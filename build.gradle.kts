@@ -16,6 +16,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
 
     testImplementation(kotlin("test"))
+    // Gradle 9 requires explicit junit-platform-console for useJUnitPlatform() test task discovery
     testRuntimeOnly("org.junit.platform:junit-platform-console:1.9.3")
 }
 
