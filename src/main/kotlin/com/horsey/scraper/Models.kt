@@ -1,5 +1,7 @@
 package com.horsey.scraper
 
+enum class MarketType { WIN, TOP_2, TOP_3, TOP_4, TOP_5 }
+
 /**
  * A horse racing meeting on the daily race list.
  *
