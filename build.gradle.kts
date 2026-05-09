@@ -14,6 +14,13 @@ dependencies {
     implementation("org.seleniumhq.selenium:selenium-java:4.16.1")
     implementation("org.slf4j:slf4j-simple:2.0.9")
     implementation("com.google.code.gson:gson:2.10.1")
+
+    testImplementation(kotlin("test"))
+    testRuntimeOnly("org.junit.platform:junit-platform-console:1.9.3")
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 application {
