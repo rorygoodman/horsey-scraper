@@ -53,7 +53,7 @@ fun main(args: Array<String>) {
     val runStart = Instant.now()
     println("\n[$runStart] Fetching today's race list…")
     val races = BetfairRaceListScraper().scrape()
-    println("Found ${races.size} UK/IE races today.")
+    println("Found ${races.size} races today.")
     races.forEach { println("  ${it.offTime}  ${it.country}  ${it.venue}  (${it.raceId})") }
 
     val results = scrapeRacesInParallel(
