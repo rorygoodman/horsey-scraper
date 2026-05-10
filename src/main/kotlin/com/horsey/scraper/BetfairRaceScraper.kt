@@ -2,9 +2,28 @@ package com.horsey.scraper
 
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
+import java.time.OffsetDateTime
+import java.time.format.DateTimeFormatter
 
 private const val TOP_N_TYPES_COUNT = 4
 private const val INTER_MARKET_DELAY_MS = 500L
+
+private val HHMM = DateTimeFormatter.ofPattern("HH:mm")
+
+/**
+ * Pure formatter for the per-race `marketName` output field.
+ *
+ * Combines the local off time + venue (always known) with the race-type
+ * snippet scraped from the page (e.g. "5f Hcap", "1m Listed"). Returns
+ * `"<HH:mm> <venue> - <raceType>"` when the race-type is present, or just
+ * `"<HH:mm> <venue>"` as a fallback.
+ */
+fun formatMarketName(race: Race, raceType: String): String {
+    val time = OffsetDateTime.parse(race.offTime).format(HHMM)
+    val trimmed = raceType.trim()
+    return if (trimmed.isEmpty()) "$time ${race.venue}"
+           else "$time ${race.venue} - $trimmed"
+}
 
 /**
  * Pure assembler: combines a [Race], a market name, and a per-market scrape
@@ -87,11 +106,16 @@ class BetfairRaceScraper(private val race: Race) {
     }
 
     private fun extractMarketName(driver: WebDriver): String {
-        return try {
-            driver.findElement(By.cssSelector("h1")).text.trim()
-                .ifEmpty { "${race.offTime} ${race.venue}" }
+        // Betfair race pages expose the race type (e.g. "5f Hcap", "1m Listed")
+        // in <span class="market-name">. The page's <h1> turns out to be empty
+        // on every race we've seen, so we don't use it. Time + venue we already
+        // know from the race-list scrape; combine them with the race type to
+        // produce the spec format "<HH:mm> <venue> - <race type>".
+        val raceType = try {
+            driver.findElement(By.cssSelector("span.market-name")).text
         } catch (e: Exception) {
-            "${race.offTime} ${race.venue}"
+            ""
         }
+        return formatMarketName(race, raceType)
     }
 }

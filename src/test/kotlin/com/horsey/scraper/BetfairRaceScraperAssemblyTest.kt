@@ -41,6 +41,33 @@ class BetfairRaceScraperAssemblyTest {
     }
 
     @Test
+    fun `formatMarketName combines time + venue + race type`() {
+        assertEquals("13:30 Lingfield - 5f Hcap", formatMarketName(race, "5f Hcap"))
+    }
+
+    @Test
+    fun `formatMarketName trims whitespace from race type`() {
+        assertEquals("13:30 Lingfield - 1m Listed",
+            formatMarketName(race, "  1m Listed\n"))
+    }
+
+    @Test
+    fun `formatMarketName falls back to time + venue when race type empty or blank`() {
+        assertEquals("13:30 Lingfield", formatMarketName(race, ""))
+        assertEquals("13:30 Lingfield", formatMarketName(race, "   "))
+    }
+
+    @Test
+    fun `formatMarketName uses local time of offTime, not UTC`() {
+        // 14:30 BST should render as "14:30", not "13:30" (the UTC equivalent).
+        val bstRace = race.copy(
+            venue = "Naas",
+            offTime = "2026-05-10T14:30:00+01:00"
+        )
+        assertEquals("14:30 Naas - 1m4f Mdn", formatMarketName(bstRace, "1m4f Mdn"))
+    }
+
+    @Test
     fun `marketScrapedAt preserves MarketType declared order`() {
         val scrapes = mapOf(
             MarketType.TOP_5 to MarketScrape(MarketType.TOP_5, "2026-05-09T12:00:17Z",

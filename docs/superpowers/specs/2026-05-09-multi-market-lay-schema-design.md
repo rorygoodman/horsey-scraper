@@ -76,7 +76,7 @@ Discovery: navigate from each race's Win market page (already known from the rac
 | `races[].country` | string | `"GB"` or `"IE"` from `Venues.countryFor(...)` |
 | `races[].offTime` | string, ISO-8601 with offset | Constructed from today's date (Europe/London) + `HH:mm` from race list |
 | `races[].winMarketUrl` | string | The Betfair Exchange URL for the Win market (carried through from the race-list scraper, useful for debugging) |
-| `races[].marketName` | string | `<h1>` text from the Win market page (race-level, not per-market) |
+| `races[].marketName` | string | Format: `"<HH:mm> <venue> - <race type>"` (e.g. `"13:30 Lingfield - 5f Hcap"`). Time + venue come from the race-list scrape. Race type comes from `<span class="market-name">` on the Win market page. The `" - <race type>"` suffix is omitted if the span is missing. (We tried `<h1>` first; it was empty on every race in our 2026-05-10 smoke run.) |
 | `races[].marketScrapedAt` | object | Map of market type → ISO-8601 UTC `Z` instant. **Only contains keys for markets that were scraped successfully.** |
 | `races[].runners[].name` | string | Horse name as shown on Betfair Win market page (source of truth for runner list) |
 | `races[].runners[].lay` | object | Map of market type → best lay price as decimal odds. **Same keys as `marketScrapedAt`.** Value is `null` if scraped but no lay was on offer. |
