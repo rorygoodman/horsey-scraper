@@ -58,4 +58,42 @@ class BetfairRaceListScraperTest {
         val ids = assembleRaces(raw, today, london).map { it.raceId }
         assertEquals(listOf("1.111", "1.222"), ids)
     }
+
+    @Test
+    fun `assembleRaces with countryOverride uses it for every venue`() {
+        val raw = listOf(
+            "Belmont Park|||18:30|||https://www.betfair.com/exchange/plus/horse-racing/market/1.555",
+            "Saratoga|||19:00|||https://www.betfair.com/exchange/plus/horse-racing/market/1.556",
+        )
+        val races = assembleRaces(raw, today, london, countryOverride = "US")
+        assertEquals(2, races.size)
+        assertEquals(setOf("US"), races.map { it.country }.toSet())
+    }
+
+    @Test
+    fun `assembleRaces with countryOverride still drops invalid race id`() {
+        val raw = listOf(
+            "Belmont Park|||18:30|||https://www.betfair.com/exchange/plus/horse-racing"
+        )
+        assertEquals(emptyList(), assembleRaces(raw, today, london, countryOverride = "US"))
+    }
+
+    @Test
+    fun `assembleRaces with countryOverride still drops invalid time`() {
+        val raw = listOf(
+            "Belmont Park|||not-a-time|||https://www.betfair.com/exchange/plus/horse-racing/market/1.555"
+        )
+        assertEquals(emptyList(), assembleRaces(raw, today, london, countryOverride = "US"))
+    }
+
+    @Test
+    fun `assembleRaces without countryOverride still uses Venues lookup (regression)`() {
+        // Default countryOverride = null path. Lingfield is in Venues.UK,
+        // so country should resolve to GB exactly as before this change.
+        val raw = listOf(
+            "Lingfield|||13:30|||https://www.betfair.com/exchange/plus/horse-racing/market/1.111"
+        )
+        val races = assembleRaces(raw, today, london)
+        assertEquals("GB", races.single().country)
+    }
 }

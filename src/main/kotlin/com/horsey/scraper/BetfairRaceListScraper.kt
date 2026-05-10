@@ -13,13 +13,26 @@ private val LONDON = ZoneId.of("Europe/London")
  * clock. Filters out unknown venues, lines with no parseable race ID, and
  * lines with unparseable times. Dedupes by raceId and sorts by offTime
  * then venue.
+ *
+ * If `countryOverride` is non-null, every race gets that country directly,
+ * bypassing the [Venues] lookup. This is used for single-country tabs
+ * (e.g. the US tab) where tab membership is itself proof of country.
+ *
+ * If `countryOverride` is null (default), country is resolved per venue via
+ * [Venues.countryFor] and unknown venues are skipped with a warning. This
+ * is the path for the GB+IE tab where the two countries are mixed.
  */
-fun assembleRaces(rawLines: List<String>, today: LocalDate, zone: ZoneId): List<Race> {
+fun assembleRaces(
+    rawLines: List<String>,
+    today: LocalDate,
+    zone: ZoneId,
+    countryOverride: String? = null
+): List<Race> {
     val races = rawLines.mapNotNull { line ->
         val parts = line.split("|||")
         if (parts.size != 3) return@mapNotNull null
         val (venue, hhmm, href) = Triple(parts[0], parts[1], parts[2])
-        val country = Venues.countryFor(venue) ?: run {
+        val country = countryOverride ?: Venues.countryFor(venue) ?: run {
             System.err.println("Skipping unknown venue: '$venue' ($hhmm)")
             return@mapNotNull null
         }
