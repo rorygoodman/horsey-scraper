@@ -44,18 +44,46 @@ fun assembleRaces(
 }
 
 /**
- * Scrapes the Betfair Exchange "Today's Racing" landing page for the GB & IE
- * meetings shown on the default tab.
+ * Describes a Betfair country-tab we want to scrape.
+ *
+ * @param name           For logs: "GB+IE", "US".
+ * @param flagsRequired  CSS classes on the flag SVG that must ALL appear in
+ *                       the tab's innerHTML for it to be the tab we want.
+ * @param countryOverride If non-null, every venue on this tab is treated as
+ *                       this country (passed straight through to
+ *                       [assembleRaces]). If null, [Venues.countryFor] is
+ *                       used to disambiguate (needed for the GB+IE tab).
+ */
+data class RegionTab(
+    val name: String,
+    val flagsRequired: Set<String>,
+    val countryOverride: String?,
+)
+
+private val REGION_TABS = listOf(
+    RegionTab("GB+IE", setOf("country-flags-gb", "country-flags-ie"), countryOverride = null),
+    RegionTab("US",    setOf("country-flags-us"),                     countryOverride = "US"),
+)
+
+/**
+ * Scrapes the Betfair Exchange "Today's Racing" landing page for meetings
+ * across all tabs in [REGION_TABS]. Currently GB+IE and US.
  *
  * DOM shape (as of 2026-05):
  *   ul.country-tabs-container
- *     li.country-tab.active     <-- GB & IE tab is default-active
+ *     li.country-tab.active     <-- some tab is default-active; we click each
+ *                                   in turn
  *   div.country-content
  *     li.meeting-item
- *       .meeting-info .meeting-label          <-- venue ("Southwell")
+ *       .meeting-info .meeting-label          <-- venue
  *       ul.race-list li.race-information
  *         a.race-link[href="horse-racing/market/1.NNN"]
  *           span.label                         <-- HH:mm
+ *
+ * Per-region failure (tab missing, layout changed, etc.) is caught and
+ * logged; remaining regions still scrape. A region with no races today
+ * (empty meeting list after activation) just contributes 0 races, which is
+ * fine.
  */
 class BetfairRaceListScraper(
     private val url: String = "https://www.betfair.com/exchange/plus/en/horse-racing-betting-7"
@@ -65,21 +93,33 @@ class BetfairRaceListScraper(
         try {
             driver.get(url)
             val js = driver as JavascriptExecutor
-            val ready = waitForMeetings(driver)
-            if (!ready) {
+            if (!waitForMeetings(driver)) {
                 dumpDiagnostics(js)
                 return emptyList()
             }
-
-            ensureGbIeTabActive(driver)
-            Thread.sleep(800)
-            val raw = extractRawMeetings(js)
-            return assembleRaces(raw, LocalDate.now(LONDON), LONDON)
+            val today = LocalDate.now(LONDON)
+            val all = mutableListOf<Race>()
+            for (region in REGION_TABS) {
+                try {
+                    activateTab(driver, region)
+                    Thread.sleep(800)
+                    val raw = extractRawMeetings(js)
+                    all += assembleRaces(raw, today, LONDON, region.countryOverride)
+                } catch (e: Exception) {
+                    System.err.println("Region ${region.name} failed: ${e.message}")
+                }
+            }
+            return all.distinctBy { it.raceId }
+                      .sortedWith(compareBy({ it.offTime }, { it.venue }))
         } finally {
             driver.quit()
         }
     }
 
+    /**
+     * Waits up to 30s for at least one li.meeting-item to appear (any tab).
+     * Returns true on success, false on timeout (caller should dump diagnostics).
+     */
     private fun waitForMeetings(driver: WebDriver): Boolean {
         val deadline = System.currentTimeMillis() + 30_000L
         while (System.currentTimeMillis() < deadline) {
@@ -112,23 +152,24 @@ class BetfairRaceListScraper(
         }
     }
 
-    private fun ensureGbIeTabActive(driver: WebDriver) {
-        try {
-            val tabs = driver.findElements(By.cssSelector("li.country-tab"))
-            for (tab in tabs) {
-                val flagsHtml = tab.getAttribute("innerHTML") ?: ""
-                if (flagsHtml.contains("country-flags-gb") && flagsHtml.contains("country-flags-ie")) {
-                    val classAttr = tab.getAttribute("class") ?: ""
-                    if (!classAttr.contains("active")) {
-                        tab.click()
-                        Thread.sleep(700)
-                    }
-                    return
+    /**
+     * Finds the tab matching `region`'s flag classes and clicks it if it's
+     * not already active. Throws if the tab isn't on the page (e.g. that
+     * region has no racing today and the tab is suppressed).
+     */
+    private fun activateTab(driver: WebDriver, region: RegionTab) {
+        for (tab in driver.findElements(By.cssSelector("li.country-tab"))) {
+            val flagsHtml = tab.getAttribute("innerHTML") ?: ""
+            if (region.flagsRequired.all { flagsHtml.contains(it) }) {
+                val classes = tab.getAttribute("class") ?: ""
+                if (!classes.contains("active")) {
+                    tab.click()
+                    Thread.sleep(700)
                 }
+                return
             }
-        } catch (e: Exception) {
-            // Tab structure may differ when only one country has races.
         }
+        error("tab for region ${region.name} not found")
     }
 
     @Suppress("UNCHECKED_CAST")
