@@ -9,6 +9,20 @@ private const val PER_RACE_DELAY_MS = 2_000L
 private const val OUTPUT_FILE = "data.json"
 
 /**
+ * Parses the worker-count CLI argument. First positional arg is parsed as an
+ * Int in 1..10. If absent, defaults to 3. Both validation failures throw
+ * `IllegalArgumentException` so the caller can catch one type and print a
+ * clean error.
+ */
+fun parseWorkerCount(args: Array<String>): Int {
+    val raw = args.firstOrNull() ?: return 3
+    val n = raw.toIntOrNull()
+    require(n != null) { "workers must be between 1 and 10 (got: '$raw')" }
+    require(n in 1..10) { "workers must be between 1 and 10 (got: $n)" }
+    return n
+}
+
+/**
  * Entry point: a single pass over today's UK + IE Betfair Exchange races.
  *
  *   1. Reads the race list from the horse-racing landing page.

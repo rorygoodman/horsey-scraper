@@ -4,6 +4,7 @@ import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertFailsWith
 import kotlin.test.assertTrue
 
 class RaceWorkerPoolTest {
@@ -211,5 +212,65 @@ class RaceWorkerPoolTest {
         val elapsedMs = (System.nanoTime() - start) / 1_000_000
         assertTrue(elapsedMs in 350..900,
             "expected ~400ms (2x 200ms inter-race delay); was ${elapsedMs}ms")
+    }
+}
+
+class ParseWorkerCountTest {
+    @Test
+    fun `defaults to 3 when no args`() {
+        assertEquals(3, parseWorkerCount(emptyArray()))
+    }
+
+    @Test
+    fun `accepts 1`() {
+        assertEquals(1, parseWorkerCount(arrayOf("1")))
+    }
+
+    @Test
+    fun `accepts 10`() {
+        assertEquals(10, parseWorkerCount(arrayOf("10")))
+    }
+
+    @Test
+    fun `accepts 5`() {
+        assertEquals(5, parseWorkerCount(arrayOf("5")))
+    }
+
+    @Test
+    fun `rejects 0`() {
+        val e = assertFailsWith<IllegalArgumentException> {
+            parseWorkerCount(arrayOf("0"))
+        }
+        assertTrue("0" in (e.message ?: ""), "message was: ${e.message}")
+    }
+
+    @Test
+    fun `rejects 11`() {
+        val e = assertFailsWith<IllegalArgumentException> {
+            parseWorkerCount(arrayOf("11"))
+        }
+        assertTrue("11" in (e.message ?: ""), "message was: ${e.message}")
+    }
+
+    @Test
+    fun `rejects negative`() {
+        assertFailsWith<IllegalArgumentException> {
+            parseWorkerCount(arrayOf("-1"))
+        }
+    }
+
+    @Test
+    fun `rejects non-numeric`() {
+        val e = assertFailsWith<IllegalArgumentException> {
+            parseWorkerCount(arrayOf("abc"))
+        }
+        assertTrue("abc" in (e.message ?: ""), "message was: ${e.message}")
+    }
+
+    @Test
+    fun `rejects empty string`() {
+        assertFailsWith<IllegalArgumentException> {
+            parseWorkerCount(arrayOf(""))
+        }
     }
 }
