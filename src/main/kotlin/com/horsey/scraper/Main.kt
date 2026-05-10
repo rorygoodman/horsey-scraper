@@ -18,7 +18,10 @@ private const val OUTPUT_FILE = "data.json"
  * Output schema: see docs/superpowers/specs/2026-05-09-multi-market-lay-schema-design.md
  */
 fun main() {
-    val gson = GsonBuilder().setPrettyPrinting().create()
+    // serializeNulls is required by the spec: a `lay` map with a key whose
+    // value is null means "scraped but no lay on offer." Without this,
+    // Gson drops null entries and breaks key parity with marketScrapedAt.
+    val gson = GsonBuilder().setPrettyPrinting().serializeNulls().create()
 
     println("Horsey Scraper — Betfair Exchange (UK + IE) — multi-market lay")
     println("=".repeat(80))
