@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter
 import java.time.format.DateTimeParseException
 
 private val RACE_ID_REGEX = Regex("""^1\.\d+$""")
-private val ALLOWED_COUNTRIES = setOf("GB", "IE")
+private val ALLOWED_COUNTRIES = setOf("GB", "IE", "US")
 private val ALLOWED_MARKETS = setOf("WIN", "TOP_2", "TOP_3", "TOP_4", "TOP_5")
 
 /**

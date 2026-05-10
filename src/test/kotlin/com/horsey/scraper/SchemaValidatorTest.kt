@@ -113,4 +113,10 @@ class SchemaValidatorTest {
         val errors = validateScrapeOutput(bad)
         assertTrue(errors.any { it.contains("offTime") }, "errors were: $errors")
     }
+
+    @Test
+    fun `accepts country US`() {
+        val good = goodJson.replace(""""country": "GB"""", """"country": "US"""")
+        assertEquals(emptyList(), validateScrapeOutput(good))
+    }
 }
