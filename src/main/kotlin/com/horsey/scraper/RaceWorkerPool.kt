@@ -17,8 +17,9 @@ import java.util.concurrent.LinkedBlockingQueue
  *    excluded from the returned list. Other races and other workers are
  *    unaffected.
  *  - `onResult` is invoked exactly once per race (success, drop, or throw).
- *    `println` is line-atomic on the JVM, so a logging `onResult` produces
- *    interleaved-but-readable output.
+ *    It MAY BE CALLED CONCURRENTLY from multiple worker threads — the
+ *    caller is responsible for any thread-safety it needs. A pure logging
+ *    callback is safe because `println` is line-atomic on the JVM.
  *  - If `workerCount > races.size`, surplus workers exit immediately on
  *    first empty `poll()`. Harmless.
  *  - If `races` is empty, returns empty list immediately (workers still
@@ -60,5 +61,8 @@ fun scrapeRacesInParallel(
     }
     threads.forEach { it.join() }
 
+    // Lexicographic sort works because all `offTime` values for one run share
+    // the same timezone offset (Europe/London BST or GMT, set by OffTimeBuilder).
+    // If we ever mix offsets within a run, switch to OffsetDateTime parsing.
     return results.toList().sortedWith(compareBy({ it.offTime }, { it.venue }))
 }

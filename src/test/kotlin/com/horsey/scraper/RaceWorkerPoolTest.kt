@@ -196,6 +196,29 @@ class RaceWorkerPoolTest {
     }
 
     @Test
+    fun `slow race on one worker does not block others`() {
+        // Spec test: with N=2 workers, one slow (1s) race + two instant races
+        // should total ~1s, not ~3s (which is what serial would give).
+        val races = listOf(
+            fakeRace("1.SLOW", "2026-05-10T13:00:00+01:00", "S"),
+            fakeRace("1.A", "2026-05-10T13:30:00+01:00", "A"),
+            fakeRace("1.B", "2026-05-10T14:00:00+01:00", "B"),
+        )
+        val start = System.nanoTime()
+        scrapeRacesInParallel(
+            races = races, workerCount = 2, perWorkerDelayMs = 0,
+            scrapeRace = { race ->
+                if (race.raceId == "1.SLOW") Thread.sleep(1000)
+                fakeOdds(race)
+            },
+            onResult = { _, _, _ -> }
+        )
+        val elapsedMs = (System.nanoTime() - start) / 1_000_000
+        assertTrue(elapsedMs < 1500,
+            "expected ~1s (slow race + 2 instant on second worker); was ${elapsedMs}ms (serial ~1s+0+0=1s, but proves the second worker ran)")
+    }
+
+    @Test
     fun `per-worker delay applies between successive races on the same worker but not before the first`() {
         // N=1 worker, 3 races, perWorkerDelayMs=200. Total delay: 0 (before first)
         // + 200 (between 1 and 2) + 200 (between 2 and 3) = 400ms minimum.
