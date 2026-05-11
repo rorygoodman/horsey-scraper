@@ -60,7 +60,7 @@ data class RegionTab(
     val countryOverride: String?,
 )
 
-private val REGION_TABS = listOf(
+internal val REGION_TABS = listOf(
     RegionTab("GB+IE", setOf("country-flags-gb", "country-flags-ie"), countryOverride = null),
     RegionTab("US",    setOf("country-flags-us"),                     countryOverride = "US"),
 )
