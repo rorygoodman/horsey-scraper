@@ -22,21 +22,21 @@ fun parseWorkerCount(args: Array<String>): Int {
 }
 
 /**
- * Parses the regions CLI argument. Second positional arg is a
+ * Parses the regions CLI argument. First positional arg is a
  * comma-separated set of region IDs (case-insensitive, whitespace-tolerant).
  * If absent, defaults to `setOf("gb-ie")`.
  *
- * Region IDs are derived from `REGION_TABS` via [RegionTab.regionId].
- * Unknown IDs cause an `IllegalArgumentException` whose message lists the
- * bad id(s) alongside the valid set, so the caller can surface a clean
- * error message. An empty arg (or one that parses to no ids) also throws.
+ * Region IDs come from [Regions.ALL]. Unknown IDs throw
+ * `IllegalArgumentException` whose message lists the bad id(s) alongside
+ * the valid set, so the caller can surface a clean error. An empty arg
+ * (or one that parses to no ids) also throws.
  */
 fun parseRegions(args: Array<String>): Set<String> {
-    val raw = args.getOrNull(1) ?: return setOf("gb-ie")
+    val raw = args.getOrNull(0) ?: return setOf("gb-ie")
     val ids = raw.split(",").map { it.trim().lowercase() }
         .filter { it.isNotEmpty() }
         .toSet()
-    val known = REGION_TABS.map { it.regionId() }.toSet()
+    val known = Regions.ALL
     val unknown = ids - known
     require(unknown.isEmpty()) {
         "unknown region(s) ${unknown.joinToString(",")}; valid: ${known.sorted().joinToString(",")}"
