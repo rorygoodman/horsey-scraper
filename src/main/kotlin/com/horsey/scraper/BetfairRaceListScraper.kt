@@ -156,14 +156,19 @@ class BetfairRaceListScraper(
      * Finds the tab matching `region`'s flag classes and clicks it if it's
      * not already active. Throws if the tab isn't on the page (e.g. that
      * region has no racing today and the tab is suppressed).
+     *
+     * Uses a JS-level click rather than `WebElement.click()` so the OneTrust
+     * cookie consent banner overlay (`<div class="onetrust-pc-dark-filter">`,
+     * which intercepts native pointer events) doesn't block the tab switch.
      */
     private fun activateTab(driver: WebDriver, region: RegionTab) {
+        val js = driver as JavascriptExecutor
         for (tab in driver.findElements(By.cssSelector("li.country-tab"))) {
             val flagsHtml = tab.getAttribute("innerHTML") ?: ""
             if (region.flagsRequired.all { flagsHtml.contains(it) }) {
                 val classes = tab.getAttribute("class") ?: ""
                 if (!classes.contains("active")) {
-                    tab.click()
+                    js.executeScript("arguments[0].click();", tab)
                     Thread.sleep(700)
                 }
                 return
