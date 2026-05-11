@@ -158,14 +158,18 @@ class RaceWorkerPoolTest {
             fakeRace("1.B", "2026-05-10T13:30:00+01:00", "B"),
             fakeRace("1.C", "2026-05-10T14:00:00+01:00", "C"),
         )
-        val seen = ConcurrentHashMap<String, RaceOdds?>()
+        // NB: cannot use ConcurrentHashMap here — it rejects null values, and
+        // we explicitly need to record `null` for the throwing race.
+        val seen = mutableMapOf<String, RaceOdds?>()
         val results = scrapeRacesInParallel(
             races = races, workerCount = 2, perWorkerDelayMs = 0,
             scrapeRace = { race ->
                 if (race.raceId == "1.B") throw RuntimeException("boom")
                 fakeOdds(race)
             },
-            onResult = { _, race, odds -> seen[race.raceId] = odds }
+            onResult = { _, race, odds ->
+                synchronized(seen) { seen[race.raceId] = odds }
+            }
         )
         assertEquals(setOf("1.A", "1.C"), results.map { it.raceId }.toSet())
         assertEquals(setOf("1.A", "1.B", "1.C"), seen.keys)
