@@ -66,6 +66,14 @@ private val REGION_TABS = listOf(
 )
 
 /**
+ * Stable user-facing ID for a region. Lower-cased, with `+` replaced by `-`
+ * so it's easy to type as a CLI arg. Used by both the CLI parser
+ * ([com.horsey.scraper.parseRegions]) and the constructor's `regions`
+ * filter to identify tabs.
+ */
+internal fun RegionTab.regionId(): String = name.lowercase().replace("+", "-")
+
+/**
  * Scrapes the Betfair Exchange "Today's Racing" landing page for meetings
  * across all tabs in [REGION_TABS]. Currently GB+IE and US.
  *
@@ -86,7 +94,8 @@ private val REGION_TABS = listOf(
  * fine.
  */
 class BetfairRaceListScraper(
-    private val url: String = "https://www.betfair.com/exchange/plus/en/horse-racing-betting-7"
+    private val url: String = "https://www.betfair.com/exchange/plus/en/horse-racing-betting-7",
+    private val regions: Set<String> = REGION_TABS.map { it.regionId() }.toSet(),
 ) {
     fun scrape(): List<Race> {
         val driver: WebDriver = createChromeDriver()
@@ -99,7 +108,7 @@ class BetfairRaceListScraper(
             }
             val today = LocalDate.now(LONDON)
             val all = mutableListOf<Race>()
-            for (region in REGION_TABS) {
+            for (region in REGION_TABS.filter { it.regionId() in regions }) {
                 try {
                     activateTab(driver, region)
                     Thread.sleep(800)
