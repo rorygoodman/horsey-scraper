@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# Forward the first positional arg as the worker count (default 3).
+# Single positional arg: regions (default `gb-ie`; valid: gb-ie,us).
 # Examples:
-#   ./run.sh        # 3 workers (default)
-#   ./run.sh 1      # serial — exactly the pre-parallel behavior
-#   ./run.sh 5      # 5 parallel workers (max 10)
-WORKERS="${1:-3}"
-exec ./gradlew run --quiet --args="$WORKERS"
+#   ./run.sh               # GB+IE
+#   ./run.sh us            # US only
+#   ./run.sh gb-ie,us      # both
+exec ./gradlew run --quiet --args="${1:-gb-ie}"
