@@ -2073,6 +2073,8 @@ git commit -m "run.sh: single regions arg, default gb-ie"
 
 Now that `Main.kt` no longer references the Selenium scraper or `RaceWorkerPool`, delete every Selenium-touched file and the now-stranded test files.
 
+> **Note (Task 8 review extract):** `RaceOddsAssembly.kt` and its test file `RaceOddsAssemblyTest.kt` survive — they hold the extracted pure helpers `assembleRaceOdds` and `formatMarketName` (extracted from `BetfairRaceScraper.kt` during Task 8 review so that `RaceOddsFetcher` has stable references). Do **not** delete these two files in this task.
+
 **Files (delete all):**
 - `src/main/kotlin/com/horsey/scraper/BetfairRaceListScraper.kt`
 - `src/main/kotlin/com/horsey/scraper/BetfairRaceScraper.kt`
@@ -2087,7 +2089,6 @@ Now that `Main.kt` no longer references the Selenium scraper or `RaceWorkerPool`
 - `src/main/kotlin/com/horsey/scraper/TestListMain.kt`
 - `src/main/kotlin/com/horsey/scraper/TestRaceMain.kt`
 - `src/test/kotlin/com/horsey/scraper/BetfairRaceListScraperTest.kt`
-- `src/test/kotlin/com/horsey/scraper/BetfairRaceScraperAssemblyTest.kt`
 - `src/test/kotlin/com/horsey/scraper/RaceWorkerPoolTest.kt`
 - `debug-page.html`
 
@@ -2118,7 +2119,6 @@ Run:
 ```bash
 git rm \
   src/test/kotlin/com/horsey/scraper/BetfairRaceListScraperTest.kt \
-  src/test/kotlin/com/horsey/scraper/BetfairRaceScraperAssemblyTest.kt \
   src/test/kotlin/com/horsey/scraper/RaceWorkerPoolTest.kt
 ```
 
