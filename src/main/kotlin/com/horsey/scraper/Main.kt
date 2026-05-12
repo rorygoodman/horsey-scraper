@@ -4,22 +4,7 @@ import com.google.gson.GsonBuilder
 import java.io.File
 import java.time.Instant
 
-private const val PER_RACE_DELAY_MS = 2_000L
 private const val OUTPUT_FILE = "data.json"
-
-/**
- * Parses the worker-count CLI argument. First positional arg is parsed as an
- * Int in 1..10. If absent, defaults to 3. Both validation failures throw
- * `IllegalArgumentException` so the caller can catch one type and print a
- * clean error.
- */
-fun parseWorkerCount(args: Array<String>): Int {
-    val raw = args.firstOrNull() ?: return 3
-    val n = raw.toIntOrNull()
-    require(n != null) { "workers must be between 1 and 10 (got: '$raw')" }
-    require(n in 1..10) { "workers must be between 1 and 10 (got: $n)" }
-    return n
-}
 
 /**
  * Parses the regions CLI argument. First positional arg is a
@@ -48,53 +33,73 @@ fun parseRegions(args: Array<String>): Set<String> {
 }
 
 /**
- * Entry point: a single pass over today's UK + IE Betfair Exchange races.
+ * Entry point: one pass over today's racing in the chosen regions, fetched
+ * from the Betfair Exchange REST API.
  *
- *   1. Parses worker count from args[0] (default 3, range 1..10).
- *   2. Reads the race list from the horse-racing landing page.
- *   3. For each race, opens one Chrome and scrapes WIN + Top 2/3/4/5 Finish.
- *      Up to `workerCount` races run concurrently.
- *   4. Pivots into per-horse lay map and writes data.json.
+ *   1. Parses regions from args[0] (default `gb-ie`).
+ *   2. Loads credentials from `~/.horsey-scraper/credentials.json`.
+ *   3. Logs in to identitysso.
+ *   4. Fetches today's WIN markets and the explicit Top-N markets, then
+ *      their prices in batches of ≤40 marketIds.
+ *   5. Pivots into per-horse lay map and writes `data.json`.
  *
  * Output schema: see docs/superpowers/specs/2026-05-09-multi-market-lay-schema-design.md
- * Parallelism:  see docs/superpowers/specs/2026-05-10-parallel-scraping-design.md
+ * Migration:     see docs/superpowers/specs/2026-05-11-betfair-api-migration-design.md
  */
 fun main(args: Array<String>) {
-    val workerCount = try {
-        parseWorkerCount(args)
+    val regions = try {
+        parseRegions(args)
     } catch (e: IllegalArgumentException) {
         System.err.println("Error: ${e.message}")
         kotlin.system.exitProcess(1)
     }
 
-    // serializeNulls is required by the spec: a `lay` map with a key whose
-    // value is null means "scraped but no lay on offer." Without this,
-    // Gson drops null entries and breaks key parity with marketScrapedAt.
+    val credentials = try {
+        loadCredentials(defaultCredentialsPath())
+    } catch (e: IllegalArgumentException) {
+        System.err.println("Error: ${e.message}")
+        kotlin.system.exitProcess(2)
+    }
+
     val gson = GsonBuilder().setPrettyPrinting().serializeNulls().create()
 
-    println("Horsey Scraper — Betfair Exchange (UK + IE) — multi-market lay")
-    println("workers=$workerCount")
+    println("Horsey Scraper — Betfair Exchange API — multi-market lay")
+    println("regions=${regions.sorted().joinToString(",")}")
     println("=".repeat(80))
 
     val runStart = Instant.now()
+    val client = BetfairClient(appKey = credentials.appKey)
+    try {
+        client.login(credentials.username, credentials.password)
+    } catch (e: IllegalStateException) {
+        System.err.println("Error: ${e.message}")
+        kotlin.system.exitProcess(1)
+    }
+
     println("\n[$runStart] Fetching today's race list…")
-    val races = BetfairRaceListScraper().scrape()
+    val races = try {
+        RaceListFetcher(client).fetch(regions)
+    } catch (e: Exception) {
+        System.err.println("Error fetching race list: ${e.message}")
+        kotlin.system.exitProcess(1)
+    }
     println("Found ${races.size} races today.")
     races.forEach { println("  ${it.offTime}  ${it.country}  ${it.venue}  (${it.raceId})") }
 
-    val results = scrapeRacesInParallel(
-        races = races,
-        workerCount = workerCount,
-        perWorkerDelayMs = PER_RACE_DELAY_MS,
-        scrapeRace = { race -> BetfairRaceScraper(race).scrape() },
-    ) { workerId, race, odds ->
-        val tag = "[w$workerId]"
-        if (odds == null) {
-            println("$tag ${race.offTime} ${race.venue} (${race.raceId}) DROPPED")
-        } else {
-            val markets = odds.marketScrapedAt.keys.joinToString(",") { it.name }
-            println("$tag ${race.offTime} ${race.venue} (${race.raceId}) → ${odds.runners.size} runners, markets=[$markets]")
-        }
+    val results: List<RaceOdds> = try {
+        RaceOddsFetcher(client).fetch(races, regions)
+    } catch (e: Exception) {
+        System.err.println("Error fetching odds: ${e.message}")
+        emptyList()
+    }
+
+    for (odds in results) {
+        val markets = odds.marketScrapedAt.keys.joinToString(",") { it.name }
+        println("  ${odds.offTime} ${odds.venue} (${odds.raceId}) → ${odds.runners.size} runners, markets=[$markets]")
+    }
+    val dropped = races.filter { r -> results.none { it.raceId == r.raceId } }
+    for (r in dropped) {
+        println("  ${r.offTime} ${r.venue} (${r.raceId}) DROPPED")
     }
 
     val output = ScrapeOutput(
