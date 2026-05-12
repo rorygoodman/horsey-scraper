@@ -33,6 +33,18 @@ class BetfairResponsesTest {
         assertFailsWith<IllegalStateException> { parseSsoid("not json") }
     }
 
+    @Test
+    fun `parseSsoid throws IllegalStateException when token is null on SUCCESS`() {
+        val json = """{ "token": null, "status": "SUCCESS" }"""
+        assertFailsWith<IllegalStateException> { parseSsoid(json) }
+    }
+
+    @Test
+    fun `parseSsoid throws IllegalStateException when token field is absent on SUCCESS`() {
+        val json = """{ "status": "SUCCESS" }"""
+        assertFailsWith<IllegalStateException> { parseSsoid(json) }
+    }
+
     // --- raceFromCatalogue ---
     @Test
     fun `raceFromCatalogue builds Race from a WIN market entry`() {

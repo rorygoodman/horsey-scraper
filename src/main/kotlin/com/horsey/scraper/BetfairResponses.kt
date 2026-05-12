@@ -29,15 +29,17 @@ fun parseSsoid(json: String): String {
     } catch (e: Exception) {
         throw IllegalStateException("login response is not a valid JSON object: ${e.message}")
     }
-    val status = root.get("status")?.asString ?: "UNKNOWN"
+    val statusEl = root.get("status")
+    val status = if (statusEl != null && statusEl.isJsonPrimitive) statusEl.asString else "UNKNOWN"
     if (status != "SUCCESS") {
         val hint = if (status == "LOGIN_RESTRICTED")
             " — this likely means 2FA is enabled on the account. 2FA must be disabled for interactive login, or switch to cert-based login."
             else ""
         throw IllegalStateException("login failed with status=$status$hint")
     }
-    return root.get("token")?.asString
-        ?: throw IllegalStateException("login response has SUCCESS status but no token")
+    val tokenEl = root.get("token")
+    return if (tokenEl != null && tokenEl.isJsonPrimitive) tokenEl.asString
+           else throw IllegalStateException("login response has SUCCESS status but no token")
 }
 
 /**
