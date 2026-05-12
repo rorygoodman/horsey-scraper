@@ -71,7 +71,7 @@ fun main(args: Array<String>) {
     val client = BetfairClient(appKey = credentials.appKey)
     try {
         client.login(credentials.username, credentials.password)
-    } catch (e: IllegalStateException) {
+    } catch (e: Exception) {
         System.err.println("Error: ${e.message}")
         kotlin.system.exitProcess(1)
     }
@@ -90,7 +90,7 @@ fun main(args: Array<String>) {
         RaceOddsFetcher(client).fetch(races, regions)
     } catch (e: Exception) {
         System.err.println("Error fetching odds: ${e.message}")
-        emptyList()
+        kotlin.system.exitProcess(1)
     }
 
     for (odds in results) {
