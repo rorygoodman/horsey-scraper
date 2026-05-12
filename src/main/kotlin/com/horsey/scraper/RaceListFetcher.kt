@@ -3,10 +3,8 @@ package com.horsey.scraper
 import com.google.gson.JsonParser
 import java.time.LocalDate
 import java.time.ZoneId
-import java.time.format.DateTimeFormatter
 
 private val LONDON_ZONE = ZoneId.of("Europe/London")
-private val UTC_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'")
 
 /**
  * Returns `(fromUtc, toUtc)` as ISO-8601 `Z` strings for the 24-hour day
@@ -18,14 +16,15 @@ private val UTC_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss'Z'")
 fun londonDayWindowUtc(date: LocalDate): Pair<String, String> {
     val from = date.atStartOfDay(LONDON_ZONE).toInstant()
     val to = date.plusDays(1).atStartOfDay(LONDON_ZONE).toInstant()
-    return from.atZone(ZoneId.of("UTC")).format(UTC_FMT) to
-           to.atZone(ZoneId.of("UTC")).format(UTC_FMT)
+    return from.toString() to to.toString()
 }
 
 /**
  * Shreds a `listMarketCatalogue` JSON array response into `Race`s.
  * Skips entries that don't contain the fields required by [raceFromCatalogue].
  * Dedupes by `raceId` (first wins) and sorts by `(offTime, venue)`.
+ * Throws if [json] is not a valid JSON array (caller is expected to pass
+ * the body of a successful `listMarketCatalogue` response).
  */
 fun parseCatalogueRaces(json: String): List<Race> {
     val arr = JsonParser.parseString(json).asJsonArray
