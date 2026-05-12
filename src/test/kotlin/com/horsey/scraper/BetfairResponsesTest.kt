@@ -133,4 +133,48 @@ class BetfairResponsesTest {
         val json = """{ "marketId": "1.1", "status": "WEIRD", "runners": [] }"""
         assertEquals(MarketBookStatus.OTHER, layPricesFromBook(json).status)
     }
+
+    // --- buildLoginBody ---
+    @Test
+    fun `buildLoginBody url-encodes form fields`() {
+        val body = buildLoginBody(username = "alice@example.com", password = "p@ss w&d")
+        // Order is fixed for stability across JVMs.
+        assertEquals(
+            "username=alice%40example.com&password=p%40ss+w%26d",
+            body
+        )
+    }
+
+    // --- buildCatalogueBody ---
+    @Test
+    fun `buildCatalogueBody emits expected JSON-RPC body for WIN markets`() {
+        val body = buildCatalogueBody(
+            marketTypeCodes = listOf("WIN"),
+            countries = listOf("GB", "IE"),
+            from = "2026-05-09T00:00:00Z",
+            to   = "2026-05-10T00:00:00Z",
+            projection = listOf("EVENT", "MARKET_START_TIME", "MARKET_DESCRIPTION"),
+            maxResults = 1000,
+            sort = "FIRST_TO_START",
+        )
+        val root = com.google.gson.JsonParser.parseString(body).asJsonObject
+        val filter = root.getAsJsonObject("filter")
+        assertEquals("[\"7\"]", filter.getAsJsonArray("eventTypeIds").toString())
+        assertEquals("[\"WIN\"]", filter.getAsJsonArray("marketTypeCodes").toString())
+        assertEquals("[\"GB\",\"IE\"]", filter.getAsJsonArray("marketCountries").toString())
+        assertEquals("2026-05-09T00:00:00Z",
+            filter.getAsJsonObject("marketStartTime").get("from").asString)
+        assertEquals("1000", root.get("maxResults").asString)
+        assertEquals("FIRST_TO_START", root.get("sort").asString)
+    }
+
+    // --- buildBookBody ---
+    @Test
+    fun `buildBookBody emits marketIds and EX_BEST_OFFERS priceData`() {
+        val body = buildBookBody(listOf("1.1", "1.2"))
+        val root = com.google.gson.JsonParser.parseString(body).asJsonObject
+        assertEquals("[\"1.1\",\"1.2\"]", root.getAsJsonArray("marketIds").toString())
+        assertEquals("[\"EX_BEST_OFFERS\"]",
+            root.getAsJsonObject("priceProjection").getAsJsonArray("priceData").toString())
+    }
 }

@@ -1,7 +1,10 @@
 package com.horsey.scraper
 
+import com.google.gson.JsonArray
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
 import java.time.OffsetDateTime
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
@@ -110,4 +113,58 @@ internal fun layPricesFromBook(root: JsonObject): MarketBookSnapshot {
         out[sel] = firstPrice
     }
     return MarketBookSnapshot(status, out)
+}
+
+/**
+ * Builds the `application/x-www-form-urlencoded` body for the interactive
+ * login endpoint. URL-encodes both fields.
+ */
+fun buildLoginBody(username: String, password: String): String {
+    fun enc(s: String) = URLEncoder.encode(s, StandardCharsets.UTF_8)
+    return "username=${enc(username)}&password=${enc(password)}"
+}
+
+/**
+ * Builds the JSON body for `listMarketCatalogue`. Always pins `eventTypeIds`
+ * to `["7"]` (horse racing). All other axes are caller-controlled.
+ */
+fun buildCatalogueBody(
+    marketTypeCodes: List<String>,
+    countries: List<String>,
+    from: String,
+    to: String,
+    projection: List<String>,
+    maxResults: Int,
+    sort: String,
+): String {
+    val filter = JsonObject().apply {
+        add("eventTypeIds", JsonArray().apply { add("7") })
+        add("marketTypeCodes", JsonArray().apply { marketTypeCodes.forEach { add(it) } })
+        add("marketCountries", JsonArray().apply { countries.forEach { add(it) } })
+        add("marketStartTime", JsonObject().apply {
+            addProperty("from", from)
+            addProperty("to", to)
+        })
+    }
+    val root = JsonObject().apply {
+        add("filter", filter)
+        add("marketProjection", JsonArray().apply { projection.forEach { add(it) } })
+        addProperty("maxResults", maxResults.toString())
+        addProperty("sort", sort)
+    }
+    return root.toString()
+}
+
+/** Builds the JSON body for `listMarketBook` over up to 40 marketIds. */
+fun buildBookBody(marketIds: List<String>): String {
+    require(marketIds.size in 1..40) {
+        "buildBookBody: marketIds size must be 1..40 (got ${marketIds.size})"
+    }
+    val root = JsonObject().apply {
+        add("marketIds", JsonArray().apply { marketIds.forEach { add(it) } })
+        add("priceProjection", JsonObject().apply {
+            add("priceData", JsonArray().apply { add("EX_BEST_OFFERS") })
+        })
+    }
+    return root.toString()
 }
