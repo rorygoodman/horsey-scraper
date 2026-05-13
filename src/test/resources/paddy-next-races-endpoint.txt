@@ -1,0 +1,6 @@
+URL: https://apisms.paddypower.com/smspp/content-managed-page/v7?_ak=vsd0Rm5ph2sS2uaK&betexRegion=IRL&capiJurisdiction=intl&cardsToFetch=19424&countryCode=IE&currencyCode=EUR&eventTypeId=7&exchangeLocale=en_GB&includeEuromillionsWithoutLogin=false&includeMarketBlurbs=true&includePrices=true&includeRaceCards=true&language=en&layoutFetchedCardsOnly=true&loggedIn=false&nextRacesMarketsLimit=1&page=SPORT&priceHistory=3&regionCode=IRE&requestCountryCode=IE&staticCardsIncluded=SEO_CONTENT_SUMMARY&timezone=Europe%2FDublin
+Method: GET
+Headers: real browser request (sec-fetch-*, Origin/Referer https://www.paddypower.com/, Chrome User-Agent). Cookies cf_clearance + __cf_bm are fingerprinted to the original TLS session — Playwright handles these natively for production; do not attempt to replay via raw HTTP.
+Captured: 2026-05-13
+
+Note: cardsToFetch=19424 corresponds to the "Extra Place Races" card. Other card IDs surface different sections of the page (e.g. "Next 5 Off"). For the v1 scraper we keep this URL as-is.
