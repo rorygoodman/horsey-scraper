@@ -20,6 +20,7 @@ Thumbs.db
 # Local scraper output
 scraper.log
 data.json
+paddypower.json
 debug-page.html
 
 # Credentials — never commit. Real file lives at ~/.horsey-scraper/credentials.json.
