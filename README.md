@@ -1,7 +1,7 @@
 # Horsey Scraper
 
 One-shot CLI that fetches today's UK + Irish horse-racing lay-side prices
-from the Betfair Exchange API and writes them to `data.json`.
+from the Betfair Exchange API and writes them to `betfair.json`.
 
 ## Prerequisites
 
@@ -33,13 +33,13 @@ warns to stderr if the file is readable by group/others.
 ./run.sh gb-ie,us      # both
 ```
 
-Output is written to `./data.json`. Schema is documented in
+Output is written to `./betfair.json`. Schema is documented in
 `docs/superpowers/specs/2026-05-09-multi-market-lay-schema-design.md`.
 
 ## Validating output
 
 ```
-./gradlew run --quiet -PmainClass=com.horsey.scraper.ValidateMainKt --args=data.json
+./gradlew run --quiet -PmainClass=com.horsey.scraper.ValidateMainKt --args=betfair.json
 ```
 
 ## Architecture

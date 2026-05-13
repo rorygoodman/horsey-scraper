@@ -4,7 +4,7 @@ import com.google.gson.GsonBuilder
 import java.io.File
 import java.time.Instant
 
-private const val OUTPUT_FILE = "data.json"
+private const val OUTPUT_FILE = "betfair.json"
 
 /**
  * Parses the regions CLI argument. First positional arg is a

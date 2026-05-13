@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Add a one-shot PaddyPower next-races scraper that writes a `paddypower.json` snapshot (horse names, decimal+fractional win prices, per-race each-way terms) alongside the existing Betfair `data.json`. First of N bookmaker scrapers.
+**Goal:** Add a one-shot PaddyPower next-races scraper that writes a `paddypower.json` snapshot (horse names, decimal+fractional win prices, per-race each-way terms) alongside the existing Betfair `betfair.json`. First of N bookmaker scrapers.
 
 **Architecture:** New sub-package `com.horsey.scraper.paddypower`. Hand-rolled HTTP via `java.net.http.HttpClient` against PaddyPower's internal JSON endpoint (discovered in Task 0). Pure parsers convert the response into domain types, region filter drops out-of-scope races, schema validator enforces the output contract. Runs from `Main.kt` after the Betfair pipeline.
 
@@ -16,8 +16,8 @@
 
 If you've never touched this codebase:
 
-- This is a Kotlin/JVM one-shot CLI that already produces `data.json` from the Betfair Exchange API. You're adding a second output, `paddypower.json`, from PaddyPower's public next-races view.
-- Output shape is fixed by the spec — read the spec before starting. `paddypower.json` is independent of `data.json`; the two files are joined later by a separate (out-of-scope) arb-finder.
+- This is a Kotlin/JVM one-shot CLI that already produces `betfair.json` from the Betfair Exchange API. You're adding a second output, `paddypower.json`, from PaddyPower's public next-races view.
+- Output shape is fixed by the spec — read the spec before starting. `paddypower.json` is independent of `betfair.json`; the two files are joined later by a separate (out-of-scope) arb-finder.
 - The Betfair-side code lives directly under `src/main/kotlin/com/horsey/scraper/`. PaddyPower code lives in a *sub-package* `src/main/kotlin/com/horsey/scraper/paddypower/`. Same for tests.
 - Don't touch any Betfair-side code except `Main.kt` (Task 9 appends one block to it).
 - TDD throughout: every behaviour gets a failing test before the implementation.
@@ -126,7 +126,7 @@ data class EachWayTerms(
  *
  * `selectionId` is the same selection id Betfair uses for this horse,
  * letting an arb-finder join PaddyPower runners directly to Betfair
- * `data.json` runners without horse-name normalisation. Nullable so
+ * `betfair.json` runners without horse-name normalisation. Nullable so
  * future bookmakers without this affordance can still produce records.
  */
 data class PaddyRunner(
@@ -144,7 +144,7 @@ data class PaddyRunner(
  *
  * `betfairWinMarketId` is the matching Betfair Exchange WIN market id
  * (e.g. `"1.258114325"`), which PaddyPower exposes on its API. Acts as
- * the direct join key against `data.json[].raceId`. Nullable so future
+ * the direct join key against `betfair.json[].raceId`. Nullable so future
  * bookmakers without this affordance can still produce records.
  */
 data class PaddyRace(
@@ -1374,7 +1374,7 @@ Append this code immediately before the closing `}` of `fun main`:
     // ---------- PaddyPower phase ----------
     //
     // Runs only after the Betfair pipeline has fully completed and
-    // written data.json. A PaddyPower failure exits non-zero so the
+    // written betfair.json. A PaddyPower failure exits non-zero so the
     // user sees the failure, but the Betfair output is preserved.
     println("\nFetching PaddyPower next-races…")
     val ppOutput = try {
@@ -1446,7 +1446,7 @@ Don't run a live scrape unattended — it requires the user's existing Betfair c
 
 Tell the user:
 
-> "PaddyPower scraper merged. To smoke-test live: run `./run.sh`. Expected: produces both `data.json` and `paddypower.json` (the latter has races filtered to GB+IE). Validate `paddypower.json` with `./gradlew run --quiet -PmainClass=com.horsey.scraper.paddypower.PaddyValidateMainKt --args=paddypower.json` — expected output: `paddypower.json: VALID (matches spec)`."
+> "PaddyPower scraper merged. To smoke-test live: run `./run.sh`. Expected: produces both `betfair.json` and `paddypower.json` (the latter has races filtered to GB+IE). Validate `paddypower.json` with `./gradlew run --quiet -PmainClass=com.horsey.scraper.paddypower.PaddyValidateMainKt --args=paddypower.json` — expected output: `paddypower.json: VALID (matches spec)`."
 
 No commit in this task.
 
@@ -1456,7 +1456,7 @@ No commit in this task.
 
 These are deliberately not in this plan; mention them to the user when reporting completion:
 
-- **Arb-finder.** Joining `data.json` and `paddypower.json` to surface arbitrage opportunities is its own project.
+- **Arb-finder.** Joining `betfair.json` and `paddypower.json` to surface arbitrage opportunities is its own project.
 - **Venue-name normalisation.** PaddyPower may show "Lingfield Park" while Betfair shows "Lingfield". A normalisation table belongs in the arb-finder, not here.
 - **Retries / rate-limit handling.** PP's next-races view is light traffic; if you start running this every few minutes, polite backoff is worth adding.
 - **Full-day scrape.** v1 captures only what's on the next-races view (≤10 races). Scraping every race today across multiple meeting pages is a future extension.

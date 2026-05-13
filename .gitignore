@@ -19,7 +19,7 @@ Thumbs.db
 
 # Local scraper output
 scraper.log
-data.json
+betfair.json
 paddypower.json
 debug-page.html
 

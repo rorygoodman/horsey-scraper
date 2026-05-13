@@ -12,7 +12,7 @@ Add the first bookmaker-side data source to the repo: a one-shot scraper
 that reads PaddyPower's "next races" view and writes
 `paddypower.json` — a self-contained snapshot of horse names, win
 prices, and each-way terms, suitable for arb-comparison against the
-Betfair lay-side `data.json` already produced by this repo.
+Betfair lay-side `betfair.json` already produced by this repo.
 
 This is the first of N bookmaker scrapers (Bet365, William Hill, etc.
 to come). The design treats PaddyPower as one concrete instance of a
@@ -22,7 +22,7 @@ in without disturbing each other.
 ## Non-goals
 
 - No automated arb-comparison. Producing the bookmaker snapshot is the
-  scope; joining it against `data.json` is a future tool.
+  scope; joining it against `betfair.json` is a future tool.
 - No full-day scrape. v1 captures only what PaddyPower shows on the
   next-races landing page (typically 5–10 upcoming races globally,
   filtered to GB+IE by default).
@@ -127,7 +127,7 @@ the JSON into domain types. The PaddyPower scrape runs from `Main.kt`
 
   ```text
   (existing Betfair pipeline, unchanged)
-    → write data.json
+    → write betfair.json
   PaddyPower pipeline (only if Betfair phase exited cleanly):
     val ppFetcher = PaddyNextRacesFetcher(PaddyClient())
     val ppOutput = try {
@@ -192,7 +192,7 @@ Nothing else changes: `Regions`, `Credentials`, `BetfairClient`,
 | `races[].marketName` | string | `"HH:mm Venue"` (race-type suffix only if PP exposes it cleanly; see Open Questions) |
 | `races[].raceUrl` | string | PaddyPower deep link, useful for debugging |
 | `races[].scrapedAt` | string, ISO-8601 UTC | per-race observation time |
-| `races[].betfairWinMarketId` | string or `null` | Betfair Exchange WIN market id (e.g. `"1.258114325"`) for this race, as exposed by PaddyPower's API. Acts as a direct join key against `data.json[].raceId`. `null` if absent. |
+| `races[].betfairWinMarketId` | string or `null` | Betfair Exchange WIN market id (e.g. `"1.258114325"`) for this race, as exposed by PaddyPower's API. Acts as a direct join key against `betfair.json[].raceId`. `null` if absent. |
 | `races[].eachWayTerms` | object or `null` | `{ fraction: Double in (0,1], places: Int 1..6 }`; `null` when PP doesn't offer EW |
 | `races[].runners[].name` | string | as shown on PaddyPower |
 | `races[].runners[].selectionId` | number or `null` | Betfair-compatible selection id (PaddyPower shares Betfair's selection ids). Acts as a direct join key against Betfair runner lists. `null` if absent. |
@@ -214,8 +214,8 @@ These are normative — they define what is and isn't a valid `paddypower.json`.
    be unsafe otherwise) with a stderr warning.
 5. `eachWayTerms` is `null` when PP doesn't display them. We don't
    fabricate values.
-6. Primary join key against Betfair's `data.json` is
-   `betfairWinMarketId == data.json.races[].raceId` when both are
+6. Primary join key against Betfair's `betfair.json` is
+   `betfairWinMarketId == betfair.json.races[].raceId` when both are
    non-null. Fallback join key when either is null is the tuple
    `(country, venue, offTime)`. PaddyPower's API exposes the Betfair
    market id directly on every market we've seen, so the fallback is
@@ -242,7 +242,7 @@ These are normative — they define what is and isn't a valid `paddypower.json`.
 | Single runner with unparseable price | runner kept, both price fields null |
 
 The PaddyPower phase runs *after* the Betfair phase completes
-successfully. If PP fails, `data.json` is already on disk so the
+successfully. If PP fails, `betfair.json` is already on disk so the
 Betfair scrape is preserved; the process exits 1 to signal the
 incomplete run.
 
@@ -279,7 +279,7 @@ No live API tests. End-to-end verification is a manual smoke run +
 ## Acceptance
 
 A run with the existing Betfair credentials configured completes,
-produces both `data.json` and a `paddypower.json` such that:
+produces both `betfair.json` and a `paddypower.json` such that:
 
 - Top-level shape matches the schema above.
 - `PaddySchemaValidator` reports zero errors.
@@ -297,7 +297,7 @@ phase succeeded).
 
 ## Migration
 
-No schema breakage. `data.json` is unchanged; `paddypower.json` is new
+No schema breakage. `betfair.json` is unchanged; `paddypower.json` is new
 and has no existing consumers.
 
 ## Discovered API shape (resolved 2026-05-13)
