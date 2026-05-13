@@ -67,6 +67,7 @@ the JSON into domain types. The PaddyPower scrape runs from `Main.kt`
 
   data class PaddyRunner(
       val name: String,
+      val selectionId: Long?,    // Betfair-compatible selectionId; PaddyPower exposes this
       val winPrice: Double?,     // decimal odds; null for non-runners
       val winPriceRaw: String?,  // original fractional; null for non-runners
   )
@@ -78,6 +79,7 @@ the JSON into domain types. The PaddyPower scrape runs from `Main.kt`
       val marketName: String,    // "HH:mm Venue"
       val raceUrl: String,
       val scrapedAt: String,     // ISO-8601 UTC `Z`
+      val betfairWinMarketId: String?,  // matching Betfair WIN market id (e.g. "1.258114325"); null if PP doesn't expose
       val eachWayTerms: EachWayTerms?,
       val runners: List<PaddyRunner>,
   )
@@ -89,16 +91,25 @@ the JSON into domain types. The PaddyPower scrape runs from `Main.kt`
   )
   ```
 
+  Two of the fields above (`selectionId` on runner, `betfairWinMarketId`
+  on race) exist to short-circuit the venue/horse-name normalisation
+  the spec would otherwise have to handle at arb-finder time —
+  PaddyPower's API exposes both directly, so we capture them.
+
 - **`PaddyResponses.kt`** — pure parsers:
   - `fun fractionalToDecimal(raw: String): Double?` —
     `"9/2"`→`5.5`, `"evens"`/`"EVS"`/`"1/1"`→`2.0`, `"SP"`/malformed→`null`.
-  - `fun parseEachWayTerms(raw: String): EachWayTerms?` — accepts
-    common PP formats; returns `null` on missing or unrecognised input.
+    Kept as a utility for future bookmakers whose APIs only return
+    fractional strings. PaddyPower's API already provides decimal odds
+    directly, so this function is not used on the PP scrape path; it's
+    available for re-use.
   - `fun parsePaddyNextRaces(json: String, nowProvider: () -> Instant = { Instant.now() }): List<PaddyRace>` —
     shreds the response into `PaddyRace` objects. Per-race `scrapedAt`
     timestamps come from the injected `nowProvider`. Races without a
     country, with no parseable runners, or with otherwise broken
-    fixtures are dropped with a stderr warning.
+    fixtures are dropped with a stderr warning. Filters out PaddyPower's
+    synthetic "Unnamed Favourite", "Unnamed 2nd Favourite", and
+    "The Field" runner entries that appear in every market.
 
 - **`PaddyNextRacesFetcher.kt`** — orchestration. Constructor takes
   `PaddyClient`. One method:
@@ -148,15 +159,18 @@ Nothing else changes: `Regions`, `Credentials`, `BetfairClient`,
       "marketName": "20:20 Punchestown",
       "raceUrl": "https://www.paddypower.com/horse-racing/race/...",
       "scrapedAt": "2026-05-13T20:30:00.456Z",
+      "betfairWinMarketId": "1.258114325",
       "eachWayTerms": { "fraction": 0.2, "places": 3 },
       "runners": [
         {
           "name": "Working Class Hero",
+          "selectionId": 71384199,
           "winPrice": 5.5,
           "winPriceRaw": "9/2"
         },
         {
           "name": "Mister Killeens",
+          "selectionId": 55504985,
           "winPrice": null,
           "winPriceRaw": null
         }
@@ -178,8 +192,10 @@ Nothing else changes: `Regions`, `Credentials`, `BetfairClient`,
 | `races[].marketName` | string | `"HH:mm Venue"` (race-type suffix only if PP exposes it cleanly; see Open Questions) |
 | `races[].raceUrl` | string | PaddyPower deep link, useful for debugging |
 | `races[].scrapedAt` | string, ISO-8601 UTC | per-race observation time |
+| `races[].betfairWinMarketId` | string or `null` | Betfair Exchange WIN market id (e.g. `"1.258114325"`) for this race, as exposed by PaddyPower's API. Acts as a direct join key against `data.json[].raceId`. `null` if absent. |
 | `races[].eachWayTerms` | object or `null` | `{ fraction: Double in (0,1], places: Int 1..6 }`; `null` when PP doesn't offer EW |
 | `races[].runners[].name` | string | as shown on PaddyPower |
+| `races[].runners[].selectionId` | number or `null` | Betfair-compatible selection id (PaddyPower shares Betfair's selection ids). Acts as a direct join key against Betfair runner lists. `null` if absent. |
 | `races[].runners[].winPrice` | number or `null` | decimal odds; `null` for non-runners or unparseable prices |
 | `races[].runners[].winPriceRaw` | string or `null` | original fractional; `null` for non-runners or unparseable prices |
 
@@ -198,15 +214,21 @@ These are normative — they define what is and isn't a valid `paddypower.json`.
    be unsafe otherwise) with a stderr warning.
 5. `eachWayTerms` is `null` when PP doesn't display them. We don't
    fabricate values.
-6. The join key against Betfair's `data.json` is the tuple
-   `(country, venue, offTime)`. Both sides format `offTime` identically
-   (Europe/London offset, no sub-second precision) so a string compare
-   suffices. Venue-name normalisation (e.g. PP "Lingfield Park" vs
-   Betfair "Lingfield") is a known mismatch surface and will be
-   handled by the future arb-finder; this spec does not normalise on
-   the scrape side.
-7. `winPrice` and `winPriceRaw` are both null or both populated — the
+6. Primary join key against Betfair's `data.json` is
+   `betfairWinMarketId == data.json.races[].raceId` when both are
+   non-null. Fallback join key when either is null is the tuple
+   `(country, venue, offTime)`. PaddyPower's API exposes the Betfair
+   market id directly on every market we've seen, so the fallback is
+   defensive rather than load-bearing.
+7. Runners are joined to Betfair runners by `selectionId` when both are
+   non-null; horse name otherwise.
+8. `winPrice` and `winPriceRaw` are both null or both populated — the
    validator enforces parity.
+9. PaddyPower's response contains synthetic runner entries that aren't
+   real horses (`"Unnamed Favourite"`, `"Unnamed 2nd Favourite"`,
+   `"The Field"` — always present, identifiable by name or by
+   PaddyPower's reserved selection ids). These are dropped during
+   parsing and never appear in `runners[]`.
 
 ## Error policy
 
@@ -278,30 +300,44 @@ phase succeeded).
 No schema breakage. `data.json` is unchanged; `paddypower.json` is new
 and has no existing consumers.
 
-## Open implementation questions
+## Discovered API shape (resolved 2026-05-13)
 
-These will be resolved during implementation, not blocking on design:
+The fixture at `src/test/resources/paddy-next-races-sample.json`
+answers most of the spec's original open questions:
 
-- **Exact next-races endpoint URL.** Discovered via Chrome DevTools →
-  Network tab during implementation. If discoverable: hand-rolled
-  HTTP as designed. If only delivered via WebSocket / heavy JS hydration:
-  switch to Playwright (`com.microsoft.playwright:playwright`) — adds
-  a Gradle dep but keeps the rest of the design intact.
-- **Word-form prices.** Whether "evens" / "EVS" appear in the API
-  payload or only `1/1`. Parser handles both; tests cover both.
-- **Race-type snippet.** Whether PP exposes a clean
-  `5f Hcap`-style descriptor; if yes, the `marketName` becomes
-  `"HH:mm Venue - <type>"` to match the Betfair format; if not,
-  it stays as `"HH:mm Venue"`.
-- **Non-runner marking.** Whether PP flags non-runners with an
-  explicit field (`status: "NON_RUNNER"`) or by an absent price;
-  parser handles both via the "both fields null" rule.
-- **Venue-name normalisation.** PP may show venues as "Lingfield Park"
-  where Betfair shows "Lingfield". Out of scope; flagged for the
-  future arb-finder.
-- **Country source.** If the API payload does not include a country code
-  per race, edge-case rule 4 would silently drop every race. In that
-  case we re-introduce a venue → country lookup table (analogous to the
-  deleted `Venues.kt`, scoped to GB+IE venues PP actually shows on
-  next-races) at implementation time and resolve country via lookup
-  before applying the region filter.
+- **Endpoint:** `GET https://apisms.paddypower.com/smspp/content-managed-page/v7`
+  with a long query string including `eventTypeId=7&cardsToFetch=19424`.
+  Hand-rolled HTTP is **not viable** — Cloudflare Bot Fight Mode blocks
+  raw clients regardless of headers. Production transport uses
+  Playwright (headless Chromium) to satisfy the challenge.
+- **Top-level shape:** `{ layout: {...}, attachments: { races, markets, meetings } }`.
+  Races and markets are both maps keyed by id, joined by
+  `race.winMarketId → market.marketId`. No top-level array.
+- **Price format:** the API returns both decimal (`runner.winRunnerOdds.trueOdds.decimalOdds.decimalOdds`)
+  and fractional (`runner.winRunnerOdds.trueOdds.fractionalOdds.{numerator, denominator}`).
+  We don't compute decimal-from-fractional in production; `fractionalToDecimal`
+  stays as a utility for future bookmakers.
+- **Each-way terms** come as structured fields per market: `numberOfPlaces`
+  and `placeFraction.{numerator, denominator}`. The spec's `parseEachWayTerms`
+  text parser is dropped from this v1 plan as dead code.
+- **Race-type snippet:** PP exposes `race.winMarketName` (e.g. `"6f Hcap"`,
+  `"2m4f Hcap Hrd"`) on the race object. `marketName` becomes
+  `"HH:mm Venue - <type>"` to match the Betfair side's format exactly.
+- **Country source:** every race carries `race.countryCode` directly;
+  the venue → country fallback table is not needed.
+- **Non-runner marking:** `runner.runnerStatus == "REMOVED"` or
+  `runner.winRunnerOdds` absent. Either case → both price fields null.
+- **Synthetic runners** are present in every market: `"Unnamed Favourite"`,
+  `"Unnamed 2nd Favourite"`, `"The Field"`. Filtered out by name
+  (alternatively by their reserved selection ids 10518227, 10518230,
+  327679; name-based is more portable).
+
+## Open implementation questions (remaining)
+
+- **Playwright determinism.** Whether headless Chromium reliably solves
+  Cloudflare's challenge across multiple consecutive runs without
+  user-agent rotation or stealth plugins. To be confirmed during the
+  Task 7 / Task 8 smoke runs.
+- **Stable card id.** Whether `cardsToFetch=19424` ("Extra Place Races")
+  is stable across days, or rotates. If the card rotates, the URL needs
+  re-derivation. Worth a follow-up smoke run on a different day.

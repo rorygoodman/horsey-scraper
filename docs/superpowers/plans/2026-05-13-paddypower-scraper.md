@@ -123,9 +123,15 @@ data class EachWayTerms(
  * One runner on a PaddyPower race. `winPrice` and `winPriceRaw` are both
  * null or both populated (parity enforced by the schema validator). Null
  * means a non-runner or a price the parser could not interpret.
+ *
+ * `selectionId` is the same selection id Betfair uses for this horse,
+ * letting an arb-finder join PaddyPower runners directly to Betfair
+ * `data.json` runners without horse-name normalisation. Nullable so
+ * future bookmakers without this affordance can still produce records.
  */
 data class PaddyRunner(
     val name: String,
+    val selectionId: Long?,
     val winPrice: Double?,
     val winPriceRaw: String?,
 )
@@ -135,6 +141,11 @@ data class PaddyRunner(
  * ISO-8601 string with Europe/London offset, formatted identically to
  * the Betfair side's `offTime` so a string compare suffices as a join
  * key. `country` is ISO 3166-1 alpha-2.
+ *
+ * `betfairWinMarketId` is the matching Betfair Exchange WIN market id
+ * (e.g. `"1.258114325"`), which PaddyPower exposes on its API. Acts as
+ * the direct join key against `data.json[].raceId`. Nullable so future
+ * bookmakers without this affordance can still produce records.
  */
 data class PaddyRace(
     val venue: String,
@@ -143,6 +154,7 @@ data class PaddyRace(
     val marketName: String,
     val raceUrl: String,
     val scrapedAt: String,
+    val betfairWinMarketId: String?,
     val eachWayTerms: EachWayTerms?,
     val runners: List<PaddyRunner>,
 )
@@ -277,166 +289,63 @@ git commit -m "paddy: add fractionalToDecimal price converter"
 
 ---
 
-## Task 3: `parseEachWayTerms` — text → `EachWayTerms?`
+## Task 3: ~~`parseEachWayTerms`~~ — SUPERSEDED
 
-Pure parser. TDD.
+**Skip this task.** The fixture captured in Task 0 shows that PaddyPower's
+API returns each-way terms as structured fields (`numberOfPlaces: 4`,
+`placeFraction: { numerator: 1, denominator: 5 }`), not as a text string.
+Parsing text is therefore dead code on the PP scrape path. The
+`EachWayTerms` data class is still defined in Task 1; the next task
+constructs values of it directly from the structured JSON fields.
 
-**Files:**
-- Modify: `src/main/kotlin/com/horsey/scraper/paddypower/PaddyResponses.kt`
-- Create: `src/test/kotlin/com/horsey/scraper/paddypower/EachWayTermsParserTest.kt`
-
-- [ ] **Step 1: Write the failing tests**
-
-Create `src/test/kotlin/com/horsey/scraper/paddypower/EachWayTermsParserTest.kt`:
-
-```kotlin
-package com.horsey.scraper.paddypower
-
-import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertNull
-
-class EachWayTermsParserTest {
-    @Test fun `standard PaddyPower format`() {
-        assertEquals(EachWayTerms(0.2, 3), parseEachWayTerms("1/5 Odds, 3 Places"))
-    }
-
-    @Test fun `1_4 odds 4 places`() {
-        assertEquals(EachWayTerms(0.25, 4), parseEachWayTerms("1/4 Odds, 4 Places"))
-    }
-
-    @Test fun `case insensitive`() {
-        assertEquals(EachWayTerms(0.2, 3), parseEachWayTerms("1/5 odds, 3 places"))
-        assertEquals(EachWayTerms(0.25, 4), parseEachWayTerms("1/4 ODDS, 4 PLACES"))
-    }
-
-    @Test fun `alternate place-list form`() {
-        // "1/5 odds 1,2,3" — three places listed
-        assertEquals(EachWayTerms(0.2, 3), parseEachWayTerms("1/5 odds 1,2,3"))
-    }
-
-    @Test fun `alternate place-list form four places`() {
-        assertEquals(EachWayTerms(0.25, 4), parseEachWayTerms("1/4 odds 1,2,3,4"))
-    }
-
-    @Test fun `with Each Way prefix`() {
-        assertEquals(EachWayTerms(0.2, 3), parseEachWayTerms("Each Way: 1/5 Odds, 3 Places"))
-    }
-
-    @Test fun `whitespace-padded`() {
-        assertEquals(EachWayTerms(0.2, 3), parseEachWayTerms("  1/5 Odds, 3 Places  "))
-    }
-
-    @Test fun `empty string returns null`() {
-        assertNull(parseEachWayTerms(""))
-    }
-
-    @Test fun `unrecognised text returns null`() {
-        assertNull(parseEachWayTerms("Place market not available"))
-    }
-
-    @Test fun `fraction without places returns null`() {
-        assertNull(parseEachWayTerms("1/5 Odds"))
-    }
-
-    @Test fun `places without fraction returns null`() {
-        assertNull(parseEachWayTerms("3 Places"))
-    }
-}
-```
-
-- [ ] **Step 2: Run tests to verify they fail**
-
-Run: `./gradlew test --tests 'com.horsey.scraper.paddypower.EachWayTermsParserTest'`
-
-Expected: FAIL with `unresolved reference: parseEachWayTerms`.
-
-- [ ] **Step 3: Implement `parseEachWayTerms`**
-
-Append to `src/main/kotlin/com/horsey/scraper/paddypower/PaddyResponses.kt`:
-
-```kotlin
-// Matches either "N/D odds … P places" or "N/D odds A,B,C..." where the
-// place count is either the explicit "P places" number or the count of
-// comma-separated positions.
-private val EW_FRACTION = Regex("""(\d+)\s*/\s*(\d+)\s*odds""", RegexOption.IGNORE_CASE)
-private val EW_PLACES_EXPLICIT = Regex("""(\d+)\s*places?""", RegexOption.IGNORE_CASE)
-private val EW_PLACES_LIST = Regex("""odds\s+((?:\d+\s*,\s*)+\d+)""", RegexOption.IGNORE_CASE)
-
-/**
- * Parses an each-way-terms description string into [EachWayTerms].
- *
- * Accepts PaddyPower's common forms:
- *   - `"1/5 Odds, 3 Places"` → `EachWayTerms(0.2, 3)`
- *   - `"1/4 Odds, 4 Places"` → `EachWayTerms(0.25, 4)`
- *   - `"1/5 odds 1,2,3"`     → `EachWayTerms(0.2, 3)` (places counted from the list)
- *   - `"Each Way: 1/5 Odds, 3 Places"` (with prefix)
- *
- * Returns null when either the fraction or the place count is missing or
- * unparseable. Case-insensitive, whitespace-tolerant.
- */
-fun parseEachWayTerms(raw: String): EachWayTerms? {
-    val s = raw.trim()
-    if (s.isEmpty()) return null
-
-    val fracMatch = EW_FRACTION.find(s) ?: return null
-    val num = fracMatch.groupValues[1].toIntOrNull() ?: return null
-    val den = fracMatch.groupValues[2].toIntOrNull() ?: return null
-    if (den == 0) return null
-    val fraction = num.toDouble() / den.toDouble()
-
-    val places: Int = EW_PLACES_EXPLICIT.find(s)?.groupValues?.get(1)?.toIntOrNull()
-        ?: EW_PLACES_LIST.find(s)?.groupValues?.get(1)
-            ?.split(",")?.map { it.trim() }?.count { it.toIntOrNull() != null }
-        ?: return null
-    if (places <= 0) return null
-
-    return EachWayTerms(fraction, places)
-}
-```
-
-- [ ] **Step 4: Run tests to verify they pass**
-
-Run: `./gradlew test --tests 'com.horsey.scraper.paddypower.EachWayTermsParserTest'`
-
-Expected: 11 tests PASS.
-
-- [ ] **Step 5: Run the full suite**
-
-Run: `./gradlew test`
-
-Expected: 123 tests pass (112 + 11 new).
-
-- [ ] **Step 6: Commit**
-
-```bash
-git add src/main/kotlin/com/horsey/scraper/paddypower/PaddyResponses.kt src/test/kotlin/com/horsey/scraper/paddypower/EachWayTermsParserTest.kt
-git commit -m "paddy: add parseEachWayTerms"
-```
+If a future bookmaker returns EW terms as text and needs a parser,
+re-introduce this task then.
 
 ---
 
 ## Task 4: `parsePaddyNextRaces` — JSON → `List<PaddyRace>`
 
-The behavioural contract is fixed by the spec. The exact JSON shape (key names, nesting) depends on what Task 0 captured. **Read `src/test/resources/paddy-next-races-sample.json` first to understand the shape**, then write the parser against it.
+Now grounded in the real fixture from Task 0. The PaddyPower
+`content-managed-page/v7` response has this shape (abridged):
+
+```text
+{
+  "layout":      { "cards": { "19424": { "raceIds": [...] } } },
+  "attachments": {
+    "races":   { "<raceId>": { raceId, winMarketId, winMarketName,
+                              startTime, countryCode, venue, meetingId } },
+    "markets": { "<marketId>": { marketId, raceId, marketName, marketType,
+                                  exchangeMarketId, runners[...],
+                                  numberOfPlaces, placeFraction:{numerator,denominator},
+                                  eachwayAvailable } },
+    "meetings":{ ... }
+  }
+}
+```
+
+Races and markets are joined by `race.winMarketId == market.marketId`.
+Each market's `exchangeMarketId` (e.g. `"1.258114325"`) is the matching
+Betfair WIN market id — captured as `betfairWinMarketId`. Each runner
+carries `selectionId`, `runnerName`, `runnerStatus`, and prices in
+`winRunnerOdds.trueOdds.{decimalOdds.decimalOdds, fractionalOdds.{numerator,denominator}}`.
+
+Three runner names are synthetic placeholders we must filter out:
+`"Unnamed Favourite"`, `"Unnamed 2nd Favourite"`, `"The Field"`.
+
+EW terms are structured (not text): build `EachWayTerms` directly from
+`numberOfPlaces` and `placeFraction` when `eachwayAvailable == true`.
 
 **Files:**
 - Modify: `src/main/kotlin/com/horsey/scraper/paddypower/PaddyResponses.kt`
 - Create: `src/test/kotlin/com/horsey/scraper/paddypower/PaddyResponsesTest.kt`
 
-- [ ] **Step 1: Inspect the fixture**
+- [ ] **Step 1: Verify the fixture is present**
 
-Read `src/test/resources/paddy-next-races-sample.json` (committed in Task 0). Note:
-- Where the race array lives (top-level or under a key like `data`, `races`, `meetings`, etc.).
-- The race-object key names for: venue, country (or country code, or country name), start time, race URL/path, each-way terms.
-- The runner key names for: horse name, win price (and whether it's a string `"9/2"` or already decimal, or both).
-- How non-runners are marked.
+Run: `test -f src/test/resources/paddy-next-races-sample.json && wc -c src/test/resources/paddy-next-races-sample.json`
 
-Write a short note in the test file's class-level KDoc summarising the shape so future maintainers don't have to re-derive it.
+Expected: the file exists with several thousand bytes. If missing, Task 0 wasn't completed — return BLOCKED.
 
-- [ ] **Step 2: Write the failing tests**
-
-Create `src/test/kotlin/com/horsey/scraper/paddypower/PaddyResponsesTest.kt` with the **behavioural** tests below. Build per-test JSON snippets that match the real fixture's shape (use Read to confirm field names, then construct minimal raw strings). The full-fixture happy-path test reads the fixture from disk.
+Create `src/test/kotlin/com/horsey/scraper/paddypower/PaddyResponsesTest.kt`:
 
 ```kotlin
 package com.horsey.scraper.paddypower
@@ -446,22 +355,32 @@ import java.nio.file.Paths
 import java.time.Instant
 import kotlin.test.Test
 import kotlin.test.assertEquals
-import kotlin.test.assertNotEquals
 import kotlin.test.assertNotNull
 import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
 /**
- * Tests for parsePaddyNextRaces.
+ * Tests for `parsePaddyNextRaces`.
  *
- * The exact JSON shape of PaddyPower's next-races response is captured in
- * `src/test/resources/paddy-next-races-sample.json`. See the metadata at
- * `src/test/resources/paddy-next-races-endpoint.txt` for the URL/method
- * this fixture was captured from.
+ * The PaddyPower next-races JSON shape (captured 2026-05-13 from
+ * `apisms.paddypower.com/smspp/content-managed-page/v7`) is:
+ *   {
+ *     "layout":      { ... cards listing raceIds ... },
+ *     "attachments": {
+ *       "races":   { "<raceId>": { raceId, winMarketId, winMarketName,
+ *                                  startTime, countryCode, venue, ... } },
+ *       "markets": { "<marketId>": { marketId, raceId, marketType,
+ *                                    exchangeMarketId, runners[...],
+ *                                    numberOfPlaces,
+ *                                    placeFraction:{numerator,denominator},
+ *                                    eachwayAvailable } }
+ *     }
+ *   }
  *
- * The happy-path test parses the real fixture end-to-end. Other tests use
- * synthetic JSON snippets that mirror the fixture's shape but trim away
- * everything irrelevant to the behaviour under test.
+ * Races and markets are joined by `race.winMarketId == market.marketId`.
+ * Each runner carries `selectionId`, `runnerName`, `runnerStatus`,
+ * and prices in `winRunnerOdds.trueOdds.{decimalOdds.decimalOdds,
+ * fractionalOdds:{numerator,denominator}}`.
  */
 class PaddyResponsesTest {
 
@@ -474,120 +393,148 @@ class PaddyResponsesTest {
         val races = parsePaddyNextRaces(json, nowProvider)
         assertTrue(races.isNotEmpty(), "fixture should contain at least one race")
         val first = races.first()
-        assertTrue(first.venue.isNotBlank(), "venue must be populated")
-        assertTrue(first.country.isNotBlank(), "country must be populated")
-        assertTrue(first.offTime.matches(Regex("""\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[+-]\d{2}:\d{2}|\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z""")),
-            "offTime must be ISO-8601 with offset, got '${first.offTime}'")
-        assertEquals(fixedNow.toString(), first.scrapedAt,
-            "each race's scrapedAt comes from the injected nowProvider")
+        assertTrue(first.venue.isNotBlank())
+        assertTrue(first.country.isNotBlank())
+        assertTrue(
+            first.offTime.matches(Regex("""\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}([+-]\d{2}:\d{2}|Z)""")),
+            "offTime must be ISO-8601 with offset, got '${first.offTime}'",
+        )
+        assertEquals(fixedNow.toString(), first.scrapedAt)
         assertTrue(first.runners.isNotEmpty(), "race must have at least one runner")
     }
 
     @Test
-    fun `non-runners have null prices but stay in the runner list`() {
-        // The synth helper builds a race fixture containing exactly one
-        // non-runner (marker discovered by inspecting the real fixture for
-        // any race with one — absent price field, status flag, etc.) and at
-        // least one normal runner.
-        val json = synthRaceWithRunners(runnersJson = synthRunnersWithNonRunner())
-        val race = parsePaddyNextRaces(json, nowProvider).single()
-        val nonRunner = race.runners.first { it.winPrice == null }
-        assertNull(nonRunner.winPriceRaw, "non-runner has both price fields null")
-        assertTrue(race.runners.size >= 2, "non-runner is preserved in the list, not dropped")
+    fun `synthetic runners are filtered out`() {
+        val json = Files.readString(Paths.get("src/test/resources/paddy-next-races-sample.json"))
+        val races = parsePaddyNextRaces(json, nowProvider)
+        val allNames = races.flatMap { it.runners.map { r -> r.name } }
+        assertTrue(allNames.isNotEmpty())
+        for (synthetic in listOf("Unnamed Favourite", "Unnamed 2nd Favourite", "The Field")) {
+            assertTrue(synthetic !in allNames, "found synthetic runner '$synthetic' in output")
+        }
     }
 
     @Test
-    fun `race without country is dropped`() {
-        val json = synthRaceWithoutCountry()
+    fun `marketName is HH_mm Venue - race-type`() {
+        val json = Files.readString(Paths.get("src/test/resources/paddy-next-races-sample.json"))
+        val races = parsePaddyNextRaces(json, nowProvider)
+        val race = races.first { it.venue == "Salisbury" }
+        // Salisbury market is 16:40 UTC = 17:40 BST in May → "17:40 Salisbury - 6f Hcap"
+        assertEquals("17:40 Salisbury - 6f Hcap", race.marketName)
+    }
+
+    @Test
+    fun `betfairWinMarketId is captured from market exchangeMarketId`() {
+        val json = Files.readString(Paths.get("src/test/resources/paddy-next-races-sample.json"))
+        val races = parsePaddyNextRaces(json, nowProvider)
+        val race = races.first { it.venue == "Salisbury" }
+        assertEquals("1.258114325", race.betfairWinMarketId)
+    }
+
+    @Test
+    fun `selectionId is captured on each runner`() {
+        val json = Files.readString(Paths.get("src/test/resources/paddy-next-races-sample.json"))
+        val races = parsePaddyNextRaces(json, nowProvider)
+        val race = races.first { it.venue == "Salisbury" }
+        val stoleMyHeart = race.runners.first { it.name == "Stole My Heart" }
+        assertEquals(28252276L, stoleMyHeart.selectionId)
+    }
+
+    @Test
+    fun `decimal and fractional prices are both populated`() {
+        val json = Files.readString(Paths.get("src/test/resources/paddy-next-races-sample.json"))
+        val races = parsePaddyNextRaces(json, nowProvider)
+        val race = races.first { it.venue == "Salisbury" }
+        val r = race.runners.first { it.name == "Stole My Heart" }
+        // fixture has decimalOdds=21, fractionalOdds 20/1
+        assertEquals(21.0, r.winPrice)
+        assertEquals("20/1", r.winPriceRaw)
+    }
+
+    @Test
+    fun `each-way terms come from numberOfPlaces and placeFraction`() {
+        val json = Files.readString(Paths.get("src/test/resources/paddy-next-races-sample.json"))
+        val races = parsePaddyNextRaces(json, nowProvider)
+        val race = races.first { it.venue == "Salisbury" }
+        // fixture: numberOfPlaces=4, placeFraction 1/5
+        assertEquals(EachWayTerms(0.2, 4), race.eachWayTerms)
+    }
+
+    @Test
+    fun `race without country code is dropped`() {
+        val json = """
+            { "attachments": {
+                "races": { "1.1": { "raceId": "1.1", "winMarketId": "m1",
+                                    "startTime": "2026-05-13T19:00:00.000Z",
+                                    "venue": "Nowhere" } },
+                "markets": { "m1": { "marketId": "m1", "raceId": "1.1",
+                                     "marketType": "WIN", "runners": [],
+                                     "exchangeMarketId": "1.x" } } } }
+        """.trimIndent()
         assertTrue(parsePaddyNextRaces(json, nowProvider).isEmpty())
     }
 
     @Test
-    fun `race with zero parseable runners is dropped`() {
-        val json = synthRaceWithEmptyRunners()
+    fun `race with zero real runners is dropped`() {
+        // All runners are synthetic placeholders → effectively empty.
+        val json = """
+            { "attachments": {
+                "races": { "1.1": { "raceId": "1.1", "winMarketId": "m1",
+                                    "winMarketName": "5f Hcap",
+                                    "startTime": "2026-05-13T19:00:00.000Z",
+                                    "countryCode": "GB", "venue": "Bath" } },
+                "markets": { "m1": { "marketId": "m1", "raceId": "1.1",
+                                     "marketType": "WIN",
+                                     "exchangeMarketId": "1.x",
+                                     "numberOfPlaces": 3,
+                                     "placeFraction": {"numerator":1,"denominator":5},
+                                     "eachwayAvailable": true,
+                                     "runners": [
+                                       { "selectionId": 10518227, "runnerName": "Unnamed Favourite", "runnerStatus": "ACTIVE" },
+                                       { "selectionId": 327679,   "runnerName": "The Field",         "runnerStatus": "REMOVED" }
+                                     ] } } } }
+        """.trimIndent()
         assertTrue(parsePaddyNextRaces(json, nowProvider).isEmpty())
     }
 
     @Test
-    fun `each-way terms are populated when PaddyPower offers them`() {
-        val json = synthRaceWithEachWay("1/5 Odds, 3 Places")
+    fun `runner with REMOVED status keeps both price fields null`() {
+        // Construct a race with one normal runner + one withdrawn real horse.
+        val json = """
+            { "attachments": {
+                "races": { "1.1": { "raceId": "1.1", "winMarketId": "m1",
+                                    "winMarketName": "5f Hcap",
+                                    "startTime": "2026-05-13T19:00:00.000Z",
+                                    "countryCode": "GB", "venue": "Bath" } },
+                "markets": { "m1": { "marketId": "m1", "raceId": "1.1",
+                                     "marketType": "WIN",
+                                     "exchangeMarketId": "1.x",
+                                     "numberOfPlaces": 3,
+                                     "placeFraction": {"numerator":1,"denominator":5},
+                                     "eachwayAvailable": true,
+                                     "runners": [
+                                       { "selectionId": 1001, "runnerName": "Real Horse", "runnerStatus": "ACTIVE",
+                                         "winRunnerOdds": { "trueOdds": { "decimalOdds": {"decimalOdds":5.0},
+                                                                          "fractionalOdds": {"numerator":4,"denominator":1} } } },
+                                       { "selectionId": 1002, "runnerName": "Withdrawn Horse", "runnerStatus": "REMOVED" }
+                                     ] } } } }
+        """.trimIndent()
         val race = parsePaddyNextRaces(json, nowProvider).single()
-        assertEquals(EachWayTerms(0.2, 3), race.eachWayTerms)
+        val withdrawn = race.runners.first { it.name == "Withdrawn Horse" }
+        assertNull(withdrawn.winPrice)
+        assertNull(withdrawn.winPriceRaw)
+        assertNotNull(race.runners.firstOrNull { it.name == "Real Horse" })
     }
-
-    @Test
-    fun `each-way terms are null when PaddyPower omits them`() {
-        val json = synthRaceWithoutEachWay()
-        val race = parsePaddyNextRaces(json, nowProvider).single()
-        assertNull(race.eachWayTerms)
-    }
-
-    @Test
-    fun `winPrice is decimal and winPriceRaw is the original fraction`() {
-        val json = synthRaceWithPrice(rawPrice = "9/2")
-        val race = parsePaddyNextRaces(json, nowProvider).single()
-        val r = race.runners.first()
-        assertEquals(5.5, r.winPrice)
-        assertEquals("9/2", r.winPriceRaw)
-    }
-
-    @Test
-    fun `marketName combines HH_mm and venue`() {
-        val json = synthRaceWithVenueAndOffTime("Lingfield", "2026-05-09T13:30:00+01:00")
-        val race = parsePaddyNextRaces(json, nowProvider).single()
-        assertEquals("13:30 Lingfield", race.marketName)
-    }
-
-    @Test
-    fun `each race carries the injected scrapedAt`() {
-        val json = synthRaceWithRunners(synthRunnersWithNonRunner())
-        val race = parsePaddyNextRaces(json, nowProvider).single()
-        assertEquals(fixedNow.toString(), race.scrapedAt)
-        // And it's distinct from offTime's representation:
-        assertNotEquals(race.scrapedAt, race.offTime)
-    }
-
-    // --- Synthetic fixture builders ---
-    //
-    // Replace the bodies below with minimal JSON strings that match the
-    // shape you observed in `paddy-next-races-sample.json`. Each builder
-    // should produce just enough JSON to exercise the test in question.
-    //
-    // Example skeleton (adjust field names to match the fixture):
-    //
-    //   private fun synthRaceWithEachWay(terms: String): String = """
-    //       { "races": [
-    //           { "venue": "Bath", "country": "GB",
-    //             "startTime": "2026-05-13T19:12:00Z",
-    //             "eachWayTerms": "$terms",
-    //             "raceUrl": "/horse-racing/bath/19-12",
-    //             "runners": [ { "name": "Man Is King", "price": "5/2" } ]
-    //           }
-    //         ] }
-    //   """.trimIndent()
-
-    private fun synthRunnersWithNonRunner(): String =
-        error("Step 4: replace body with a runners-array JSON snippet containing one non-runner and one normal runner, matching the fixture's runner shape.")
-    private fun synthRaceWithRunners(runnersJson: String): String =
-        error("Step 4: replace body with a one-race JSON snippet whose runners array is `$runnersJson`, matching the fixture's race shape.")
-    private fun synthRaceWithoutCountry(): String =
-        error("Step 4: replace body with a one-race JSON snippet that has every required field except country (or with country empty).")
-    private fun synthRaceWithEmptyRunners(): String =
-        error("Step 4: replace body with a one-race JSON snippet whose runners array is empty.")
-    private fun synthRaceWithEachWay(terms: String): String =
-        error("Step 4: replace body with a one-race JSON snippet whose each-way-terms field is `$terms`.")
-    private fun synthRaceWithoutEachWay(): String =
-        error("Step 4: replace body with a one-race JSON snippet that omits or nulls the each-way-terms field.")
-    private fun synthRaceWithPrice(rawPrice: String): String =
-        error("Step 4: replace body with a one-race JSON snippet whose single runner has price `$rawPrice`.")
-    private fun synthRaceWithVenueAndOffTime(venue: String, offTime: String): String =
-        error("Step 4: replace body with a one-race JSON snippet whose venue is `$venue` and start time matches `$offTime`.")
 }
 ```
 
-The `error(...)` calls in the synth builders will throw `IllegalStateException` at runtime — that's intentional, so the tests fail loudly until you replace them with concrete fixture-shaped JSON in Step 4 alongside the parser implementation.
+- [ ] **Step 3: Run tests to verify they fail**
 
-- [ ] **Step 3: Implement `parsePaddyNextRaces`**
+Run: `./gradlew test --tests 'com.horsey.scraper.paddypower.PaddyResponsesTest'`
+
+Expected: FAIL with `unresolved reference: parsePaddyNextRaces`.
+
+- [ ] **Step 4: Implement `parsePaddyNextRaces`**
 
 Append to `src/main/kotlin/com/horsey/scraper/paddypower/PaddyResponses.kt`:
 
@@ -602,163 +549,187 @@ import java.time.format.DateTimeFormatter
 private val LONDON = ZoneId.of("Europe/London")
 private val HHMM = DateTimeFormatter.ofPattern("HH:mm")
 
+// PaddyPower's synthetic placeholders that appear in every market and are
+// not actual horses. Filter by name (selection ids 10518227, 10518230,
+// 327679 would work too; name-based is more portable across endpoints).
+private val SYNTHETIC_RUNNER_NAMES =
+    setOf("Unnamed Favourite", "Unnamed 2nd Favourite", "The Field")
+
 /**
  * Shreds a PaddyPower next-races JSON response into [PaddyRace] objects.
  *
- * The exact JSON shape is fixture-dependent — see
- * `src/test/resources/paddy-next-races-sample.json` and the test class
- * KDoc on `PaddyResponsesTest` for a description of the fields used.
+ * Expected shape (see test class KDoc for full details):
+ *   `attachments.races[id]`   → race metadata, joins to `markets[winMarketId]`
+ *   `attachments.markets[id]` → runners, EW terms, exchangeMarketId
  *
  * Drops races that:
- *  - have no parseable country (the region filter would be unsafe)
- *  - have zero parseable runners (no usable signal)
+ *   - have no country code (region filter would be unsafe)
+ *   - have no joined WIN market
+ *   - have zero non-synthetic, non-empty runners after filtering
  *
- * Non-runners are preserved in the runner list with both price fields
- * null. Each race carries the [nowProvider]'s timestamp as `scrapedAt`.
- * Caller is responsible for the top-level `PaddyOutput.scrapedAt`.
+ * Non-runners (`runnerStatus = "REMOVED"`) are preserved in the runner list
+ * with both price fields null. Each race carries the [nowProvider]'s
+ * timestamp as `scrapedAt`.
  */
 fun parsePaddyNextRaces(
     json: String,
     nowProvider: () -> Instant = { Instant.now() },
 ): List<PaddyRace> {
-    val root = JsonParser.parseString(json)
-    // Locate the race array — this depends on the fixture shape.
-    // E.g. for `{ "races": [...] }`: `root.asJsonObject.getAsJsonArray("races")`.
-    // For `{ "data": { "meetings": [...] } }`: navigate down accordingly.
-    // For a top-level array: `root.asJsonArray`.
-    val arr = locateRaceArray(root)
-    val nowStr = nowProvider().toString()
+    val root = JsonParser.parseString(json).asJsonObject
+    val attachments = root.get("attachments")?.takeIf { it.isJsonObject }?.asJsonObject
+        ?: return emptyList()
+    val racesObj = attachments.get("races")?.takeIf { it.isJsonObject }?.asJsonObject
+        ?: return emptyList()
+    val marketsObj = attachments.get("markets")?.takeIf { it.isJsonObject }?.asJsonObject
+        ?: return emptyList()
+
+    val scrapedAt = nowProvider().toString()
     val out = mutableListOf<PaddyRace>()
-    for (el in arr) {
-        if (!el.isJsonObject) continue
-        val race = paddyRaceFromJson(el.asJsonObject, nowStr) ?: continue
+    for ((_, raceEl) in racesObj.entrySet()) {
+        if (!raceEl.isJsonObject) continue
+        val race = paddyRaceFromJson(raceEl.asJsonObject, marketsObj, scrapedAt) ?: continue
         out += race
     }
     return out
 }
 
-/**
- * Locates the array of races inside the JSON root. The navigation path
- * is fixture-dependent — adjust this single function to match the key
- * path observed in `src/test/resources/paddy-next-races-sample.json`.
- *
- * Examples:
- *   - top-level array (`[...]`)                 → `root.asJsonArray`
- *   - `{ "races": [...] }`                      → `root.asJsonObject.getAsJsonArray("races")`
- *   - `{ "data": { "meetings": [...] } }`       → navigate via `data` then `meetings`
- *
- * The default below assumes `{ "races": [...] }`. Replace if the fixture
- * shows otherwise.
- */
-private fun locateRaceArray(root: com.google.gson.JsonElement): com.google.gson.JsonArray {
-    return root.asJsonObject.getAsJsonArray("races")
-}
-
-/**
- * Field-key map. All JSON-shape-dependent string constants live here so
- * a single edit suffices when adapting to the fixture. Adjust each value
- * to match the key actually used in
- * `src/test/resources/paddy-next-races-sample.json`. The defaults below
- * are a starting guess; rename to match what's in the fixture.
- */
-private object Field {
-    const val VENUE        = "venue"
-    const val COUNTRY      = "country"
-    const val START_TIME   = "startTime"
-    const val RACE_URL     = "raceUrl"
-    const val EW_TERMS     = "eachWayTerms"
-    const val RUNNERS      = "runners"
-    const val RUNNER_NAME  = "name"
-    const val RUNNER_PRICE = "price"
-}
-
-/**
- * Builds a single [PaddyRace] from one race-object in the JSON. Returns
- * null if any required field is missing or unparseable.
- */
-private fun paddyRaceFromJson(root: JsonObject, scrapedAt: String): PaddyRace? {
-    val venue = root.get(Field.VENUE)?.takeIf { it.isJsonPrimitive }?.asString ?: return null
-    val country = root.get(Field.COUNTRY)?.takeIf { it.isJsonPrimitive }?.asString?.takeIf { it.isNotBlank() } ?: run {
+private fun paddyRaceFromJson(
+    raceJson: JsonObject,
+    marketsObj: JsonObject,
+    scrapedAt: String,
+): PaddyRace? {
+    val venue = raceJson.string("venue") ?: return null
+    val country = raceJson.string("countryCode")?.takeIf { it.isNotBlank() } ?: run {
         System.err.println("paddy: dropping race with no country at venue=$venue")
         return null
     }
-    val startTimeRaw = root.get(Field.START_TIME)?.takeIf { it.isJsonPrimitive }?.asString ?: return null
-    val offTime = utcOrIsoToLondon(startTimeRaw) ?: return null
-    val raceUrl = root.get(Field.RACE_URL)?.takeIf { it.isJsonPrimitive }?.asString ?: ""
+    val startTimeUtc = raceJson.string("startTime") ?: return null
+    val offTime = utcToLondon(startTimeUtc) ?: return null
+    val winMarketId = raceJson.string("winMarketId") ?: return null
+    val raceType = raceJson.string("winMarketName") ?: ""
 
-    val runners = (root.get(Field.RUNNERS)?.takeIf { it.isJsonArray }?.asJsonArray ?: return null)
-        .mapNotNull { rEl ->
-            if (!rEl.isJsonObject) return@mapNotNull null
-            val r = rEl.asJsonObject
-            val name = r.get(Field.RUNNER_NAME)?.takeIf { it.isJsonPrimitive }?.asString ?: return@mapNotNull null
-            val priceRaw = r.get(Field.RUNNER_PRICE)?.takeIf { it.isJsonPrimitive }?.asString
-            val priceDecimal = priceRaw?.let { fractionalToDecimal(it) }
-            // Spec edge-case rule 2: non-runners stay in the list with both
-            // fields null. We treat "no parseable price" as a non-runner.
-            val (winPrice, winPriceRaw) = if (priceDecimal == null) (null to null) else (priceDecimal to priceRaw)
-            PaddyRunner(name = name, winPrice = winPrice, winPriceRaw = winPriceRaw)
-        }
+    val marketJson = marketsObj.get(winMarketId)?.takeIf { it.isJsonObject }?.asJsonObject
+        ?: return null
+
+    val runners = parsePaddyRunners(marketJson)
     if (runners.isEmpty()) {
-        System.err.println("paddy: dropping race with zero runners: $venue $startTimeRaw")
+        System.err.println("paddy: dropping race with zero runners: $venue $startTimeUtc")
         return null
     }
 
-    val ewRaw = root.get(Field.EW_TERMS)?.takeIf { it.isJsonPrimitive }?.asString ?: ""
-    val ew = if (ewRaw.isBlank()) null else parseEachWayTerms(ewRaw)
+    val ew = parseStructuredEachWay(marketJson)
+    val betfairId = marketJson.string("exchangeMarketId")
 
-    val marketName = "${OffsetDateTime.parse(offTime).format(HHMM)} $venue"
+    val time = OffsetDateTime.parse(offTime).format(HHMM)
+    val marketName = if (raceType.isBlank()) "$time $venue" else "$time $venue - $raceType"
 
     return PaddyRace(
         venue = venue,
         country = country,
         offTime = offTime,
         marketName = marketName,
-        raceUrl = raceUrl,
+        raceUrl = "",  // PaddyPower doesn't expose a per-race deep link in this endpoint
         scrapedAt = scrapedAt,
+        betfairWinMarketId = betfairId,
         eachWayTerms = ew,
         runners = runners,
     )
 }
 
+private fun parsePaddyRunners(marketJson: JsonObject): List<PaddyRunner> {
+    val runners = marketJson.get("runners")?.takeIf { it.isJsonArray }?.asJsonArray
+        ?: return emptyList()
+    val out = mutableListOf<PaddyRunner>()
+    for (rEl in runners) {
+        if (!rEl.isJsonObject) continue
+        val r = rEl.asJsonObject
+        val name = r.string("runnerName") ?: continue
+        if (name in SYNTHETIC_RUNNER_NAMES) continue
+        val selectionId = r.long("selectionId")
+        val status = r.string("runnerStatus") ?: "ACTIVE"
+        val odds = r.get("winRunnerOdds")?.takeIf { it.isJsonObject }?.asJsonObject
+            ?.get("trueOdds")?.takeIf { it.isJsonObject }?.asJsonObject
+        val isActiveWithOdds = status == "ACTIVE" && odds != null
+        val winPrice: Double? = odds
+            ?.get("decimalOdds")?.takeIf { it.isJsonObject }?.asJsonObject
+            ?.double("decimalOdds")
+            ?.takeIf { isActiveWithOdds }
+        val winPriceRaw: String? = odds
+            ?.get("fractionalOdds")?.takeIf { it.isJsonObject }?.asJsonObject
+            ?.let { fOdds ->
+                val n = fOdds.int("numerator") ?: return@let null
+                val d = fOdds.int("denominator") ?: return@let null
+                "$n/$d"
+            }
+            ?.takeIf { isActiveWithOdds }
+        out += PaddyRunner(
+            name = name,
+            selectionId = selectionId,
+            winPrice = winPrice,
+            winPriceRaw = winPriceRaw,
+        )
+    }
+    return out
+}
+
+private fun parseStructuredEachWay(marketJson: JsonObject): EachWayTerms? {
+    val available = marketJson.get("eachwayAvailable")?.takeIf { it.isJsonPrimitive }
+        ?.asJsonPrimitive?.takeIf { it.isBoolean }?.asBoolean ?: true
+    if (!available) return null
+    val places = marketJson.int("numberOfPlaces") ?: return null
+    if (places <= 0) return null
+    val frac = marketJson.get("placeFraction")?.takeIf { it.isJsonObject }?.asJsonObject ?: return null
+    val num = frac.int("numerator") ?: return null
+    val den = frac.int("denominator") ?: return null
+    if (den == 0) return null
+    val fraction = num.toDouble() / den.toDouble()
+    if (fraction <= 0.0 || fraction > 1.0) return null
+    return EachWayTerms(fraction, places)
+}
+
 /**
- * Converts a UTC ISO-8601 instant (e.g. `"2026-05-09T12:30:00.000Z"`) to a
- * Europe/London ISO-8601 string with offset (`"2026-05-09T13:30:00+01:00"`
+ * Converts a UTC ISO-8601 instant (e.g. `"2026-05-14T16:40:00.000Z"`) to a
+ * Europe/London ISO-8601 string with offset (`"2026-05-14T17:40:00+01:00"`
  * in BST or `"…Z"` in GMT). Returns null on parse failure.
  */
-internal fun utcOrIsoToLondon(isoUtc: String): String? = try {
-    val parsed = OffsetDateTime.parse(isoUtc)
-    parsed.atZoneSameInstant(LONDON).toOffsetDateTime()
+internal fun utcToLondon(isoUtc: String): String? = try {
+    OffsetDateTime.parse(isoUtc)
+        .atZoneSameInstant(LONDON).toOffsetDateTime()
         .format(DateTimeFormatter.ISO_OFFSET_DATE_TIME)
 } catch (e: Exception) {
     null
 }
+
+// Tiny JSON helpers — keep guards uniform across this file.
+private fun JsonObject.string(key: String): String? =
+    get(key)?.takeIf { it.isJsonPrimitive && it.asJsonPrimitive.isString }?.asString
+private fun JsonObject.int(key: String): Int? =
+    get(key)?.takeIf { it.isJsonPrimitive && it.asJsonPrimitive.isNumber }?.asInt
+private fun JsonObject.long(key: String): Long? =
+    get(key)?.takeIf { it.isJsonPrimitive && it.asJsonPrimitive.isNumber }?.asLong
+private fun JsonObject.double(key: String): Double? =
+    get(key)?.takeIf { it.isJsonPrimitive && it.asJsonPrimitive.isNumber }?.asDouble
 ```
 
-Adjust two places to match the real fixture: (1) the `Field` constants near the top of the file, and (2) the `locateRaceArray` helper if the race array isn't at `root.races`. The behaviours (drop on missing country, drop on empty runners, preserve non-runners, EW parsing) stay the same.
-
-- [ ] **Step 4: Fill in the synth builders in the test file**
-
-Replace each `error(...)` body in the synth builders with a minimal JSON snippet matching your fixture's shape that exercises the one behaviour the test cares about. Keep them as small as possible — the goal is each test fails for exactly one reason.
+Move the new `import` lines to the existing import block at the top of `PaddyResponses.kt`.
 
 - [ ] **Step 5: Run tests to verify they pass**
 
 Run: `./gradlew test --tests 'com.horsey.scraper.paddypower.PaddyResponsesTest'`
 
-Expected: 9 tests PASS.
-
-If a test fails because the fixture's shape differs from your synth builder, your synth builder is wrong (not the parser) — fix the snippet.
+Expected: 10 tests PASS.
 
 - [ ] **Step 6: Run the full suite**
 
 Run: `./gradlew test`
 
-Expected: 132 tests pass (123 + 9 new).
+Expected: 122 tests pass (95 baseline + 17 from Task 2 + 10 new in this task).
 
 - [ ] **Step 7: Commit**
 
 ```bash
 git add src/main/kotlin/com/horsey/scraper/paddypower/PaddyResponses.kt src/test/kotlin/com/horsey/scraper/paddypower/PaddyResponsesTest.kt
-git commit -m "paddy: add parsePaddyNextRaces with edge-case handling"
+git commit -m "paddy: add parsePaddyNextRaces with fixture-grounded parser"
 ```
 
 ---
@@ -903,7 +874,7 @@ Re-run Step 4. The 4 unit tests don't invoke `client.getNextRaces()` so the stub
 
 Run: `./gradlew test`
 
-Expected: 136 tests pass (132 + 4 new).
+Expected: 126 tests pass (122 + 4 new).
 
 - [ ] **Step 6: Commit**
 
@@ -947,13 +918,14 @@ class PaddySchemaValidatorTest {
               "venue": "Punchestown",
               "country": "IE",
               "offTime": "2026-05-13T20:20:00+01:00",
-              "marketName": "20:20 Punchestown",
-              "raceUrl": "https://www.paddypower.com/horse-racing/race/x",
+              "marketName": "20:20 Punchestown - 2m INHF",
+              "raceUrl": "",
               "scrapedAt": "2026-05-13T20:30:00.456Z",
+              "betfairWinMarketId": "1.258114325",
               "eachWayTerms": { "fraction": 0.2, "places": 3 },
               "runners": [
-                { "name": "Working Class Hero", "winPrice": 5.5, "winPriceRaw": "9/2" },
-                { "name": "Mister Killeens",    "winPrice": null, "winPriceRaw": null }
+                { "name": "Working Class Hero", "selectionId": 71384199, "winPrice": 5.5, "winPriceRaw": "9/2" },
+                { "name": "Mister Killeens",    "selectionId": 55504985, "winPrice": null, "winPriceRaw": null }
               ]
             }
           ]
@@ -1205,7 +1177,7 @@ Expected: 10 tests PASS.
 
 Run: `./gradlew test`
 
-Expected: 146 tests pass (136 + 10 new).
+Expected: 136 tests pass (126 + 10 new).
 
 - [ ] **Step 7: Commit**
 
@@ -1216,92 +1188,158 @@ git commit -m "paddy: add PaddySchemaValidator and PaddyValidateMain"
 
 ---
 
-## Task 7: `PaddyClient` — HTTP transport
+## Task 7: `PaddyClient` — Playwright transport
 
-The thin HTTP wrapper. Uses the URL captured in Task 0's
-`src/test/resources/paddy-next-races-endpoint.txt`. No unit tests
-(would require mocking `HttpClient`); the pure builders/parsers it
-glues together are tested elsewhere.
+Hand-rolled HTTP is not viable: every PaddyPower API subdomain is
+behind Cloudflare Bot Fight Mode, which blocks raw HTTP clients
+regardless of headers. The transport drives headless Chromium via
+Playwright, which executes the Cloudflare challenge JS naturally and
+fetches the JSON like a real browser.
 
 **Files:**
-- Create or replace (if Task 5 stubbed it): `src/main/kotlin/com/horsey/scraper/paddypower/PaddyClient.kt`
+- Modify: `build.gradle.kts` — add Playwright + its lifecycle plugin (the
+  bundled-browser download triggers via a Gradle task).
+- Create or replace: `src/main/kotlin/com/horsey/scraper/paddypower/PaddyClient.kt`
 
-- [ ] **Step 1: Read the endpoint metadata**
+- [ ] **Step 1: Add Playwright to `build.gradle.kts`**
 
-Run: `cat src/test/resources/paddy-next-races-endpoint.txt`
+Append to the `dependencies { … }` block (alongside the existing
+`com.google.code.gson:gson` entry):
 
-Note the URL, method, and any required headers.
+```kotlin
+    implementation("com.microsoft.playwright:playwright:1.47.0")
+```
 
-- [ ] **Step 2: Replace `PaddyClient.kt`**
+- [ ] **Step 2: Install the browser binary**
+
+Run: `./gradlew --no-daemon --quiet build -x test 2>&1 | tail -5`
+(this fetches the Playwright jar). Then run:
+
+```bash
+./gradlew --no-daemon -q "javaExec" 2>/dev/null || true
+# Bootstrap the Chromium bundle Playwright uses:
+mkdir -p ~/.cache/ms-playwright
+java -cp "$(./gradlew -q --no-daemon dependencies --configuration runtimeClasspath 2>/dev/null | grep -o '/Users/.*playwright-1.47.0.jar' | head -1)" com.microsoft.playwright.CLI install chromium
+```
+
+If that one-liner is awkward, do the equivalent via Playwright's
+documented bootstrap: `./gradlew run -PmainClass=com.microsoft.playwright.CLI --args="install chromium"`.
+Either path leaves the Chromium binary in `~/.cache/ms-playwright/`.
+
+Expected: a `chromium-<version>` directory exists under
+`~/.cache/ms-playwright/`. The next steps depend on this.
+
+- [ ] **Step 3: Implement `PaddyClient.kt`**
+
+Create `src/main/kotlin/com/horsey/scraper/paddypower/PaddyClient.kt`:
 
 ```kotlin
 package com.horsey.scraper.paddypower
 
-import java.net.URI
-import java.net.http.HttpClient
-import java.net.http.HttpRequest
-import java.net.http.HttpResponse
-import java.time.Duration
+import com.microsoft.playwright.Browser
+import com.microsoft.playwright.BrowserType
+import com.microsoft.playwright.Playwright
+import com.microsoft.playwright.options.LoadState
 
-// Paste the URL from src/test/resources/paddy-next-races-endpoint.txt:
-private const val NEXT_RACES_URL = "<PASTE URL HERE>"
+// URL captured 2026-05-13 — see src/test/resources/paddy-next-races-endpoint.txt.
+private const val NEXT_RACES_URL =
+    "https://apisms.paddypower.com/smspp/content-managed-page/v7" +
+    "?_ak=vsd0Rm5ph2sS2uaK&betexRegion=IRL&capiJurisdiction=intl" +
+    "&cardsToFetch=19424&countryCode=IE&currencyCode=EUR&eventTypeId=7" +
+    "&exchangeLocale=en_GB&includeEuromillionsWithoutLogin=false" +
+    "&includeMarketBlurbs=true&includePrices=true&includeRaceCards=true" +
+    "&language=en&layoutFetchedCardsOnly=true&loggedIn=false" +
+    "&nextRacesMarketsLimit=1&page=SPORT&priceHistory=3&regionCode=IRE" +
+    "&requestCountryCode=IE&staticCardsIncluded=SEO_CONTENT_SUMMARY" +
+    "&timezone=Europe%2FDublin"
 
-// Realistic recent Chrome UA. Bookmakers commonly block obviously-bot UAs.
-private const val USER_AGENT =
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " +
-    "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+// Visit the parent page first so Cloudflare drops the cf_clearance cookie
+// in the browser session before we hit the API.
+private const val WARMUP_URL = "https://www.paddypower.com/horse-racing"
 
 /**
- * Thin HTTP transport for PaddyPower's next-races JSON endpoint.
+ * Fetches PaddyPower's next-races JSON via a real headless Chromium
+ * instance so Cloudflare's bot challenge resolves naturally.
  *
- * No auth, no retries, no rate-limit handling. One request per call.
- * Non-2xx responses throw `IllegalStateException` with the status code
- * and the first 500 chars of the body — same shape as `BetfairClient`.
+ * Flow:
+ *   1. Launch headless Chromium.
+ *   2. Visit the public horse-racing landing page; wait for it to settle.
+ *      This earns the `cf_clearance` cookie scoped to *.paddypower.com.
+ *   3. Fetch the JSON endpoint via the in-page `fetch()` API so the
+ *      browser's TLS / cookie / fingerprint state carries through.
+ *   4. Return the response body as a String.
+ *
+ * Each call launches and tears down its own browser. For a one-shot CLI
+ * that's acceptable (~2-3 s of fixed overhead). If we ever need multiple
+ * scrapes per run, hoist the browser into a lifecycle-managed singleton.
  */
-class PaddyClient(
-    private val http: HttpClient = HttpClient.newBuilder()
-        .connectTimeout(Duration.ofSeconds(10))
-        .build(),
-) {
+class PaddyClient {
     fun getNextRaces(): String {
-        val req = HttpRequest.newBuilder()
-            .uri(URI.create(NEXT_RACES_URL))
-            .timeout(Duration.ofSeconds(20))
-            .header("User-Agent", USER_AGENT)
-            .header("Accept", "application/json")
-            // If endpoint.txt lists method=POST, change the next line to:
-            //   .POST(HttpRequest.BodyPublishers.noBody())
-            .GET()
-            .build()
-        val res: HttpResponse<String> = http.send(req, HttpResponse.BodyHandlers.ofString())
-        if (res.statusCode() / 100 != 2) {
-            val snip = res.body().take(500)
-            error("HTTP ${res.statusCode()} from ${req.uri()}: $snip")
+        Playwright.create().use { pw ->
+            val browser: Browser = pw.chromium().launch(
+                BrowserType.LaunchOptions().setHeadless(true),
+            )
+            try {
+                val context = browser.newContext(
+                    Browser.NewContextOptions()
+                        .setUserAgent(
+                            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) " +
+                            "AppleWebKit/537.36 (KHTML, like Gecko) " +
+                            "Chrome/126.0.0.0 Safari/537.36",
+                        )
+                        .setLocale("en-GB")
+                        .setTimezoneId("Europe/Dublin"),
+                )
+                val page = context.newPage()
+                page.navigate(WARMUP_URL)
+                page.waitForLoadState(LoadState.NETWORKIDLE)
+
+                // Fetch from inside the page so Cloudflare cookies + TLS fingerprint
+                // are used. evaluate() returns the response body.
+                val body = page.evaluate(
+                    """
+                    async (url) => {
+                        const r = await fetch(url, {
+                            method: 'GET',
+                            credentials: 'include',
+                            headers: { 'accept': 'application/json, text/plain, */*' },
+                        });
+                        if (!r.ok) {
+                            const text = await r.text();
+                            throw new Error('HTTP ' + r.status + ': ' + text.slice(0, 500));
+                        }
+                        return await r.text();
+                    }
+                    """.trimIndent(),
+                    NEXT_RACES_URL,
+                ) as? String
+
+                return body ?: error("PaddyClient: empty response body from $NEXT_RACES_URL")
+            } finally {
+                browser.close()
+            }
         }
-        return res.body()
     }
 }
 ```
 
-Adjust the `.GET()` call and any custom headers per the metadata file. If a header like `X-NEDS-TOKEN` was captured, add it. If the endpoint requires a query parameter (e.g. `?country=GB`), append it to `NEXT_RACES_URL`.
-
-- [ ] **Step 3: Compile**
+- [ ] **Step 4: Compile**
 
 Run: `./gradlew compileKotlin`
 
-Expected: `BUILD SUCCESSFUL`. The URL constant doesn't have to be valid for compile — the runtime call would fail, but tests don't make live HTTP calls.
+Expected: `BUILD SUCCESSFUL`. Playwright classes resolve via the new dependency.
 
-- [ ] **Step 4: Run the full suite**
+- [ ] **Step 5: Run the full suite**
 
 Run: `./gradlew test`
 
-Expected: 146 tests pass (no new tests in this task).
+Expected: no new tests added; total unchanged (122 from after Task 4).
 
-- [ ] **Step 5: Commit**
+- [ ] **Step 6: Commit**
 
 ```bash
-git add src/main/kotlin/com/horsey/scraper/paddypower/PaddyClient.kt
-git commit -m "paddy: add PaddyClient HTTP transport"
+git add build.gradle.kts src/main/kotlin/com/horsey/scraper/paddypower/PaddyClient.kt
+git commit -m "paddy: add PaddyClient (Playwright transport for Cloudflare-gated endpoint)"
 ```
 
 ---
@@ -1361,7 +1399,7 @@ Expected: `BUILD SUCCESSFUL`.
 
 Run: `./gradlew test`
 
-Expected: 146 tests pass (no new tests).
+Expected: 136 tests pass (no new tests).
 
 - [ ] **Step 5: Commit**
 
@@ -1380,7 +1418,7 @@ Verification only — no code changes, no commits.
 
 Run: `./gradlew test 2>&1 | tail -10`
 
-Expected: `BUILD SUCCESSFUL`. Test total should be approximately 146.
+Expected: `BUILD SUCCESSFUL`. Test total should be approximately 136.
 
 - [ ] **Step 2: Compile + assemble**
 
