@@ -32,10 +32,17 @@ data class MarketScrape(
  * One runner's lay prices pivoted across markets. Key presence in `lay`
  * mirrors key presence in [RaceOdds.marketScrapedAt]: present iff the
  * market was scraped successfully.
+ *
+ * `selectionId` is the Betfair Exchange selection id for this runner.
+ * It exists primarily so a downstream arbitrage tool can join Betfair
+ * runners to PaddyPower runners (which expose the same id) without
+ * horse-name normalisation. Nullable for backward compatibility with
+ * older snapshots and tests that don't care about the id.
  */
 data class RunnerOdds(
     val name: String,
-    val lay: Map<MarketType, Double?>
+    val lay: Map<MarketType, Double?>,
+    val selectionId: Long? = null,
 )
 
 /**

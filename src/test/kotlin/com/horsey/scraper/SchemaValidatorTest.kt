@@ -119,4 +119,30 @@ class SchemaValidatorTest {
         val good = goodJson.replace(""""country": "GB"""", """"country": "US"""")
         assertEquals(emptyList(), validateScrapeOutput(good))
     }
+
+    @Test
+    fun `selectionId field on a runner is accepted when present and numeric`() {
+        // Take the existing happy-path JSON and inject a selectionId on the runner.
+        val withSelectionId = goodJson.replace(
+            "\"name\": \"Some Horse\",",
+            "\"name\": \"Some Horse\", \"selectionId\": 12345,"
+        )
+        assertEquals(emptyList(), validateScrapeOutput(withSelectionId))
+    }
+
+    @Test
+    fun `selectionId field absent is also accepted (backward compatibility)`() {
+        // The existing happy path has no selectionId field — still valid.
+        assertEquals(emptyList(), validateScrapeOutput(goodJson))
+    }
+
+    @Test
+    fun `selectionId of wrong type is flagged`() {
+        val bad = goodJson.replace(
+            "\"name\": \"Some Horse\",",
+            "\"name\": \"Some Horse\", \"selectionId\": \"not a number\","
+        )
+        val errs = validateScrapeOutput(bad)
+        assertTrue(errs.any { "selectionId" in it }, errs.toString())
+    }
 }

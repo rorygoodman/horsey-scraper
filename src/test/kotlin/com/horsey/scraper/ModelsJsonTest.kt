@@ -5,6 +5,7 @@ import com.google.gson.GsonBuilder
 import com.google.gson.JsonParser
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 class ModelsJsonTest {
     private val gson = Gson()
@@ -81,5 +82,25 @@ class ModelsJsonTest {
             JsonParser.parseString("""{"WIN":null}"""),
             JsonParser.parseString(withNulls).asJsonObject.get("runners").asJsonArray[0].asJsonObject.get("lay")
         )
+    }
+
+    @Test
+    fun `RunnerOdds serialises selectionId when set`() {
+        val gson = GsonBuilder().setPrettyPrinting().serializeNulls().create()
+        val runner = RunnerOdds(
+            name = "X",
+            lay = linkedMapOf(MarketType.WIN to 4.5),
+            selectionId = 987654321L,
+        )
+        val json = gson.toJson(runner)
+        assertTrue(json.contains("\"selectionId\": 987654321"), json)
+    }
+
+    @Test
+    fun `RunnerOdds serialises selectionId as null when unset`() {
+        val gson = GsonBuilder().setPrettyPrinting().serializeNulls().create()
+        val runner = RunnerOdds(name = "X", lay = linkedMapOf(MarketType.WIN to 4.5))
+        val json = gson.toJson(runner)
+        assertTrue(json.contains("\"selectionId\": null"), json)
     }
 }

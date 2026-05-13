@@ -84,6 +84,13 @@ fun validateScrapeOutput(json: String): List<String> {
             if (!rEl.isJsonObject) { errors += "$rctx: not an object"; return@forEachIndexed }
             val r = rEl.asJsonObject
             requireString(r, "name", errors)
+            // selectionId is optional; when present it must be a JSON number.
+            val selEl = r.get("selectionId")
+            if (selEl != null && !selEl.isJsonNull) {
+                if (!selEl.isJsonPrimitive || !selEl.asJsonPrimitive.isNumber) {
+                    errors += "$rctx.selectionId: not a number (got $selEl)"
+                }
+            }
             val layEl = r.get("lay")
             if (layEl == null || !layEl.isJsonObject) {
                 errors += "$rctx.lay: missing or not object"
