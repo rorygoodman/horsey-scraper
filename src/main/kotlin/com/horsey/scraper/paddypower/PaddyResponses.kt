@@ -100,7 +100,10 @@ private fun paddyRaceFromJson(
     val raceType = raceJson.string("winMarketName") ?: ""
 
     val marketJson = marketsObj.get(winMarketId)?.takeIf { it.isJsonObject }?.asJsonObject
-        ?: return null
+        ?: run {
+            System.err.println("paddy: dropping race with no market for winMarketId=$winMarketId at venue=$venue")
+            return null
+        }
 
     val runners = parsePaddyRunners(marketJson)
     if (runners.isEmpty()) {
@@ -141,11 +144,11 @@ private fun parsePaddyRunners(marketJson: JsonObject): List<PaddyRunner> {
         val odds = r.get("winRunnerOdds")?.takeIf { it.isJsonObject }?.asJsonObject
             ?.get("trueOdds")?.takeIf { it.isJsonObject }?.asJsonObject
         val isActiveWithOdds = status == "ACTIVE" && odds != null
-        val winPrice: Double? = odds
+        val decimalVal: Double? = odds
             ?.get("decimalOdds")?.takeIf { it.isJsonObject }?.asJsonObject
             ?.double("decimalOdds")
             ?.takeIf { isActiveWithOdds }
-        val winPriceRaw: String? = odds
+        val fractionalVal: String? = odds
             ?.get("fractionalOdds")?.takeIf { it.isJsonObject }?.asJsonObject
             ?.let { fOdds ->
                 val n = fOdds.int("numerator") ?: return@let null
@@ -153,6 +156,11 @@ private fun parsePaddyRunners(marketJson: JsonObject): List<PaddyRunner> {
                 "$n/$d"
             }
             ?.takeIf { isActiveWithOdds }
+        // Parity invariant (see PaddyRunner KDoc): both populated or both null.
+        // If either side is missing (e.g. malformed fractionalOdds), null both.
+        val bothPresent = decimalVal != null && fractionalVal != null
+        val winPrice = if (bothPresent) decimalVal else null
+        val winPriceRaw = if (bothPresent) fractionalVal else null
         out += PaddyRunner(
             name = name,
             selectionId = selectionId,

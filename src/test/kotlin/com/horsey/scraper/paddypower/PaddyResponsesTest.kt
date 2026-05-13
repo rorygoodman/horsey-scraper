@@ -175,4 +175,43 @@ class PaddyResponsesTest {
         assertNull(withdrawn.winPriceRaw)
         assertNotNull(race.runners.firstOrNull { it.name == "Real Horse" })
     }
+
+    @Test
+    fun `race whose winMarketId has no entry in markets is dropped`() {
+        val json = """
+            { "attachments": {
+                "races": { "1.1": { "raceId": "1.1", "winMarketId": "m-missing",
+                                    "winMarketName": "5f Hcap",
+                                    "startTime": "2026-05-13T19:00:00.000Z",
+                                    "countryCode": "GB", "venue": "Bath" } },
+                "markets": { } } }
+        """.trimIndent()
+        assertTrue(parsePaddyNextRaces(json, nowProvider).isEmpty())
+    }
+
+    @Test
+    fun `partial price data drops both fields to enforce parity`() {
+        // decimalOdds present but fractionalOdds missing numerator → both nulled.
+        val json = """
+            { "attachments": {
+                "races": { "1.1": { "raceId": "1.1", "winMarketId": "m1",
+                                    "winMarketName": "5f Hcap",
+                                    "startTime": "2026-05-13T19:00:00.000Z",
+                                    "countryCode": "GB", "venue": "Bath" } },
+                "markets": { "m1": { "marketId": "m1", "raceId": "1.1",
+                                     "marketType": "WIN",
+                                     "exchangeMarketId": "1.x",
+                                     "numberOfPlaces": 3,
+                                     "placeFraction": {"numerator":1,"denominator":5},
+                                     "eachwayAvailable": true,
+                                     "runners": [
+                                       { "selectionId": 1001, "runnerName": "Partial Horse", "runnerStatus": "ACTIVE",
+                                         "winRunnerOdds": { "trueOdds": { "decimalOdds": {"decimalOdds":5.0},
+                                                                          "fractionalOdds": {"denominator":1} } } }
+                                     ] } } } }
+        """.trimIndent()
+        val r = parsePaddyNextRaces(json, nowProvider).single().runners.single()
+        assertNull(r.winPrice)
+        assertNull(r.winPriceRaw)
+    }
 }
