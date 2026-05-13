@@ -198,26 +198,39 @@ omitted (same fallback as today).
 
 ### Top-N markets
 
-One additional `listMarketCatalogue` call for all PLACE markets in scope:
+One additional `listMarketCatalogue` call for all place-style markets in
+scope:
 
 ```json
 {
   "filter": {
     "eventTypeIds": ["7"],
     "marketCountries": ["GB", "IE"],
-    "marketTypeCodes": ["PLACE"],
+    "marketTypeCodes": ["PLACE", "OTHER_PLACE"],
     "marketStartTime": { "from": "...", "to": "..." }
   },
-  "marketProjection": ["EVENT", "MARKET_DESCRIPTION"],
+  "marketProjection": ["EVENT", "MARKET_DESCRIPTION", "RUNNER_DESCRIPTION"],
   "maxResults": "1000"
 }
 ```
 
-Each PLACE result is classified by `MarketClassifier` using its
-`marketName` and `description.numberOfWinners`. Markets that don't match
-the `^Top [2-5] Finish$` pattern (e.g. the standard "To Be Placed" market)
-are silently ignored. Classified markets are joined back to the matching
-`Race` by `event.id` and their `MarketType` is recorded.
+**API conventions discovered live (verified 2026-05-13):**
+
+- `marketTypeCode=PLACE` is the standard "To Be Placed" market — we
+  **exclude** it (the classifier rejects the name).
+- `marketTypeCode=OTHER_PLACE` is where the explicit Top-N markets live.
+- API `marketName` for these is the abbreviated form `"N TBP"`
+  (e.g. `"2 TBP"`, `"4 TBP"`) — *not* the UI's `"Top N Finish"` text.
+- `description.numberOfWinners` is **null** on this projection.
+
+Each result is classified by `MarketClassifier.classifyTopN(name,
+numberOfWinners)`. The classifier accepts two name patterns
+(`^Top [2-5] Finish$` from the UI tradition, and `^[2-5] TBP$` from the
+API) and a nullable `numberOfWinners`. When `numberOfWinners` is
+non-null it must agree with the N in the name; when null, the name is
+the source of truth. Anything that doesn't match is silently ignored.
+Classified markets are joined back to the matching `Race` by `event.id`
+and their `MarketType` is recorded.
 
 ### Prices
 
