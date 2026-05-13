@@ -2,6 +2,7 @@ package com.horsey.scraper.paddypower
 
 import com.microsoft.playwright.Browser
 import com.microsoft.playwright.BrowserType
+import com.microsoft.playwright.Page
 import com.microsoft.playwright.Playwright
 import com.microsoft.playwright.options.LoadState
 
@@ -59,8 +60,16 @@ class PaddyClient {
                         .setTimezoneId("Europe/Dublin"),
                 )
                 val page = context.newPage()
-                page.navigate(WARMUP_URL)
-                page.waitForLoadState(LoadState.NETWORKIDLE)
+                page.navigate(
+                    WARMUP_URL,
+                    Page.NavigateOptions().setTimeout(20_000.0),
+                )
+                // Only need the cookies, not full network idle — switching to
+                // DOMCONTENTLOADED prevents indefinite hangs on a JS-heavy page.
+                page.waitForLoadState(
+                    LoadState.DOMCONTENTLOADED,
+                    Page.WaitForLoadStateOptions().setTimeout(10_000.0),
+                )
 
                 // Fetch from inside the page so Cloudflare cookies + TLS fingerprint
                 // are used. evaluate() returns the response body.
