@@ -28,7 +28,9 @@ fun parseCataloguePlaceMarkets(json: String): Map<String, List<PlaceMarketEntry>
         val root = el.asJsonObject
         val name = root.get("marketName")?.asString ?: continue
         val desc = root.get("description")?.takeIf { it.isJsonObject }?.asJsonObject ?: continue
-        val numberOfWinners = desc.get("numberOfWinners")?.asInt ?: continue
+        // numberOfWinners is null in practice on the API's catalogue projection.
+        // Classifier accepts null and falls back to the name pattern.
+        val numberOfWinners = desc.get("numberOfWinners")?.takeIf { it.isJsonPrimitive }?.asInt
         val type = classifyTopN(name, numberOfWinners) ?: continue
         val marketId = root.get("marketId")?.asString ?: continue
         val eventId = root.get("event")?.takeIf { it.isJsonObject }?.asJsonObject
@@ -170,8 +172,11 @@ class RaceOddsFetcher(
         val (from, to) = londonDayWindowUtc(java.time.LocalDate.now(java.time.ZoneId.of("Europe/London")))
 
         // PLACE catalogue.
+        // PLACE = standard "To Be Placed" (rejected by the classifier).
+        // OTHER_PLACE = the explicit "N TBP" / "Top N Finish" markets.
+        // We fetch both and let `parseCataloguePlaceMarkets` filter by name.
         val placeBody = buildCatalogueBody(
-            marketTypeCodes = listOf("PLACE"),
+            marketTypeCodes = listOf("PLACE", "OTHER_PLACE"),
             countries = countries,
             from = from, to = to,
             projection = listOf("EVENT", "MARKET_DESCRIPTION", "RUNNER_DESCRIPTION"),

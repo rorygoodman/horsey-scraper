@@ -42,14 +42,21 @@ class RaceOddsFetcherTest {
             "description": { "marketType": "PLACE", "numberOfWinners": 3 },
             "event": { "id": "EVT1" },
             "runners": [ { "selectionId": 100, "runnerName": "Some Horse" } ]
+          },
+          {
+            "marketId": "1.13", "marketName": "4 TBP",
+            "description": { "marketType": "OTHER_PLACE" },
+            "event": { "id": "EVT1" },
+            "runners": [ { "selectionId": 100, "runnerName": "Some Horse" } ]
           }
         ]
         """.trimIndent()
         val byEvent = parseCataloguePlaceMarkets(json)
         assertEquals(setOf("EVT1"), byEvent.keys)
         val markets = byEvent.getValue("EVT1").associateBy { it.type }
-        assertEquals(setOf(MarketType.TOP_2, MarketType.TOP_3), markets.keys)
+        assertEquals(setOf(MarketType.TOP_2, MarketType.TOP_3, MarketType.TOP_4), markets.keys)
         assertEquals("1.10", markets.getValue(MarketType.TOP_2).marketId)
+        assertEquals("1.13", markets.getValue(MarketType.TOP_4).marketId)
         assertEquals(mapOf(100L to "Some Horse", 200L to "Outsider Bob"),
             markets.getValue(MarketType.TOP_2).runners)
     }

@@ -47,4 +47,38 @@ class MarketClassifierTest {
     fun `whitespace-padded name is accepted`() {
         assertEquals(MarketType.TOP_2, classifyTopN("  Top 2 Finish  ", 2))
     }
+
+    // --- API-style "N TBP" name format (Betfair REST returns this, not UI text) ---
+
+    @Test
+    fun `N TBP API name classifies as TOP_N`() {
+        assertEquals(MarketType.TOP_2, classifyTopN("2 TBP", null))
+        assertEquals(MarketType.TOP_3, classifyTopN("3 TBP", null))
+        assertEquals(MarketType.TOP_4, classifyTopN("4 TBP", null))
+        assertEquals(MarketType.TOP_5, classifyTopN("5 TBP", null))
+    }
+
+    @Test
+    fun `N TBP is case-insensitive and whitespace-tolerant`() {
+        assertEquals(MarketType.TOP_2, classifyTopN("2 tbp", null))
+        assertEquals(MarketType.TOP_4, classifyTopN(" 4 TBP ", null))
+    }
+
+    @Test
+    fun `N TBP out of range is rejected`() {
+        assertNull(classifyTopN("1 TBP", null))
+        assertNull(classifyTopN("6 TBP", null))
+    }
+
+    @Test
+    fun `null numberOfWinners is accepted for either name format`() {
+        assertEquals(MarketType.TOP_2, classifyTopN("Top 2 Finish", null))
+        assertEquals(MarketType.TOP_3, classifyTopN("3 TBP", null))
+    }
+
+    @Test
+    fun `non-null numberOfWinners still must agree with N`() {
+        assertEquals(MarketType.TOP_2, classifyTopN("2 TBP", 2))
+        assertNull(classifyTopN("2 TBP", 3))
+    }
 }
