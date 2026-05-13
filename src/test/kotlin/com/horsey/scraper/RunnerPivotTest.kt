@@ -22,15 +22,15 @@ class RunnerPivotTest {
     @Test
     fun `pivots runners across all five markets`() {
         val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z",
-            listOf("Some Horse" to 4.8, "Outsider" to 22.0))
+            listOf(RunnerEntry(null, "Some Horse", 4.8), RunnerEntry(null, "Outsider", 22.0)))
         val top2 = MarketScrape(MarketType.TOP_2, "2026-05-09T12:00:08Z",
-            listOf("Some Horse" to 2.5, "Outsider" to 9.5))
+            listOf(RunnerEntry(null, "Some Horse", 2.5), RunnerEntry(null, "Outsider", 9.5)))
         val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z",
-            listOf("Some Horse" to 1.7, "Outsider" to 5.0))
+            listOf(RunnerEntry(null, "Some Horse", 1.7), RunnerEntry(null, "Outsider", 5.0)))
         val top4 = MarketScrape(MarketType.TOP_4, "2026-05-09T12:00:14Z",
-            listOf("Some Horse" to 1.4, "Outsider" to 3.2))
+            listOf(RunnerEntry(null, "Some Horse", 1.4), RunnerEntry(null, "Outsider", 3.2)))
         val top5 = MarketScrape(MarketType.TOP_5, "2026-05-09T12:00:17Z",
-            listOf("Some Horse" to 1.2, "Outsider" to 2.4))
+            listOf(RunnerEntry(null, "Some Horse", 1.2), RunnerEntry(null, "Outsider", 2.4)))
 
         val runners = pivotMarketScrapes(
             scrapes = mapOf(
@@ -51,8 +51,8 @@ class RunnerPivotTest {
 
     @Test
     fun `omits keys for markets that were not scraped`() {
-        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf("X" to 3.0))
-        val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z", listOf("X" to 1.5))
+        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf(RunnerEntry(null, "X", 3.0)))
+        val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z", listOf(RunnerEntry(null, "X", 1.5)))
 
         val runners = pivotMarketScrapes(
             scrapes = mapOf(MarketType.WIN to win, MarketType.TOP_3 to top3),
@@ -65,8 +65,8 @@ class RunnerPivotTest {
 
     @Test
     fun `preserves null lay for runner with no offer in a scraped market`() {
-        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf("X" to 3.0))
-        val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z", listOf("X" to null))
+        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf(RunnerEntry(null, "X", 3.0)))
+        val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z", listOf(RunnerEntry(null, "X", null)))
 
         val runners = pivotMarketScrapes(
             scrapes = mapOf(MarketType.WIN to win, MarketType.TOP_3 to top3),
@@ -78,9 +78,9 @@ class RunnerPivotTest {
     @Test
     fun `runner missing from a scraped Top-N market gets null for that key`() {
         val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z",
-            listOf("X" to 3.0, "Y" to 10.0))
+            listOf(RunnerEntry(null, "X", 3.0), RunnerEntry(null, "Y", 10.0)))
         val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z",
-            listOf("X" to 1.5))  // Y missing
+            listOf(RunnerEntry(null, "X", 1.5)))  // Y missing
 
         val runners = pivotMarketScrapes(
             scrapes = mapOf(MarketType.WIN to win, MarketType.TOP_3 to top3),
@@ -92,9 +92,9 @@ class RunnerPivotTest {
 
     @Test
     fun `phantom horse in Top-N is dropped with stderr warning`() {
-        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf("X" to 3.0))
+        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf(RunnerEntry(null, "X", 3.0)))
         val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z",
-            listOf("X" to 1.5, "Phantom" to 7.0))
+            listOf(RunnerEntry(null, "X", 1.5), RunnerEntry(null, "Phantom", 7.0)))
 
         var runners: List<RunnerOdds> = emptyList()
         val stderr = captureStderr {
@@ -110,7 +110,7 @@ class RunnerPivotTest {
 
     @Test
     fun `returns empty list when WIN scrape is absent`() {
-        val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z", listOf("X" to 1.5))
+        val top3 = MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z", listOf(RunnerEntry(null, "X", 1.5)))
         val runners = pivotMarketScrapes(
             scrapes = mapOf(MarketType.TOP_3 to top3),
             raceIdForWarnings = "1.111"
@@ -120,9 +120,9 @@ class RunnerPivotTest {
 
     @Test
     fun `lay map preserves MarketType declared order`() {
-        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf("X" to 3.0))
-        val top5 = MarketScrape(MarketType.TOP_5, "2026-05-09T12:00:17Z", listOf("X" to 1.1))
-        val top2 = MarketScrape(MarketType.TOP_2, "2026-05-09T12:00:08Z", listOf("X" to 2.0))
+        val win = MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z", listOf(RunnerEntry(null, "X", 3.0)))
+        val top5 = MarketScrape(MarketType.TOP_5, "2026-05-09T12:00:17Z", listOf(RunnerEntry(null, "X", 1.1)))
+        val top2 = MarketScrape(MarketType.TOP_2, "2026-05-09T12:00:08Z", listOf(RunnerEntry(null, "X", 2.0)))
 
         val runners = pivotMarketScrapes(
             scrapes = mapOf(MarketType.TOP_5 to top5, MarketType.WIN to win, MarketType.TOP_2 to top2),
@@ -130,5 +130,38 @@ class RunnerPivotTest {
         )
         assertEquals(listOf(MarketType.WIN, MarketType.TOP_2, MarketType.TOP_5),
             runners[0].lay.keys.toList())
+    }
+
+    @Test
+    fun `selectionId from the WIN scrape propagates into RunnerOdds`() {
+        val win = MarketScrape(
+            MarketType.WIN, "2026-05-09T12:00:04Z",
+            listOf(RunnerEntry(selectionId = 111L, name = "X", lay = 3.0)),
+        )
+        val top3 = MarketScrape(
+            MarketType.TOP_3, "2026-05-09T12:00:11Z",
+            listOf(RunnerEntry(selectionId = 111L, name = "X", lay = 1.5)),
+        )
+        val pivoted = pivotMarketScrapes(
+            scrapes = linkedMapOf(MarketType.WIN to win, MarketType.TOP_3 to top3),
+            raceIdForWarnings = "1.999",
+        )
+        assertEquals(1, pivoted.size)
+        assertEquals(111L, pivoted[0].selectionId)
+        assertEquals("X", pivoted[0].name)
+    }
+
+    @Test
+    fun `selectionId is null on RunnerOdds when WIN scrape carries a null id`() {
+        val win = MarketScrape(
+            MarketType.WIN, "2026-05-09T12:00:04Z",
+            listOf(RunnerEntry(selectionId = null, name = "Y", lay = 5.0)),
+        )
+        val pivoted = pivotMarketScrapes(
+            scrapes = linkedMapOf(MarketType.WIN to win),
+            raceIdForWarnings = "1.999",
+        )
+        assertEquals(1, pivoted.size)
+        assertEquals(null, pivoted[0].selectionId)
     }
 }

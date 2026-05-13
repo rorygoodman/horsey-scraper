@@ -15,17 +15,29 @@ data class Race(
 )
 
 /**
+ * One runner observed in one market scrape. `selectionId` is the
+ * Betfair selection id (when known); `name` is the horse name as
+ * shown on the market page; `lay` is the best lay price observed
+ * (or null if no lay was on offer).
+ */
+data class RunnerEntry(
+    val selectionId: Long?,
+    val name: String,
+    val lay: Double?,
+)
+
+/**
  * Result of scraping a single market within a race. Intermediate type
  * passed from per-market scrape into the pivot. Not serialised.
  *
  * `scrapedAt` is an ISO-8601 UTC instant (e.g. "2026-05-09T12:00:04Z").
- * `runners` preserves market-page order; the second element of each
- * pair is the best lay or null if no lay is on offer.
+ * `runners` preserves market-page order; the lay value is null if no
+ * lay is on offer for that runner.
  */
 data class MarketScrape(
     val type: MarketType,
     val scrapedAt: String,
-    val runners: List<Pair<String, Double?>>
+    val runners: List<RunnerEntry>
 )
 
 /**

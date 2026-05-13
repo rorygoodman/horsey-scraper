@@ -15,9 +15,9 @@ class BetfairRaceScraperAssemblyTest {
     fun `assembleRaceOdds produces flat fields and pivot`() {
         val scrapes = mapOf(
             MarketType.WIN to MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z",
-                listOf("X" to 3.0)),
+                listOf(RunnerEntry(null, "X", 3.0))),
             MarketType.TOP_3 to MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z",
-                listOf("X" to 1.5))
+                listOf(RunnerEntry(null, "X", 1.5)))
         )
         val odds = assembleRaceOdds(race, "13:30 Lingfield - 5f Hcap", scrapes)
         assertEquals(race.raceId, odds!!.raceId)
@@ -35,7 +35,7 @@ class BetfairRaceScraperAssemblyTest {
     fun `assembleRaceOdds returns null when WIN scrape is missing`() {
         val scrapes = mapOf(
             MarketType.TOP_3 to MarketScrape(MarketType.TOP_3, "2026-05-09T12:00:11Z",
-                listOf("X" to 1.5))
+                listOf(RunnerEntry(null, "X", 1.5)))
         )
         assertNull(assembleRaceOdds(race, "irrelevant", scrapes))
     }
@@ -71,11 +71,11 @@ class BetfairRaceScraperAssemblyTest {
     fun `marketScrapedAt preserves MarketType declared order`() {
         val scrapes = mapOf(
             MarketType.TOP_5 to MarketScrape(MarketType.TOP_5, "2026-05-09T12:00:17Z",
-                listOf("X" to 1.1)),
+                listOf(RunnerEntry(null, "X", 1.1))),
             MarketType.WIN to MarketScrape(MarketType.WIN, "2026-05-09T12:00:04Z",
-                listOf("X" to 3.0)),
+                listOf(RunnerEntry(null, "X", 3.0))),
             MarketType.TOP_2 to MarketScrape(MarketType.TOP_2, "2026-05-09T12:00:08Z",
-                listOf("X" to 2.0))
+                listOf(RunnerEntry(null, "X", 2.0)))
         )
         val odds = assembleRaceOdds(race, "x", scrapes)
         assertEquals(listOf(MarketType.WIN, MarketType.TOP_2, MarketType.TOP_5),

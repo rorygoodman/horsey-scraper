@@ -122,7 +122,9 @@ fun joinScrapes(
             MarketType.WIN to MarketScrape(
                 type = MarketType.WIN,
                 scrapedAt = scrapedAt,
-                runners = nameOrder.map { (sel, name) -> name to winSnap.layBySelectionId[sel] },
+                runners = nameOrder.map { (sel, name) ->
+                    RunnerEntry(selectionId = sel, name = name, lay = winSnap.layBySelectionId[sel])
+                },
             )
         )
 
@@ -131,7 +133,7 @@ fun joinScrapes(
             val snap = snapshots[place.marketId] ?: continue
             if (snap.status != MarketBookStatus.OPEN) continue
             val rows = place.runners.entries.map { (sel, name) ->
-                name to snap.layBySelectionId[sel]
+                RunnerEntry(selectionId = sel, name = name, lay = snap.layBySelectionId[sel])
             }
             scrapes[place.type] = MarketScrape(
                 type = place.type,
