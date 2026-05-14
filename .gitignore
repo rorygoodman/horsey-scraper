@@ -21,6 +21,7 @@ Thumbs.db
 scraper.log
 betfair.json
 paddypower.json
+arbs.json
 debug-page.html
 
 # Credentials — never commit. Real file lives at ~/.horsey-scraper/credentials.json.
