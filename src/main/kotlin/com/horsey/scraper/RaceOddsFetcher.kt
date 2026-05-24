@@ -7,6 +7,10 @@ import java.time.Instant
 data class PlaceMarketEntry(
     val marketId: String,
     val type: MarketType,
+    /** Betfair event id this market belongs to. Multiple races at one venue share one event. */
+    val eventId: String,
+    /** The market's start time (ISO-8601 UTC). Equals the race's WIN `marketStartTime`. */
+    val marketTime: String,
     /** selectionId → runnerName, as published by the catalogue for this market. */
     val runners: Map<Long, String>,
 )
@@ -17,12 +21,15 @@ fun <T> chunkOf40(items: List<T>): List<List<T>> =
 
 /**
  * Parses a PLACE `listMarketCatalogue` response: classifies each market via
- * [classifyTopN] and groups the survivors by `event.id`. Anything that
- * doesn't classify (To Be Placed, mismatched winners, etc.) is dropped.
+ * [classifyTopN] and returns one [PlaceMarketEntry] per surviving market.
+ * Anything that doesn't classify (To Be Placed, mismatched winners, etc.)
+ * is dropped. Markets without `description.marketTime` are also dropped —
+ * we need the marketTime to bind each PLACE market to its specific race
+ * (the Betfair event id alone is ambiguous across a multi-race meeting).
  */
-fun parseCataloguePlaceMarkets(json: String): Map<String, List<PlaceMarketEntry>> {
+fun parseCataloguePlaceMarkets(json: String): List<PlaceMarketEntry> {
     val arr = JsonParser.parseString(json).asJsonArray
-    val out = linkedMapOf<String, MutableList<PlaceMarketEntry>>()
+    val out = mutableListOf<PlaceMarketEntry>()
     for (el in arr) {
         if (!el.isJsonObject) continue
         val root = el.asJsonObject
@@ -32,12 +39,31 @@ fun parseCataloguePlaceMarkets(json: String): Map<String, List<PlaceMarketEntry>
         // Classifier accepts null and falls back to the name pattern.
         val numberOfWinners = desc.get("numberOfWinners")?.takeIf { it.isJsonPrimitive }?.asInt
         val type = classifyTopN(name, numberOfWinners) ?: continue
+        val marketTime = desc.get("marketTime")?.takeIf { it.isJsonPrimitive }?.asString ?: continue
         val marketId = root.get("marketId")?.asString ?: continue
         val eventId = root.get("event")?.takeIf { it.isJsonObject }?.asJsonObject
             ?.get("id")?.asString ?: continue
-        out.getOrPut(eventId) { mutableListOf() }.add(
-            PlaceMarketEntry(marketId, type, runnerMap(root))
-        )
+        out += PlaceMarketEntry(marketId, type, eventId, marketTime, runnerMap(root))
+    }
+    return out
+}
+
+/**
+ * Groups [entries] by `(eventId, marketTime)` and rekeys them to raceId
+ * using [raceKeyByRaceId] (a `raceId → (eventId, marketTime)` map built
+ * from the WIN catalogue). Entries whose key doesn't appear in
+ * [raceKeyByRaceId] are dropped. Within a multi-race Betfair event this
+ * is what ensures each race only sees its own Top-N markets.
+ */
+fun placeMarketsByRaceId(
+    entries: List<PlaceMarketEntry>,
+    raceKeyByRaceId: Map<String, Pair<String, String>>,
+): Map<String, List<PlaceMarketEntry>> {
+    val raceIdByKey = raceKeyByRaceId.entries.associate { (rid, key) -> key to rid }
+    val out = linkedMapOf<String, MutableList<PlaceMarketEntry>>()
+    for (entry in entries) {
+        val raceId = raceIdByKey[entry.eventId to entry.marketTime] ?: continue
+        out.getOrPut(raceId) { mutableListOf() }.add(entry)
     }
     return out
 }
@@ -186,9 +212,9 @@ class RaceOddsFetcher(
             sort = "FIRST_TO_START",
         )
         val placeJson = client.listMarketCatalogue(placeBody)
-        val placeByEvent = parseCataloguePlaceMarkets(placeJson)
+        val placeEntries = parseCataloguePlaceMarkets(placeJson)
 
-        // WIN catalogue (re-fetched to grab runner names + raceType + eventIds).
+        // WIN catalogue (re-fetched to grab runner names + raceType + race keys).
         val winBody = buildCatalogueBody(
             marketTypeCodes = listOf("WIN"),
             countries = countries,
@@ -200,16 +226,11 @@ class RaceOddsFetcher(
         val winJson = client.listMarketCatalogue(winBody)
         val winRunners = parseWinCatalogueRunners(winJson)
         val winRaceTypeByRaceId = parseWinRaceTypes(winJson)
-        val eventIdByRaceId = parseWinEventIds(winJson)
+        val raceKeyByRaceId = parseWinRaceKeys(winJson)
 
-        // Rekey placeByEvent from eventId → raceId using the WIN catalogue's
-        // marketId↔eventId map (built once, used many).
-        val raceIdByEventId = eventIdByRaceId.entries.associate { (rid, eid) -> eid to rid }
-        val placeByRaceId = mutableMapOf<String, List<PlaceMarketEntry>>()
-        for ((eventId, list) in placeByEvent) {
-            val raceId = raceIdByEventId[eventId] ?: continue
-            placeByRaceId[raceId] = list
-        }
+        // Bind each PLACE market to its specific race via (eventId, marketTime).
+        // The Betfair event id alone collides across the day's races at one venue.
+        val placeByRaceId = placeMarketsByRaceId(placeEntries, raceKeyByRaceId)
 
         // Gather marketIds and fetch prices in batches.
         val allMarketIds = (races.map { it.raceId } +
@@ -260,17 +281,23 @@ fun parseWinRaceTypes(json: String): Map<String, String> {
     return out
 }
 
-/** Returns marketId → eventId from a WIN `listMarketCatalogue` response. */
-fun parseWinEventIds(json: String): Map<String, String> {
+/**
+ * Returns raceId (WIN marketId) → `(eventId, marketStartTime)` from a WIN
+ * `listMarketCatalogue` response. The pair uniquely identifies a race
+ * within a multi-race Betfair event and is the key used to bind PLACE
+ * markets back to the right race.
+ */
+fun parseWinRaceKeys(json: String): Map<String, Pair<String, String>> {
     val arr = JsonParser.parseString(json).asJsonArray
-    val out = linkedMapOf<String, String>()
+    val out = linkedMapOf<String, Pair<String, String>>()
     for (el in arr) {
         if (!el.isJsonObject) continue
         val root = el.asJsonObject
         val mid = root.get("marketId")?.asString ?: continue
         val event = root.get("event")?.takeIf { it.isJsonObject }?.asJsonObject ?: continue
         val eid = event.get("id")?.asString ?: continue
-        out[mid] = eid
+        val mst = root.get("marketStartTime")?.takeIf { it.isJsonPrimitive }?.asString ?: continue
+        out[mid] = eid to mst
     }
     return out
 }

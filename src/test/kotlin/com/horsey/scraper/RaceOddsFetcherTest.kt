@@ -19,12 +19,13 @@ class RaceOddsFetcherTest {
     }
 
     @Test
-    fun `parseCataloguePlaceMarkets classifies and joins to eventId`() {
+    fun `parseCataloguePlaceMarkets returns a flat entry per Top-N market with eventId and marketTime`() {
         val json = """
         [
           {
             "marketId": "1.10", "marketName": "Top 2 Finish",
-            "description": { "marketType": "PLACE", "numberOfWinners": 2 },
+            "description": { "marketType": "PLACE", "numberOfWinners": 2,
+                             "marketTime": "2026-05-20T12:30:00.000Z" },
             "event": { "id": "EVT1" },
             "runners": [
               { "selectionId": 100, "runnerName": "Some Horse" },
@@ -33,32 +34,80 @@ class RaceOddsFetcherTest {
           },
           {
             "marketId": "1.11", "marketName": "To Be Placed",
-            "description": { "marketType": "PLACE", "numberOfWinners": 3 },
+            "description": { "marketType": "PLACE", "numberOfWinners": 3,
+                             "marketTime": "2026-05-20T12:30:00.000Z" },
             "event": { "id": "EVT1" },
             "runners": []
           },
           {
-            "marketId": "1.12", "marketName": "Top 3 Finish",
-            "description": { "marketType": "PLACE", "numberOfWinners": 3 },
+            "marketId": "1.13", "marketName": "4 TBP",
+            "description": { "marketType": "OTHER_PLACE",
+                             "marketTime": "2026-05-20T12:30:00.000Z" },
             "event": { "id": "EVT1" },
             "runners": [ { "selectionId": 100, "runnerName": "Some Horse" } ]
           },
           {
-            "marketId": "1.13", "marketName": "4 TBP",
-            "description": { "marketType": "OTHER_PLACE" },
+            "marketId": "1.20", "marketName": "2 TBP",
+            "description": { "marketType": "OTHER_PLACE",
+                             "marketTime": "2026-05-20T13:00:00.000Z" },
             "event": { "id": "EVT1" },
-            "runners": [ { "selectionId": 100, "runnerName": "Some Horse" } ]
+            "runners": [ { "selectionId": 300, "runnerName": "Other Race Horse" } ]
           }
         ]
         """.trimIndent()
-        val byEvent = parseCataloguePlaceMarkets(json)
-        assertEquals(setOf("EVT1"), byEvent.keys)
-        val markets = byEvent.getValue("EVT1").associateBy { it.type }
-        assertEquals(setOf(MarketType.TOP_2, MarketType.TOP_3, MarketType.TOP_4), markets.keys)
-        assertEquals("1.10", markets.getValue(MarketType.TOP_2).marketId)
-        assertEquals("1.13", markets.getValue(MarketType.TOP_4).marketId)
-        assertEquals(mapOf(100L to "Some Horse", 200L to "Outsider Bob"),
-            markets.getValue(MarketType.TOP_2).runners)
+        val entries = parseCataloguePlaceMarkets(json)
+        assertEquals(3, entries.size)
+        val top2Race1 = entries.single { it.marketId == "1.10" }
+        assertEquals(MarketType.TOP_2, top2Race1.type)
+        assertEquals("EVT1", top2Race1.eventId)
+        assertEquals("2026-05-20T12:30:00.000Z", top2Race1.marketTime)
+        assertEquals(mapOf(100L to "Some Horse", 200L to "Outsider Bob"), top2Race1.runners)
+        val top2Race2 = entries.single { it.marketId == "1.20" }
+        assertEquals("2026-05-20T13:00:00.000Z", top2Race2.marketTime)
+        assertEquals(mapOf(300L to "Other Race Horse"), top2Race2.runners)
+    }
+
+    @Test
+    fun `placeMarketsByRaceId groups entries by (eventId, marketTime) so multi-race events split correctly`() {
+        // Two Kempton races in the same Betfair event, each with its own TOP_2 market.
+        val race1Top2 = PlaceMarketEntry(
+            marketId = "1.10", type = MarketType.TOP_2,
+            eventId = "EVT-KMPT", marketTime = "2026-05-20T18:00:00.000Z",
+            runners = mapOf(100L to "Race1 Horse"),
+        )
+        val race2Top2 = PlaceMarketEntry(
+            marketId = "1.20", type = MarketType.TOP_2,
+            eventId = "EVT-KMPT", marketTime = "2026-05-20T18:30:00.000Z",
+            runners = mapOf(200L to "Race2 Horse"),
+        )
+        val unmatched = PlaceMarketEntry(
+            marketId = "1.99", type = MarketType.TOP_4,
+            eventId = "EVT-OTHER", marketTime = "2026-05-20T19:00:00.000Z",
+            runners = emptyMap(),
+        )
+        val raceKey = mapOf(
+            "1.W1" to ("EVT-KMPT" to "2026-05-20T18:00:00.000Z"),
+            "1.W2" to ("EVT-KMPT" to "2026-05-20T18:30:00.000Z"),
+        )
+        val grouped = placeMarketsByRaceId(listOf(race1Top2, race2Top2, unmatched), raceKey)
+        assertEquals(setOf("1.W1", "1.W2"), grouped.keys)
+        assertEquals(listOf("1.10"), grouped.getValue("1.W1").map { it.marketId })
+        assertEquals(listOf("1.20"), grouped.getValue("1.W2").map { it.marketId })
+    }
+
+    @Test
+    fun `parseWinRaceKeys returns raceId to (eventId, marketTime) from WIN catalogue`() {
+        val json = """
+        [
+          { "marketId": "1.W1", "marketStartTime": "2026-05-20T18:00:00.000Z",
+            "event": { "id": "EVT-KMPT" } },
+          { "marketId": "1.W2", "marketStartTime": "2026-05-20T18:30:00.000Z",
+            "event": { "id": "EVT-KMPT" } }
+        ]
+        """.trimIndent()
+        val keys = parseWinRaceKeys(json)
+        assertEquals("EVT-KMPT" to "2026-05-20T18:00:00.000Z", keys["1.W1"])
+        assertEquals("EVT-KMPT" to "2026-05-20T18:30:00.000Z", keys["1.W2"])
     }
 
     @Test
@@ -138,7 +187,8 @@ class RaceOddsFetcherTest {
         val winSnap = MarketBookSnapshot(MarketBookStatus.OPEN, mapOf(100L to 4.8))
         val top2Snap = MarketBookSnapshot(MarketBookStatus.OPEN, mapOf(100L to 2.5))
         val placeMarkets = mapOf("1.W" to listOf(
-            PlaceMarketEntry("1.P", MarketType.TOP_2, mapOf(100L to "Some Horse"))
+            PlaceMarketEntry("1.P", MarketType.TOP_2, "EVT", "2026-05-09T12:30:00Z",
+                mapOf(100L to "Some Horse"))
         ))
         val out = joinScrapes(
             races = listOf(race),
@@ -160,7 +210,8 @@ class RaceOddsFetcherTest {
         val winSnap = MarketBookSnapshot(MarketBookStatus.OPEN, mapOf(100L to 4.8))
         val top2Snap = MarketBookSnapshot(MarketBookStatus.OTHER, emptyMap())
         val placeMarkets = mapOf("1.W" to listOf(
-            PlaceMarketEntry("1.P", MarketType.TOP_2, mapOf(100L to "Some Horse"))
+            PlaceMarketEntry("1.P", MarketType.TOP_2, "EVT", "2026-05-09T12:30:00Z",
+                mapOf(100L to "Some Horse"))
         ))
         val out = joinScrapes(
             races = listOf(race),
