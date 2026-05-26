@@ -8,12 +8,10 @@ separate parser module)."""
 from __future__ import annotations
 
 import sys
-from datetime import datetime, timezone
-from zoneinfo import ZoneInfo
+
+from common.timeutil import utc_to_london as _utc_to_london
 
 from .models import EachWayTerms, PaddyRace, PaddyRunner
-
-LONDON = ZoneInfo("Europe/London")
 
 SYNTHETIC_RUNNER_NAMES = frozenset({
     "Unnamed Favourite",
@@ -146,27 +144,6 @@ def _parse_eachway(market: dict) -> EachWayTerms | None:
     if fraction <= 0.0 or fraction > 1.0:
         return None
     return EachWayTerms(fraction=fraction, places=places)
-
-
-def _utc_to_london(iso_utc: str) -> str | None:
-    """'2026-05-26T17:39:00.000Z' → '2026-05-26T18:39:00+01:00' (BST)
-    or '...Z' (GMT). Returns None on parse failure."""
-    if not iso_utc:
-        return None
-    try:
-        parsed = datetime.fromisoformat(iso_utc.replace("Z", "+00:00"))
-    except ValueError:
-        return None
-    if parsed.tzinfo is None:
-        # No tz marker → treat as UTC (matches filtering.in_window); avoids
-        # astimezone() silently assuming system-local time on non-UTC hosts.
-        parsed = parsed.replace(tzinfo=timezone.utc)
-    london = parsed.astimezone(LONDON)
-    # Format identical to Java's ISO_OFFSET_DATE_TIME: '+01:00' or 'Z'
-    s = london.isoformat(timespec="seconds")
-    if s.endswith("+00:00"):
-        s = s[:-6] + "Z"
-    return s
 
 
 def _market_name(off_time_london: str, venue: str, race_type: str) -> str:

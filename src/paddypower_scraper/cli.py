@@ -11,7 +11,8 @@ from typing import Callable, Iterable, Protocol
 
 from . import api
 from .browser import BrowserFetchError, BrowserSession
-from .filtering import in_window, london_day_window, parse_regions
+from .filtering import in_window, london_day_window
+from common.regions import countries_for_all, parse_regions
 from .meetings import parse_meetings_index
 from .models import PaddyOutput, PaddyRace, RaceStub
 from .output import write_paddypower_json
@@ -39,7 +40,7 @@ def main(
     region_arg = argv[0] if argv else "gb-ie"
 
     try:
-        countries = parse_regions(region_arg)
+        countries = countries_for_all(parse_regions(region_arg))
     except ValueError as e:
         print(f"paddypower-scraper: {e}", file=sys.stderr)
         return 2

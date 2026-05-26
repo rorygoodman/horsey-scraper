@@ -73,5 +73,5 @@ class TestConstants:
         assert LOCALE == "en-GB"
 
     def test_timezone_dublin(self):
-        # Matches PaddyPower's regional API context — see Kotlin PaddyClient
+        # Matches PaddyPower's regional API context — see api.py TIMEZONE constant
         assert TIMEZONE == "Europe/Dublin"

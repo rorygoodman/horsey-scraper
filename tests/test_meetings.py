@@ -3,7 +3,7 @@
 from paddypower_scraper.meetings import parse_meetings_index
 from paddypower_scraper.models import RaceStub
 
-from .conftest import mutate
+from conftest import mutate
 
 
 class TestParseMeetingsIndex:

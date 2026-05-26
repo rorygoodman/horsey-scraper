@@ -12,7 +12,7 @@ from paddypower_scraper.races import (
     parse_meeting_response,
 )
 
-from .conftest import mutate
+from conftest import mutate
 
 SCRAPED_AT = "2026-05-26T18:00:00Z"
 
@@ -219,7 +219,7 @@ class TestParseEachway:
         assert ew.places == 3
 
     def test_default_true_when_field_missing(self):
-        # Spec: when eachwayAvailable is absent, treat as True (parity with Kotlin)
+        # Spec: when eachwayAvailable is absent, treat as True (see races.py _parse_eachway)
         m = {"numberOfPlaces": 3,
              "placeFraction": {"numerator": 1, "denominator": 4}}
         ew = _parse_eachway(m)

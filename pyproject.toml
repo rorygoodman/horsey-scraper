@@ -17,13 +17,11 @@ betfair-scraper = "betfair_scraper.cli:main"
 paddypower-scraper = "paddypower_scraper.cli:main"
 arb-finder = "arb_finder.cli:main"
 
-# NOTE: src/paddypower_scraper is added to this list in a later task, after the
-# move creates the directory. Listing a non-existent package dir here would
-# make `uv sync` fail.
 [tool.hatch.build.targets.wheel]
 packages = [
     "src/common",
     "src/betfair_scraper",
+    "src/paddypower_scraper",
     "src/arb_finder",
 ]
 

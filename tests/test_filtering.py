@@ -6,26 +6,22 @@ from datetime import datetime, timezone
 
 import pytest
 
-from paddypower_scraper.filtering import (
+from paddypower_scraper.filtering import in_window, london_day_window
+from common.regions import (
     REGION_COUNTRIES,
-    in_window,
-    london_day_window,
+    countries_for_all,
     parse_regions,
 )
 
 
 class TestParseRegions:
     def test_single_gb_ie(self):
-        assert parse_regions("gb-ie") == frozenset({"GB", "IE"})
+        assert parse_regions("gb-ie") == frozenset({"gb-ie"})
 
-    def test_single_us(self):
-        assert parse_regions("us") == frozenset({"US"})
-
-    def test_combo(self):
-        assert parse_regions("gb-ie,us") == frozenset({"GB", "IE", "US"})
-
-    def test_whitespace_tolerant(self):
-        assert parse_regions(" gb-ie ,  us ") == frozenset({"GB", "IE", "US"})
+    def test_combo_to_countries(self):
+        assert countries_for_all(parse_regions("gb-ie,us")) == frozenset(
+            {"GB", "IE", "US"}
+        )
 
     def test_unknown_region_raises(self):
         with pytest.raises(ValueError, match="valid: gb-ie,us"):
@@ -34,10 +30,6 @@ class TestParseRegions:
     def test_empty_arg_raises(self):
         with pytest.raises(ValueError, match="non-empty"):
             parse_regions("")
-
-    def test_whitespace_only_raises(self):
-        with pytest.raises(ValueError, match="non-empty"):
-            parse_regions("   ")
 
 
 class TestLondonDayWindow:
@@ -114,8 +106,7 @@ class TestInWindow:
 
 
 class TestRegionCountries:
-    def test_table_matches_kotlin(self):
-        # Parity with Kotlin Regions.kt
+    def test_table(self):
         assert REGION_COUNTRIES == {
             "gb-ie": frozenset({"GB", "IE"}),
             "us": frozenset({"US"}),
