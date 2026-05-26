@@ -63,6 +63,10 @@ class TestLondonDayWindow:
         # 23:30 BST → tomorrow London midnight = 2026-06-16 00:00 BST = 2026-06-15 23:00 UTC.
         assert end == datetime(2026, 6, 15, 23, 0, tzinfo=timezone.utc)
 
+    def test_naive_now_raises(self):
+        with pytest.raises(ValueError, match="timezone-aware"):
+            london_day_window(datetime(2026, 6, 15, 10, 0))
+
 
 class TestInWindow:
     def test_race_inside_window(self):
@@ -99,6 +103,14 @@ class TestInWindow:
             datetime(2026, 6, 15, 23, 0, tzinfo=timezone.utc),
         )
         assert not in_window("2026-06-16T00:00:00.000Z", win)
+
+    def test_naive_timestamp_treated_as_utc(self):
+        win = (
+            datetime(2026, 6, 15, 10, 0, tzinfo=timezone.utc),
+            datetime(2026, 6, 15, 23, 0, tzinfo=timezone.utc),
+        )
+        # No 'Z' / offset → parsed naive, then treated as UTC
+        assert in_window("2026-06-15T15:00:00", win)
 
 
 class TestRegionCountries:
