@@ -54,3 +54,40 @@ class TestParseMeetingsIndex:
     def test_returns_list_not_generator(self, card63_payload):
         result = parse_meetings_index(card63_payload)
         assert isinstance(result, list)
+
+    def test_drops_race_missing_race_id(self, card63_payload):
+        p = mutate(card63_payload)
+        races = p["attachments"]["races"]
+        victim_key = next(iter(races))
+        original_id = races[victim_key]["raceId"]
+        races[victim_key].pop("raceId", None)
+        stubs = parse_meetings_index(p)
+        assert all(s.race_id != original_id for s in stubs)
+
+    def test_drops_race_missing_meeting_id(self, card63_payload):
+        p = mutate(card63_payload)
+        races = p["attachments"]["races"]
+        victim_key = next(iter(races))
+        original_id = races[victim_key]["raceId"]
+        races[victim_key].pop("meetingId", None)
+        stubs = parse_meetings_index(p)
+        assert all(s.race_id != original_id for s in stubs)
+
+    def test_drops_race_missing_venue(self, card63_payload):
+        p = mutate(card63_payload)
+        races = p["attachments"]["races"]
+        victim_key = next(iter(races))
+        original_id = races[victim_key]["raceId"]
+        races[victim_key].pop("venue", None)
+        stubs = parse_meetings_index(p)
+        assert all(s.race_id != original_id for s in stubs)
+
+    def test_drops_race_with_non_string_field(self, card63_payload):
+        # A truthy but non-string field (e.g. numeric raceId) must be
+        # dropped, not stored against the str-typed RaceStub field.
+        p = mutate(card63_payload)
+        races = p["attachments"]["races"]
+        victim_key = next(iter(races))
+        races[victim_key]["raceId"] = 123456  # int, not str
+        stubs = parse_meetings_index(p)
+        assert all(s.race_id != 123456 for s in stubs)

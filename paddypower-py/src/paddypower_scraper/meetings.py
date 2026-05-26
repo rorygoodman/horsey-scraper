@@ -36,9 +36,11 @@ def parse_meetings_index(payload: dict) -> list[RaceStub]:
             )
         except (KeyError, TypeError):
             continue
-        # Defensive: drop entries with empty string values
-        if not all((stub.race_id, stub.meeting_id, stub.win_market_id,
-                    stub.start_time_utc, stub.country_code, stub.venue)):
+        # Defensive: drop entries whose required fields are missing,
+        # empty, or not strings (RaceStub fields are all str).
+        if not all(isinstance(v, str) and v for v in (
+                stub.race_id, stub.meeting_id, stub.win_market_id,
+                stub.start_time_utc, stub.country_code, stub.venue)):
             continue
         out.append(stub)
     return out
