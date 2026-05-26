@@ -109,21 +109,4 @@ fun main(args: Array<String>) {
     )
     File(OUTPUT_FILE).writeText(gson.toJson(output))
     println("\nWrote $OUTPUT_FILE (${results.size} races)")
-
-    // ---------- PaddyPower phase ----------
-    //
-    // Runs only after the Betfair pipeline has fully completed and
-    // written data.json. A PaddyPower failure exits non-zero so the
-    // user sees the failure, but the Betfair output is preserved.
-    println("\nFetching PaddyPower next-races…")
-    val ppOutput = try {
-        com.horsey.scraper.paddypower.PaddyNextRacesFetcher(
-            com.horsey.scraper.paddypower.PaddyClient()
-        ).fetch(regions)
-    } catch (e: Exception) {
-        System.err.println("Error fetching PaddyPower: ${e.message}")
-        kotlin.system.exitProcess(1)
-    }
-    File("paddypower.json").writeText(gson.toJson(ppOutput))
-    println("Wrote paddypower.json (${ppOutput.raceCount} races)")
 }

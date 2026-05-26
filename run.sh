@@ -5,8 +5,10 @@
 #   ./run.sh us            # US only
 #   ./run.sh gb-ie,us      # both
 #
-# Pipeline: scrapers (Betfair + PaddyPower) → arb finder.
+# Pipeline: Kotlin Betfair scrape → Python PaddyPower scrape → Kotlin arb finder.
 # A scrape failure exits non-zero before the arb step is reached.
 set -euo pipefail
-./gradlew run --quiet --args="${1:-gb-ie}"
+REGIONS="${1:-gb-ie}"
+./gradlew run --quiet --args="$REGIONS"
+uv --project paddypower-py run python -m paddypower_scraper "$REGIONS"
 exec ./gradlew run --quiet -PmainClass=com.horsey.scraper.arb.ArbMainKt
