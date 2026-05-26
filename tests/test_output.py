@@ -1,11 +1,7 @@
 """Tests for output.py: write paddypower.json with camelCase keys."""
 
 import json
-import os
-import subprocess
 from pathlib import Path
-
-import pytest
 
 from paddypower_scraper.models import (
     EachWayTerms,
@@ -14,6 +10,7 @@ from paddypower_scraper.models import (
     PaddyRunner,
 )
 from paddypower_scraper.output import write_paddypower_json
+from paddypower_scraper.validation import validate_paddy_output
 
 
 def _sample_output() -> PaddyOutput:
@@ -106,32 +103,29 @@ class TestWritePaddypowerJson:
         assert data["raceCount"] == 1
 
 
-class TestKotlinValidatorContract:
-    """Opt-in: shells out to the Kotlin PaddySchemaValidator to confirm
-    Python output is byte-shape compatible with the arb finder.
+class TestValidatorAcceptsOwnOutput:
+    """The validator must accept what the writer produces (in-process,
+    replaces the old cross-language gradle contract test)."""
 
-    Run with: RUN_CONTRACT=1 uv run pytest -m contract"""
-
-    pytestmark = [pytest.mark.contract]
-
-    @pytest.mark.skipif(
-        os.environ.get("RUN_CONTRACT") != "1",
-        reason="set RUN_CONTRACT=1 to run cross-language contract test",
-    )
-    def test_sample_output_passes_kotlin_validator(self, tmp_path: Path):
-        out = tmp_path / "paddypower.json"
-        write_paddypower_json(_sample_output(), out)
-        # Repo root: tests/ is two levels under repo
-        repo_root = Path(__file__).resolve().parents[2]
-        result = subprocess.run(
-            ["./gradlew", "run", "--quiet",
-             "-PmainClass=com.horsey.scraper.paddypower.PaddyValidateMainKt",
-             f"--args={out}"],
-            cwd=repo_root,
-            capture_output=True,
-            text=True,
-            timeout=120,
+    def test_written_output_validates(self, tmp_path):
+        from paddypower_scraper.models import (
+            EachWayTerms, PaddyOutput, PaddyRace, PaddyRunner,
         )
-        assert result.returncode == 0, (
-            f"validator failed:\nstdout={result.stdout}\nstderr={result.stderr}"
+        from paddypower_scraper.output import write_paddypower_json
+
+        out = PaddyOutput(
+            scraped_at="2026-05-25T17:05:58.384555Z",
+            race_count=1,
+            races=[PaddyRace(
+                venue="Ballinrobe", country="IE",
+                off_time="2026-05-25T18:05:00+01:00",
+                market_name="18:05 Ballinrobe", race_url="https://x/r",
+                scraped_at="2026-05-25T17:05:58.384555Z",
+                betfair_win_market_id="1.258528220",
+                each_way_terms=EachWayTerms(0.2, 3),
+                runners=[PaddyRunner("Sony Bill", 66986352, 2.72, "7/4")],
+            )],
         )
+        target = tmp_path / "paddypower.json"
+        write_paddypower_json(out, target)
+        assert validate_paddy_output(target.read_text()) == []
