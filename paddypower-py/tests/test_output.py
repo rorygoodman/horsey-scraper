@@ -1,7 +1,11 @@
 """Tests for output.py: write paddypower.json with camelCase keys."""
 
 import json
+import os
+import subprocess
 from pathlib import Path
+
+import pytest
 
 from paddypower_scraper.models import (
     EachWayTerms,
@@ -100,3 +104,34 @@ class TestWritePaddypowerJson:
         data = json.loads(out.read_text())
         assert "old" not in data
         assert data["raceCount"] == 1
+
+
+class TestKotlinValidatorContract:
+    """Opt-in: shells out to the Kotlin PaddySchemaValidator to confirm
+    Python output is byte-shape compatible with the arb finder.
+
+    Run with: RUN_CONTRACT=1 uv run pytest -m contract"""
+
+    pytestmark = [pytest.mark.contract]
+
+    @pytest.mark.skipif(
+        os.environ.get("RUN_CONTRACT") != "1",
+        reason="set RUN_CONTRACT=1 to run cross-language contract test",
+    )
+    def test_sample_output_passes_kotlin_validator(self, tmp_path: Path):
+        out = tmp_path / "paddypower.json"
+        write_paddypower_json(_sample_output(), out)
+        # Repo root: tests/ is two levels under repo
+        repo_root = Path(__file__).resolve().parents[2]
+        result = subprocess.run(
+            ["./gradlew", "run", "--quiet",
+             "-PmainClass=com.horsey.scraper.paddypower.PaddyValidateMainKt",
+             f"--args={out}"],
+            cwd=repo_root,
+            capture_output=True,
+            text=True,
+            timeout=120,
+        )
+        assert result.returncode == 0, (
+            f"validator failed:\nstdout={result.stdout}\nstderr={result.stderr}"
+        )
