@@ -27,3 +27,10 @@ debug-page.html
 # Credentials — never commit. Real file lives at ~/.horsey-scraper/credentials.json.
 credentials.json
 *.env
+
+# Python / paddypower-py
+paddypower-py/.venv/
+paddypower-py/.pytest_cache/
+paddypower-py/**/__pycache__/
+paddypower-py/src/**/__pycache__/
+paddypower-py/uv.lock.tmp
