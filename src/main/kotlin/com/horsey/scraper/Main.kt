@@ -41,7 +41,7 @@ fun parseRegions(args: Array<String>): Set<String> {
  *   3. Logs in to identitysso.
  *   4. Fetches today's WIN markets and the explicit Top-N markets, then
  *      their prices in batches of ≤40 marketIds.
- *   5. Pivots into per-horse lay map and writes `data.json`.
+ *   5. Pivots into per-horse lay map and writes `betfair.json`.
  *
  * Output schema: see docs/superpowers/specs/2026-05-09-multi-market-lay-schema-design.md
  * Migration:     see docs/superpowers/specs/2026-05-11-betfair-api-migration-design.md
