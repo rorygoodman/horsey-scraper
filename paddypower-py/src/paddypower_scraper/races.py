@@ -8,7 +8,7 @@ separate parser module)."""
 from __future__ import annotations
 
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 from .models import EachWayTerms, PaddyRace, PaddyRunner
@@ -157,6 +157,10 @@ def _utc_to_london(iso_utc: str) -> str | None:
         parsed = datetime.fromisoformat(iso_utc.replace("Z", "+00:00"))
     except ValueError:
         return None
+    if parsed.tzinfo is None:
+        # No tz marker → treat as UTC (matches filtering.in_window); avoids
+        # astimezone() silently assuming system-local time on non-UTC hosts.
+        parsed = parsed.replace(tzinfo=timezone.utc)
     london = parsed.astimezone(LONDON)
     # Format identical to Java's ISO_OFFSET_DATE_TIME: '+01:00' or 'Z'
     s = london.isoformat(timespec="seconds")

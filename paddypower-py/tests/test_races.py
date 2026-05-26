@@ -27,6 +27,9 @@ class TestParseMeetingResponse:
         # Some entries in payload['races'] have winMarketId=null (exchange results).
         # The fixture has these (raceIds starting with '1.201.').
         races = parse_meeting_response(racing_page_payload, SCRAPED_AT)
+        # Exactly one race in the fixture has a present WIN market; the rest are
+        # exchange-history rows (null winMarketId) or have absent markets.
+        assert len(races) == 1
         # Real bookmaker races have raceIds like '35646567.1800'
         for r in races:
             # Real races have venue / country / off_time populated
@@ -84,6 +87,17 @@ class TestParseMeetingResponse:
             if r.get("winMarketId") and r["winMarketId"] in p["markets"]
         )
         del p["markets"][victim_wmid]
+        races = parse_meeting_response(p, SCRAPED_AT)
+        assert len(races) == len(baseline) - 1
+
+    def test_drops_race_with_no_usable_runners(self, racing_page_payload):
+        baseline = parse_meeting_response(racing_page_payload, SCRAPED_AT)
+        p = mutate(racing_page_payload)
+        victim_wmid = next(
+            r["winMarketId"] for r in p["races"].values()
+            if r.get("winMarketId") and r["winMarketId"] in p["markets"]
+        )
+        p["markets"][victim_wmid]["runners"] = []
         races = parse_meeting_response(p, SCRAPED_AT)
         assert len(races) == len(baseline) - 1
 
@@ -225,6 +239,10 @@ class TestUtcToLondon:
 
     def test_empty_returns_none(self):
         assert _utc_to_london("") is None
+
+    def test_naive_treated_as_utc(self):
+        # No tz marker → treated as UTC, then converted to London (June=BST)
+        assert _utc_to_london("2026-06-15T17:00:00") == "2026-06-15T18:00:00+01:00"
 
 
 class TestMarketName:
