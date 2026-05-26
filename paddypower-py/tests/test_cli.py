@@ -268,3 +268,65 @@ class TestTodayWindowFiltering:
         assert rc == 0
         fanout_calls = [u for u in session.calls if "racing-page" in u]
         assert len(fanout_calls) == 1
+
+
+class TestParseExceptionAllFail:
+    def test_parse_exception_skips_meeting_exits_one(self, tmp_path: Path, monkeypatch):
+        race = _race_meta(race_id="100.1800", meeting_id="100", win_market_id="927.1",
+                          start_time="2026-05-26T18:00:00.000Z", country="GB",
+                          venue="Plumpton")
+        responses = {
+            api.MEETINGS_INDEX_URL: _index_payload([race]),
+            api.racing_page_url("100.1800"): _meeting_payload(
+                "100.1800", "927.1", "2026-05-26T18:00:00.000Z", "Plumpton", "GB"),
+        }
+
+        def _boom(payload, scraped_at):
+            raise ValueError("unexpected structure")
+
+        monkeypatch.setattr(cli, "parse_meeting_response", _boom)
+        session = FakeSession(responses)
+        rc = cli.main(
+            ["gb-ie"],
+            now_utc=NOW,
+            make_session=make_session_factory(session),
+            out_path=tmp_path / "paddypower.json",
+        )
+        assert rc == 1
+
+
+class TestAllMeetingsEmptyParse:
+    def test_empty_parse_result_exits_one(self, tmp_path: Path):
+        race = _race_meta(race_id="100.1800", meeting_id="100", win_market_id="927.1",
+                          start_time="2026-05-26T18:00:00.000Z", country="GB",
+                          venue="Plumpton")
+        # Meeting whose WIN market has no usable runners → parse yields []
+        meeting = {
+            "races": {
+                "100.1800": {
+                    "raceId": "100.1800", "winMarketId": "927.1",
+                    "startTime": "2026-05-26T18:00:00.000Z",
+                    "venue": "Plumpton", "countryCode": "GB",
+                    "winMarketName": "Test Race",
+                }
+            },
+            "markets": {
+                "927.1": {
+                    "marketName": "Test Race",
+                    "exchangeMarketId": "1.x",
+                    "runners": [],  # no usable runners → race dropped → parse returns []
+                }
+            },
+        }
+        responses = {
+            api.MEETINGS_INDEX_URL: _index_payload([race]),
+            api.racing_page_url("100.1800"): meeting,
+        }
+        session = FakeSession(responses)
+        rc = cli.main(
+            ["gb-ie"],
+            now_utc=NOW,
+            make_session=make_session_factory(session),
+            out_path=tmp_path / "paddypower.json",
+        )
+        assert rc == 1
