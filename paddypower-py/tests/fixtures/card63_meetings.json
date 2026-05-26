@@ -1,0 +1,5657 @@
+{
+  "attachments": {
+    "eventTypes": {
+      "7": {
+        "name": "Horse Racing",
+        "eventTypeId": 7
+      }
+    },
+    "meetings": {
+      "35646518": {
+        "meetingId": "35646518",
+        "name": "21:30 5F STAKES 4f 214y",
+        "eventTypeId": 7,
+        "countryCode": "CL",
+        "venue": "Concepcion",
+        "openDate": "2026-05-26T18:30:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35646518.1830"
+      },
+      "35646567": {
+        "meetingId": "35646567",
+        "name": "19:30 2M HCAP HURDLE 2m 13y",
+        "eventTypeId": 7,
+        "countryCode": "IE",
+        "venue": "Ballinrobe",
+        "openDate": "2026-05-26T15:55:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35646567.1800",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35646570": {
+        "meetingId": "35646570",
+        "name": "18:48 5F HCAP 5f",
+        "eventTypeId": 7,
+        "countryCode": "IE",
+        "venue": "Dundalk",
+        "openDate": "2026-05-26T16:07:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35646570.1748",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35646582": {
+        "meetingId": "35646582",
+        "name": "19:39 HANDICAP HURDLE 3m 0f 217y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Plumpton",
+        "openDate": "2026-05-26T16:37:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35646582.1739",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35646613": {
+        "meetingId": "35646613",
+        "name": "19:54 HANDICAP 0m 7f 0y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Lingfield",
+        "openDate": "2026-05-26T16:54:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35646613.1754",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35647495": {
+        "meetingId": "35647495",
+        "name": "19:01 EVENT 1m 5f 92y",
+        "eventTypeId": 7,
+        "countryCode": "FR",
+        "venue": "Vincennes",
+        "openDate": "2026-05-26T13:58:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35647495.1801"
+      },
+      "35648496": {
+        "meetingId": "35648496",
+        "name": "LADBROKES STRADBROKE CALCUTTA BOOK NOW BENCHMARK 78 Handicap",
+        "eventTypeId": 7,
+        "countryCode": "AU",
+        "venue": "Doomben",
+        "openDate": "2026-05-27T02:02:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648496.0202",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648561": {
+        "meetingId": "35648561",
+        "name": "19:30 EVENT 1m 0f 0y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Fairmount Park",
+        "openDate": "2026-05-26T18:30:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648561.1830",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648562": {
+        "meetingId": "35648562",
+        "name": "21:20 EVENT 1m 0f 0y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Thistledown",
+        "openDate": "2026-05-26T16:50:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648562.1750",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648563": {
+        "meetingId": "35648563",
+        "name": "01:30 EVENT 0m 5f 0y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Assiniboia Downs",
+        "openDate": "2026-05-27T00:30:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648563.0030"
+      },
+      "35648564": {
+        "meetingId": "35648564",
+        "name": "23:00 EVENT 0m 5f 212y",
+        "eventTypeId": 7,
+        "countryCode": "BR",
+        "venue": "Gavea",
+        "openDate": "2026-05-26T21:00:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648564.2100"
+      },
+      "35648598": {
+        "meetingId": "35648598",
+        "name": "Lawn Pride Australia Handicap",
+        "eventTypeId": 7,
+        "countryCode": "AU",
+        "venue": "Belmont",
+        "openDate": "2026-05-27T05:04:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35648598.0504"
+      },
+      "35648605": {
+        "meetingId": "35648605",
+        "name": "Vale Bob Autridge (Bm65)",
+        "eventTypeId": 7,
+        "countryCode": "NZ",
+        "venue": "Riccarton Park",
+        "openDate": "2026-05-26T23:45:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35648605.2345"
+      },
+      "35648610": {
+        "meetingId": "35648610",
+        "name": "Tab Handicap",
+        "eventTypeId": 7,
+        "countryCode": "AU",
+        "venue": "Canterbury",
+        "openDate": "2026-05-27T03:25:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648610.0400",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648634": {
+        "meetingId": "35648634",
+        "name": "Exceedance @ Vinery Stud Handicap",
+        "eventTypeId": 7,
+        "countryCode": "AU",
+        "venue": "Port Macquarie",
+        "openDate": "2026-05-27T02:10:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35648634.0325",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648981": {
+        "meetingId": "35648981",
+        "name": "Ruby Tuesday Foundation Maiden Plate",
+        "eventTypeId": 7,
+        "countryCode": "AU",
+        "venue": "Gawler",
+        "openDate": "2026-05-27T03:15:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648981.0315",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648991": {
+        "meetingId": "35648991",
+        "name": "00:53 1M STAKES 1m",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Louisiana Downs",
+        "openDate": "2026-05-26T21:05:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35648991.2105"
+      },
+      "35649027": {
+        "meetingId": "35649027",
+        "name": "22:45 EVENT 0m 5f 110y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Presque Isle Downs",
+        "openDate": "2026-05-26T19:30:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649027.1930"
+      },
+      "35649032": {
+        "meetingId": "35649032",
+        "name": "21:45 EVENT 1m 0f 0y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Horseshoe Indianapolis",
+        "openDate": "2026-05-26T18:10:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649032.1810",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649034": {
+        "meetingId": "35649034",
+        "name": "00:50 EVENT 0m 7f 110y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Mountaineer Park",
+        "openDate": "2026-05-26T23:00:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649034.2300",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649038": {
+        "meetingId": "35649038",
+        "name": "20:49 6F STAKES 6f",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Philadelphia",
+        "openDate": "2026-05-26T16:40:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649038.1801"
+      },
+      "35649221": {
+        "meetingId": "35649221",
+        "name": "12:45 EVENT 0m 5f 212y",
+        "eventTypeId": 7,
+        "countryCode": "ZA",
+        "venue": "Greyville",
+        "openDate": "2026-05-27T10:30:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649221.1030"
+      },
+      "35649297": {
+        "meetingId": "35649297",
+        "name": "14:35 EVENT 1m 1f 35y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Hamilton",
+        "openDate": "2026-05-27T13:05:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649297.1305",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649298": {
+        "meetingId": "35649298",
+        "name": "15:23 NOVICE'S HANDICAP CHASE 2m 4f 216y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Newton Abbot",
+        "openDate": "2026-05-27T13:53:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649298.1353",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649300": {
+        "meetingId": "35649300",
+        "name": "16:15 HANDICAP 1m 0f 100y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Beverley",
+        "openDate": "2026-05-27T13:15:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649300.1315",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649305": {
+        "meetingId": "35649305",
+        "name": "20:38 HANDICAP CHASE 2m 1f 61y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Cartmel",
+        "openDate": "2026-05-27T17:08:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649305.1708",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649306": {
+        "meetingId": "35649306",
+        "name": "19:00 EVENT 0m 7f 0y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Kempton",
+        "openDate": "2026-05-27T16:25:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649306.1625",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649356": {
+        "meetingId": "35649356",
+        "name": "17:47 2M 1F HCAP HURDLE 2m 1f",
+        "eventTypeId": 7,
+        "countryCode": "IE",
+        "venue": "Wexford",
+        "openDate": "2026-05-27T15:42:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649356.1542",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649603": {
+        "meetingId": "35649603",
+        "name": "19:15 5F STAKES 4f 214y",
+        "eventTypeId": 7,
+        "countryCode": "CL",
+        "venue": "Valparaiso",
+        "openDate": "2026-05-27T17:45:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35649603.1745"
+      },
+      "35652214": {
+        "meetingId": "35652214",
+        "name": "18:50 EVENT 0m 6f 0y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Thistledown",
+        "openDate": "2026-05-27T16:50:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652214.1650",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652218": {
+        "meetingId": "35652218",
+        "name": "02:00 EVENT 0m 5f 110y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Assiniboia Downs",
+        "openDate": "2026-05-28T00:30:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652218.0030"
+      },
+      "35652219": {
+        "meetingId": "35652219",
+        "name": "20:00 EVENT 0m 7f 210y",
+        "eventTypeId": 7,
+        "countryCode": "AR",
+        "venue": "San Isidro",
+        "openDate": "2026-05-27T17:00:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652219.1700"
+      },
+      "35652284": {
+        "meetingId": "35652284",
+        "name": "23:05 5F HCAP 4f 214y",
+        "eventTypeId": 7,
+        "countryCode": "AR",
+        "venue": "Palermo",
+        "openDate": "2026-05-28T17:35:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35652284.1735"
+      },
+      "35652520": {
+        "meetingId": "35652520",
+        "name": "19:05 6F STAKES 6f",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Belterra Park",
+        "openDate": "2026-05-27T16:35:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652520.1635"
+      },
+      "35652554": {
+        "meetingId": "35652554",
+        "name": "19:01 5 1/2F STAKES 5f 110y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Philadelphia",
+        "openDate": "2026-05-27T16:40:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652554.1640"
+      },
+      "35652587": {
+        "meetingId": "35652587",
+        "name": "01:30 1 1/2F STAKES 1f 130y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Delta Downs",
+        "openDate": "2026-05-27T23:15:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652587.2315"
+      },
+      "35652758": {
+        "meetingId": "35652758",
+        "name": "19:22 EVENT 0m 5f 110y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Finger Lakes",
+        "openDate": "2026-05-27T16:55:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652758.1655"
+      },
+      "35652759": {
+        "meetingId": "35652759",
+        "name": "21:51 EVENT 1m 0f 0y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Presque Isle Downs",
+        "openDate": "2026-05-27T19:30:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652759.1930"
+      },
+      "35652761": {
+        "meetingId": "35652761",
+        "name": "18:24 EVENT 0m 6f 0y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Delaware Park",
+        "openDate": "2026-05-27T16:20:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652761.1620",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652765": {
+        "meetingId": "35652765",
+        "name": "20:12 EVENT 1m 0f 70y",
+        "eventTypeId": 7,
+        "countryCode": "US",
+        "venue": "Horseshoe Indianapolis",
+        "openDate": "2026-05-27T18:10:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35652765.1810",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653029": {
+        "meetingId": "35653029",
+        "name": "Ciron Hcp (C4)",
+        "eventTypeId": 7,
+        "countryCode": "HK",
+        "venue": "Happy Valley",
+        "openDate": "2026-05-27T10:40:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653029.1040"
+      },
+      "35653117": {
+        "meetingId": "35653117",
+        "name": "12:15 EVENT 0m 5f 212y",
+        "eventTypeId": 7,
+        "countryCode": "JP",
+        "venue": "Mombetsu",
+        "openDate": "2026-05-27T05:35:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653117.0535"
+      },
+      "35653118": {
+        "meetingId": "35653118",
+        "name": "09:05 EVENT 0m 6f 211y",
+        "eventTypeId": 7,
+        "countryCode": "JP",
+        "venue": "Kasamatsu",
+        "openDate": "2026-05-27T01:55:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653118.0155"
+      },
+      "35653119": {
+        "meetingId": "35653119",
+        "name": "04:10 EVENT 0m 6f 25y",
+        "eventTypeId": 7,
+        "countryCode": "JP",
+        "venue": "Sonoda",
+        "openDate": "2026-05-27T01:40:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653119.0140"
+      },
+      "35653120": {
+        "meetingId": "35653120",
+        "name": "08:00 EVENT 0m 7f 101y",
+        "eventTypeId": 7,
+        "countryCode": "JP",
+        "venue": "Urawa",
+        "openDate": "2026-05-27T03:20:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653120.0320"
+      },
+      "35653190": {
+        "meetingId": "35653190",
+        "name": "17:27 1M 2F STAKES 1m 1f 210y",
+        "eventTypeId": 7,
+        "countryCode": "IE",
+        "venue": "Fairyhouse",
+        "openDate": "2026-05-28T13:12:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653190.1312",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653207": {
+        "meetingId": "35653207",
+        "name": "20:30 2M NH FLAT 2m",
+        "eventTypeId": 7,
+        "countryCode": "IE",
+        "venue": "Limerick",
+        "openDate": "2026-05-28T15:40:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653207.1540",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653236": {
+        "meetingId": "35653236",
+        "name": "14:48 HANDICAP 0m 7f 3y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Yarmouth",
+        "openDate": "2026-05-28T13:18:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35653236.1318",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653237": {
+        "meetingId": "35653237",
+        "name": "20:42 HANDICAP HURDLE 2m 0f 125y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Market Rasen",
+        "openDate": "2026-05-28T17:00:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653237.1700",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653238": {
+        "meetingId": "35653238",
+        "name": "18:42 EVENT 1m 0f 0y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Sandown",
+        "openDate": "2026-05-28T16:10:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653238.1610",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653239": {
+        "meetingId": "35653239",
+        "name": "15:30 NOVICES' HURDLE 2m 0f 0y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Worcester",
+        "openDate": "2026-05-28T13:25:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35653239.1325",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653241": {
+        "meetingId": "35653241",
+        "name": "15:40 HANDICAP 1m 1f 170y",
+        "eventTypeId": 7,
+        "countryCode": "GB",
+        "venue": "Ripon",
+        "openDate": "2026-05-28T13:05:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35653241.1305",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653328": {
+        "meetingId": "35653328",
+        "name": "16:27 HANDICAP 1m 3f 204y",
+        "eventTypeId": 7,
+        "countryCode": "FR",
+        "venue": "Toulouse",
+        "openDate": "2026-05-27T14:52:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35653328.1452"
+      },
+      "35653335": {
+        "meetingId": "35653335",
+        "name": "16:45 EVENT 1m 6f 36y",
+        "eventTypeId": 7,
+        "countryCode": "FR",
+        "venue": "Hyeres.",
+        "openDate": "2026-05-27T14:35:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35653335.1435"
+      },
+      "35653337": {
+        "meetingId": "35653337",
+        "name": "13:12 EVENT 1m 4f 39y",
+        "eventTypeId": 7,
+        "countryCode": "FR",
+        "venue": "Caen.",
+        "openDate": "2026-05-27T09:42:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35653337.0942"
+      },
+      "35653339": {
+        "meetingId": "35653339",
+        "name": "11:00 EVENT 1m 1f 207y",
+        "eventTypeId": 7,
+        "countryCode": "FR",
+        "venue": "Strasbourg",
+        "openDate": "2026-05-27T10:00:00.000Z",
+        "videoAvailable": true,
+        "nextRace": "35653339.1000"
+      },
+      "35653425": {
+        "meetingId": "35653425",
+        "name": "14:33 5F STAKES 4f 214y",
+        "eventTypeId": 7,
+        "countryCode": "IT",
+        "venue": "Naples",
+        "openDate": "2026-05-28T13:33:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653425.1333"
+      },
+      "35653996": {
+        "meetingId": "35653996",
+        "name": "20:11 5F HCAP 4f 214y",
+        "eventTypeId": 7,
+        "countryCode": "CL",
+        "venue": "Hipo Chile",
+        "openDate": "2026-05-28T17:30:00.000Z",
+        "videoAvailable": false,
+        "nextRace": "35653996.1730"
+      }
+    },
+    "races": {
+      "35652758.2018": {
+        "raceId": "35652758.2018",
+        "winMarketId": "927.385349422",
+        "winMarketName": "R8 1m Allw",
+        "startTime": "2026-05-27T20:18:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35649305.1738": {
+        "raceId": "35649305.1738",
+        "winMarketId": "927.385247040",
+        "winMarketName": "2m1f Hcap Hrd",
+        "startTime": "2026-05-27T17:38:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649305",
+        "venue": "Cartmel",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652218.0305": {
+        "raceId": "35652218.0305",
+        "winMarketId": "927.385349629",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T03:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652218",
+        "venue": "Assiniboia Downs"
+      },
+      "35646518.1900": {
+        "raceId": "35646518.1900",
+        "winMarketId": "927.385107227",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T19:00:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35652761.1724": {
+        "raceId": "35652761.1724",
+        "winMarketId": "927.385349477",
+        "winMarketName": "R3 6f Claim",
+        "startTime": "2026-05-27T17:24:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653996.2235": {
+        "raceId": "35653996.2235",
+        "winMarketId": "927.385420661",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T22:35:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35653996.2117": {
+        "raceId": "35653996.2117",
+        "winMarketId": "927.385420658",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T21:17:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35648610.0400": {
+        "raceId": "35648610.0400",
+        "winMarketId": "927.385211809",
+        "winMarketName": "R2 1250m Mdn",
+        "startTime": "2026-05-27T04:00:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648610",
+        "venue": "Canterbury",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653335.1655": {
+        "raceId": "35653335.1655",
+        "winMarketId": "927.385397719",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T16:55:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35647495.1801": {
+        "raceId": "35647495.1801",
+        "winMarketId": "927.385153386",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T18:01:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35647495",
+        "venue": "Vincennes"
+      },
+      "35652214.1720": {
+        "raceId": "35652214.1720",
+        "winMarketId": "927.385349583",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T17:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653117.1005": {
+        "raceId": "35653117.1005",
+        "winMarketId": "927.385379729",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T10:05:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35653237.1832": {
+        "raceId": "35653237.1832",
+        "winMarketId": "927.385390885",
+        "winMarketName": "2m5f Hcap Hrd",
+        "startTime": "2026-05-28T18:32:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653237",
+        "venue": "Market Rasen",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648564.2230": {
+        "raceId": "35648564.2230",
+        "winMarketId": "927.385216156",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T22:30:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35652284.1935": {
+        "raceId": "35652284.1935",
+        "winMarketId": "927.385359576",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T19:35:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35652219.2200": {
+        "raceId": "35652219.2200",
+        "winMarketId": "927.385349792",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T22:00:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35646582.1739": {
+        "raceId": "35646582.1739",
+        "winMarketId": "927.385113765",
+        "winMarketName": "2m1f Hcap Chs",
+        "startTime": "2026-05-26T17:39:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646582",
+        "venue": "Plumpton",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648563.0215": {
+        "raceId": "35648563.0215",
+        "winMarketId": "927.385216142",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T02:15:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648563",
+        "venue": "Assiniboia Downs"
+      },
+      "35648598.0805": {
+        "raceId": "35648598.0805",
+        "winMarketId": "927.385214942",
+        "winMarketName": "R6 1650m CL3",
+        "startTime": "2026-05-27T08:05:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648598",
+        "venue": "Belmont"
+      },
+      "35652554.1707": {
+        "raceId": "35652554.1707",
+        "winMarketId": "927.385360181",
+        "winMarketName": "R2 6f Claim",
+        "startTime": "2026-05-27T17:07:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35652554.1828": {
+        "raceId": "35652554.1828",
+        "winMarketId": "927.385360192",
+        "winMarketName": "R5 1m Claim",
+        "startTime": "2026-05-27T18:28:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35652554.1949": {
+        "raceId": "35652554.1949",
+        "winMarketId": "927.385360200",
+        "winMarketName": "R8 6f Allw",
+        "startTime": "2026-05-27T19:49:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35649038.1801": {
+        "raceId": "35649038.1801",
+        "winMarketId": "927.385228334",
+        "winMarketName": "R4 7f Claim",
+        "startTime": "2026-05-26T18:01:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649038",
+        "venue": "Philadelphia"
+      },
+      "35649038.1922": {
+        "raceId": "35649038.1922",
+        "winMarketId": "927.385228352",
+        "winMarketName": "R7 6f Claim",
+        "startTime": "2026-05-26T19:22:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649038",
+        "venue": "Philadelphia"
+      },
+      "35653120.0735": {
+        "raceId": "35653120.0735",
+        "winMarketId": "927.385380012",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T07:35:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35652214.1850": {
+        "raceId": "35652214.1850",
+        "winMarketId": "927.385349594",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T18:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648562.1920": {
+        "raceId": "35648562.1920",
+        "winMarketId": "927.385216082",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T19:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648562",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652284.1805": {
+        "raceId": "35652284.1805",
+        "winMarketId": "927.385359565",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T18:05:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35648564.2130": {
+        "raceId": "35648564.2130",
+        "winMarketId": "927.385216152",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T21:30:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35652219.2230": {
+        "raceId": "35652219.2230",
+        "winMarketId": "927.385349797",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T22:30:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35652761.1828": {
+        "raceId": "35652761.1828",
+        "winMarketId": "927.385349483",
+        "winMarketName": "R5 6f Claim",
+        "startTime": "2026-05-27T18:28:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649305.1838": {
+        "raceId": "35649305.1838",
+        "winMarketId": "927.385247044",
+        "winMarketName": "3m1f Hcap Hrd",
+        "startTime": "2026-05-27T18:38:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649305",
+        "venue": "Cartmel",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653119.0750": {
+        "raceId": "35653119.0750",
+        "winMarketId": "927.385379944",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T07:50:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35648563.0305": {
+        "raceId": "35648563.0305",
+        "winMarketId": "927.385216146",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T03:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648563",
+        "venue": "Assiniboia Downs"
+      },
+      "35648610.0545": {
+        "raceId": "35648610.0545",
+        "winMarketId": "927.385211815",
+        "winMarketName": "R5 1550m Hcap",
+        "startTime": "2026-05-27T05:45:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648610",
+        "venue": "Canterbury",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653335.1435": {
+        "raceId": "35653335.1435",
+        "winMarketId": "927.385397740",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T14:35:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35653120.0625": {
+        "raceId": "35653120.0625",
+        "winMarketId": "927.385380017",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T06:25:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35653339.1340": {
+        "raceId": "35653339.1340",
+        "winMarketId": "927.385398645",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-27T13:40:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35648561.2035": {
+        "raceId": "35648561.2035",
+        "winMarketId": "927.385216045",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T20:35:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648562.1950": {
+        "raceId": "35648562.1950",
+        "winMarketId": "927.385216085",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T19:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648562",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649603.1915": {
+        "raceId": "35649603.1915",
+        "winMarketId": "927.385267770",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T19:15:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35646582.1839": {
+        "raceId": "35646582.1839",
+        "winMarketId": "927.385113761",
+        "winMarketName": "3m1f Hcap Hrd",
+        "startTime": "2026-05-26T18:39:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646582",
+        "venue": "Plumpton",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652219.2100": {
+        "raceId": "35652219.2100",
+        "winMarketId": "927.385349774",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T21:00:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35652554.1801": {
+        "raceId": "35652554.1801",
+        "winMarketId": "927.385360188",
+        "winMarketName": "R4 6f Claim",
+        "startTime": "2026-05-27T18:01:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35652554.1922": {
+        "raceId": "35652554.1922",
+        "winMarketId": "927.385360197",
+        "winMarketName": "R7 1m Claim",
+        "startTime": "2026-05-27T19:22:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35653996.2000": {
+        "raceId": "35653996.2000",
+        "winMarketId": "927.385420654",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T20:00:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35648610.0435": {
+        "raceId": "35648610.0435",
+        "winMarketId": "927.385211810",
+        "winMarketName": "R3 1900m Hcap",
+        "startTime": "2026-05-27T04:35:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648610",
+        "venue": "Canterbury",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653335.1545": {
+        "raceId": "35653335.1545",
+        "winMarketId": "927.385397741",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T15:45:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35653238.1642": {
+        "raceId": "35653238.1642",
+        "winMarketId": "927.385391133",
+        "winMarketName": "5f Listed",
+        "startTime": "2026-05-28T16:42:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653238",
+        "venue": "Sandown",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652214.1750": {
+        "raceId": "35652214.1750",
+        "winMarketId": "927.385349588",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T17:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649038.1828": {
+        "raceId": "35649038.1828",
+        "winMarketId": "927.385228346",
+        "winMarketName": "R5 1m Claim",
+        "startTime": "2026-05-26T18:28:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649038",
+        "venue": "Philadelphia"
+      },
+      "35649038.1949": {
+        "raceId": "35649038.1949",
+        "winMarketId": "927.385228354",
+        "winMarketName": "R8 6f Allw",
+        "startTime": "2026-05-26T19:49:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649038",
+        "venue": "Philadelphia"
+      },
+      "35653339.1110": {
+        "raceId": "35653339.1110",
+        "winMarketId": "927.385398641",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-27T11:10:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35653339.1230": {
+        "raceId": "35653339.1230",
+        "winMarketId": "927.385398604",
+        "winMarketName": "1m2f Stks",
+        "startTime": "2026-05-27T12:30:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35648562.1820": {
+        "raceId": "35648562.1820",
+        "winMarketId": "927.385216079",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T18:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648562",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653237.1700": {
+        "raceId": "35653237.1700",
+        "winMarketId": "927.385390893",
+        "winMarketName": "2m3f Mdn Hrd",
+        "startTime": "2026-05-28T17:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653237",
+        "venue": "Market Rasen",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653237.1942": {
+        "raceId": "35653237.1942",
+        "winMarketId": "927.385390892",
+        "winMarketName": "2m1f Hcap Hrd",
+        "startTime": "2026-05-28T19:42:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653237",
+        "venue": "Market Rasen",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652284.1905": {
+        "raceId": "35652284.1905",
+        "winMarketId": "927.385359572",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T19:05:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35653117.1150": {
+        "raceId": "35653117.1150",
+        "winMarketId": "927.385379728",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T11:50:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35652520.2005": {
+        "raceId": "35652520.2005",
+        "winMarketId": "927.385360145",
+        "winMarketName": "R8 1m Mdn",
+        "startTime": "2026-05-27T20:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35646613.1754": {
+        "raceId": "35646613.1754",
+        "winMarketId": "927.385114753",
+        "winMarketName": "6f Hcap",
+        "startTime": "2026-05-26T17:54:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646613",
+        "venue": "Lingfield",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652554.1734": {
+        "raceId": "35652554.1734",
+        "winMarketId": "927.385360184",
+        "winMarketName": "R3 7f Mdn Claim",
+        "startTime": "2026-05-27T17:34:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35652554.1855": {
+        "raceId": "35652554.1855",
+        "winMarketId": "927.385360191",
+        "winMarketName": "R6 7f Claim",
+        "startTime": "2026-05-27T18:55:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35653119.0530": {
+        "raceId": "35653119.0530",
+        "winMarketId": "927.385379948",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T05:30:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35653119.0415": {
+        "raceId": "35653119.0415",
+        "winMarketId": "927.385379946",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T04:15:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35648562.1850": {
+        "raceId": "35648562.1850",
+        "winMarketId": "927.385216080",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T18:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648562",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653120.0920": {
+        "raceId": "35653120.0920",
+        "winMarketId": "927.385380015",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T09:20:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35653337.0942": {
+        "raceId": "35653337.0942",
+        "winMarketId": "927.385398307",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T09:42:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35653118.0805": {
+        "raceId": "35653118.0805",
+        "winMarketId": "927.385379865",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T08:05:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35652284.1735": {
+        "raceId": "35652284.1735",
+        "winMarketId": "927.385359563",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T17:35:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35652765.1943": {
+        "raceId": "35652765.1943",
+        "winMarketId": "927.385349539",
+        "winMarketName": "R4 1m Claim",
+        "startTime": "2026-05-27T19:43:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649221.1405": {
+        "raceId": "35649221.1405",
+        "winMarketId": "927.385239254",
+        "winMarketName": "R7 1000m Stks",
+        "startTime": "2026-05-27T14:05:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35653996.2144": {
+        "raceId": "35653996.2144",
+        "winMarketId": "927.385420659",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T21:44:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35653335.1727": {
+        "raceId": "35653335.1727",
+        "winMarketId": "927.385397737",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T17:27:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35648598.0842": {
+        "raceId": "35648598.0842",
+        "winMarketId": "927.385214946",
+        "winMarketName": "R7 1300m Hcap",
+        "startTime": "2026-05-27T08:42:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648598",
+        "venue": "Belmont"
+      },
+      "35652761.1932": {
+        "raceId": "35652761.1932",
+        "winMarketId": "927.385349506",
+        "winMarketName": "R7 1m Allw Claim",
+        "startTime": "2026-05-27T19:32:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653996.2027": {
+        "raceId": "35653996.2027",
+        "winMarketId": "927.385420655",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T20:27:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35648598.0728": {
+        "raceId": "35648598.0728",
+        "winMarketId": "927.385214944",
+        "winMarketName": "R5 1000m CL1",
+        "startTime": "2026-05-27T07:28:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648598",
+        "venue": "Belmont"
+      },
+      "35653238.1742": {
+        "raceId": "35653238.1742",
+        "winMarketId": "927.385391113",
+        "winMarketName": "1m Listed",
+        "startTime": "2026-05-28T17:42:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653238",
+        "venue": "Sandown",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652214.1650": {
+        "raceId": "35652214.1650",
+        "winMarketId": "927.385349573",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T16:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649032.2215": {
+        "raceId": "35649032.2215",
+        "winMarketId": "927.385216030",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T22:15:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653120.0810": {
+        "raceId": "35653120.0810",
+        "winMarketId": "927.385380013",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T08:10:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35646518.1830": {
+        "raceId": "35646518.1830",
+        "winMarketId": "927.385107226",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T18:30:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35653239.1355": {
+        "raceId": "35653239.1355",
+        "winMarketId": "927.385391328",
+        "winMarketName": "2m7f Hcap Chs",
+        "startTime": "2026-05-28T13:55:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653239",
+        "venue": "Worcester",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653339.1415": {
+        "raceId": "35653339.1415",
+        "winMarketId": "927.385398638",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-27T14:15:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35648564.2200": {
+        "raceId": "35648564.2200",
+        "winMarketId": "927.385216153",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T22:00:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35649306.2000": {
+        "raceId": "35649306.2000",
+        "winMarketId": "927.385247256",
+        "winMarketName": "2m Hcap",
+        "startTime": "2026-05-27T20:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653996.2052": {
+        "raceId": "35653996.2052",
+        "winMarketId": "927.385420656",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T20:52:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35653237.1730": {
+        "raceId": "35653237.1730",
+        "winMarketId": "927.385390852",
+        "winMarketName": "2m5f Hcap Chs",
+        "startTime": "2026-05-28T17:30:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653237",
+        "venue": "Market Rasen",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648598.0614": {
+        "raceId": "35648598.0614",
+        "winMarketId": "927.385214938",
+        "winMarketName": "R3 1400m Hcap",
+        "startTime": "2026-05-27T06:14:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648598",
+        "venue": "Belmont"
+      },
+      "35653119.0310": {
+        "raceId": "35653119.0310",
+        "winMarketId": "927.385379941",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T03:10:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35653335.1759": {
+        "raceId": "35653335.1759",
+        "winMarketId": "927.385397739",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T17:59:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35652761.1900": {
+        "raceId": "35652761.1900",
+        "winMarketId": "927.385349500",
+        "winMarketName": "R6 1m Mdn",
+        "startTime": "2026-05-27T19:00:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649027.1957": {
+        "raceId": "35649027.1957",
+        "winMarketId": "927.385215933",
+        "winMarketName": "R2 1m Claim",
+        "startTime": "2026-05-26T19:57:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35653238.1610": {
+        "raceId": "35653238.1610",
+        "winMarketId": "927.385391130",
+        "winMarketName": "5f Hcap",
+        "startTime": "2026-05-28T16:10:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653238",
+        "venue": "Sandown",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653335.1510": {
+        "raceId": "35653335.1510",
+        "winMarketId": "927.385397718",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T15:10:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35648562.1750": {
+        "raceId": "35648562.1750",
+        "winMarketId": "927.385216075",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T17:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648562",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35646567.1900": {
+        "raceId": "35646567.1900",
+        "winMarketId": "927.385112440",
+        "winMarketName": "2m6f Hcap Hrd",
+        "startTime": "2026-05-26T19:00:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646567",
+        "venue": "Ballinrobe",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653120.0700": {
+        "raceId": "35653120.0700",
+        "winMarketId": "927.385380018",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T07:00:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35648564.2330": {
+        "raceId": "35648564.2330",
+        "winMarketId": "927.385216161",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T23:30:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35648564.0030": {
+        "raceId": "35648564.0030",
+        "winMarketId": "927.385216165",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T00:30:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35653339.1305": {
+        "raceId": "35653339.1305",
+        "winMarketId": "927.385398612",
+        "winMarketName": "1m7f Hcap",
+        "startTime": "2026-05-27T13:05:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35652284.1835": {
+        "raceId": "35652284.1835",
+        "winMarketId": "927.385359561",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T18:35:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35652219.2300": {
+        "raceId": "35652219.2300",
+        "winMarketId": "927.385349803",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T23:00:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35648598.0504": {
+        "raceId": "35648598.0504",
+        "winMarketId": "927.385214947",
+        "winMarketName": "R1 1000m Mdn",
+        "startTime": "2026-05-27T05:04:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648598",
+        "venue": "Belmont"
+      },
+      "35653238.1845": {
+        "raceId": "35653238.1845",
+        "winMarketId": "927.385391112",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-28T18:45:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653238",
+        "venue": "Sandown",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653335.1620": {
+        "raceId": "35653335.1620",
+        "winMarketId": "927.385397742",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T16:20:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35646518.1930": {
+        "raceId": "35646518.1930",
+        "winMarketId": "927.385107229",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T19:30:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35653117.1115": {
+        "raceId": "35653117.1115",
+        "winMarketId": "927.385379731",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T11:15:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35648564.2100": {
+        "raceId": "35648564.2100",
+        "winMarketId": "927.385216151",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T21:00:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35652765.1841": {
+        "raceId": "35652765.1841",
+        "winMarketId": "927.385349519",
+        "winMarketName": "R2 1m Claim",
+        "startTime": "2026-05-27T18:41:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35646582.1909": {
+        "raceId": "35646582.1909",
+        "winMarketId": "927.385113766",
+        "winMarketName": "2m Hcap Hrd",
+        "startTime": "2026-05-26T19:09:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646582",
+        "venue": "Plumpton",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652765.1912": {
+        "raceId": "35652765.1912",
+        "winMarketId": "927.385349525",
+        "winMarketName": "R3 1m Allw Claim",
+        "startTime": "2026-05-27T19:12:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652759.2024": {
+        "raceId": "35652759.2024",
+        "winMarketId": "927.385349448",
+        "winMarketName": "R3 6f Allw Claim",
+        "startTime": "2026-05-27T20:24:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35652759.2145": {
+        "raceId": "35652759.2145",
+        "winMarketId": "927.385349459",
+        "winMarketName": "R6 6f Claim",
+        "startTime": "2026-05-27T21:45:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35649297.1335": {
+        "raceId": "35649297.1335",
+        "winMarketId": "927.385246306",
+        "winMarketName": "1m1f Nov Stks",
+        "startTime": "2026-05-27T13:35:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649297",
+        "venue": "Hamilton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649027.1930": {
+        "raceId": "35649027.1930",
+        "winMarketId": "927.385215930",
+        "winMarketName": "R1 6f Mdn Claim",
+        "startTime": "2026-05-26T19:30:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35649603.1845": {
+        "raceId": "35649603.1845",
+        "winMarketId": "927.385267718",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T18:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35648561.1920": {
+        "raceId": "35648561.1920",
+        "winMarketId": "927.385216040",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T19:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35646570.1918": {
+        "raceId": "35646570.1918",
+        "winMarketId": "927.385113096",
+        "winMarketName": "1m3f Mdn",
+        "startTime": "2026-05-26T19:18:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646570",
+        "venue": "Dundalk",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35646567.1800": {
+        "raceId": "35646567.1800",
+        "winMarketId": "927.385112402",
+        "winMarketName": "2m Hcap Hrd",
+        "startTime": "2026-05-26T18:00:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646567",
+        "venue": "Ballinrobe",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35646518.2030": {
+        "raceId": "35646518.2030",
+        "winMarketId": "927.385107231",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T20:30:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35653120.0320": {
+        "raceId": "35653120.0320",
+        "winMarketId": "927.385380011",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T03:20:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35648496.0347": {
+        "raceId": "35648496.0347",
+        "winMarketId": "927.385207699",
+        "winMarketName": "R4 2200m Hcap",
+        "startTime": "2026-05-27T03:47:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648634.0325": {
+        "raceId": "35648634.0325",
+        "winMarketId": "927.385211819",
+        "winMarketName": "R3 1000m CL1",
+        "startTime": "2026-05-27T03:25:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648634",
+        "venue": "Port Macquarie",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653328.1452": {
+        "raceId": "35653328.1452",
+        "winMarketId": "927.385397418",
+        "winMarketName": "1m Stks",
+        "startTime": "2026-05-27T14:52:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35649032.2014": {
+        "raceId": "35649032.2014",
+        "winMarketId": "927.385215985",
+        "winMarketName": "R5 6f Mdn",
+        "startTime": "2026-05-26T20:14:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648564.0100": {
+        "raceId": "35648564.0100",
+        "winMarketId": "927.385216166",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T01:00:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35648496.0237": {
+        "raceId": "35648496.0237",
+        "winMarketId": "927.385207697",
+        "winMarketName": "R2 1350m Mdn",
+        "startTime": "2026-05-27T02:37:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653120.0450": {
+        "raceId": "35653120.0450",
+        "winMarketId": "927.385380016",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T04:50:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35653207.1720": {
+        "raceId": "35653207.1720",
+        "winMarketId": "927.385389037",
+        "winMarketName": "2m4f Hcap Hrd",
+        "startTime": "2026-05-28T17:20:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652218.0125": {
+        "raceId": "35652218.0125",
+        "winMarketId": "927.385349622",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T01:25:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652218",
+        "venue": "Assiniboia Downs"
+      },
+      "35649297.1435": {
+        "raceId": "35649297.1435",
+        "winMarketId": "927.385246327",
+        "winMarketName": "1m5f Hcap",
+        "startTime": "2026-05-27T14:35:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649297",
+        "venue": "Hamilton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649603.1745": {
+        "raceId": "35649603.1745",
+        "winMarketId": "927.385267706",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T17:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35653207.1615": {
+        "raceId": "35653207.1615",
+        "winMarketId": "927.385389033",
+        "winMarketName": "2m4f Mdn Hrd",
+        "startTime": "2026-05-28T16:15:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648981.0350": {
+        "raceId": "35648981.0350",
+        "winMarketId": "927.385209953",
+        "winMarketName": "R2 1200m Mdn",
+        "startTime": "2026-05-27T03:50:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648981",
+        "venue": "Gawler",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653337.1052": {
+        "raceId": "35653337.1052",
+        "winMarketId": "927.385398310",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T10:52:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35653335.1831": {
+        "raceId": "35653335.1831",
+        "winMarketId": "927.385397736",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T18:31:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653335",
+        "venue": "Hyeres."
+      },
+      "35652218.0240": {
+        "raceId": "35652218.0240",
+        "winMarketId": "927.385349627",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T02:40:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652218",
+        "venue": "Assiniboia Downs"
+      },
+      "35646570.1818": {
+        "raceId": "35646570.1818",
+        "winMarketId": "927.385113044",
+        "winMarketName": "1m4f Mdn",
+        "startTime": "2026-05-26T18:18:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646570",
+        "venue": "Dundalk",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653207.1855": {
+        "raceId": "35653207.1855",
+        "winMarketId": "927.385389044",
+        "winMarketName": "2m6f Hcap Hrd",
+        "startTime": "2026-05-28T18:55:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35646518.2130": {
+        "raceId": "35646518.2130",
+        "winMarketId": "927.385107233",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T21:30:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35652765.1810": {
+        "raceId": "35652765.1810",
+        "winMarketId": "927.385349518",
+        "winMarketName": "R1 6f Mdn Claim",
+        "startTime": "2026-05-27T18:10:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648496.0202": {
+        "raceId": "35648496.0202",
+        "winMarketId": "927.385207687",
+        "winMarketName": "R1 1350m Mdn",
+        "startTime": "2026-05-27T02:02:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652759.2051": {
+        "raceId": "35652759.2051",
+        "winMarketId": "927.385349451",
+        "winMarketName": "R4 1m Claim",
+        "startTime": "2026-05-27T20:51:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35649297.1305": {
+        "raceId": "35649297.1305",
+        "winMarketId": "927.385246376",
+        "winMarketName": "5f Mdn Stks",
+        "startTime": "2026-05-27T13:05:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649297",
+        "venue": "Hamilton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652758.1655": {
+        "raceId": "35652758.1655",
+        "winMarketId": "927.385349379",
+        "winMarketName": "R1 1m Allw",
+        "startTime": "2026-05-27T16:55:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35653120.0350": {
+        "raceId": "35653120.0350",
+        "winMarketId": "927.385380014",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T03:50:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653120",
+        "venue": "Urawa"
+      },
+      "35653118.0155": {
+        "raceId": "35653118.0155",
+        "winMarketId": "927.385379862",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T01:55:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35646567.1930": {
+        "raceId": "35646567.1930",
+        "winMarketId": "927.385112443",
+        "winMarketName": "2m INHF",
+        "startTime": "2026-05-26T19:30:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646567",
+        "venue": "Ballinrobe",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649032.2116": {
+        "raceId": "35649032.2116",
+        "winMarketId": "927.385216001",
+        "winMarketName": "R7 6f Allw",
+        "startTime": "2026-05-26T21:16:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648564.2300": {
+        "raceId": "35648564.2300",
+        "winMarketId": "927.385216158",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T23:00:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35648496.0457": {
+        "raceId": "35648496.0457",
+        "winMarketId": "927.385207694",
+        "winMarketName": "R6 1200m Hcap",
+        "startTime": "2026-05-27T04:57:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648564.0000": {
+        "raceId": "35648564.0000",
+        "winMarketId": "927.385216164",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T00:00:00.000Z",
+        "countryCode": "BR",
+        "videoAvailable": true,
+        "meetingId": "35648564",
+        "venue": "Gavea"
+      },
+      "35649034.0155": {
+        "raceId": "35649034.0155",
+        "winMarketId": "927.385216135",
+        "winMarketName": "R8 6f Stks",
+        "startTime": "2026-05-27T01:55:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652219.2130": {
+        "raceId": "35652219.2130",
+        "winMarketId": "927.385349786",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T21:30:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35649300.1345": {
+        "raceId": "35649300.1345",
+        "winMarketId": "927.385246802",
+        "winMarketName": "7f Nov Stks",
+        "startTime": "2026-05-27T13:45:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649300",
+        "venue": "Beverley",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653236.1348": {
+        "raceId": "35653236.1348",
+        "winMarketId": "927.385390829",
+        "winMarketName": "7f Hcap",
+        "startTime": "2026-05-28T13:48:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653236",
+        "venue": "Yarmouth",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649297.1535": {
+        "raceId": "35649297.1535",
+        "winMarketId": "927.385246374",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-27T15:35:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649297",
+        "venue": "Hamilton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648981.0535": {
+        "raceId": "35648981.0535",
+        "winMarketId": "927.385209945",
+        "winMarketName": "R5 1516m Hcap",
+        "startTime": "2026-05-27T05:35:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648981",
+        "venue": "Gawler",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653117.0755": {
+        "raceId": "35653117.0755",
+        "winMarketId": "927.385379727",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T07:55:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35652218.0100": {
+        "raceId": "35652218.0100",
+        "winMarketId": "927.385349621",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T01:00:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652218",
+        "venue": "Assiniboia Downs"
+      },
+      "35653339.1000": {
+        "raceId": "35653339.1000",
+        "winMarketId": "927.385398639",
+        "winMarketName": "1m2f Stks",
+        "startTime": "2026-05-27T10:00:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35649032.2045": {
+        "raceId": "35649032.2045",
+        "winMarketId": "927.385215999",
+        "winMarketName": "R6 1m Mdn Claim",
+        "startTime": "2026-05-26T20:45:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648496.0422": {
+        "raceId": "35648496.0422",
+        "winMarketId": "927.385207692",
+        "winMarketName": "R5 1110m CL1",
+        "startTime": "2026-05-27T04:22:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649297.1405": {
+        "raceId": "35649297.1405",
+        "winMarketId": "927.385246321",
+        "winMarketName": "6f Hcap",
+        "startTime": "2026-05-27T14:05:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649297",
+        "venue": "Hamilton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649603.1815": {
+        "raceId": "35649603.1815",
+        "winMarketId": "927.385267707",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T18:15:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35649034.2325": {
+        "raceId": "35649034.2325",
+        "winMarketId": "927.385216097",
+        "winMarketName": "R2 1m Stks",
+        "startTime": "2026-05-26T23:25:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652219.2000": {
+        "raceId": "35652219.2000",
+        "winMarketId": "927.385349743",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T20:00:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35652758.1753": {
+        "raceId": "35652758.1753",
+        "winMarketId": "927.385349404",
+        "winMarketName": "R3 6f Allw",
+        "startTime": "2026-05-27T17:53:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35646582.1939": {
+        "raceId": "35646582.1939",
+        "winMarketId": "927.385113773",
+        "winMarketName": "2m2f Stks",
+        "startTime": "2026-05-26T19:39:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646582",
+        "venue": "Plumpton",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648981.0645": {
+        "raceId": "35648981.0645",
+        "winMarketId": "927.385209950",
+        "winMarketName": "R7 1200m Hcap",
+        "startTime": "2026-05-27T06:45:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648981",
+        "venue": "Gawler",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652759.2212": {
+        "raceId": "35652759.2212",
+        "winMarketId": "927.385349462",
+        "winMarketName": "R7 6f Claim",
+        "startTime": "2026-05-27T22:12:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35652218.0215": {
+        "raceId": "35652218.0215",
+        "winMarketId": "927.385349626",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T02:15:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652218",
+        "venue": "Assiniboia Downs"
+      },
+      "35653117.0645": {
+        "raceId": "35653117.0645",
+        "winMarketId": "927.385379722",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T06:45:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35646567.1830": {
+        "raceId": "35646567.1830",
+        "winMarketId": "927.385112403",
+        "winMarketName": "2m Hcap Hrd",
+        "startTime": "2026-05-26T18:30:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646567",
+        "venue": "Ballinrobe",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652761.1652": {
+        "raceId": "35652761.1652",
+        "winMarketId": "927.385349474",
+        "winMarketName": "R2 6f Mdn Claim",
+        "startTime": "2026-05-27T16:52:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648561.1830": {
+        "raceId": "35648561.1830",
+        "winMarketId": "927.385216034",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T18:30:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35646570.1848": {
+        "raceId": "35646570.1848",
+        "winMarketId": "927.385113041",
+        "winMarketName": "1m4f Hcap",
+        "startTime": "2026-05-26T18:48:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646570",
+        "venue": "Dundalk",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653237.1800": {
+        "raceId": "35653237.1800",
+        "winMarketId": "927.385390900",
+        "winMarketName": "2m5f Hcap Hrd",
+        "startTime": "2026-05-28T18:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653237",
+        "venue": "Market Rasen",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648496.0312": {
+        "raceId": "35648496.0312",
+        "winMarketId": "927.385207691",
+        "winMarketName": "R3 1200m 2yo",
+        "startTime": "2026-05-27T03:12:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652219.2030": {
+        "raceId": "35652219.2030",
+        "winMarketId": "927.385349761",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T20:30:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35646582.1809": {
+        "raceId": "35646582.1809",
+        "winMarketId": "927.385113759",
+        "winMarketName": "2m4f Hcap Chs",
+        "startTime": "2026-05-26T18:09:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646582",
+        "venue": "Plumpton",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648981.0315": {
+        "raceId": "35648981.0315",
+        "winMarketId": "927.385209951",
+        "winMarketName": "R1 1100m Mdn",
+        "startTime": "2026-05-27T03:15:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648981",
+        "venue": "Gawler",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653328.1527": {
+        "raceId": "35653328.1527",
+        "winMarketId": "927.385397419",
+        "winMarketName": "1m4f Hcap",
+        "startTime": "2026-05-27T15:27:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35649034.2350": {
+        "raceId": "35649034.2350",
+        "winMarketId": "927.385216110",
+        "winMarketName": "R3 1m Stks",
+        "startTime": "2026-05-26T23:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653117.0535": {
+        "raceId": "35653117.0535",
+        "winMarketId": "927.385379732",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T05:35:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35649300.1445": {
+        "raceId": "35649300.1445",
+        "winMarketId": "927.385246803",
+        "winMarketName": "1m2f Hcap",
+        "startTime": "2026-05-27T14:45:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649300",
+        "venue": "Beverley",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652761.1620": {
+        "raceId": "35652761.1620",
+        "winMarketId": "927.385349471",
+        "winMarketName": "R1 1m Claim",
+        "startTime": "2026-05-27T16:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649603.1945": {
+        "raceId": "35649603.1945",
+        "winMarketId": "927.385267771",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T19:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35648561.1945": {
+        "raceId": "35648561.1945",
+        "winMarketId": "927.385216043",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T19:45:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653119.0715": {
+        "raceId": "35653119.0715",
+        "winMarketId": "927.385379943",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T07:15:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35649038.1855": {
+        "raceId": "35649038.1855",
+        "winMarketId": "927.385228349",
+        "winMarketName": "R6 6f Mdn Claim",
+        "startTime": "2026-05-26T18:55:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649038",
+        "venue": "Philadelphia"
+      },
+      "35649032.2147": {
+        "raceId": "35649032.2147",
+        "winMarketId": "927.385216025",
+        "winMarketName": "R8 6f Mdn",
+        "startTime": "2026-05-26T21:47:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653207.1930": {
+        "raceId": "35653207.1930",
+        "winMarketId": "927.385389047",
+        "winMarketName": "2m INHF",
+        "startTime": "2026-05-28T19:30:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649297.1505": {
+        "raceId": "35649297.1505",
+        "winMarketId": "927.385246328",
+        "winMarketName": "5f Hcap",
+        "startTime": "2026-05-27T15:05:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649297",
+        "venue": "Hamilton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652758.1851": {
+        "raceId": "35652758.1851",
+        "winMarketId": "927.385349410",
+        "winMarketName": "R5 6f Allw Claim",
+        "startTime": "2026-05-27T18:51:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35653241.1335": {
+        "raceId": "35653241.1335",
+        "winMarketId": "927.385391553",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-28T13:35:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653241",
+        "venue": "Ripon",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649034.0040": {
+        "raceId": "35649034.0040",
+        "winMarketId": "927.385216121",
+        "winMarketName": "R5 6f Stks",
+        "startTime": "2026-05-27T00:40:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648981.0425": {
+        "raceId": "35648981.0425",
+        "winMarketId": "927.385209938",
+        "winMarketName": "R3 1200m Mdn",
+        "startTime": "2026-05-27T04:25:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648981",
+        "venue": "Gawler",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653328.1637": {
+        "raceId": "35653328.1637",
+        "winMarketId": "927.385397437",
+        "winMarketName": "1m2f Stks",
+        "startTime": "2026-05-27T16:37:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35652759.2118": {
+        "raceId": "35652759.2118",
+        "winMarketId": "927.385349455",
+        "winMarketName": "R5 1m Mdn",
+        "startTime": "2026-05-27T21:18:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35652759.2239": {
+        "raceId": "35652759.2239",
+        "winMarketId": "927.385349467",
+        "winMarketName": "R8 1m Allw",
+        "startTime": "2026-05-27T22:39:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35652761.1756": {
+        "raceId": "35652761.1756",
+        "winMarketId": "927.385349482",
+        "winMarketName": "R4 1m Mdn Claim",
+        "startTime": "2026-05-27T17:56:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653119.0605": {
+        "raceId": "35653119.0605",
+        "winMarketId": "927.385379942",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T06:05:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35653237.1907": {
+        "raceId": "35653237.1907",
+        "winMarketId": "927.385390887",
+        "winMarketName": "2m1f Nov Hcap Chs",
+        "startTime": "2026-05-28T19:07:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653237",
+        "venue": "Market Rasen",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653996.1911": {
+        "raceId": "35653996.1911",
+        "winMarketId": "927.385420652",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T19:11:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35653339.1155": {
+        "raceId": "35653339.1155",
+        "winMarketId": "927.385398603",
+        "winMarketName": "1m7f Hcap",
+        "startTime": "2026-05-27T11:55:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35646570.1748": {
+        "raceId": "35646570.1748",
+        "winMarketId": "927.385113004",
+        "winMarketName": "5f Hcap",
+        "startTime": "2026-05-26T17:48:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35646570",
+        "venue": "Dundalk",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653207.1820": {
+        "raceId": "35653207.1820",
+        "winMarketId": "927.385389041",
+        "winMarketName": "2m6f Hcap Hrd",
+        "startTime": "2026-05-28T18:20:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653339.1035": {
+        "raceId": "35653339.1035",
+        "winMarketId": "927.385398606",
+        "winMarketName": "1m2f Mdn Stks",
+        "startTime": "2026-05-27T10:35:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653339",
+        "venue": "Strasbourg"
+      },
+      "35648496.0532": {
+        "raceId": "35648496.0532",
+        "winMarketId": "927.385207700",
+        "winMarketName": "R7 1630m Hcap",
+        "startTime": "2026-05-27T05:32:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653241.1440": {
+        "raceId": "35653241.1440",
+        "winMarketId": "927.385391587",
+        "winMarketName": "1m2f Hcap",
+        "startTime": "2026-05-28T14:40:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653241",
+        "venue": "Ripon",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653239.1605": {
+        "raceId": "35653239.1605",
+        "winMarketId": "927.385391325",
+        "winMarketName": "2m4f Hcap Hrd",
+        "startTime": "2026-05-28T16:05:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653239",
+        "venue": "Worcester",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649306.1900": {
+        "raceId": "35649306.1900",
+        "winMarketId": "927.385247276",
+        "winMarketName": "7f Hcap",
+        "startTime": "2026-05-27T19:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648981.0610": {
+        "raceId": "35648981.0610",
+        "winMarketId": "927.385209955",
+        "winMarketName": "R6 1200m Hcap",
+        "startTime": "2026-05-27T06:10:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648981",
+        "venue": "Gawler",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652758.1724": {
+        "raceId": "35652758.1724",
+        "winMarketId": "927.385349383",
+        "winMarketName": "R2 6f Claim",
+        "startTime": "2026-05-27T17:24:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35653425.1603": {
+        "raceId": "35653425.1603",
+        "winMarketId": "927.385403589",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T16:03:00.000Z",
+        "countryCode": "IT",
+        "videoAvailable": false,
+        "meetingId": "35653425",
+        "venue": "Naples"
+      },
+      "35652219.1800": {
+        "raceId": "35652219.1800",
+        "winMarketId": "927.385349686",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T18:00:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35653996.1820": {
+        "raceId": "35653996.1820",
+        "winMarketId": "927.385420643",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T18:20:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35649356.1919": {
+        "raceId": "35649356.1919",
+        "winMarketId": "927.385253108",
+        "winMarketName": "2m4f INHF",
+        "startTime": "2026-05-27T19:19:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652284.2105": {
+        "raceId": "35652284.2105",
+        "winMarketId": "927.385359580",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T21:05:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35653117.0830": {
+        "raceId": "35653117.0830",
+        "winMarketId": "927.385379721",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T08:30:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35653328.1743": {
+        "raceId": "35653328.1743",
+        "winMarketId": "927.385397449",
+        "winMarketName": "1m4f Stks",
+        "startTime": "2026-05-27T17:43:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35652765.2045": {
+        "raceId": "35652765.2045",
+        "winMarketId": "927.385349546",
+        "winMarketName": "R6 1m Allw",
+        "startTime": "2026-05-27T20:45:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652520.1635": {
+        "raceId": "35652520.1635",
+        "winMarketId": "927.385360135",
+        "winMarketName": "R1 6f Claim",
+        "startTime": "2026-05-27T16:35:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35653236.1423": {
+        "raceId": "35653236.1423",
+        "winMarketId": "927.385390834",
+        "winMarketName": "7f Nov Stks",
+        "startTime": "2026-05-28T14:23:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653236",
+        "venue": "Yarmouth",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649297.1605": {
+        "raceId": "35649297.1605",
+        "winMarketId": "927.385246290",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-27T16:05:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649297",
+        "venue": "Hamilton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653190.1342": {
+        "raceId": "35653190.1342",
+        "winMarketId": "927.385386830",
+        "winMarketName": "6f Claim Stks",
+        "startTime": "2026-05-28T13:42:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653190",
+        "venue": "Fairyhouse",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653118.0335": {
+        "raceId": "35653118.0335",
+        "winMarketId": "927.385379868",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T03:35:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35649298.1453": {
+        "raceId": "35649298.1453",
+        "winMarketId": "927.385246718",
+        "winMarketName": "3m2f Hcap Chs",
+        "startTime": "2026-05-27T14:53:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649298",
+        "venue": "Newton Abbot",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649300.1550": {
+        "raceId": "35649300.1550",
+        "winMarketId": "927.385246943",
+        "winMarketName": "1m4f Hcap",
+        "startTime": "2026-05-27T15:50:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649300",
+        "venue": "Beverley",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653236.1318": {
+        "raceId": "35653236.1318",
+        "winMarketId": "927.385390836",
+        "winMarketName": "1m3f Nov Stks",
+        "startTime": "2026-05-28T13:18:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653236",
+        "venue": "Yarmouth",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649034.0105": {
+        "raceId": "35649034.0105",
+        "winMarketId": "927.385216123",
+        "winMarketName": "R6 1m Stks",
+        "startTime": "2026-05-27T01:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652587.0055": {
+        "raceId": "35652587.0055",
+        "winMarketId": "927.385360278",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T00:55:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35649300.1315": {
+        "raceId": "35649300.1315",
+        "winMarketId": "927.385246864",
+        "winMarketName": "5f Claim Stks",
+        "startTime": "2026-05-27T13:15:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649300",
+        "venue": "Beverley",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648991.2201": {
+        "raceId": "35648991.2201",
+        "winMarketId": "927.385227798",
+        "winMarketName": "R3 6f Mdn Claim",
+        "startTime": "2026-05-26T22:01:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648991",
+        "venue": "Louisiana Downs"
+      },
+      "35653117.0720": {
+        "raceId": "35653117.0720",
+        "winMarketId": "927.385379723",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T07:20:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35653996.1936": {
+        "raceId": "35653996.1936",
+        "winMarketId": "927.385420653",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T19:36:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35646518.2205": {
+        "raceId": "35646518.2205",
+        "winMarketId": "927.385107234",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T22:05:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35648991.2325": {
+        "raceId": "35648991.2325",
+        "winMarketId": "927.385227809",
+        "winMarketName": "R6 6f Claim",
+        "startTime": "2026-05-26T23:25:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648991",
+        "venue": "Louisiana Downs"
+      },
+      "35649027.2051": {
+        "raceId": "35649027.2051",
+        "winMarketId": "927.385215939",
+        "winMarketName": "R4 5f Mdn",
+        "startTime": "2026-05-26T20:51:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35652214.2020": {
+        "raceId": "35652214.2020",
+        "winMarketId": "927.385349604",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T20:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653118.0545": {
+        "raceId": "35653118.0545",
+        "winMarketId": "927.385379882",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T05:45:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35653190.1312": {
+        "raceId": "35653190.1312",
+        "winMarketId": "927.385386850",
+        "winMarketName": "6f Stks",
+        "startTime": "2026-05-28T13:12:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653190",
+        "venue": "Fairyhouse",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653337.1212": {
+        "raceId": "35653337.1212",
+        "winMarketId": "927.385398313",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T12:12:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35649034.0130": {
+        "raceId": "35649034.0130",
+        "winMarketId": "927.385216133",
+        "winMarketName": "R7 6f Stks",
+        "startTime": "2026-05-27T01:30:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653190.1552": {
+        "raceId": "35653190.1552",
+        "winMarketId": "927.385386929",
+        "winMarketName": "1m2f Hcap",
+        "startTime": "2026-05-28T15:52:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653190",
+        "venue": "Fairyhouse",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653118.0300": {
+        "raceId": "35653118.0300",
+        "winMarketId": "927.385379864",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T03:00:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35649603.0015": {
+        "raceId": "35649603.0015",
+        "winMarketId": "927.385267783",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T00:15:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35649306.1800": {
+        "raceId": "35649306.1800",
+        "winMarketId": "927.385247357",
+        "winMarketName": "7f Nov Stks",
+        "startTime": "2026-05-27T18:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652758.1822": {
+        "raceId": "35652758.1822",
+        "winMarketId": "927.385349406",
+        "winMarketName": "R4 6f Claim",
+        "startTime": "2026-05-27T18:22:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35649221.1030": {
+        "raceId": "35649221.1030",
+        "winMarketId": "927.385239256",
+        "winMarketName": "R1 1000m Mdn",
+        "startTime": "2026-05-27T10:30:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35653241.1545": {
+        "raceId": "35653241.1545",
+        "winMarketId": "927.385391633",
+        "winMarketName": "1m4f Hcap",
+        "startTime": "2026-05-28T15:45:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653241",
+        "venue": "Ripon",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653328.1847": {
+        "raceId": "35653328.1847",
+        "winMarketId": "927.385397467",
+        "winMarketName": "1m4f Stks",
+        "startTime": "2026-05-27T18:47:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35653241.1305": {
+        "raceId": "35653241.1305",
+        "winMarketId": "927.385391548",
+        "winMarketName": "6f Nov Stks",
+        "startTime": "2026-05-28T13:05:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653241",
+        "venue": "Ripon",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652219.1700": {
+        "raceId": "35652219.1700",
+        "winMarketId": "927.385349647",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T17:00:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35653425.1503": {
+        "raceId": "35653425.1503",
+        "winMarketId": "927.385403584",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T15:03:00.000Z",
+        "countryCode": "IT",
+        "videoAvailable": false,
+        "meetingId": "35653425",
+        "venue": "Naples"
+      },
+      "35649603.2315": {
+        "raceId": "35649603.2315",
+        "winMarketId": "927.385267781",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T23:15:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35649034.0015": {
+        "raceId": "35649034.0015",
+        "winMarketId": "927.385216120",
+        "winMarketName": "R4 1m Stks",
+        "startTime": "2026-05-27T00:15:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649356.1819": {
+        "raceId": "35649356.1819",
+        "winMarketId": "927.385253105",
+        "winMarketName": "3m Cond Hrd",
+        "startTime": "2026-05-27T18:19:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648991.2353": {
+        "raceId": "35648991.2353",
+        "winMarketId": "927.385227813",
+        "winMarketName": "R7 1m Allw Claim",
+        "startTime": "2026-05-26T23:53:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648991",
+        "venue": "Louisiana Downs"
+      },
+      "35652284.2205": {
+        "raceId": "35652284.2205",
+        "winMarketId": "927.385359584",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T22:05:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35653996.1846": {
+        "raceId": "35653996.1846",
+        "winMarketId": "927.385420651",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T18:46:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35653117.0610": {
+        "raceId": "35653117.0610",
+        "winMarketId": "927.385379724",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T06:10:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35652758.1949": {
+        "raceId": "35652758.1949",
+        "winMarketId": "927.385349419",
+        "winMarketName": "R7 6f Allw",
+        "startTime": "2026-05-27T19:49:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35653029.1415": {
+        "raceId": "35653029.1415",
+        "winMarketId": "927.385360376",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T14:15:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35653328.1602": {
+        "raceId": "35653328.1602",
+        "winMarketId": "927.385397436",
+        "winMarketName": "1m4f Hcap",
+        "startTime": "2026-05-27T16:02:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35652520.1735": {
+        "raceId": "35652520.1735",
+        "winMarketId": "927.385360133",
+        "winMarketName": "R3 6f Claim",
+        "startTime": "2026-05-27T17:35:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35653239.1500": {
+        "raceId": "35653239.1500",
+        "winMarketId": "927.385391331",
+        "winMarketName": "2m7f Nov Hcap Hrd",
+        "startTime": "2026-05-28T15:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653239",
+        "venue": "Worcester",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653118.0435": {
+        "raceId": "35653118.0435",
+        "winMarketId": "927.385379867",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T04:35:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35649306.1930": {
+        "raceId": "35649306.1930",
+        "winMarketId": "927.385247354",
+        "winMarketName": "1m4f Hcap",
+        "startTime": "2026-05-27T19:30:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649221.1145": {
+        "raceId": "35649221.1145",
+        "winMarketId": "927.385239258",
+        "winMarketName": "R3 1200m Mdn",
+        "startTime": "2026-05-27T11:45:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35653337.1322": {
+        "raceId": "35653337.1322",
+        "winMarketId": "927.385398315",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T13:22:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35653190.1447": {
+        "raceId": "35653190.1447",
+        "winMarketId": "927.385386872",
+        "winMarketName": "6f Hcap",
+        "startTime": "2026-05-28T14:47:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653190",
+        "venue": "Fairyhouse",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648496.0607": {
+        "raceId": "35648496.0607",
+        "winMarketId": "927.385207703",
+        "winMarketName": "R8 1350m CL2",
+        "startTime": "2026-05-27T06:07:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648496",
+        "venue": "Doomben",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649298.1353": {
+        "raceId": "35649298.1353",
+        "winMarketId": "927.385246739",
+        "winMarketName": "2m1f Nov Hrd",
+        "startTime": "2026-05-27T13:53:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649298",
+        "venue": "Newton Abbot",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648981.0500": {
+        "raceId": "35648981.0500",
+        "winMarketId": "927.385209943",
+        "winMarketName": "R4 1516m Mdn",
+        "startTime": "2026-05-27T05:00:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648981",
+        "venue": "Gawler",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652219.1930": {
+        "raceId": "35652219.1930",
+        "winMarketId": "927.385349741",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T19:30:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35649300.1415": {
+        "raceId": "35649300.1415",
+        "winMarketId": "927.385246868",
+        "winMarketName": "7f Hcap",
+        "startTime": "2026-05-27T14:15:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649300",
+        "venue": "Beverley",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649034.2300": {
+        "raceId": "35649034.2300",
+        "winMarketId": "927.385216095",
+        "winMarketName": "R1 5f Stks",
+        "startTime": "2026-05-26T23:00:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649034",
+        "venue": "Mountaineer Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652761.2004": {
+        "raceId": "35652761.2004",
+        "winMarketId": "927.385349510",
+        "winMarketName": "R8 6f Claim",
+        "startTime": "2026-05-27T20:04:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652761",
+        "venue": "Delaware Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648561.1855": {
+        "raceId": "35648561.1855",
+        "winMarketId": "927.385216036",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T18:55:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648991.2229": {
+        "raceId": "35648991.2229",
+        "winMarketId": "927.385227801",
+        "winMarketName": "R4 1m Mdn Claim",
+        "startTime": "2026-05-26T22:29:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648991",
+        "venue": "Louisiana Downs"
+      },
+      "35653328.1711": {
+        "raceId": "35653328.1711",
+        "winMarketId": "927.385397461",
+        "winMarketName": "2m5f Chs",
+        "startTime": "2026-05-27T17:11:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35648991.2105": {
+        "raceId": "35648991.2105",
+        "winMarketId": "927.385227794",
+        "winMarketName": "R1 1m1f Claim",
+        "startTime": "2026-05-26T21:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648991",
+        "venue": "Louisiana Downs"
+      },
+      "35653236.1453": {
+        "raceId": "35653236.1453",
+        "winMarketId": "927.385390839",
+        "winMarketName": "1m2f Hcap",
+        "startTime": "2026-05-28T14:53:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653236",
+        "venue": "Yarmouth",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652758.1920": {
+        "raceId": "35652758.1920",
+        "winMarketId": "927.385349413",
+        "winMarketName": "R6 1m Mdn",
+        "startTime": "2026-05-27T19:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35649300.1620": {
+        "raceId": "35649300.1620",
+        "winMarketId": "927.385246867",
+        "winMarketName": "5f Hcap",
+        "startTime": "2026-05-27T16:20:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649300",
+        "venue": "Beverley",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649027.2024": {
+        "raceId": "35649027.2024",
+        "winMarketId": "927.385215936",
+        "winMarketName": "R3 6f Allw Claim",
+        "startTime": "2026-05-26T20:24:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35649027.2145": {
+        "raceId": "35649027.2145",
+        "winMarketId": "927.385215948",
+        "winMarketName": "R6 6f Allw Claim",
+        "startTime": "2026-05-26T21:45:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35653029.1310": {
+        "raceId": "35653029.1310",
+        "winMarketId": "927.385360387",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T13:10:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35653337.1357": {
+        "raceId": "35653337.1357",
+        "winMarketId": "927.385398311",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T13:57:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35649306.1700": {
+        "raceId": "35649306.1700",
+        "winMarketId": "927.385247296",
+        "winMarketName": "6f Nov Stks",
+        "startTime": "2026-05-27T17:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649298.1423": {
+        "raceId": "35649298.1423",
+        "winMarketId": "927.385246734",
+        "winMarketName": "2m5f Nov Hcap Chs",
+        "startTime": "2026-05-27T14:23:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649298",
+        "venue": "Newton Abbot",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653241.1407": {
+        "raceId": "35653241.1407",
+        "winMarketId": "927.385391547",
+        "winMarketName": "6f Hcap",
+        "startTime": "2026-05-28T14:07:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653241",
+        "venue": "Ripon",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648562.2020": {
+        "raceId": "35648562.2020",
+        "winMarketId": "927.385216092",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T20:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648562",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648605.0020": {
+        "raceId": "35648605.0020",
+        "winMarketId": "927.385206608",
+        "winMarketName": "R2 1400m Mdn",
+        "startTime": "2026-05-27T00:20:00.000Z",
+        "countryCode": "NZ",
+        "videoAvailable": false,
+        "meetingId": "35648605",
+        "venue": "Riccarton Park"
+      },
+      "35652520.1835": {
+        "raceId": "35652520.1835",
+        "winMarketId": "927.385360137",
+        "winMarketName": "R5 6f Allw",
+        "startTime": "2026-05-27T18:35:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35653207.1750": {
+        "raceId": "35653207.1750",
+        "winMarketId": "927.385389040",
+        "winMarketName": "2m4f Hcap Hrd",
+        "startTime": "2026-05-28T17:50:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649306.1830": {
+        "raceId": "35649306.1830",
+        "winMarketId": "927.385247355",
+        "winMarketName": "1m3f Nov Stks",
+        "startTime": "2026-05-27T18:30:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653241.1510": {
+        "raceId": "35653241.1510",
+        "winMarketId": "927.385391628",
+        "winMarketName": "6f Hcap",
+        "startTime": "2026-05-28T15:10:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653241",
+        "venue": "Ripon",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649300.1515": {
+        "raceId": "35649300.1515",
+        "winMarketId": "927.385246870",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-27T15:15:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649300",
+        "venue": "Beverley",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653328.1815": {
+        "raceId": "35653328.1815",
+        "winMarketId": "927.385397466",
+        "winMarketName": "2m1f Hcap Hrd",
+        "startTime": "2026-05-27T18:15:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653328",
+        "venue": "Toulouse"
+      },
+      "35653996.1730": {
+        "raceId": "35653996.1730",
+        "winMarketId": "927.385420630",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T17:30:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35649032.1912": {
+        "raceId": "35649032.1912",
+        "winMarketId": "927.385215969",
+        "winMarketName": "R3 6f Claim",
+        "startTime": "2026-05-26T19:12:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648605.0130": {
+        "raceId": "35648605.0130",
+        "winMarketId": "927.385206603",
+        "winMarketName": "R4 1200m Mdn",
+        "startTime": "2026-05-27T01:30:00.000Z",
+        "countryCode": "NZ",
+        "videoAvailable": false,
+        "meetingId": "35648605",
+        "venue": "Riccarton Park"
+      },
+      "35652284.2135": {
+        "raceId": "35652284.2135",
+        "winMarketId": "927.385359583",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T21:35:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35653190.1417": {
+        "raceId": "35653190.1417",
+        "winMarketId": "927.385386856",
+        "winMarketName": "6f Hcap",
+        "startTime": "2026-05-28T14:17:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653190",
+        "venue": "Fairyhouse",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35646518.2240": {
+        "raceId": "35646518.2240",
+        "winMarketId": "927.385107270",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T22:40:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35646518.2000": {
+        "raceId": "35646518.2000",
+        "winMarketId": "927.385107230",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T20:00:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35652765.2116": {
+        "raceId": "35652765.2116",
+        "winMarketId": "927.385349550",
+        "winMarketName": "R7 6f Mdn",
+        "startTime": "2026-05-27T21:16:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653029.1210": {
+        "raceId": "35653029.1210",
+        "winMarketId": "927.385360404",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T12:10:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35653118.0225": {
+        "raceId": "35653118.0225",
+        "winMarketId": "927.385379866",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T02:25:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35653236.1523": {
+        "raceId": "35653236.1523",
+        "winMarketId": "927.385390831",
+        "winMarketName": "6f Hcap",
+        "startTime": "2026-05-28T15:23:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653236",
+        "venue": "Yarmouth",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653241.1620": {
+        "raceId": "35653241.1620",
+        "winMarketId": "927.385391635",
+        "winMarketName": "5f Hcap",
+        "startTime": "2026-05-28T16:20:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653241",
+        "venue": "Ripon",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653337.1017": {
+        "raceId": "35653337.1017",
+        "winMarketId": "927.385398308",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T10:17:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35652219.1900": {
+        "raceId": "35652219.1900",
+        "winMarketId": "927.385349740",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T19:00:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35653117.0935": {
+        "raceId": "35653117.0935",
+        "winMarketId": "927.385379726",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T09:35:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35653029.1450": {
+        "raceId": "35653029.1450",
+        "winMarketId": "927.385360370",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T14:50:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35648605.2345": {
+        "raceId": "35648605.2345",
+        "winMarketId": "927.385206599",
+        "winMarketName": "R1 1600m Hcap",
+        "startTime": "2026-05-26T23:45:00.000Z",
+        "countryCode": "NZ",
+        "videoAvailable": false,
+        "meetingId": "35648605",
+        "venue": "Riccarton Park"
+      },
+      "35652284.2005": {
+        "raceId": "35652284.2005",
+        "winMarketId": "927.385359577",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T20:05:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35653207.1650": {
+        "raceId": "35653207.1650",
+        "winMarketId": "927.385389034",
+        "winMarketName": "2m4f Hcap Hrd",
+        "startTime": "2026-05-28T16:50:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652765.2147": {
+        "raceId": "35652765.2147",
+        "winMarketId": "927.385349567",
+        "winMarketName": "R8 1m Mdn Claim",
+        "startTime": "2026-05-27T21:47:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653190.1627": {
+        "raceId": "35653190.1627",
+        "winMarketId": "927.385386930",
+        "winMarketName": "1m2f Mdn",
+        "startTime": "2026-05-28T16:27:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653190",
+        "venue": "Fairyhouse",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652520.1935": {
+        "raceId": "35652520.1935",
+        "winMarketId": "927.385360142",
+        "winMarketName": "R7 5f Claim",
+        "startTime": "2026-05-27T19:35:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35649306.1730": {
+        "raceId": "35649306.1730",
+        "winMarketId": "927.385247298",
+        "winMarketName": "7f Nov Stks",
+        "startTime": "2026-05-27T17:30:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653337.1247": {
+        "raceId": "35653337.1247",
+        "winMarketId": "927.385398314",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T12:47:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35653029.1345": {
+        "raceId": "35653029.1345",
+        "winMarketId": "927.385360406",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T13:45:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35653337.1127": {
+        "raceId": "35653337.1127",
+        "winMarketId": "927.385398300",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T11:27:00.000Z",
+        "countryCode": "FR",
+        "videoAvailable": true,
+        "meetingId": "35653337",
+        "venue": "Caen."
+      },
+      "35649298.1556": {
+        "raceId": "35649298.1556",
+        "winMarketId": "927.385246740",
+        "winMarketName": "2m6f Hcap Hrd",
+        "startTime": "2026-05-27T15:56:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649298",
+        "venue": "Newton Abbot",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652218.0030": {
+        "raceId": "35652218.0030",
+        "winMarketId": "927.385349618",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T00:30:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652218",
+        "venue": "Assiniboia Downs"
+      },
+      "35649027.2118": {
+        "raceId": "35649027.2118",
+        "winMarketId": "927.385215940",
+        "winMarketName": "R5 1m Claim",
+        "startTime": "2026-05-26T21:18:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35649027.2239": {
+        "raceId": "35649027.2239",
+        "winMarketId": "927.385215953",
+        "winMarketName": "R8 1m Claim",
+        "startTime": "2026-05-26T22:39:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35652218.0150": {
+        "raceId": "35652218.0150",
+        "winMarketId": "927.385349624",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T01:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652218",
+        "venue": "Assiniboia Downs"
+      },
+      "35653996.1755": {
+        "raceId": "35653996.1755",
+        "winMarketId": "927.385420634",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T17:55:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35653207.1540": {
+        "raceId": "35653207.1540",
+        "winMarketId": "927.385389031",
+        "winMarketName": "2m Mdn Hrd",
+        "startTime": "2026-05-28T15:40:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653207",
+        "venue": "Limerick",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652284.2235": {
+        "raceId": "35652284.2235",
+        "winMarketId": "927.385359586",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T22:35:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35652520.1705": {
+        "raceId": "35652520.1705",
+        "winMarketId": "927.385360131",
+        "winMarketName": "R2 6f Claim",
+        "startTime": "2026-05-27T17:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35653190.1517": {
+        "raceId": "35653190.1517",
+        "winMarketId": "927.385386926",
+        "winMarketName": "7f Hcap",
+        "startTime": "2026-05-28T15:17:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": false,
+        "meetingId": "35653190",
+        "venue": "Fairyhouse",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652765.2014": {
+        "raceId": "35652765.2014",
+        "winMarketId": "927.385349541",
+        "winMarketName": "R5 1m Claim",
+        "startTime": "2026-05-27T20:14:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652554.2016": {
+        "raceId": "35652554.2016",
+        "winMarketId": "927.385360203",
+        "winMarketName": "R9 1m Claim",
+        "startTime": "2026-05-27T20:16:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35646518.2100": {
+        "raceId": "35646518.2100",
+        "winMarketId": "927.385107232",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T21:00:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35646518",
+        "venue": "Concepcion"
+      },
+      "35653029.1110": {
+        "raceId": "35653029.1110",
+        "winMarketId": "927.385360373",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T11:10:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35649221.1330": {
+        "raceId": "35649221.1330",
+        "winMarketId": "927.385239253",
+        "winMarketName": "R6 1400m Stks",
+        "startTime": "2026-05-27T13:30:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35649306.1625": {
+        "raceId": "35649306.1625",
+        "winMarketId": "927.385247254",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-27T16:25:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649306",
+        "venue": "Kempton",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653119.0450": {
+        "raceId": "35653119.0450",
+        "winMarketId": "927.385379947",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T04:50:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35649603.2015": {
+        "raceId": "35649603.2015",
+        "winMarketId": "927.385267772",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T20:15:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35649356.1647": {
+        "raceId": "35649356.1647",
+        "winMarketId": "927.385253083",
+        "winMarketName": "2m1f Hcap Hrd",
+        "startTime": "2026-05-27T16:47:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653119.0210": {
+        "raceId": "35653119.0210",
+        "winMarketId": "927.385379938",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T02:10:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35653238.1712": {
+        "raceId": "35653238.1712",
+        "winMarketId": "927.385391110",
+        "winMarketName": "2m Grp 3",
+        "startTime": "2026-05-28T17:12:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653238",
+        "venue": "Sandown",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653239.1325": {
+        "raceId": "35653239.1325",
+        "winMarketId": "927.385391323",
+        "winMarketName": "2m1f Hcap Chs",
+        "startTime": "2026-05-28T13:25:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653239",
+        "venue": "Worcester",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649305.1908": {
+        "raceId": "35649305.1908",
+        "winMarketId": "927.385247042",
+        "winMarketName": "2m5f Nov Hcap Chs",
+        "startTime": "2026-05-27T19:08:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649305",
+        "venue": "Cartmel",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649027.2212": {
+        "raceId": "35649027.2212",
+        "winMarketId": "927.385215951",
+        "winMarketName": "R7 6f Allw",
+        "startTime": "2026-05-26T22:12:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649027",
+        "venue": "Presque Isle Downs"
+      },
+      "35653118.0730": {
+        "raceId": "35653118.0730",
+        "winMarketId": "927.385379886",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T07:30:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35649221.1440": {
+        "raceId": "35649221.1440",
+        "winMarketId": "927.385239257",
+        "winMarketName": "R8 1000m Stks",
+        "startTime": "2026-05-27T14:40:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35646613.1824": {
+        "raceId": "35646613.1824",
+        "winMarketId": "927.385114780",
+        "winMarketName": "1m Nov Stks",
+        "startTime": "2026-05-26T18:24:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646613",
+        "venue": "Lingfield",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653119.0345": {
+        "raceId": "35653119.0345",
+        "winMarketId": "927.385379945",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T03:45:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35652587.0210": {
+        "raceId": "35652587.0210",
+        "winMarketId": "927.385360281",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T02:10:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35653029.1240": {
+        "raceId": "35653029.1240",
+        "winMarketId": "927.385360372",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T12:40:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35649032.1841": {
+        "raceId": "35649032.1841",
+        "winMarketId": "927.385215966",
+        "winMarketName": "R2 6f Claim",
+        "startTime": "2026-05-26T18:41:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649603.2145": {
+        "raceId": "35649603.2145",
+        "winMarketId": "927.385267778",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T21:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35653425.1433": {
+        "raceId": "35653425.1433",
+        "winMarketId": "927.385403583",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T14:33:00.000Z",
+        "countryCode": "IT",
+        "videoAvailable": false,
+        "meetingId": "35653425",
+        "venue": "Naples"
+      },
+      "35652520.1805": {
+        "raceId": "35652520.1805",
+        "winMarketId": "927.385360129",
+        "winMarketName": "R4 6f Claim",
+        "startTime": "2026-05-27T18:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35653239.1430": {
+        "raceId": "35653239.1430",
+        "winMarketId": "927.385391329",
+        "winMarketName": "2m Nov Hrd",
+        "startTime": "2026-05-28T14:30:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653239",
+        "venue": "Worcester",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35646613.1854": {
+        "raceId": "35646613.1854",
+        "winMarketId": "927.385114783",
+        "winMarketName": "7f Hcap",
+        "startTime": "2026-05-26T18:54:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646613",
+        "venue": "Lingfield",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653236.1600": {
+        "raceId": "35653236.1600",
+        "winMarketId": "927.385390851",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-28T16:00:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653236",
+        "venue": "Yarmouth",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648598.0652": {
+        "raceId": "35648598.0652",
+        "winMarketId": "927.385214940",
+        "winMarketName": "R4 1300m CL1",
+        "startTime": "2026-05-27T06:52:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648598",
+        "venue": "Belmont"
+      },
+      "35649356.1542": {
+        "raceId": "35649356.1542",
+        "winMarketId": "927.385253080",
+        "winMarketName": "2m1f Claim Hrd",
+        "startTime": "2026-05-27T15:42:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649298.1523": {
+        "raceId": "35649298.1523",
+        "winMarketId": "927.385246736",
+        "winMarketName": "2m3f Nov Hcap Hrd",
+        "startTime": "2026-05-27T15:23:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649298",
+        "venue": "Newton Abbot",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653238.1812": {
+        "raceId": "35653238.1812",
+        "winMarketId": "927.385391137",
+        "winMarketName": "1m2f Grp 3",
+        "startTime": "2026-05-28T18:12:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653238",
+        "venue": "Sandown",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648598.0539": {
+        "raceId": "35648598.0539",
+        "winMarketId": "927.385214936",
+        "winMarketName": "R2 1400m Mdn",
+        "startTime": "2026-05-27T05:39:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": false,
+        "meetingId": "35648598",
+        "venue": "Belmont"
+      },
+      "35652587.0120": {
+        "raceId": "35652587.0120",
+        "winMarketId": "927.385360279",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T01:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35649032.1810": {
+        "raceId": "35649032.1810",
+        "winMarketId": "927.385215958",
+        "winMarketName": "R1 5f Mdn",
+        "startTime": "2026-05-26T18:10:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648605.0244": {
+        "raceId": "35648605.0244",
+        "winMarketId": "927.385206609",
+        "winMarketName": "R6 1600m Hcap",
+        "startTime": "2026-05-27T02:44:00.000Z",
+        "countryCode": "NZ",
+        "videoAvailable": false,
+        "meetingId": "35648605",
+        "venue": "Riccarton Park"
+      },
+      "35652587.0005": {
+        "raceId": "35652587.0005",
+        "winMarketId": "927.385360276",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T00:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35648563.0030": {
+        "raceId": "35648563.0030",
+        "winMarketId": "927.385216138",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T00:30:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648563",
+        "venue": "Assiniboia Downs"
+      },
+      "35653119.0240": {
+        "raceId": "35653119.0240",
+        "winMarketId": "927.385379939",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T02:40:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35648563.0150": {
+        "raceId": "35648563.0150",
+        "winMarketId": "927.385216141",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T01:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648563",
+        "venue": "Assiniboia Downs"
+      },
+      "35649298.1630": {
+        "raceId": "35649298.1630",
+        "winMarketId": "927.385246755",
+        "winMarketName": "3m2f Hcap Hrd",
+        "startTime": "2026-05-27T16:30:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649298",
+        "venue": "Newton Abbot",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653029.1140": {
+        "raceId": "35653029.1140",
+        "winMarketId": "927.385360401",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T11:40:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35653117.0905": {
+        "raceId": "35653117.0905",
+        "winMarketId": "927.385379725",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T09:05:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35649032.1943": {
+        "raceId": "35649032.1943",
+        "winMarketId": "927.385215981",
+        "winMarketName": "R4 1m Mdn",
+        "startTime": "2026-05-26T19:43:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649032",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648605.0354": {
+        "raceId": "35648605.0354",
+        "winMarketId": "927.385206594",
+        "winMarketName": "R8 1400m Hcap",
+        "startTime": "2026-05-27T03:54:00.000Z",
+        "countryCode": "NZ",
+        "videoAvailable": false,
+        "meetingId": "35648605",
+        "venue": "Riccarton Park"
+      },
+      "35653425.1333": {
+        "raceId": "35653425.1333",
+        "winMarketId": "927.385403581",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T13:33:00.000Z",
+        "countryCode": "IT",
+        "videoAvailable": false,
+        "meetingId": "35653425",
+        "venue": "Naples"
+      },
+      "35653238.1920": {
+        "raceId": "35653238.1920",
+        "winMarketId": "927.385391135",
+        "winMarketName": "1m Hcap",
+        "startTime": "2026-05-28T19:20:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": false,
+        "meetingId": "35653238",
+        "venue": "Sandown",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35649603.2045": {
+        "raceId": "35649603.2045",
+        "winMarketId": "927.385267776",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T20:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35652284.2035": {
+        "raceId": "35652284.2035",
+        "winMarketId": "927.385359579",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T20:35:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": false,
+        "meetingId": "35652284",
+        "venue": "Palermo"
+      },
+      "35652520.1905": {
+        "raceId": "35652520.1905",
+        "winMarketId": "927.385360139",
+        "winMarketName": "R6 1m1f Mdn Claim",
+        "startTime": "2026-05-27T19:05:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652520",
+        "venue": "Belterra Park"
+      },
+      "35652554.1640": {
+        "raceId": "35652554.1640",
+        "winMarketId": "927.385360177",
+        "winMarketName": "R1 7f Claim",
+        "startTime": "2026-05-27T16:40:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652554",
+        "venue": "Philadelphia"
+      },
+      "35652765.2215": {
+        "raceId": "35652765.2215",
+        "winMarketId": "927.385349570",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T22:15:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652765",
+        "venue": "Horseshoe Indianapolis",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649221.1255": {
+        "raceId": "35649221.1255",
+        "winMarketId": "927.385239260",
+        "winMarketName": "R5 1800m Stks",
+        "startTime": "2026-05-27T12:55:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35649305.1938": {
+        "raceId": "35649305.1938",
+        "winMarketId": "927.385247036",
+        "winMarketName": "2m1f Hcap Chs",
+        "startTime": "2026-05-27T19:38:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649305",
+        "venue": "Cartmel",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648563.0240": {
+        "raceId": "35648563.0240",
+        "winMarketId": "927.385216143",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T02:40:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648563",
+        "venue": "Assiniboia Downs"
+      },
+      "35652214.1920": {
+        "raceId": "35652214.1920",
+        "winMarketId": "927.385349596",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T19:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652587.0145": {
+        "raceId": "35652587.0145",
+        "winMarketId": "927.385360280",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T01:45:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35649603.2215": {
+        "raceId": "35649603.2215",
+        "winMarketId": "927.385267779",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T22:15:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35649356.1849": {
+        "raceId": "35649356.1849",
+        "winMarketId": "927.385253106",
+        "winMarketName": "3m Hcap Hrd",
+        "startTime": "2026-05-27T18:49:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35648563.0125": {
+        "raceId": "35648563.0125",
+        "winMarketId": "927.385216140",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T01:25:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648563",
+        "venue": "Assiniboia Downs"
+      },
+      "35648991.2133": {
+        "raceId": "35648991.2133",
+        "winMarketId": "927.385227795",
+        "winMarketName": "R2 7f Mdn Claim",
+        "startTime": "2026-05-26T21:33:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648991",
+        "venue": "Louisiana Downs"
+      },
+      "35648991.2257": {
+        "raceId": "35648991.2257",
+        "winMarketId": "927.385227808",
+        "winMarketName": "R5 6f Claim",
+        "startTime": "2026-05-26T22:57:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648991",
+        "venue": "Louisiana Downs"
+      },
+      "35649356.1719": {
+        "raceId": "35649356.1719",
+        "winMarketId": "927.385253101",
+        "winMarketName": "2m1f Hcap Hrd",
+        "startTime": "2026-05-27T17:19:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653425.1403": {
+        "raceId": "35653425.1403",
+        "winMarketId": "927.385403582",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T14:03:00.000Z",
+        "countryCode": "IT",
+        "videoAvailable": false,
+        "meetingId": "35653425",
+        "venue": "Naples"
+      },
+      "35648561.2010": {
+        "raceId": "35648561.2010",
+        "winMarketId": "927.385216044",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T20:10:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35653117.1040": {
+        "raceId": "35653117.1040",
+        "winMarketId": "927.385379730",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T10:40:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653117",
+        "venue": "Mombetsu"
+      },
+      "35653118.0405": {
+        "raceId": "35653118.0405",
+        "winMarketId": "927.385379863",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T04:05:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35653118.0655": {
+        "raceId": "35653118.0655",
+        "winMarketId": "927.385379883",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T06:55:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35649305.1708": {
+        "raceId": "35649305.1708",
+        "winMarketId": "927.385247038",
+        "winMarketName": "2m1f Mdn Hrd",
+        "startTime": "2026-05-27T17:08:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649305",
+        "venue": "Cartmel",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653119.0140": {
+        "raceId": "35653119.0140",
+        "winMarketId": "927.385379937",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T01:40:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653119",
+        "venue": "Sonoda"
+      },
+      "35652219.1830": {
+        "raceId": "35652219.1830",
+        "winMarketId": "927.385349738",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T18:30:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35649603.2345": {
+        "raceId": "35649603.2345",
+        "winMarketId": "927.385267782",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T23:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35653425.1635": {
+        "raceId": "35653425.1635",
+        "winMarketId": "927.385403590",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T16:35:00.000Z",
+        "countryCode": "IT",
+        "videoAvailable": false,
+        "meetingId": "35653425",
+        "venue": "Naples"
+      },
+      "35649356.1612": {
+        "raceId": "35649356.1612",
+        "winMarketId": "927.385253079",
+        "winMarketName": "2m1f Cond Hrd",
+        "startTime": "2026-05-27T16:12:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653029.1040": {
+        "raceId": "35653029.1040",
+        "winMarketId": "927.385360400",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T10:40:00.000Z",
+        "countryCode": "HK",
+        "videoAvailable": false,
+        "meetingId": "35653029",
+        "venue": "Happy Valley"
+      },
+      "35652758.2047": {
+        "raceId": "35652758.2047",
+        "winMarketId": "927.385349425",
+        "winMarketName": "R9 6f Claim",
+        "startTime": "2026-05-27T20:47:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652758",
+        "venue": "Finger Lakes"
+      },
+      "35648561.2125": {
+        "raceId": "35648561.2125",
+        "winMarketId": "927.385216051",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T21:25:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652759.1930": {
+        "raceId": "35652759.1930",
+        "winMarketId": "927.385349428",
+        "winMarketName": "R1 1m Mdn Claim",
+        "startTime": "2026-05-27T19:30:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35652587.2315": {
+        "raceId": "35652587.2315",
+        "winMarketId": "927.385360274",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T23:15:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35649603.0045": {
+        "raceId": "35649603.0045",
+        "winMarketId": "927.385267784",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T00:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35649038.2016": {
+        "raceId": "35649038.2016",
+        "winMarketId": "927.385228360",
+        "winMarketName": "R9 7f Claim",
+        "startTime": "2026-05-26T20:16:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35649038",
+        "venue": "Philadelphia"
+      },
+      "35648563.0100": {
+        "raceId": "35648563.0100",
+        "winMarketId": "927.385216139",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T01:00:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648563",
+        "venue": "Assiniboia Downs"
+      },
+      "35653118.0620": {
+        "raceId": "35653118.0620",
+        "winMarketId": "927.385379884",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T06:20:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35649356.1749": {
+        "raceId": "35649356.1749",
+        "winMarketId": "927.385253103",
+        "winMarketName": "2m4f Mdn Hrd",
+        "startTime": "2026-05-27T17:49:00.000Z",
+        "countryCode": "IE",
+        "videoAvailable": true,
+        "meetingId": "35649356",
+        "venue": "Wexford",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35652587.2340": {
+        "raceId": "35652587.2340",
+        "winMarketId": "927.385360275",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T23:40:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35648610.0620": {
+        "raceId": "35648610.0620",
+        "winMarketId": "927.385211816",
+        "winMarketName": "R6 1250m Hcap",
+        "startTime": "2026-05-27T06:20:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648610",
+        "venue": "Canterbury",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649603.2110": {
+        "raceId": "35649603.2110",
+        "winMarketId": "927.385267777",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T21:10:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35652214.1820": {
+        "raceId": "35652214.1820",
+        "winMarketId": "927.385349590",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T18:20:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649221.1220": {
+        "raceId": "35649221.1220",
+        "winMarketId": "927.385239259",
+        "winMarketName": "R4 1000m Mdn",
+        "startTime": "2026-05-27T12:20:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35649305.1808": {
+        "raceId": "35649305.1808",
+        "winMarketId": "927.385247033",
+        "winMarketName": "2m6f Hcap Hrd",
+        "startTime": "2026-05-27T18:08:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35649305",
+        "venue": "Cartmel",
+        "onTvChannels": [
+          "Racing TV"
+        ]
+      },
+      "35653118.0510": {
+        "raceId": "35653118.0510",
+        "winMarketId": "927.385379872",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T05:10:00.000Z",
+        "countryCode": "JP",
+        "videoAvailable": false,
+        "meetingId": "35653118",
+        "venue": "Kasamatsu"
+      },
+      "35646613.1924": {
+        "raceId": "35646613.1924",
+        "winMarketId": "927.385114759",
+        "winMarketName": "7f Hcap",
+        "startTime": "2026-05-26T19:24:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35646613",
+        "venue": "Lingfield",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652219.1730": {
+        "raceId": "35652219.1730",
+        "winMarketId": "927.385349649",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T17:30:00.000Z",
+        "countryCode": "AR",
+        "videoAvailable": true,
+        "meetingId": "35652219",
+        "venue": "San Isidro"
+      },
+      "35648605.0319": {
+        "raceId": "35648605.0319",
+        "winMarketId": "927.385206596",
+        "winMarketName": "R7 2200m Hcap",
+        "startTime": "2026-05-27T03:19:00.000Z",
+        "countryCode": "NZ",
+        "videoAvailable": false,
+        "meetingId": "35648605",
+        "venue": "Riccarton Park"
+      },
+      "35652587.0030": {
+        "raceId": "35652587.0030",
+        "winMarketId": "927.385360277",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T00:30:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652587",
+        "venue": "Delta Downs"
+      },
+      "35649221.1105": {
+        "raceId": "35649221.1105",
+        "winMarketId": "927.385239252",
+        "winMarketName": "R2 1200m Mdn",
+        "startTime": "2026-05-27T11:05:00.000Z",
+        "countryCode": "ZA",
+        "videoAvailable": true,
+        "meetingId": "35649221",
+        "venue": "Greyville"
+      },
+      "35648610.0510": {
+        "raceId": "35648610.0510",
+        "winMarketId": "927.385211813",
+        "winMarketName": "R4 1250m 3yo",
+        "startTime": "2026-05-27T05:10:00.000Z",
+        "countryCode": "AU",
+        "videoAvailable": true,
+        "meetingId": "35648610",
+        "venue": "Canterbury",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35652759.1957": {
+        "raceId": "35652759.1957",
+        "winMarketId": "927.385349433",
+        "winMarketName": "R2 6f Claim",
+        "startTime": "2026-05-27T19:57:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652759",
+        "venue": "Presque Isle Downs"
+      },
+      "35653996.2209": {
+        "raceId": "35653996.2209",
+        "winMarketId": "927.385420660",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T22:09:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": false,
+        "meetingId": "35653996",
+        "venue": "Hipo Chile"
+      },
+      "35652214.1950": {
+        "raceId": "35652214.1950",
+        "winMarketId": "927.385349599",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T19:50:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35652214",
+        "venue": "Thistledown",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35649603.2245": {
+        "raceId": "35649603.2245",
+        "winMarketId": "927.385267780",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-27T22:45:00.000Z",
+        "countryCode": "CL",
+        "videoAvailable": true,
+        "meetingId": "35649603",
+        "venue": "Valparaiso"
+      },
+      "35653425.1533": {
+        "raceId": "35653425.1533",
+        "winMarketId": "927.385403587",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-28T15:33:00.000Z",
+        "countryCode": "IT",
+        "videoAvailable": false,
+        "meetingId": "35653425",
+        "venue": "Naples"
+      },
+      "35653239.1530": {
+        "raceId": "35653239.1530",
+        "winMarketId": "927.385391333",
+        "winMarketName": "2m Hcap Hrd",
+        "startTime": "2026-05-28T15:30:00.000Z",
+        "countryCode": "GB",
+        "videoAvailable": true,
+        "meetingId": "35653239",
+        "venue": "Worcester",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      },
+      "35648561.2100": {
+        "raceId": "35648561.2100",
+        "winMarketId": "927.385216048",
+        "winMarketName": "Win or Each Way",
+        "startTime": "2026-05-26T21:00:00.000Z",
+        "countryCode": "US",
+        "videoAvailable": true,
+        "meetingId": "35648561",
+        "venue": "Fairmount Park",
+        "onTvChannels": [
+          "Sky Sports Racing"
+        ]
+      }
+    }
+  }
+}
