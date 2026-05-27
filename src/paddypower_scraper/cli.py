@@ -13,6 +13,7 @@ from . import api
 from .browser import BrowserFetchError, BrowserSession
 from .filtering import in_window, london_day_window
 from common.regions import countries_for_all, parse_regions
+from common.timeutil import iso_utc
 from .meetings import parse_meetings_index
 from .models import PaddyOutput, PaddyRace, RaceStub
 from .output import write_paddypower_json
@@ -79,7 +80,7 @@ def main(
             attempted += 1
             anchor = stubs_in_meeting[0]
             url = api.racing_page_url(anchor.race_id)
-            scraped_at = _iso_utc(datetime.now(timezone.utc))
+            scraped_at = iso_utc(datetime.now(timezone.utc))
             try:
                 payload = session.fetch_json(url)
                 meeting_races = parse_meeting_response(payload, scraped_at)
@@ -138,13 +139,8 @@ def _group_by_meeting(stubs: Iterable[RaceStub]) -> dict[str, list[RaceStub]]:
     return dict(sorted(groups.items(), key=lambda kv: kv[1][0].start_time_utc))
 
 
-def _iso_utc(dt: datetime) -> str:
-    s = dt.astimezone(timezone.utc).isoformat(timespec="microseconds")
-    return s.replace("+00:00", "Z")
-
-
 def _write(out_path: Path, now: datetime, races: list[PaddyRace]) -> None:
     write_paddypower_json(
-        PaddyOutput(scraped_at=_iso_utc(now), race_count=len(races), races=races),
+        PaddyOutput(scraped_at=iso_utc(now), race_count=len(races), races=races),
         out_path,
     )

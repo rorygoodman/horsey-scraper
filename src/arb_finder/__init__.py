@@ -1,1 +1,1 @@
-"""Each-way arbitrage finder. Populated in Plan 3."""
+"""Each-way arbitrage finder → arbs.json."""

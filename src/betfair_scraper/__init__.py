@@ -1,1 +1,1 @@
-"""Betfair Exchange API scraper. Populated in Plan 2."""
+"""Betfair Exchange API scraper → betfair.json."""
