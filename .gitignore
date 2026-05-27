@@ -1,21 +1,17 @@
-# Gradle
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
+# Python
+.venv/
+.pytest_cache/
+__pycache__/
+**/__pycache__/
+*.pyc
 
 # IDE
 .idea/
 *.iml
-*.iws
-*.ipr
-out/
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Kotlin
-*.class
 
 # Local scraper output
 scraper.log
@@ -27,10 +23,3 @@ debug-page.html
 # Credentials — never commit. Real file lives at ~/.horsey-scraper/credentials.json.
 credentials.json
 *.env
-
-# Python / paddypower-py
-paddypower-py/.venv/
-paddypower-py/.pytest_cache/
-paddypower-py/**/__pycache__/
-paddypower-py/src/**/__pycache__/
-paddypower-py/uv.lock.tmp
