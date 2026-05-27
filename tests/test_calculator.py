@@ -77,7 +77,7 @@ class TestFindHorses:
         assert horses[0].edge == pytest.approx(0.25)
 
     def test_negative_edge_still_included(self):
-        # The headline change vs arbs.json: negative edges are KEPT.
+        # Unlike the old arb-only filter: negative edges are KEPT in horses.json.
         horses = find_horses(_betfair(4.0, 3.0), _paddy())
         assert len(horses) == 1
         assert horses[0].edge < 0
