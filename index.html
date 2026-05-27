@@ -88,7 +88,7 @@
         const pos = HORSES.filter(h => h.edge > 0).length;
         const updated = data.computedAt ? new Date(data.computedAt).toLocaleString() : "unknown";
         summary.innerHTML =
-          `updated <b>${updated}</b> &middot; <b>${data.horseCount}</b> horses &middot; ` +
+          `updated <b>${updated}</b> &middot; <b>${data.horseCount}</b> horseys &middot; ` +
           `<b>${pos}</b> with edge&gt;0`;
         if (!HORSES.length) {
           document.getElementById("content").innerHTML =
