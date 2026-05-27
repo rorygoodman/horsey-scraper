@@ -1,0 +1,41 @@
+{
+  "computedAt": "2026-05-27T20:34:11Z",
+  "betfairScrapedAt": "2026-05-27T20:34:01Z",
+  "paddypowerScrapedAt": "2026-05-27T20:34:05Z",
+  "horseCount": 3,
+  "horses": [
+    {
+      "venue": "Cartmel",
+      "country": "GB",
+      "offTime": "2026-05-27T18:38:00+01:00",
+      "marketName": "18:38 Cartmel",
+      "betfairWinMarketId": "1.258587656",
+      "runner": { "name": "Clean Getaway", "selectionId": 66112233 },
+      "paddypower": { "winPrice": 15.0, "winPriceRaw": "14/1", "eachWayTerms": { "fraction": 0.2, "places": 3 } },
+      "betfair": { "winLay": 19.0, "placeLay": 3.45, "placeMarket": "TOP_3" },
+      "edge": 0.0469
+    },
+    {
+      "venue": "Kempton",
+      "country": "GB",
+      "offTime": "2026-05-27T21:00:00+01:00",
+      "marketName": "21:00 Kempton",
+      "betfairWinMarketId": "1.258587732",
+      "runner": { "name": "Gooloogong", "selectionId": 66445566 },
+      "paddypower": { "winPrice": 7.0, "winPriceRaw": "6/1", "eachWayTerms": { "fraction": 0.2, "places": 3 } },
+      "betfair": { "winLay": 7.8, "placeLay": 2.04, "placeMarket": "TOP_3" },
+      "edge": -0.0121
+    },
+    {
+      "venue": "Kempton",
+      "country": "GB",
+      "offTime": "2026-05-27T21:00:00+01:00",
+      "marketName": "21:00 Kempton",
+      "betfairWinMarketId": "1.258587732",
+      "runner": { "name": "Filibustering", "selectionId": 66778899 },
+      "paddypower": { "winPrice": 6.5, "winPriceRaw": "11/2", "eachWayTerms": { "fraction": 0.2, "places": 3 } },
+      "betfair": { "winLay": 7.0, "placeLay": 2.04, "placeMarket": "TOP_3" },
+      "edge": -0.0210
+    }
+  ]
+}
