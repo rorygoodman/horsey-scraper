@@ -1,4 +1,4 @@
-"""Validate an arbs.json payload string. Port of ArbSchemaValidator.kt."""
+"""Validate a horses.json payload string."""
 
 from __future__ import annotations
 
@@ -7,10 +7,10 @@ import json
 from common.isovalid import is_iso_offset_datetime, is_iso_utc
 
 _EW_PLACES = range(2, 6)  # 2..5 inclusive
-_ALLOWED_TOP_N = {"TOP_2", "TOP_3", "TOP_4", "TOP_5"}
+_ALLOWED_PLACE_MARKETS = {"TOP_2", "TOP_3", "TOP_4", "TOP_5"}
 
 
-def validate_arbs_output(text: str) -> list[str]:
+def validate_horses_output(text: str) -> list[str]:
     errors: list[str] = []
     try:
         root = json.loads(text)
@@ -23,34 +23,32 @@ def validate_arbs_output(text: str) -> list[str]:
         _require_str(root, key, errors,
                      lambda v, k=key: None if is_iso_utc(v)
                      else errors.append(f"{k} is not ISO-8601 UTC instant: '{v}'"))
-    arb_count = _require_int(root, "arbCount", errors)
-    arbs = root.get("arbs")
-    if not isinstance(arbs, list):
-        errors.append("arbs: missing or not array")
+    horse_count = _require_int(root, "horseCount", errors)
+    horses = root.get("horses")
+    if not isinstance(horses, list):
+        errors.append("horses: missing or not array")
         return errors
-    if arb_count is not None and arb_count != len(arbs):
-        errors.append(f"arbCount ({arb_count}) != arbs.length ({len(arbs)})")
+    if horse_count is not None and horse_count != len(horses):
+        errors.append(f"horseCount ({horse_count}) != horses.length ({len(horses)})")
 
-    for i, arb in enumerate(arbs):
-        ctx = f"arbs[{i}]"
-        if not isinstance(arb, dict):
+    for i, h in enumerate(horses):
+        ctx = f"horses[{i}]"
+        if not isinstance(h, dict):
             errors.append(f"{ctx}: not an object")
             continue
-        _require_str(arb, "venue", errors)
-        _require_str(arb, "country", errors)
-        _require_str(arb, "offTime", errors,
+        _require_str(h, "venue", errors)
+        _require_str(h, "country", errors)
+        _require_str(h, "offTime", errors,
                      lambda v: None if is_iso_offset_datetime(v)
                      else errors.append(f"{ctx}.offTime not ISO-8601 with offset: '{v}'"))
-        _require_str(arb, "marketName", errors)
-        _require_str(arb, "betfairWinMarketId", errors)
+        _require_str(h, "marketName", errors)
+        _require_str(h, "betfairWinMarketId", errors)
 
-        margin = arb.get("margin")
-        if not isinstance(margin, (int, float)) or isinstance(margin, bool):
-            errors.append(f"{ctx}.margin: missing or not a number")
-        elif margin <= 0.0:
-            errors.append(f"{ctx}.margin must be > 0, got {margin}")
+        edge = h.get("edge")
+        if not isinstance(edge, (int, float)) or isinstance(edge, bool):
+            errors.append(f"{ctx}.edge: missing or not a number")
 
-        runner = arb.get("runner")
+        runner = h.get("runner")
         if not isinstance(runner, dict):
             errors.append(f"{ctx}.runner: missing or not an object")
         else:
@@ -59,8 +57,8 @@ def validate_arbs_output(text: str) -> list[str]:
             if not isinstance(sel, (int, float)) or isinstance(sel, bool):
                 errors.append(f"{ctx}.runner.selectionId: missing or not a number")
 
-        _validate_paddy_leg(arb.get("paddypower"), f"{ctx}.paddypower", errors)
-        _validate_betfair_leg(arb.get("betfair"), f"{ctx}.betfair", errors)
+        _validate_paddy_leg(h.get("paddypower"), f"{ctx}.paddypower", errors)
+        _validate_betfair_leg(h.get("betfair"), f"{ctx}.betfair", errors)
     return errors
 
 
@@ -89,15 +87,15 @@ def _validate_betfair_leg(el, ctx: str, errors: list[str]) -> None:
     if not isinstance(el, dict):
         errors.append(f"{ctx}: missing or not an object")
         return
-    for key in ("winLay", "topNLay"):
+    for key in ("winLay", "placeLay"):
         v = el.get(key)
         if not isinstance(v, (int, float)) or isinstance(v, bool):
             errors.append(f"{ctx}.{key}: missing or not a number")
-    top_n = el.get("topNType")
-    if not isinstance(top_n, str):
-        errors.append(f"{ctx}.topNType: missing or not a string")
-    elif top_n not in _ALLOWED_TOP_N:
-        errors.append(f"{ctx}.topNType: '{top_n}' not in {_ALLOWED_TOP_N}")
+    pm = el.get("placeMarket")
+    if not isinstance(pm, str):
+        errors.append(f"{ctx}.placeMarket: missing or not a string")
+    elif pm not in _ALLOWED_PLACE_MARKETS:
+        errors.append(f"{ctx}.placeMarket: '{pm}' not in {_ALLOWED_PLACE_MARKETS}")
 
 
 def _require_str(obj: dict, key: str, errors: list[str], extra=None) -> "str | None":

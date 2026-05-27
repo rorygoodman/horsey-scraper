@@ -1,1 +1,1 @@
-"""Each-way arbitrage finder → arbs.json."""
+"""Each-way edge calculator → horses.json."""

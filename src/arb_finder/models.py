@@ -1,4 +1,4 @@
-"""Dataclasses mirroring arbs.json + serializer. Port of ArbModels.kt."""
+"""Dataclasses mirroring horses.json + serializer."""
 
 from __future__ import annotations
 
@@ -20,43 +20,43 @@ class PaddyPriceLeg:
 @dataclass(frozen=True)
 class BetfairLayLeg:
     win_lay: float
-    top_n_lay: float
-    top_n_type: MarketType
+    place_lay: float
+    place_market: MarketType
 
 
 @dataclass(frozen=True)
-class ArbRunner:
+class Runner:
     name: str
     selection_id: int
 
 
 @dataclass(frozen=True)
-class Arb:
+class Horse:
     venue: str
     country: str
     off_time: str
     market_name: str
     betfair_win_market_id: str
-    runner: ArbRunner
+    runner: Runner
     paddypower: PaddyPriceLeg
     betfair: BetfairLayLeg
-    margin: float
+    edge: float
 
 
 @dataclass(frozen=True)
-class ArbOutput:
+class HorsesOutput:
     computed_at: str
     betfair_scraped_at: str
     paddypower_scraped_at: str
-    arb_count: int
-    arbs: list[Arb]
+    horse_count: int
+    horses: list[Horse]
 
 
-ARB_RENAME = {
+HORSES_RENAME = {
     "computed_at": "computedAt",
     "betfair_scraped_at": "betfairScrapedAt",
     "paddypower_scraped_at": "paddypowerScrapedAt",
-    "arb_count": "arbCount",
+    "horse_count": "horseCount",
     "off_time": "offTime",
     "market_name": "marketName",
     "betfair_win_market_id": "betfairWinMarketId",
@@ -65,10 +65,10 @@ ARB_RENAME = {
     "win_price_raw": "winPriceRaw",
     "each_way_terms": "eachWayTerms",
     "win_lay": "winLay",
-    "top_n_lay": "topNLay",
-    "top_n_type": "topNType",
+    "place_lay": "placeLay",
+    "place_market": "placeMarket",
 }
 
 
-def write_arbs_json(out: ArbOutput, path: Path | str) -> None:
-    write_json(out, ARB_RENAME, path)
+def write_horses_json(out: HorsesOutput, path: Path | str) -> None:
+    write_json(out, HORSES_RENAME, path)

@@ -1,6 +1,6 @@
-"""Arb finder entry point. Port of ArbMain.kt.
-Reads + validates betfair.json and paddypower.json, computes arbs,
-writes arbs.json. Exit 0 ok (even zero arbs), 1 bad usage, 2 input error."""
+"""Edge calculator entry point. Reads + validates betfair.json and
+paddypower.json, prices every fully-priced runner, writes horses.json.
+Exit 0 ok (even zero horses), 1 bad usage, 2 input error."""
 
 from __future__ import annotations
 
@@ -14,25 +14,25 @@ from betfair_scraper.validation import validate_scrape_output
 from common.timeutil import iso_utc
 from paddypower_scraper.models import PaddyOutput
 from paddypower_scraper.validation import validate_paddy_output
-from .calculator import find_arbs
-from .models import ArbOutput, write_arbs_json
+from .calculator import find_horses
+from .models import HorsesOutput, write_horses_json
 
 
-def parse_arb_cli_args(argv: list[str]) -> tuple[str, str, str]:
+def parse_horses_cli_args(argv: list[str]) -> tuple[str, str, str]:
     if len(argv) == 0:
-        return ("betfair.json", "paddypower.json", "arbs.json")
+        return ("betfair.json", "paddypower.json", "horses.json")
     if len(argv) == 3:
         return (argv[0], argv[1], argv[2])
     raise ValueError(
         "usage: arb-finder                                          # all defaults\n"
-        "       arb-finder <betfair-in> <paddypower-in> <arbs-out>  # all explicit"
+        "       arb-finder <betfair-in> <paddypower-in> <horses-out>  # all explicit"
     )
 
 
 def main(argv=None, *, now=None) -> int:
     argv = argv if argv is not None else sys.argv[1:]
     try:
-        betfair_in, paddy_in, out_path = parse_arb_cli_args(argv)
+        betfair_in, paddy_in, out_path = parse_horses_cli_args(argv)
     except ValueError as e:
         print(e, file=sys.stderr)
         return 1
@@ -61,16 +61,16 @@ def main(argv=None, *, now=None) -> int:
     paddy = PaddyOutput.from_dict(json.loads(paddy_text))
 
     computed_at = iso_utc((now or (lambda: datetime.now(timezone.utc)))())
-    arbs = find_arbs(betfair, paddy)
-    output = ArbOutput(
+    horses = find_horses(betfair, paddy)
+    output = HorsesOutput(
         computed_at=computed_at,
         betfair_scraped_at=betfair.scraped_at,
         paddypower_scraped_at=paddy.scraped_at,
-        arb_count=len(arbs),
-        arbs=arbs,
+        horse_count=len(horses),
+        horses=horses,
     )
-    write_arbs_json(output, out_path)
-    print(f"Wrote {out_path} ({len(arbs)} arbs from {len(betfair.races)} BF races "
+    write_horses_json(output, out_path)
+    print(f"Wrote {out_path} ({len(horses)} horses from {len(betfair.races)} BF races "
           f"and {len(paddy.races)} PP races)")
     return 0
 
