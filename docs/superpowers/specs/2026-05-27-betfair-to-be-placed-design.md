@@ -56,7 +56,9 @@ scraper, surfaced by running the migrated pipeline against live data.
 
 ## Key decisions
 
-1. **Capture "To Be Placed"** in addition to the explicit markets.
+1. **Capture "To Be Placed"** in addition to the explicit markets,
+   routing by `description.marketType` (`PLACE` = standard place market,
+   `OTHER_PLACE` = explicit "N TBP"), with name as a defensive fallback.
 2. **Place count** for "To Be Placed" comes from the **market book's
    `numberOfWinners`** — the catalogue projection returns it as `null`,
    but the book carries it (confirmed live: `numberOfWinners=3`). We
@@ -88,13 +90,19 @@ No new files. The two modules that already own this:
 #### `betfair_scraper/race_odds.py` — capture, defer, resolve, merge
 
 - `PlaceMarketEntry.type` becomes `MarketType | None`. `None` marks a
-  standard "To Be Placed" market whose `TOP_N` is not yet known.
-- `parse_catalogue_place_markets(text)`:
-  - explicit market (`classify_top_n(name, numberOfWinners)` returns a
-    `TOP_N`) → entry with `type = TOP_N` (unchanged behavior);
-  - market whose name is **"To Be Placed"** (case-insensitive, trimmed)
-    → entry with `type = None` (deferred);
-  - anything else `classify_top_n` rejects → dropped (unchanged).
+  standard place market whose `TOP_N` is not yet known.
+- `parse_catalogue_place_markets(text)` routes each market by its
+  `description.marketType` (Betfair's authoritative type — the same field
+  the request's `marketTypeCodes` filter keys on):
+  - **`marketType == "PLACE"`** (the standard "To Be Placed" market)
+    → entry with `type = None` (deferred; `TOP_N` resolved from the book);
+  - **`marketType == "OTHER_PLACE"`** (the explicit "first N" markets)
+    → `classify_top_n(name, numberOfWinners)`; a `TOP_N` → entry with that
+    type, otherwise dropped (e.g. "Without Favourite", "Each Way" variants
+    — unchanged behavior);
+  - **`marketType` absent/other** → defensive fallback to name:
+    name `"to be placed"` (case-insensitive, trimmed) → deferred entry;
+    else `classify_top_n` as above.
   - All other fields (`market_id`, `event_id`, `market_time`, `runners`)
     are parsed exactly as today, including the existing `marketTime` /
     `marketId` / `event.id` presence guards.
@@ -156,14 +164,23 @@ a per-runner merge of both, the result is one `TOP_3` entry in
 `marketScrapedAt` and one `TOP_3` lay per runner — exactly the existing
 schema. Validators and `arbs.json` are unaffected.
 
-### Detecting "To Be Placed"
+### Detecting the standard place market
 
-By market **name** equal to `"to be placed"` (case-insensitive, trimmed).
-This is Betfair's stable name for the standard place market.
-`description.marketType == "PLACE"` is an equivalent signal but name
-matching is sufficient and avoids depending on the description projection;
-all other PLACE/OTHER_PLACE markets are still filtered by
-`classify_top_n`.
+By **`description.marketType`**, with name as a defensive fallback.
+`marketType` is Betfair's authoritative market-type taxonomy — it is the
+exact field the request's `marketTypeCodes=["PLACE","OTHER_PLACE"]` filter
+keys on, so every returned market carries it by construction, and it is a
+structured enum rather than a localizable display string. `MARKET_DESCRIPTION`
+(already requested) returns it.
+
+Live evidence (2026-05-27, GB+IE): across the place markets observed,
+`description.marketType` was present on every market (zero nulls) and
+`PLACE ⟺ "To Be Placed"`, `OTHER_PLACE ⟺ explicit "N TBP"`, with no
+anomalies. The sample was small (end-of-day), but the structural argument
+(it is the filter field) does not depend on sample size. If `marketType`
+is ever missing or unexpected, the name fallback (`"to be placed"` →
+deferred) preserves today's behavior — and keeps existing test fixtures
+that omit `marketType` working.
 
 ## Edge cases
 
@@ -186,10 +203,13 @@ all other PLACE/OTHER_PLACE markets are still filtered by
 - `MarketBookSnapshot` constructs without the new arg (default `None`).
 
 ### `tests/test_race_odds.py`
-- `parse_catalogue_place_markets`: a `"To Be Placed"` market is **kept**
-  with `type is None`; an explicit `"3 TBP"` → `TOP_3`; an unclassifiable
-  market (e.g. `"Without Fav"`) is dropped. (Updates the existing test
-  that asserted "To Be Placed" was dropped.)
+- `parse_catalogue_place_markets`: a `marketType == "PLACE"` market is
+  **kept** with `type is None` (regardless of exact name); an
+  `OTHER_PLACE` `"3 TBP"` → `TOP_3`; an `OTHER_PLACE` market
+  `classify_top_n` rejects (e.g. `"Without Fav"`) is dropped; and the
+  name fallback path (entry with no `marketType`) routes `"To Be Placed"`
+  → deferred and `"2 TBP"` → `TOP_2`. (Updates the existing test that
+  asserted "To Be Placed" was dropped.)
 - `join_scrapes` resolution: a deferred entry with `number_of_winners=3`
   produces a `TOP_3` `MarketScrape`; `number_of_winners=1` (or `None`)
   produces no `TOP_N`.
@@ -215,6 +235,12 @@ Re-run the pipeline live during racing hours and confirm previously
 - **`numberOfWinners` reliability in the book.** Confirmed present live
   for "To Be Placed". If Betfair ever omits it, that market resolves to
   no `TOP_N` and is simply skipped (degrades to today's behavior — safe).
-- **Name-based detection.** If Betfair renamed the standard place market,
-  detection would miss it (degrades to today's behavior). Low risk; the
-  name has been stable.
+- **`marketType` echoed in the catalogue.** Detection relies on
+  `description.marketType` being returned under the `MARKET_DESCRIPTION`
+  projection. Observed present on every market (zero nulls) and it is the
+  field the request filter keys on, so absence is unlikely; the name
+  fallback covers it if it ever is missing.
+- **Name fallback fragility.** Only reached if `marketType` is absent —
+  if Betfair also renamed the standard place market the fallback would
+  miss it (degrades to today's behavior). Low risk; both signals have
+  been stable.
