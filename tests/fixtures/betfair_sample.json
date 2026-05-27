@@ -1,0 +1,30 @@
+{
+  "scrapedAt": "2026-05-25T17:05:56.890289Z",
+  "raceCount": 1,
+  "races": [
+    {
+      "raceId": "1.258528220",
+      "venue": "Ballinrobe",
+      "country": "IE",
+      "offTime": "2026-05-25T18:05:00+01:00",
+      "winMarketUrl": "https://www.betfair.com/exchange/plus/horse-racing/market/1.258528220",
+      "marketName": "18:05 Ballinrobe - 2m1f Beg Chs",
+      "marketScrapedAt": {
+        "WIN": "2026-05-25T17:05:58.303431Z",
+        "TOP_2": "2026-05-25T17:05:58.303431Z"
+      },
+      "runners": [
+        {
+          "name": "Sony Bill",
+          "lay": { "WIN": 2.72, "TOP_2": 1.99 },
+          "selectionId": 66986352
+        },
+        {
+          "name": "No Offer",
+          "lay": { "WIN": null, "TOP_2": null },
+          "selectionId": 832048
+        }
+      ]
+    }
+  ]
+}
