@@ -7,7 +7,7 @@ import sys
 from contextlib import AbstractContextManager
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable, Iterable, Protocol
+from typing import Callable, Protocol
 
 from . import api
 from .browser import BrowserFetchError, BrowserSession
@@ -15,7 +15,7 @@ from .filtering import in_window, london_day_window
 from common.regions import countries_for_all, parse_regions
 from common.timeutil import iso_utc
 from .meetings import parse_meetings_index
-from .models import PaddyOutput, PaddyRace, RaceStub
+from .models import PaddyOutput, PaddyRace
 from .output import write_paddypower_json
 from .races import parse_meeting_response
 
@@ -64,8 +64,7 @@ def main(
         in_region = [s for s in stubs if s.country_code in countries]
         in_today = [s for s in in_region if in_window(s.start_time_utc, window)]
 
-        meetings = _group_by_meeting(in_today)
-        if not meetings:
+        if not in_today:
             # Legitimate empty day: write empty output and exit 0.
             _write(out_path, now, [])
             print(
@@ -73,70 +72,79 @@ def main(
             )
             return 0
 
+        in_today.sort(key=lambda s: s.start_time_utc)
+
+        # Per-race fan-out. A racing-page response lists the whole meeting's
+        # race metadata but includes the market for ONLY the requested raceId,
+        # so one call per meeting yields just one race. The index already
+        # gives us every race's raceId, so we fetch racing-page per race.
         all_races: list[PaddyRace] = []
-        skipped = 0
         attempted = 0
-        for meeting_id, stubs_in_meeting in meetings.items():
+        skipped = 0
+        for stub in in_today:
             attempted += 1
-            anchor = stubs_in_meeting[0]
-            url = api.racing_page_url(anchor.race_id)
+            url = api.racing_page_url(stub.race_id)
             scraped_at = iso_utc(datetime.now(timezone.utc))
             try:
                 payload = session.fetch_json(url)
-                meeting_races = parse_meeting_response(payload, scraped_at)
+                races = parse_meeting_response(payload, scraped_at)
             except BrowserFetchError as e:
                 print(
-                    f"paddy: skipping meeting {meeting_id} {anchor.venue}: {e.reason}",
+                    f"paddy: skipping race {stub.race_id} {stub.venue}: {e.reason}",
                     file=sys.stderr,
                 )
                 skipped += 1
                 continue
             except Exception as e:
                 print(
-                    f"paddy: skipping meeting {meeting_id} {anchor.venue}: parse error: {e}",
+                    f"paddy: skipping race {stub.race_id} {stub.venue}: parse error: {e}",
                     file=sys.stderr,
                 )
                 skipped += 1
                 continue
-            if not meeting_races:
+            if not races:
                 print(
-                    f"paddy: skipping meeting {meeting_id} {anchor.venue}: no usable races",
+                    f"paddy: skipping race {stub.race_id} {stub.venue}: no usable race",
                     file=sys.stderr,
                 )
                 skipped += 1
                 continue
-            for r in meeting_races:
-                ew = r.each_way_terms
-                ew_str = (
-                    f"eachway={ew.fraction:.2f} places={ew.places}"
-                    if ew else "eachway=no"
-                )
-                print(f"  {r.off_time[11:16]} {r.venue} ({meeting_id}) "
-                      f"→ {len(r.runners)} runners, {ew_str}")
-            all_races.extend(meeting_races)
+            all_races.extend(races)
 
         if attempted > 0 and not all_races:
-            # Every attempted meeting failed.
-            print("paddy: every attempted meeting failed", file=sys.stderr)
+            # Every attempted race failed.
+            print("paddy: every attempted race failed", file=sys.stderr)
             return 1
 
-        all_races.sort(key=lambda r: r.off_time)
-        _write(out_path, now, all_races)
+        # Each racing-page call carries only the requested race's market, so it
+        # yields exactly that race; dedup by (venue, off_time) guards against
+        # any cross-call market bleed.
+        seen: set[tuple[str, str]] = set()
+        deduped: list[PaddyRace] = []
+        for r in all_races:
+            key = (r.venue, r.off_time)
+            if key in seen:
+                continue
+            seen.add(key)
+            deduped.append(r)
+        deduped.sort(key=lambda r: r.off_time)
+
+        for r in deduped:
+            ew = r.each_way_terms
+            ew_str = (
+                f"eachway={ew.fraction:.2f} places={ew.places}"
+                if ew else "eachway=no"
+            )
+            print(f"  {r.off_time[11:16]} {r.venue} "
+                  f"→ {len(r.runners)} runners, {ew_str}")
+
+        meetings_represented = len({r.venue for r in deduped})
+        _write(out_path, now, deduped)
         print(
-            f"Wrote {out_path} ({len(all_races)} races from "
-            f"{attempted - skipped} meetings, {skipped} skipped)"
+            f"Wrote {out_path} ({len(deduped)} races from "
+            f"{meetings_represented} meetings, {skipped} skipped)"
         )
         return 0
-
-
-def _group_by_meeting(stubs: Iterable[RaceStub]) -> dict[str, list[RaceStub]]:
-    groups: dict[str, list[RaceStub]] = {}
-    for s in stubs:
-        groups.setdefault(s.meeting_id, []).append(s)
-    for v in groups.values():
-        v.sort(key=lambda s: s.start_time_utc)
-    # Deterministic meeting order: earliest race first.
-    return dict(sorted(groups.items(), key=lambda kv: kv[1][0].start_time_utc))
 
 
 def _write(out_path: Path, now: datetime, races: list[PaddyRace]) -> None:

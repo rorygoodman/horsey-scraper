@@ -124,6 +124,64 @@ class TestHappyPath:
         assert data["races"][0]["venue"] == "Plumpton"
 
 
+def _market_for(win_market_id: str, race_id: str) -> dict:
+    return {
+        win_market_id: {
+            "marketName": "Test Race",
+            "exchangeMarketId": f"1.exchange_{race_id}",
+            "eachwayAvailable": True,
+            "numberOfPlaces": 3,
+            "placeFraction": {"numerator": 1, "denominator": 5},
+            "runners": [
+                {"runnerName": "Horse A", "selectionId": 1, "runnerStatus": "ACTIVE",
+                 "winRunnerOdds": {"trueOdds": {
+                     "decimalOdds": {"decimalOdds": 4.0},
+                     "fractionalOdds": {"numerator": 3, "denominator": 1},
+                 }}},
+            ],
+        }
+    }
+
+
+class TestPerRaceFanout:
+    """A racing-page response lists the whole meeting's race metadata but
+    includes the market for ONLY the requested raceId. The scraper must fan
+    out per race to retrieve every race's market, not once per meeting."""
+
+    def test_all_races_in_a_meeting_returned(self, tmp_path: Path):
+        r1 = _race_meta(race_id="100.1800", meeting_id="100", win_market_id="927.1",
+                        start_time="2026-05-26T18:00:00.000Z", country="GB", venue="Plumpton")
+        r2 = _race_meta(race_id="100.1830", meeting_id="100", win_market_id="927.2",
+                        start_time="2026-05-26T18:30:00.000Z", country="GB", venue="Plumpton")
+        # Every racing-page response carries BOTH race rows (whole meeting),
+        # but markets only for the race whose raceId was requested.
+        both_rows = {
+            "100.1800": {"raceId": "100.1800", "winMarketId": "927.1",
+                         "startTime": "2026-05-26T18:00:00.000Z", "venue": "Plumpton",
+                         "countryCode": "GB", "winMarketName": "R1"},
+            "100.1830": {"raceId": "100.1830", "winMarketId": "927.2",
+                         "startTime": "2026-05-26T18:30:00.000Z", "venue": "Plumpton",
+                         "countryCode": "GB", "winMarketName": "R2"},
+        }
+        responses = {
+            api.MEETINGS_INDEX_URL: _index_payload([r1, r2]),
+            api.racing_page_url("100.1800"): {"races": both_rows,
+                                              "markets": _market_for("927.1", "100.1800")},
+            api.racing_page_url("100.1830"): {"races": both_rows,
+                                              "markets": _market_for("927.2", "100.1830")},
+        }
+        session = FakeSession(responses)
+        out = tmp_path / "paddypower.json"
+        rc = cli.main(["gb-ie"], now_utc=NOW,
+                      make_session=make_session_factory(session), out_path=out)
+        assert rc == 0
+        data = json.loads(out.read_text())
+        assert data["raceCount"] == 2
+        assert sorted(r["offTime"][11:16] for r in data["races"]) == ["19:00", "19:30"]
+        # one racing-page call per race
+        assert len([u for u in session.calls if "racing-page" in u]) == 2
+
+
 class TestPartialFailure:
     def test_one_meeting_fails_rest_succeeds(self, tmp_path: Path):
         good = _race_meta(race_id="100.1800", meeting_id="100", win_market_id="927.1",
