@@ -70,6 +70,29 @@ uv run python -m paddypower_scraper.validate paddypower.json
 uv run python -m arb_finder.validate horses.json
 ```
 
+## Web page (GitHub Pages)
+
+The latest output is published as a static page at
+**https://rorygoodman.github.io/horsey-scraper/** — an edge-ranked table of
+every fully-priced runner (positive-edge rows highlighted).
+
+Scrape and publish in one step:
+
+```
+./publish.sh            # GB + IE
+./publish.sh us         # US only
+```
+
+`publish.sh` runs the pipeline, then force-pushes `index.html` + `horses.json`
+to the `gh-pages` branch (via the `gh` https credential helper). Preview the
+page locally without publishing:
+
+```
+mkdir -p /tmp/horsey-preview && cp index.html /tmp/horsey-preview/
+cp examples/horses.example.json /tmp/horsey-preview/horses.json
+( cd /tmp/horsey-preview && python3 -m http.server 8099 )   # open http://localhost:8099
+```
+
 ## Tests
 
 ```
