@@ -26,7 +26,7 @@ from .responses import (
 @dataclass(frozen=True)
 class PlaceMarketEntry:
     market_id: str
-    type: MarketType
+    type: MarketType | None  # None = standard "To Be Placed"; TOP_N resolved from the book
     event_id: str
     market_time: str
     runners: dict[int, str]
@@ -63,9 +63,16 @@ def parse_catalogue_place_markets(text: str) -> list[PlaceMarketEntry]:
         n_winners = desc.get("numberOfWinners")
         if not isinstance(n_winners, int) or isinstance(n_winners, bool):
             n_winners = None
-        type_ = classify_top_n(name, n_winners)
-        if type_ is None:
-            continue
+        market_type = desc.get("marketType")
+        # Route by Betfair's authoritative marketType; fall back to name.
+        if market_type == "PLACE" or (
+            market_type is None and name.strip().lower() == "to be placed"
+        ):
+            type_ = None  # standard place market — TOP_N resolved from the book
+        else:
+            type_ = classify_top_n(name, n_winners)
+            if type_ is None:
+                continue
         market_time = desc.get("marketTime")
         market_id = el.get("marketId")
         event = el.get("event")

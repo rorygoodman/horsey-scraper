@@ -26,29 +26,46 @@ def test_chunk_of_40():
     assert chunk_of_40(list(range(41))) == [list(range(40)), [40]]
 
 
-def test_parse_catalogue_place_markets_filters_and_binds():
+def test_parse_catalogue_place_markets_routes_by_market_type():
     text = json.dumps([
-        {  # a Top-2 market that classifies
-            "marketName": "2 TBP",
-            "marketId": "9.1",
-            "description": {"marketTime": "2026-05-25T17:00:00Z"},
+        {  # explicit OTHER_PLACE → TOP_2
+            "marketName": "2 TBP", "marketId": "9.1",
+            "description": {"marketType": "OTHER_PLACE", "marketTime": "2026-05-25T17:00:00Z"},
             "event": {"id": "30.1"},
             "runners": [{"selectionId": 1, "runnerName": "A"}],
         },
-        {  # To Be Placed → rejected by classifier
-            "marketName": "To Be Placed",
-            "marketId": "9.2",
-            "description": {"marketTime": "2026-05-25T17:00:00Z"},
+        {  # standard PLACE → deferred (type None), kept
+            "marketName": "To Be Placed", "marketId": "9.2",
+            "description": {"marketType": "PLACE", "marketTime": "2026-05-25T17:00:00Z"},
             "event": {"id": "30.1"},
-            "runners": [],
+            "runners": [{"selectionId": 1, "runnerName": "A"}],
+        },
+        {  # OTHER_PLACE that doesn't classify → dropped
+            "marketName": "Without Fav", "marketId": "9.3",
+            "description": {"marketType": "OTHER_PLACE", "marketTime": "2026-05-25T17:00:00Z"},
+            "event": {"id": "30.1"}, "runners": [],
         },
     ])
-    entries = parse_catalogue_place_markets(text)
-    assert len(entries) == 1
-    assert entries[0].market_id == "9.1"
-    assert entries[0].type is MarketType.TOP_2
-    assert entries[0].event_id == "30.1"
-    assert entries[0].runners == {1: "A"}
+    by_id = {e.market_id: e for e in parse_catalogue_place_markets(text)}
+    assert set(by_id) == {"9.1", "9.2"}
+    assert by_id["9.1"].type is MarketType.TOP_2
+    assert by_id["9.2"].type is None          # deferred standard place market
+    assert by_id["9.2"].runners == {1: "A"}
+
+
+def test_parse_catalogue_place_markets_name_fallback_without_market_type():
+    # No description.marketType → fall back to name matching.
+    text = json.dumps([
+        {"marketName": "To Be Placed", "marketId": "9.1",
+         "description": {"marketTime": "2026-05-25T17:00:00Z"},
+         "event": {"id": "30.1"}, "runners": [{"selectionId": 1, "runnerName": "A"}]},
+        {"marketName": "2 TBP", "marketId": "9.2",
+         "description": {"marketTime": "2026-05-25T17:00:00Z"},
+         "event": {"id": "30.1"}, "runners": [{"selectionId": 1, "runnerName": "A"}]},
+    ])
+    by_id = {e.market_id: e for e in parse_catalogue_place_markets(text)}
+    assert by_id["9.1"].type is None          # "To Be Placed" → deferred
+    assert by_id["9.2"].type is MarketType.TOP_2
 
 
 def test_place_markets_by_race_id_binds_via_event_and_time():
