@@ -1,10 +1,13 @@
 """Thin REST client for the three Betfair endpoints. Port of BetfairClient.kt.
-Uses stdlib urllib (no browser, no third-party dep). No retries."""
+Uses stdlib urllib over a certifi-backed TLS context. No retries."""
 
 from __future__ import annotations
 
+import ssl
 import urllib.error
 import urllib.request
+
+import certifi
 
 from .responses import build_login_body, parse_ssoid
 
@@ -13,11 +16,19 @@ CATALOGUE_URL = "https://api.betfair.com/exchange/betting/rest/v1.0/listMarketCa
 BOOK_URL = "https://api.betfair.com/exchange/betting/rest/v1.0/listMarketBook/"
 
 
+def _default_opener() -> urllib.request.OpenerDirector:
+    """Opener with a certifi CA bundle. stdlib urllib does not reliably find a
+    system CA bundle (unlike the JVM truststore the Kotlin client used), so
+    Betfair's TLS cert fails to verify without an explicit bundle."""
+    ctx = ssl.create_default_context(cafile=certifi.where())
+    return urllib.request.build_opener(urllib.request.HTTPSHandler(context=ctx))
+
+
 class BetfairClient:
     def __init__(self, app_key: str, *, opener=None):
         self.app_key = app_key
         self._ssoid: "str | None" = None
-        self._opener = opener or urllib.request.build_opener()
+        self._opener = opener or _default_opener()
 
     def login(self, username: str, password: str) -> None:
         req = urllib.request.Request(

@@ -3,7 +3,7 @@ name = "horsey-scraper"
 version = "1.0.0"
 description = "Horse-racing lay-price scraper + each-way arb finder (Betfair + PaddyPower)"
 requires-python = ">=3.11"
-dependencies = ["playwright>=1.42"]
+dependencies = ["playwright>=1.42", "certifi>=2024.2.2"]
 
 [dependency-groups]
 dev = ["pytest>=8"]
