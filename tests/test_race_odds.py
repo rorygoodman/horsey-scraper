@@ -187,6 +187,37 @@ def test_fetcher_end_to_end():
     assert client.book_calls == 1  # 2 market ids → exactly one ≤40 chunk
 
 
+def test_fetcher_resolves_to_be_placed_to_top_n():
+    # Integration: a marketType=="PLACE" "To Be Placed" market flows through
+    # the full fetch → bind → book → resolve pipeline and becomes a TOP_N
+    # (N from the book's numberOfWinners), not just at the join_scrapes unit.
+    win_json = json.dumps([{
+        "marketId": "1.1", "marketName": "2m Hcap",
+        "marketStartTime": "2026-05-25T17:00:00Z", "event": {"id": "30.1"},
+        "runners": [{"selectionId": 1, "runnerName": "A"}],
+    }])
+    place_json = json.dumps([{
+        "marketName": "To Be Placed", "marketId": "9.tbp",
+        "description": {"marketType": "PLACE", "marketTime": "2026-05-25T17:00:00Z"},
+        "event": {"id": "30.1"}, "runners": [{"selectionId": 1, "runnerName": "A"}],
+    }])
+    book_json = json.dumps([
+        {"marketId": "1.1", "status": "OPEN",
+         "runners": [{"selectionId": 1, "ex": {"availableToLay": [{"price": 2.5}]}}]},
+        {"marketId": "9.tbp", "status": "OPEN", "numberOfWinners": 3,
+         "runners": [{"selectionId": 1, "ex": {"availableToLay": [{"price": 1.6}]}}]},
+    ])
+    client = FakeClient(win_json, place_json, book_json)
+    races = [Race("1.1", "Ascot", "GB", "2026-05-25T18:00:00+01:00", "u")]
+    out = RaceOddsFetcher(
+        client, now=lambda: __import__("datetime").datetime(
+            2026, 5, 25, 17, 0, tzinfo=__import__("datetime").timezone.utc)
+    ).fetch(races, frozenset({"gb-ie"}))
+    assert len(out) == 1
+    assert list(out[0].market_scraped_at) == [MarketType.WIN, MarketType.TOP_3]
+    assert out[0].runners[0].lay == {MarketType.WIN: 2.5, MarketType.TOP_3: 1.6}
+
+
 def test_join_scrapes_resolves_to_be_placed_from_book():
     races = [Race("1.1", "Kempton", "GB", "2026-05-27T21:00:00+01:00", "u")]
     place = {"1.1": [PlaceMarketEntry("9.tbp", None, "30.1", "t", {1: "A"})]}
