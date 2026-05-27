@@ -14,3 +14,14 @@ EXAMPLE = ROOT / "examples" / "horses.example.json"
 
 def test_example_validates():
     assert validate_horses_output(EXAMPLE.read_text()) == []
+
+
+INDEX = ROOT / "index.html"
+
+
+def test_index_references_schema_fields():
+    html = INDEX.read_text()
+    assert "horses.json" in html
+    for field in ("computedAt", "horseCount", "edge", "winPrice",
+                  "winLay", "placeLay", "placeMarket"):
+        assert field in html, f"index.html missing reference to {field!r}"
