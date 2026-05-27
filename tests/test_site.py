@@ -4,6 +4,7 @@ verified by manual preview + end-to-end publish.)"""
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 from arb_finder.validation import validate_horses_output
@@ -25,3 +26,12 @@ def test_index_references_schema_fields():
     for field in ("computedAt", "horseCount", "edge", "winPrice",
                   "winLay", "placeLay", "placeMarket"):
         assert field in html, f"index.html missing reference to {field!r}"
+
+
+def test_publish_script_shape():
+    sh = ROOT / "publish.sh"
+    assert sh.exists(), "publish.sh missing"
+    assert os.access(sh, os.X_OK), "publish.sh not executable"
+    text = sh.read_text()
+    for token in ("./run.sh", "index.html", "horses.json", "gh-pages", "push -f"):
+        assert token in text, f"publish.sh missing {token!r}"

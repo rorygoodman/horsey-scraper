@@ -20,6 +20,7 @@ paddypower.json
 horses.json
 arbs.json
 debug-page.html
+public/
 
 # Credentials — never commit. Real file lives at ~/.horsey-scraper/credentials.json.
 credentials.json
