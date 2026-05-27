@@ -24,6 +24,8 @@ class MarketBookSnapshot:
     status: MarketBookStatus
     # selectionId → best lay price; value is None when availableToLay is empty.
     lay_by_selection_id: dict[int, float | None]
+    # Betfair's place count for the market (book-only; catalogue returns null).
+    number_of_winners: int | None = None
 
 
 def parse_ssoid(text: str) -> str:
@@ -76,15 +78,17 @@ def race_from_catalogue(root: dict) -> "Race | None":
 
 
 def lay_prices_from_book(root: dict) -> MarketBookSnapshot:
+    n = root.get("numberOfWinners")
+    number_of_winners = n if isinstance(n, int) and not isinstance(n, bool) else None
     status = (
         MarketBookStatus.OPEN if root.get("status") == "OPEN"
         else MarketBookStatus.OTHER
     )
     if status is not MarketBookStatus.OPEN:
-        return MarketBookSnapshot(status, {})
+        return MarketBookSnapshot(status, {}, number_of_winners)
     runners = root.get("runners")
     if not isinstance(runners, list):
-        return MarketBookSnapshot(status, {})
+        return MarketBookSnapshot(status, {}, number_of_winners)
     out: dict[int, float | None] = {}
     for r in runners:
         if not isinstance(r, dict):
@@ -105,7 +109,7 @@ def lay_prices_from_book(root: dict) -> MarketBookSnapshot:
                         first_price = p
                     break
         out[sel] = first_price
-    return MarketBookSnapshot(status, out)
+    return MarketBookSnapshot(status, out, number_of_winners)
 
 
 def build_login_body(username: str, password: str) -> str:

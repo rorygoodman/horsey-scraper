@@ -8,6 +8,7 @@ import pytest
 
 from common.markettype import MarketType  # noqa: F401 (parity import)
 from betfair_scraper.responses import (
+    MarketBookSnapshot,
     MarketBookStatus,
     build_book_body,
     build_catalogue_body,
@@ -137,6 +138,27 @@ class TestLayPricesFromBook:
         snap = lay_prices_from_book(obj)
         assert snap.status is MarketBookStatus.OPEN
         assert snap.lay_by_selection_id == {111: 4.8, 222: None, 333: 22.0}
+
+    def test_captures_number_of_winners(self):
+        obj = {
+            "status": "OPEN",
+            "numberOfWinners": 3,
+            "runners": [{"selectionId": 1, "ex": {"availableToLay": [{"price": 2.5}]}}],
+        }
+        assert lay_prices_from_book(obj).number_of_winners == 3
+
+    def test_number_of_winners_absent_is_none(self):
+        obj = {"status": "OPEN", "runners": []}
+        assert lay_prices_from_book(obj).number_of_winners is None
+
+    def test_number_of_winners_present_when_non_open(self):
+        snap = lay_prices_from_book({"status": "SUSPENDED", "numberOfWinners": 4, "runners": []})
+        assert snap.status is MarketBookStatus.OTHER
+        assert snap.number_of_winners == 4
+
+    def test_snapshot_constructs_without_number_of_winners(self):
+        snap = MarketBookSnapshot(MarketBookStatus.OPEN, {1: 2.5})
+        assert snap.number_of_winners is None
 
 
 class TestBuildBodies:
