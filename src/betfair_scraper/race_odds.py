@@ -7,7 +7,7 @@ import json
 from dataclasses import dataclass
 from datetime import datetime, timezone
 
-from common.markettype import MarketType
+from common.markettype import MarketType, top_n_from_places
 from common.regions import countries_for_all
 from common.timeutil import LONDON, iso_utc
 from .assembly import assemble_race_odds, format_market_name
@@ -163,6 +163,16 @@ def parse_win_race_keys(text: str) -> dict[str, tuple[str, str]]:
     return out
 
 
+def _better_lay(a: "float | None", b: "float | None") -> "float | None":
+    """Lower of two lay prices (a lower lay yields a higher each-way margin).
+    None is treated as 'no offer'; returns None only if both are None."""
+    if a is None:
+        return b
+    if b is None:
+        return a
+    return a if a <= b else b
+
+
 def join_scrapes(
     races: list[Race],
     place_markets: dict[str, list[PlaceMarketEntry]],
@@ -190,17 +200,36 @@ def join_scrapes(
                 ],
             )
         }
+        by_type: dict[MarketType, list[tuple[PlaceMarketEntry, MarketBookSnapshot]]] = {}
         for place in place_markets.get(race.race_id, []):
             snap = snapshots.get(place.market_id)
             if snap is None or snap.status is not MarketBookStatus.OPEN:
                 continue
-            scrapes[place.type] = MarketScrape(
-                type=place.type,
+            tn = place.type
+            if tn is None:  # standard "To Be Placed" — resolve N from the book
+                n = snap.number_of_winners
+                tn = top_n_from_places(n) if isinstance(n, int) else None
+            if tn is None:  # unresolved, or numberOfWinners outside 2..5
+                continue
+            by_type.setdefault(tn, []).append((place, snap))
+
+        for tn, items in by_type.items():
+            # Merge markets sharing this TOP_N: best (lowest non-null) lay per runner.
+            merged: dict[int, tuple[str, float | None]] = {}
+            for entry, snap in items:
+                for sel, name in entry.runners.items():
+                    lay = snap.lay_by_selection_id.get(sel)
+                    if sel not in merged:
+                        merged[sel] = (name, lay)
+                    else:
+                        prev_name, prev_lay = merged[sel]
+                        merged[sel] = (prev_name, _better_lay(prev_lay, lay))
+            scrapes[tn] = MarketScrape(
+                type=tn,
                 scraped_at=scraped_at,
                 runners=[
-                    RunnerEntry(selection_id=sel, name=name,
-                                lay=snap.lay_by_selection_id.get(sel))
-                    for sel, name in place.runners.items()
+                    RunnerEntry(selection_id=sel, name=name, lay=lay)
+                    for sel, (name, lay) in merged.items()
                 ],
             )
         odds = assemble_race_odds(race, win_market_name, scrapes)

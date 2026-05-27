@@ -185,3 +185,62 @@ def test_fetcher_end_to_end():
     assert out[0].market_name.startswith("18:00 Ascot")
     assert out[0].runners[0].lay == {MarketType.WIN: 2.5, MarketType.TOP_2: 1.4}
     assert client.book_calls == 1  # 2 market ids → exactly one ≤40 chunk
+
+
+def test_join_scrapes_resolves_to_be_placed_from_book():
+    races = [Race("1.1", "Kempton", "GB", "2026-05-27T21:00:00+01:00", "u")]
+    place = {"1.1": [PlaceMarketEntry("9.tbp", None, "30.1", "t", {1: "A"})]}
+    snapshots = {
+        "1.1": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 2.5}),
+        "9.tbp": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 1.6}, number_of_winners=3),
+    }
+    out = join_scrapes(races, place, snapshots, {"1.1": [(1, "A")]}, "n", "t")
+    assert list(out[0].market_scraped_at) == [MarketType.WIN, MarketType.TOP_3]
+    assert out[0].runners[0].lay == {MarketType.WIN: 2.5, MarketType.TOP_3: 1.6}
+
+
+def test_join_scrapes_to_be_placed_count_out_of_range_dropped():
+    races = [Race("1.1", "X", "GB", "2026-05-27T21:00:00+01:00", "u")]
+    place = {"1.1": [PlaceMarketEntry("9.tbp", None, "30.1", "t", {1: "A"})]}
+    snapshots = {
+        "1.1": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 2.5}),
+        "9.tbp": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 1.6}, number_of_winners=1),
+    }
+    out = join_scrapes(races, place, snapshots, {"1.1": [(1, "A")]}, "n", "t")
+    assert list(out[0].market_scraped_at) == [MarketType.WIN]  # 1 place → no TOP_N
+
+
+def test_join_scrapes_merges_contested_topn_per_runner_best():
+    races = [Race("1.1", "X", "GB", "2026-05-27T21:00:00+01:00", "u")]
+    place = {"1.1": [
+        PlaceMarketEntry("9.explicit", MarketType.TOP_3, "30.1", "t", {1: "A", 2: "B"}),
+        PlaceMarketEntry("9.tbp", None, "30.1", "t", {1: "A", 2: "B"}),
+    ]}
+    snapshots = {
+        "1.1": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 2.5, 2: 2.5}),
+        "9.explicit": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 3.60, 2: 5.20}),
+        "9.tbp": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 3.45, 2: 5.40}, number_of_winners=3),
+    }
+    out = join_scrapes(races, place, snapshots, {"1.1": [(1, "A"), (2, "B")]}, "n", "t")
+    lays = {r.name: r.lay[MarketType.TOP_3] for r in out[0].runners}
+    assert lays == {"A": 3.45, "B": 5.20}  # per-runner cheapest across the two books
+
+
+def test_join_scrapes_kempton_shape():
+    # Live Kempton 21:00 shape: explicit 2 TBP + 4 TBP, plus To-Be-Placed paying 3.
+    races = [Race("1.1", "Kempton", "GB", "2026-05-27T21:00:00+01:00", "u")]
+    place = {"1.1": [
+        PlaceMarketEntry("9.2", MarketType.TOP_2, "30.1", "t", {1: "A"}),
+        PlaceMarketEntry("9.4", MarketType.TOP_4, "30.1", "t", {1: "A"}),
+        PlaceMarketEntry("9.tbp", None, "30.1", "t", {1: "A"}),
+    ]}
+    snapshots = {
+        "1.1": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 2.5}),
+        "9.2": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 3.8}),
+        "9.4": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 1.8}),
+        "9.tbp": MarketBookSnapshot(MarketBookStatus.OPEN, {1: 2.3}, number_of_winners=3),
+    }
+    out = join_scrapes(races, place, snapshots, {"1.1": [(1, "A")]}, "n", "t")
+    assert set(out[0].market_scraped_at) == {
+        MarketType.WIN, MarketType.TOP_2, MarketType.TOP_3, MarketType.TOP_4}
+    assert out[0].runners[0].lay[MarketType.TOP_3] == 2.3
