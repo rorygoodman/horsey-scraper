@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="600">
+  <title>Horsey — each-way edges</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background:#1a1a1a; color:#eee;
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      padding:20px; min-height:100vh; }
+    .container { max-width:1100px; margin:0 auto; }
+    h1 { color:#9aa; font-size:1.6em; margin-bottom:6px; }
+    .summary { color:#888; margin-bottom:16px; font-size:.9em; }
+    .summary b { color:#00d4ff; }
+    .controls { display:flex; gap:14px; align-items:center; margin-bottom:16px; flex-wrap:wrap; }
+    select { background:#222; color:#eee; border:1px solid #555; border-radius:6px;
+      padding:8px 10px; font-size:.95em; }
+    label { color:#ccc; display:flex; gap:6px; align-items:center; cursor:pointer; font-size:.95em; }
+    table { width:100%; border-collapse:collapse; background:#222; border-radius:8px; overflow:hidden; }
+    th, td { padding:9px 10px; text-align:right; border-bottom:1px solid #333; white-space:nowrap; }
+    th { color:#9aa; font-weight:600; font-size:.8em; text-transform:uppercase; letter-spacing:.03em; }
+    td.l, th.l { text-align:left; }
+    tr.pos td { background:#10331f; }
+    td.edge { font-variant-numeric:tabular-nums; font-weight:600; }
+    td.edge.pos { color:#00ff88; }
+    .raw { color:#888; font-size:.85em; }
+    .msg { color:#bbb; padding:30px; text-align:center; background:#222; border-radius:8px; }
+    .err { color:#ff6b6b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🐎 Horsey — each-way edges</h1>
+    <div class="summary" id="summary">Loading…</div>
+    <div class="controls" id="controls" style="display:none">
+      <select id="venue"><option value="">All venues</option></select>
+      <label><input type="checkbox" id="posonly"> edge &gt; 0 only</label>
+    </div>
+    <div id="content"></div>
+  </div>
+  <script>
+    const fmtPct = e => (e >= 0 ? "+" : "") + (e * 100).toFixed(2) + "%";
+    const hhmm = iso => (iso || "").slice(11, 16);
+    let HORSES = [];
+
+    function render() {
+      const venue = document.getElementById("venue").value;
+      const posonly = document.getElementById("posonly").checked;
+      let rows = HORSES;
+      if (venue) rows = rows.filter(h => h.venue === venue);
+      if (posonly) rows = rows.filter(h => h.edge > 0);
+      const content = document.getElementById("content");
+      if (!rows.length) {
+        content.innerHTML = '<div class="msg">No runners match.</div>';
+        return;
+      }
+      const body = rows.map(h => {
+        const cls = h.edge > 0 ? " pos" : "";
+        const pp = h.paddypower, bf = h.betfair;
+        return `<tr class="${h.edge > 0 ? 'pos' : ''}">
+          <td class="edge${cls}">${fmtPct(h.edge)}</td>
+          <td>${hhmm(h.offTime)}</td>
+          <td class="l">${h.venue}</td>
+          <td class="l">${h.runner.name}</td>
+          <td>${pp.winPrice.toFixed(2)} <span class="raw">${pp.winPriceRaw}</span></td>
+          <td>${bf.winLay.toFixed(2)}</td>
+          <td>${bf.placeMarket}</td>
+          <td>${bf.placeLay.toFixed(2)}</td>
+        </tr>`;
+      }).join("");
+      content.innerHTML = `<table>
+        <thead><tr>
+          <th>edge</th><th>time</th><th class="l">venue</th><th class="l">runner</th>
+          <th>PP win</th><th>BF win</th><th>place</th><th>BF plc</th>
+        </tr></thead>
+        <tbody>${body}</tbody></table>`;
+    }
+
+    async function load() {
+      const summary = document.getElementById("summary");
+      try {
+        const res = await fetch("horses.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const data = await res.json();
+        HORSES = data.horses || [];
+        const pos = HORSES.filter(h => h.edge > 0).length;
+        const updated = data.computedAt ? new Date(data.computedAt).toLocaleString() : "unknown";
+        summary.innerHTML =
+          `updated <b>${updated}</b> &middot; <b>${data.horseCount}</b> horseys &middot; ` +
+          `<b>${pos}</b> with edge&gt;0`;
+        if (!HORSES.length) {
+          document.getElementById("content").innerHTML =
+            '<div class="msg">No fully-priced runners right now.</div>';
+          return;
+        }
+        const venueSel = document.getElementById("venue");
+        [...new Set(HORSES.map(h => h.venue))].sort().forEach(v => {
+          const o = document.createElement("option");
+          o.value = v; o.textContent = v; venueSel.appendChild(o);
+        });
+        document.getElementById("controls").style.display = "flex";
+        venueSel.addEventListener("change", render);
+        document.getElementById("posonly").addEventListener("change", render);
+        render();
+      } catch (e) {
+        summary.innerHTML = '<span class="err">Failed to load horses.json: ' + e.message + '</span>';
+        document.getElementById("content").innerHTML =
+          '<div class="msg err">Could not load data.</div>';
+      }
+    }
+    load();
+  </script>
+</body>
+</html>
