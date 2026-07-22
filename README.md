@@ -74,7 +74,9 @@ uv run python -m arb_finder.validate horses.json
 
 The latest output is published as a static page at
 **https://rorygoodman.github.io/horsey-scraper/** — an edge-ranked table of
-every fully-priced runner (positive-edge rows highlighted).
+every fully-priced runner (positive-edge rows highlighted). A **source**
+toggle switches the table between PaddyPower (`horses.json`) and 888sport
+(`888horses.json`); the choice is remembered across the page's auto-refresh.
 
 Scrape and publish in one step:
 
@@ -84,8 +86,8 @@ Scrape and publish in one step:
 ```
 
 `publish.sh` runs the pipeline, then force-pushes `index.html` + `horses.json`
-to the `gh-pages` branch (via the `gh` https credential helper). Preview the
-page locally without publishing:
+(and `888horses.json` when present) to the `gh-pages` branch (via the `gh`
+https credential helper). Preview the page locally without publishing:
 
 ```
 mkdir -p /tmp/horsey-preview && cp index.html /tmp/horsey-preview/

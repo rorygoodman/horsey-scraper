@@ -28,6 +28,13 @@ def test_index_references_schema_fields():
         assert field in html, f"index.html missing reference to {field!r}"
 
 
+def test_index_offers_888_source():
+    # The bookie source toggle reads 888horses.json and its sport888 leg.
+    html = INDEX.read_text()
+    assert "888horses.json" in html, "index.html missing 888horses.json source"
+    assert "sport888" in html, "index.html missing sport888 bookie leg"
+
+
 def test_publish_script_shape():
     sh = ROOT / "publish.sh"
     assert sh.exists(), "publish.sh missing"
@@ -35,3 +42,8 @@ def test_publish_script_shape():
     text = sh.read_text()
     for token in ("./run.sh", "index.html", "horses.json", "gh-pages", "push -f"):
         assert token in text, f"publish.sh missing {token!r}"
+
+
+def test_publish_script_copies_888horses():
+    text = (ROOT / "publish.sh").read_text()
+    assert "888horses.json" in text, "publish.sh should copy 888horses.json to the site"

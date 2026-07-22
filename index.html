@@ -35,17 +35,44 @@
     <h1>🐎 Horsey — each-way edges</h1>
     <div class="summary" id="summary">Loading…</div>
     <div class="controls" id="controls" style="display:none">
+      <label>source
+        <select id="source">
+          <option value="paddypower">PaddyPower</option>
+          <option value="sport888">888sport</option>
+        </select>
+      </label>
       <select id="venue"><option value="">All venues</option></select>
       <label><input type="checkbox" id="posonly"> edge &gt; 0 only</label>
     </div>
     <div id="content"></div>
   </div>
   <script>
+    // Each source is one bookie's output file. The only schema difference is
+    // the bookie-leg field name (paddypower vs sport888); everything else
+    // (edge, betfair leg, runner, venue, offTime) is identical.
+    const SOURCES = {
+      paddypower: { file: "horses.json",    leg: "paddypower", label: "PP" },
+      sport888:   { file: "888horses.json", leg: "sport888",   label: "888" },
+    };
+    const STORE_KEY = "horsey_source";
+
     const fmtPct = e => (e >= 0 ? "+" : "") + (e * 100).toFixed(2) + "%";
     const hhmm = iso => (iso || "").slice(11, 16);
     let HORSES = [];
+    let CUR = "paddypower";
+
+    function savedSource() {
+      try {
+        const s = localStorage.getItem(STORE_KEY);
+        return (s && SOURCES[s]) ? s : "paddypower";
+      } catch (e) { return "paddypower"; }
+    }
+    function rememberSource(s) {
+      try { localStorage.setItem(STORE_KEY, s); } catch (e) { /* storage blocked */ }
+    }
 
     function render() {
+      const src = SOURCES[CUR];
       const venue = document.getElementById("venue").value;
       const posonly = document.getElementById("posonly").checked;
       let rows = HORSES;
@@ -58,13 +85,13 @@
       }
       const body = rows.map(h => {
         const cls = h.edge > 0 ? " pos" : "";
-        const pp = h.paddypower, bf = h.betfair;
+        const book = h[src.leg], bf = h.betfair;
         return `<tr class="${h.edge > 0 ? 'pos' : ''}">
           <td class="edge${cls}">${fmtPct(h.edge)}</td>
           <td>${hhmm(h.offTime)}</td>
           <td class="l">${h.venue}</td>
           <td class="l">${h.runner.name}</td>
-          <td>${pp.winPrice.toFixed(2)} <span class="raw">${pp.winPriceRaw}</span></td>
+          <td>${book.winPrice.toFixed(2)} <span class="raw">${book.winPriceRaw}</span></td>
           <td>${bf.winLay.toFixed(2)}</td>
           <td>${bf.placeMarket}</td>
           <td>${bf.placeLay.toFixed(2)}</td>
@@ -73,15 +100,18 @@
       content.innerHTML = `<table>
         <thead><tr>
           <th>edge</th><th>time</th><th class="l">venue</th><th class="l">runner</th>
-          <th>PP win</th><th>BF win</th><th>place</th><th>BF plc</th>
+          <th>${src.label} win</th><th>BF win</th><th>place</th><th>BF plc</th>
         </tr></thead>
         <tbody>${body}</tbody></table>`;
     }
 
-    async function load() {
+    async function load(source) {
+      CUR = source;
+      const src = SOURCES[source];
       const summary = document.getElementById("summary");
+      const content = document.getElementById("content");
       try {
-        const res = await fetch("horses.json", { cache: "no-store" });
+        const res = await fetch(src.file, { cache: "no-store" });
         if (!res.ok) throw new Error("HTTP " + res.status);
         const data = await res.json();
         HORSES = data.horses || [];
@@ -90,27 +120,44 @@
         summary.innerHTML =
           `updated <b>${updated}</b> &middot; <b>${data.horseCount}</b> horseys &middot; ` +
           `<b>${pos}</b> with edge&gt;0`;
-        if (!HORSES.length) {
-          document.getElementById("content").innerHTML =
-            '<div class="msg">No fully-priced runners right now.</div>';
-          return;
-        }
+        // Rebuild venue filter for this file, preserving the selection if still present.
         const venueSel = document.getElementById("venue");
+        const keep = venueSel.value;
+        venueSel.innerHTML = '<option value="">All venues</option>';
         [...new Set(HORSES.map(h => h.venue))].sort().forEach(v => {
           const o = document.createElement("option");
           o.value = v; o.textContent = v; venueSel.appendChild(o);
         });
-        document.getElementById("controls").style.display = "flex";
-        venueSel.addEventListener("change", render);
-        document.getElementById("posonly").addEventListener("change", render);
+        if ([...venueSel.options].some(o => o.value === keep)) venueSel.value = keep;
+        if (!HORSES.length) {
+          content.innerHTML = '<div class="msg">No fully-priced runners right now.</div>';
+          return;
+        }
         render();
       } catch (e) {
-        summary.innerHTML = '<span class="err">Failed to load horses.json: ' + e.message + '</span>';
-        document.getElementById("content").innerHTML =
-          '<div class="msg err">Could not load data.</div>';
+        HORSES = [];
+        summary.innerHTML =
+          '<span class="err">Failed to load ' + src.file + ': ' + e.message + '</span>';
+        content.innerHTML =
+          '<div class="msg err">Could not load ' + src.file + '.</div>';
       }
     }
-    load();
+
+    function init() {
+      const start = savedSource();
+      CUR = start;
+      const sourceSel = document.getElementById("source");
+      sourceSel.value = start;
+      document.getElementById("controls").style.display = "flex";
+      sourceSel.addEventListener("change", () => {
+        rememberSource(sourceSel.value);
+        load(sourceSel.value);
+      });
+      document.getElementById("venue").addEventListener("change", render);
+      document.getElementById("posonly").addEventListener("change", render);
+      load(start);
+    }
+    init();
   </script>
 </body>
 </html>
