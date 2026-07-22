@@ -21,6 +21,8 @@ horses.json
 arbs.json
 debug-page.html
 public/
+888sport.json
+888horses.json
 
 # Credentials — never commit. Real file lives at ~/.horsey-scraper/credentials.json.
 credentials.json
