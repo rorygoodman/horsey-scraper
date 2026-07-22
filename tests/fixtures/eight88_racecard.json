@@ -1,0 +1,788 @@
+{
+ "default_event_id": "7960079",
+ "racecard": {
+  "events": {
+   "7960079": {
+    "details": {
+     "id": "7960079",
+     "event_type_id": "1",
+     "name": "Worcester",
+     "sport_id": "1",
+     "tournament_id": "23097",
+     "category_id": "27426",
+     "home_team_id": null,
+     "away_team_id": null,
+     "status_id": "2",
+     "scheduled_date": "2026-07-22",
+     "scheduled_start": "2026-07-22T12:55:00+00:00",
+     "actual_start": null,
+     "slug": "worcester-1255",
+     "active": "1",
+     "tradable": "0",
+     "visible": "1",
+     "is_bet_builder_eligible": "0",
+     "order": "1000",
+     "trading_category": null,
+     "has_results": "0",
+     "restrict_cashout": "0",
+     "last_modified": "2026-07-21 07:19:01",
+     "created": "2026-07-21 07:19:00",
+     "first_active_selection_at": "2026-07-21 07:19:01",
+     "phase_id": "2",
+     "sport_slug": "horse-racing",
+     "default_market_id": "1",
+     "feed_event_id": "399d672a8cd14c4483b64bfeff3f2c2b",
+     "headline_text": null,
+     "headline_terms_link": null,
+     "headline_id": null,
+     "headline_is_active": null,
+     "headline_show_icon": null,
+     "racing_name": null,
+     "stream_event_id": null,
+     "stream_start": "2026-07-22T06:10:22+00:00",
+     "stream_end": null,
+     "supplier": null,
+     "stream_active": null,
+     "category_slug": "uk-and-ireland",
+     "tournament_slug": "worcester",
+     "best_odds_guaranteed_single": "0",
+     "best_odds_guaranteed_multiple": "0",
+     "is_antepost": "0",
+     "streaming_enabled": "0",
+     "headline_phrase": null,
+     "category_slug_i18n": "uk-and-ireland",
+     "event_slug_i18n": "worcester-1255",
+     "tournament_slug_i18n": "worcester",
+     "sport_slug_i18n": "horse-racing"
+    }
+   }
+  },
+  "events_extra_info": {
+   "7960079": {
+    "class": "5",
+    "distance": "2m 4f",
+    "going": "Good",
+    "race_code": "Handicap Chase",
+    "racing_course": "Worcester",
+    "runners": 8,
+    "type": "Jumps",
+    "race_overview": "There should be more to come from A LITTLE SOMETHING after she unseated at the last at Stratford last time when looking on course for a third successive win over fences. She is preferred to Holy Legend who scored at Fontwell in May and was second over C&D last month. Greer Hill scored on his chase debut here last month but needs to put a poor run here behind him last time, while Traveling Soldier has something to prove but represents a respected trainer-jockey combination. [Andrew Bladen]"
+   }
+  },
+  "markets_events_extra_info": {
+   "7960079": {
+    "allow_each_way": "1",
+    "1": {
+     "allow_each_way": "1",
+     "place_odds_divisor": "5",
+     "places_paid": "3",
+     "use_feed": "True"
+    },
+    "place_odds_divisor": "5",
+    "places_paid": "3",
+    "use_feed": "True"
+   }
+  },
+  "each_way_terms": {
+   "7960079": {
+    "allow_each_way": "1",
+    "place_odds_divisor": "5",
+    "places_paid": "3"
+   }
+  },
+  "timeform_events": {
+   "7960079": {
+    "analyst_verdict": "There should be more to come from A LITTLE SOMETHING after she unseated at the last at Stratford last time when looking on course for a third successive win over fences. She is preferred to Holy Legend who scored at Fontwell in May and was second over C&D last month. Greer Hill scored on his chase debut here last month but needs to put a poor run here behind him last time, while Traveling Soldier has something to prove but represents a respected trainer-jockey combination. [Andrew Bladen]",
+    "source": "RACING_POST"
+   }
+  },
+  "events_selections": {
+   "7960079": [
+    16790408736,
+    16790408738,
+    16790408739,
+    16790408737,
+    16790408735,
+    16790408733,
+    16790408740,
+    16790408734
+   ]
+  },
+  "selections_details": {
+   "16790408736": {
+    "id": "16790408736",
+    "name": "Holy Legend",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "3.250",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "3.250",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "3.250",
+    "fraction_price": "9/4",
+    "american_price": "+225",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   },
+   "16790408738": {
+    "id": "16790408738",
+    "name": "A Little Something",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "3.250",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "3.250",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "3.250",
+    "fraction_price": "9/4",
+    "american_price": "+225",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   },
+   "16790408739": {
+    "id": "16790408739",
+    "name": "Crackerjack Queen",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "5.500",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "5.500",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "5.500",
+    "fraction_price": "9/2",
+    "american_price": "+450",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   },
+   "16790408737": {
+    "id": "16790408737",
+    "name": "Doyouknowwhatimean",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "6.500",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "6.500",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "6.500",
+    "fraction_price": "11/2",
+    "american_price": "+550",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   },
+   "16790408735": {
+    "id": "16790408735",
+    "name": "Traveling Soldier",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "8.000",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "8.000",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "8.000",
+    "fraction_price": "7/1",
+    "american_price": "+700",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   },
+   "16790408733": {
+    "id": "16790408733",
+    "name": "Greer Hill",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "8.500",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "8.500",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "8.500",
+    "fraction_price": "15/2",
+    "american_price": "+750",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   },
+   "16790408740": {
+    "id": "16790408740",
+    "name": "King Of The Story",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "23.000",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "23.000",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "23.000",
+    "fraction_price": "22/1",
+    "american_price": "+2200",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   },
+   "16790408734": {
+    "id": "16790408734",
+    "name": "Boskill Borden",
+    "specialoddsvalue": "",
+    "starting_price": null,
+    "current_price": "34.000",
+    "sp_only": false,
+    "inplay": "0",
+    "active": "1",
+    "tradable": true,
+    "visible": "1",
+    "outcome": "UNSETTLED",
+    "market_id": "1",
+    "selection_type_id": null,
+    "market_name": "Winner Market",
+    "market_display_name": "Winner Market",
+    "market_order": "0",
+    "selection_schema": "60",
+    "custom_order": "34.000",
+    "event_id": "7960079",
+    "sport_slug": "horse-racing",
+    "sport_id": "1",
+    "is_gtp": "1",
+    "decimal_price": "34.000",
+    "fraction_price": "33/1",
+    "american_price": "+3300",
+    "betable": true,
+    "market_name_raw": "Winner Market"
+   }
+  },
+  "selections_extra_info": {
+   "16790408733": {
+    "cloth_number": "3",
+    "participant_id": "3"
+   },
+   "16790408734": {
+    "cloth_number": "8",
+    "participant_id": "8"
+   },
+   "16790408735": {
+    "cloth_number": "5",
+    "participant_id": "5"
+   },
+   "16790408736": {
+    "cloth_number": "4",
+    "participant_id": "4"
+   },
+   "16790408737": {
+    "cloth_number": "1",
+    "participant_id": "1"
+   },
+   "16790408738": {
+    "cloth_number": "2",
+    "participant_id": "2"
+   },
+   "16790408739": {
+    "cloth_number": "7",
+    "participant_id": "7"
+   },
+   "16790408740": {
+    "cloth_number": "6",
+    "participant_id": "6"
+   }
+  },
+  "competitor_info": {
+   "1": {
+    "weight_units": "lbs",
+    "days_off": "11",
+    "official_rating": 105,
+    "age": 9,
+    "trainer_name": "G Hanmer",
+    "recent_form": "P-P364",
+    "jockey_filename": "3146fdb7781c7a2fddb00639b746d46d.png",
+    "weight_text": "12st 1lbs",
+    "weight_value": 169,
+    "jockey_name": "K Brogan",
+    "pre_race_comment": "All four chase wins came around 2m when trained by Dan Skelton; second on his stable debut at Uttoxeter (2m4f, heavy) in December but has been disappointing since; didn't appear to stay 2m7f on his last two runs so the drop in trip will be welcome; also takes a drop in grade off a declining mark so cannot dismiss."
+   },
+   "3": {
+    "weight_units": "lbs",
+    "days_off": "20",
+    "official_rating": 90,
+    "age": 5,
+    "trainer_name": "J Candlish",
+    "recent_form": "P-P815",
+    "jockey_filename": "8c9ed956ac9e00f1ca60c42be63c7e4d.png",
+    "weight_text": "10st 13lbs",
+    "weight_value": 153,
+    "jockey_name": "William Shanahan",
+    "pre_race_comment": "Nothing special over hurdles but made an immediate impact over fences, scoring at this track (2m, good; 28-1) last month; unable to replicate that form when beaten 47l over the same C&D three weeks ago and needs to bounce back on this step back up in trip."
+   },
+   "2": {
+    "weight_units": "lbs",
+    "days_off": "22",
+    "official_rating": 105,
+    "age": 7,
+    "trainer_name": "Miss E C Lavelle",
+    "recent_form": "22-11U",
+    "jockey_filename": "fbbb8b978be5da29d054192bb4cf7228.png",
+    "weight_text": "12st 1lbs",
+    "weight_value": 169,
+    "jockey_name": "Ben Jones",
+    "pre_race_comment": "Has taken well to fences at around this distance, winning at Stratford and Fontwell before unseating at the last when still in front at Stratford (2m4f, good to firm) last month; she must come under consideration to get back on track."
+   },
+   "5": {
+    "weight_units": "lbs",
+    "days_off": "49",
+    "official_rating": 86,
+    "age": 8,
+    "trainer_name": "O Murphy",
+    "recent_form": "23P-P3",
+    "jockey_filename": "935dc24e069f0c624b3adb9965f48e88.png",
+    "weight_text": "10st 9lbs",
+    "weight_value": 149,
+    "jockey_name": "S Bowen",
+    "pre_race_comment": "His sole success over fences came at Market Rasen (2m1f, soft) last July off 2lb higher; didn't offer a great deal once headed when third at Southwell (2m5f, good) last month in a first-time visor (retained) but has dropped to a career-low mark with Sean Bowen on board so all is not lost."
+   },
+   "4": {
+    "weight_units": "lbs",
+    "days_off": "45",
+    "official_rating": 88,
+    "age": 7,
+    "trainer_name": "Alexandra Dunn",
+    "recent_form": "R56-12",
+    "jockey_filename": "3d31ad52d56a69325fe560597118939c.png",
+    "weight_text": "10st 11lbs",
+    "weight_value": 151,
+    "jockey_name": "James Best",
+    "pre_race_comment": "Off the mark on his fifth attempt over fences at Fontwell (2m2f, good) in May and made the winner pull out all the stops when second over C&D (good) last month; in decent nick at present and looks sure to give a good account."
+   },
+   "7": {
+    "weight_units": "lbs",
+    "days_off": "20",
+    "official_rating": 82,
+    "age": 6,
+    "trainer_name": "T Ellis",
+    "recent_form": "63-524",
+    "jockey_filename": "ac0a1d92b1e57ce40255895095478663.png",
+    "weight_text": "10st 6lbs",
+    "weight_value": 146,
+    "jockey_name": "Jack Andrews",
+    "pre_race_comment": "0-9 under rules; not a bad effort when runner-up on her chasing debut at Southwell (2m5f, good) last month but beaten 23l over C&D since; needs to show more."
+   },
+   "6": {
+    "weight_units": "lbs",
+    "days_off": "20",
+    "official_rating": 83,
+    "age": 10,
+    "trainer_name": "P Gundry",
+    "recent_form": "P4-2P7",
+    "jockey_filename": "ab2df411e9d6963b72225457785e1ef5.png",
+    "weight_text": "10st 7lbs",
+    "weight_value": 147,
+    "jockey_name": "Benjamin Poste",
+    "pre_race_comment": "Two of his four wins over fences have been over C&D but he has been well below that level recently and is hard to fancy."
+   },
+   "8": {
+    "weight_units": "lbs",
+    "days_off": "292",
+    "official_rating": 79,
+    "age": 7,
+    "trainer_name": "D A Rees",
+    "recent_form": "23697-",
+    "jockey_filename": "d0dfab9db57990c7c7f4645c54b51d13.png",
+    "weight_text": "10st 2lbs",
+    "weight_value": 142,
+    "jockey_name": "Shane Fenelon",
+    "pre_race_comment": "Twice placed in 2m4f hurdle races here last summer (good) but ended last year's campaign on a low, achieving little on October's chasing debut; can't be certain he will hit the ground running in 2026."
+   }
+  },
+  "sport_slug": "horse-racing",
+  "price_history": {
+   "16790408738": [
+    {
+     "decimal_price": "3.000",
+     "fraction_price": "2/1",
+     "american_price": "+200"
+    },
+    {
+     "decimal_price": "2.875",
+     "fraction_price": "15/8",
+     "american_price": "+188"
+    },
+    {
+     "decimal_price": "3.000",
+     "fraction_price": "2/1",
+     "american_price": "+200"
+    }
+   ],
+   "16790408733": [
+    {
+     "decimal_price": "8.000",
+     "fraction_price": "7/1",
+     "american_price": "+700"
+    },
+    {
+     "decimal_price": "7.500",
+     "fraction_price": "13/2",
+     "american_price": "+650"
+    },
+    {
+     "decimal_price": "8.000",
+     "fraction_price": "7/1",
+     "american_price": "+700"
+    }
+   ],
+   "16790408735": [
+    {
+     "decimal_price": "7.500",
+     "fraction_price": "13/2",
+     "american_price": "+650"
+    },
+    {
+     "decimal_price": "8.000",
+     "fraction_price": "7/1",
+     "american_price": "+700"
+    },
+    {
+     "decimal_price": "7.500",
+     "fraction_price": "13/2",
+     "american_price": "+650"
+    }
+   ],
+   "16790408739": [
+    {
+     "decimal_price": "6.000",
+     "fraction_price": "5/1",
+     "american_price": "+500"
+    },
+    {
+     "decimal_price": "6.500",
+     "fraction_price": "11/2",
+     "american_price": "+550"
+    },
+    {
+     "decimal_price": "6.000",
+     "fraction_price": "5/1",
+     "american_price": "+500"
+    }
+   ],
+   "16790408734": [
+    {
+     "decimal_price": "23.000",
+     "fraction_price": "22/1",
+     "american_price": "+2200"
+    },
+    {
+     "decimal_price": "26.000",
+     "fraction_price": "25/1",
+     "american_price": "+2500"
+    },
+    {
+     "decimal_price": "29.000",
+     "fraction_price": "28/1",
+     "american_price": "+2800"
+    }
+   ],
+   "16790408736": [
+    {
+     "decimal_price": "4.000",
+     "fraction_price": "3/1",
+     "american_price": "+300"
+    },
+    {
+     "decimal_price": "3.750",
+     "fraction_price": "11/4",
+     "american_price": "+275"
+    },
+    {
+     "decimal_price": "3.500",
+     "fraction_price": "5/2",
+     "american_price": "+250"
+    }
+   ],
+   "16790408737": [
+    {
+     "decimal_price": "6.000",
+     "fraction_price": "5/1",
+     "american_price": "+500"
+    },
+    {
+     "decimal_price": "6.500",
+     "fraction_price": "11/2",
+     "american_price": "+550"
+    },
+    {
+     "decimal_price": "6.000",
+     "fraction_price": "5/1",
+     "american_price": "+500"
+    }
+   ],
+   "16790408740": [
+    {
+     "decimal_price": "17.000",
+     "fraction_price": "16/1",
+     "american_price": "+1600"
+    },
+    {
+     "decimal_price": "19.000",
+     "fraction_price": "18/1",
+     "american_price": "+1800"
+    },
+    {
+     "decimal_price": "21.000",
+     "fraction_price": "20/1",
+     "american_price": "+2000"
+    }
+   ]
+  },
+  "events_grouped_markets": {
+   "7960079": {
+    "groups_markets": [],
+    "groups_details": [],
+    "main_group_id": null
+   }
+  },
+  "events_markets": {
+   "7960079": {
+    "1": {
+     "name": "Winner Market",
+     "market_name_raw": "Winner Market",
+     "order": "0",
+     "selection_schema": "60"
+    }
+   }
+  },
+  "matched_market_ids": {
+   "7960079": {
+    "16790408736": 16790408736,
+    "16790408738": 16790408738,
+    "16790408739": 16790408739,
+    "16790408737": 16790408737,
+    "16790408735": 16790408735,
+    "16790408733": 16790408733,
+    "16790408740": 16790408740,
+    "16790408734": 16790408734
+   }
+  },
+  "fcTcMarkets": {
+   "1404924": "Forecast",
+   "1404925": "Tricast"
+  }
+ },
+ "branch": null,
+ "sport_slug": "horse-racing",
+ "sport_name": "Horse Racing",
+ "streaming_is_on": false,
+ "streaming_enabled": false,
+ "schedule": {
+  "has_upcoming_events": true,
+  "events": {
+   "7960079": {
+    "details": {
+     "id": "7960079",
+     "event_type_id": "1",
+     "name": "Worcester",
+     "sport_id": "1",
+     "tournament_id": "23097",
+     "category_id": "27426",
+     "home_team_id": null,
+     "away_team_id": null,
+     "status_id": "2",
+     "scheduled_date": "2026-07-22",
+     "scheduled_start": "2026-07-22T12:55:00+00:00",
+     "actual_start": null,
+     "slug": "worcester-1255",
+     "active": "1",
+     "tradable": "0",
+     "visible": "1",
+     "is_bet_builder_eligible": "0",
+     "order": "1000",
+     "trading_category": null,
+     "has_results": "0",
+     "restrict_cashout": "0",
+     "last_modified": "2026-07-21 07:19:01",
+     "created": "2026-07-21 07:19:00",
+     "first_active_selection_at": "2026-07-21 07:19:01",
+     "phase_id": "2",
+     "headline_is_active": null,
+     "headline_show_icon": null,
+     "featured": "0",
+     "feed_event_id": "399d672a8cd14c4483b64bfeff3f2c2b",
+     "category_slug": "uk-and-ireland",
+     "category_name": "UK & Ireland",
+     "antepost_rule": null,
+     "best_odds_guaranteed_single": "0",
+     "best_odds_guaranteed_multiple": "0",
+     "stream_event_id": null,
+     "stream_start": "2026-07-22T06:10:22+00:00",
+     "stream_end": null,
+     "supplier": null,
+     "stream_active": null,
+     "tournament_slug": "worcester",
+     "ew_plus": false,
+     "sport_slug_i18n": "horse-racing",
+     "category_slug_i18n": "uk-and-ireland",
+     "event_slug_i18n": "worcester-1255",
+     "tournament_slug_i18n": "worcester"
+    }
+   }
+  },
+  "display_order": [
+   "7960079"
+  ],
+  "first_event_id": "7960079",
+  "first_betable_event_id": "7960079",
+  "sports_details": {
+   "1": {
+    "id": "1",
+    "name": "Horse Racing",
+    "slug": "horse-racing",
+    "display_name": "Horse Racing",
+    "bet_accept_delay": null,
+    "exposure_limit": "100000.00",
+    "night_exposure_limit_percentage": "20",
+    "stake_factor": "1.00",
+    "multi_stake_factor": "1.00",
+    "order": "5",
+    "inplay_order": "36",
+    "default_market_id": "1",
+    "alter_default_market_id": null,
+    "extra_default_market_id_1": null,
+    "extra_default_market_id_2": null,
+    "extra_default_market_id_3": null,
+    "widget_default_market_id": null,
+    "widget_alter_default_market_id": null,
+    "active": "1",
+    "is_virtual": "0",
+    "ribbon": null,
+    "restrict_cashout": "0",
+    "created_at": "2020-02-18 10:01:27",
+    "last_modified": "2023-12-01 10:24:00",
+    "is_searchable": "1",
+    "search_order": "2",
+    "upa_enabled": "1"
+   }
+  },
+  "categories_details": {
+   "27426": {
+    "id": "27426",
+    "sport_id": "1",
+    "name": "UK & Ireland",
+    "display_name": null,
+    "slug": "uk-and-ireland",
+    "order": "500",
+    "active": "1",
+    "night_exposure_limit_percentage": null,
+    "created_at": "2020-02-18 10:01:27",
+    "last_modified": "2022-09-26 05:21:48",
+    "visualization_provider": "BG",
+    "identifier": "ee882558b6f4a8459ebc092e732f43d8"
+   }
+  },
+  "tournaments_details": {
+   "23097": {
+    "id": "23097",
+    "category_id": "27426",
+    "supertournament_id": null,
+    "name": "Worcester",
+    "display_name": null,
+    "slug": "worcester",
+    "order": "800",
+    "trading_category": "4",
+    "active": "1",
+    "country_code": "GB",
+    "restrict_cashout": "0",
+    "created_at": "2020-02-18 10:01:27",
+    "last_modified": "2022-09-26 05:21:49",
+    "identifier": "87520316ae3e4737d75012dcabb68d31",
+    "antepost_rule": false
+   }
+  }
+ }
+}

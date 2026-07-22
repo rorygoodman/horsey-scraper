@@ -28,6 +28,18 @@ def racing_page_payload() -> dict:
     return _load("racing_page_meeting.json")
 
 
+@pytest.fixture
+def eight88_schedule_payload() -> dict:
+    """Raw 888 getSchedule?tab=today response (trimmed to UK&IRE + N.America)."""
+    return _load("eight88_schedule.json")
+
+
+@pytest.fixture
+def eight88_racecard_payload() -> dict:
+    """Raw 888 getRacecard response for a GB race (Worcester)."""
+    return _load("eight88_racecard.json")
+
+
 def mutate(payload: dict) -> dict:
     """Deep-copy a fixture so a test can mutate it without affecting others."""
     return copy.deepcopy(payload)
