@@ -78,3 +78,10 @@ class TestMatchRunner:
         race = _race("Worcester", "2026-07-22T13:55:00+01:00",
                      [RunnerOdds("Holy Legend", {MarketType.WIN: 4.0}, 1)])
         assert match_runner("Different Horse", race) is None
+
+    def test_ambiguous_same_normalized_name_returns_none(self):
+        # "Holy Legend" and "holy-legend!" both normalize to "holylegend"
+        race = _race("Worcester", "2026-07-22T13:55:00+01:00",
+                     [RunnerOdds("Holy Legend", {MarketType.WIN: 4.0}, 1),
+                      RunnerOdds("holy-legend!", {MarketType.WIN: 5.0}, 2)])
+        assert match_runner("Holy Legend", race) is None

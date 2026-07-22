@@ -41,3 +41,15 @@ class TestParseRacecard:
     def test_returns_none_when_no_events(self):
         assert parse_racecard({"racecard": {"events": {}}}, SCRAPED) is None
         assert parse_racecard({}, SCRAPED) is None
+
+    def test_disqualified_runner_kept_but_nulled(self, eight88_racecard_payload):
+        p = copy.deepcopy(eight88_racecard_payload)
+        sels = p["racecard"]["selections_details"]
+        victim_id = next(k for k, s in sels.items() if s.get("market_id") == "1")
+        victim_name = sels[victim_id]["name"]
+        sels[victim_id]["betable"] = False  # disqualify: non-betable
+        race = parse_racecard(p, SCRAPED)
+        names = [r.name for r in race.runners]
+        assert victim_name in names, "disqualified runner must still be emitted"
+        victim = next(r for r in race.runners if r.name == victim_name)
+        assert victim.win_price is None and victim.win_price_raw is None

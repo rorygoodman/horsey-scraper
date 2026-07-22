@@ -9,7 +9,6 @@ from .models import BetfairLayLeg, Horse, PaddyPriceLeg, Runner
 
 from dataclasses import dataclass
 
-from betfair_scraper.models import RaceOdds, RunnerOdds
 from sport888_scraper.models import Sport888Output
 from .matching import match_race, match_runner
 from .models import Horse888, Sport888PriceLeg

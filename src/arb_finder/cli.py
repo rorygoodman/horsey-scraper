@@ -19,7 +19,7 @@ from .models import HorsesOutput, write_horses_json
 from sport888_scraper.models import Sport888Output
 from sport888_scraper.validation import validate_sport888_output
 from .calculator import find_horses_by_name
-from .models import Horse888, Horses888Output, write_horses888_json
+from .models import Horses888Output, write_horses888_json
 
 
 def parse_horses_cli_args(argv: list[str]) -> tuple[str, str, str]:
