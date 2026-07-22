@@ -7,6 +7,13 @@ from betfair_scraper.models import ScrapeOutput
 from paddypower_scraper.models import PaddyOutput
 from .models import BetfairLayLeg, Horse, PaddyPriceLeg, Runner
 
+from dataclasses import dataclass
+
+from betfair_scraper.models import RaceOdds, RunnerOdds
+from sport888_scraper.models import Sport888Output
+from .matching import match_race, match_runner
+from .models import Horse888, Sport888PriceLeg
+
 
 def each_way_arb_margin(p: float, f: float, bw: float, bp: float) -> float:
     """Each-way edge per £1 PaddyPower stake (signed):
@@ -78,3 +85,69 @@ def find_horses(betfair: ScrapeOutput, paddy: PaddyOutput) -> list[Horse]:
 
     out.sort(key=lambda h: h.edge, reverse=True)
     return out
+
+
+@dataclass(frozen=True)
+class MatchStats:
+    races_matched: int
+    races_unmatched: int
+    runners_priced: int
+    runners_unmatched: int
+
+
+def find_horses_by_name(
+    betfair: ScrapeOutput, eight88: Sport888Output
+) -> "tuple[list[Horse888], MatchStats]":
+    """Every fully-priced 888 runner that matches a Betfair selection, with its
+    each-way edge, sorted by edge descending. 888 carries no Betfair ids, so
+    each race is matched by off-time+venue and each runner by normalized name.
+    venue/country/off_time/ids come from the matched Betfair race/runner."""
+    races_matched = races_unmatched = runners_priced = runners_unmatched = 0
+    out: list[Horse888] = []
+
+    for race888 in eight88.races:
+        br = match_race(race888.off_time, race888.venue, betfair.races)
+        if br is None:
+            races_unmatched += 1
+            continue
+        races_matched += 1
+
+        ew = race888.each_way_terms
+        if ew is None:
+            continue
+        place_market = top_n_from_places(ew.places)
+        if place_market is None or place_market not in br.market_scraped_at:
+            continue
+
+        for r888 in race888.runners:
+            if r888.win_price is None or r888.win_price_raw is None:
+                continue
+            brun = match_runner(r888.name, br)
+            if brun is None or brun.selection_id is None:
+                runners_unmatched += 1
+                continue
+            win_lay = brun.lay.get(MarketType.WIN)
+            place_lay = brun.lay.get(place_market)
+            if (win_lay is None or place_lay is None
+                    or win_lay <= 0.0 or place_lay <= 0.0):
+                continue
+            edge = each_way_arb_margin(
+                p=r888.win_price, f=ew.fraction, bw=win_lay, bp=place_lay)
+            runners_priced += 1
+            out.append(Horse888(
+                venue=br.venue,
+                country=br.country,
+                off_time=br.off_time,
+                market_name=br.market_name,
+                betfair_win_market_id=br.race_id,
+                runner=Runner(name=r888.name, selection_id=brun.selection_id),
+                sport888=Sport888PriceLeg(
+                    win_price=r888.win_price, win_price_raw=r888.win_price_raw,
+                    each_way_terms=ew),
+                betfair=BetfairLayLeg(
+                    win_lay=win_lay, place_lay=place_lay, place_market=place_market),
+                edge=edge,
+            ))
+
+    out.sort(key=lambda h: h.edge, reverse=True)
+    return out, MatchStats(races_matched, races_unmatched, runners_priced, runners_unmatched)
