@@ -8,6 +8,7 @@ from pathlib import Path
 from common.jsonio import write_json
 from common.markettype import MarketType
 from paddypower_scraper.models import EachWayTerms
+from sport888_scraper.models import EachWayTerms as Sport888EachWayTerms
 
 
 @dataclass(frozen=True)
@@ -72,3 +73,54 @@ HORSES_RENAME = {
 
 def write_horses_json(out: HorsesOutput, path: Path | str) -> None:
     write_json(out, HORSES_RENAME, path)
+
+
+@dataclass(frozen=True)
+class Sport888PriceLeg:
+    win_price: float
+    win_price_raw: str
+    each_way_terms: Sport888EachWayTerms
+
+
+@dataclass(frozen=True)
+class Horse888:
+    venue: str
+    country: str
+    off_time: str
+    market_name: str
+    betfair_win_market_id: str
+    runner: Runner
+    sport888: Sport888PriceLeg
+    betfair: BetfairLayLeg
+    edge: float
+
+
+@dataclass(frozen=True)
+class Horses888Output:
+    computed_at: str
+    betfair_scraped_at: str
+    sport888_scraped_at: str
+    horse_count: int
+    horses: list[Horse888]
+
+
+HORSES888_RENAME = {
+    "computed_at": "computedAt",
+    "betfair_scraped_at": "betfairScrapedAt",
+    "sport888_scraped_at": "sport888ScrapedAt",
+    "horse_count": "horseCount",
+    "off_time": "offTime",
+    "market_name": "marketName",
+    "betfair_win_market_id": "betfairWinMarketId",
+    "selection_id": "selectionId",
+    "win_price": "winPrice",
+    "win_price_raw": "winPriceRaw",
+    "each_way_terms": "eachWayTerms",
+    "win_lay": "winLay",
+    "place_lay": "placeLay",
+    "place_market": "placeMarket",
+}
+
+
+def write_horses888_json(out: Horses888Output, path: Path | str) -> None:
+    write_json(out, HORSES888_RENAME, path)
