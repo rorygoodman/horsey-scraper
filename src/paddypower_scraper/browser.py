@@ -26,17 +26,24 @@ class BrowserFetchError(Exception):
 
 
 _FETCH_JS = """
-async (url) => {
-    const r = await fetch(url, {
-        method: 'GET',
-        credentials: 'include',
-        headers: { 'accept': 'application/json, text/plain, */*' },
-    });
-    if (!r.ok) {
-        const text = await r.text();
-        throw new Error('HTTP ' + r.status + ': ' + text.slice(0, 500));
+async ([url, timeoutMs]) => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    try {
+        const r = await fetch(url, {
+            method: 'GET',
+            credentials: 'include',
+            headers: { 'accept': 'application/json, text/plain, */*' },
+            signal: controller.signal,
+        });
+        if (!r.ok) {
+            const text = await r.text();
+            throw new Error('HTTP ' + r.status + ': ' + text.slice(0, 500));
+        }
+        return await r.text();
+    } finally {
+        clearTimeout(timer);
     }
-    return await r.text();
 }
 """
 
@@ -86,7 +93,7 @@ class BrowserSession:
         if self._page is None:
             raise RuntimeError("BrowserSession not entered")
         try:
-            body = self._page.evaluate(_FETCH_JS, url)
+            body = self._page.evaluate(_FETCH_JS, [url, timeout_ms])
         except Exception as e:
             raise BrowserFetchError(url, str(e)) from e
         if not isinstance(body, str):
