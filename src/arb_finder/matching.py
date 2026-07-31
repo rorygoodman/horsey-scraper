@@ -1,8 +1,9 @@
 """Structural match of a bookie race/runner to a Betfair race/runner.
 
-888sport carries no Betfair ids, so we match by off-time instant + normalized
-venue (race) and normalized runner name (selection). Exact normalized matches
-only — no fuzzy matching, because a wrong match yields a silently mispriced arb."""
+888sport and Novibet carry no Betfair ids, so we match by off-time instant +
+normalized venue (race) and normalized runner name (selection). Exact
+normalized matches only — no fuzzy matching, because a wrong match yields a
+silently mispriced arb."""
 
 from __future__ import annotations
 

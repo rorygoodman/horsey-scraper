@@ -57,8 +57,14 @@ stage warns to stderr if the file is readable by group/others.
 ./run.sh gb-ie,us      # both
 ```
 
-Outputs are written to `./betfair.json`, `./paddypower.json`, `./horses.json`.
-A non-zero exit at any stage halts the pipeline before the edge step.
+Outputs are written to `./betfair.json`, `./paddypower.json`, `./horses.json`,
+`./888sport.json`, `./888horses.json`, `./novibet.json` and
+`./novibethorses.json`. The Betfair and PaddyPower stages (and the first
+arb-finder run) are fatal — a non-zero exit there halts the pipeline before
+the PaddyPower publish. The 888 and Novibet stages are deliberately
+**non-fatal**: a failure there is logged to stderr and the pipeline
+continues, so an outage in either bookie can never block the PaddyPower
+publish.
 
 Run a single stage directly:
 
@@ -66,6 +72,7 @@ Run a single stage directly:
 uv run python -m betfair_scraper gb-ie
 uv run python -m paddypower_scraper gb-ie
 uv run python -m arb_finder
+uv run python -m sport888_scraper gb-ie
 uv run python -m novibet_scraper gb-ie
 ```
 
@@ -75,6 +82,7 @@ uv run python -m novibet_scraper gb-ie
 uv run python -m betfair_scraper.validate betfair.json
 uv run python -m paddypower_scraper.validate paddypower.json
 uv run python -m arb_finder.validate horses.json
+uv run python -m sport888_scraper.validate 888sport.json
 uv run python -m novibet_scraper.validate novibet.json
 ```
 

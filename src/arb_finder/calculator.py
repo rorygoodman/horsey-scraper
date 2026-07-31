@@ -13,7 +13,7 @@ from .matching import match_race, match_runner
 
 
 def each_way_arb_margin(p: float, f: float, bw: float, bp: float) -> float:
-    """Each-way edge per £1 PaddyPower stake (signed):
+    """Each-way edge per £1 bookie stake (signed):
 
       L_w  = p / (2·bw)
       L_p  = (1 + (p−1)·f) / (2·bp)
@@ -88,6 +88,7 @@ def find_horses(betfair: ScrapeOutput, paddy: PaddyOutput) -> list[PricedHorse]:
 class MatchStats:
     races_matched: int
     races_unmatched: int
+    races_unpriceable: int
     runners_priced: int
     runners_unmatched: int
 
@@ -100,7 +101,8 @@ def find_horses_by_name(
     Betfair ids (888sport, Novibet), each race is matched by off-time+venue
     and each runner by normalized name. venue/country/off_time/ids come from
     the matched Betfair race/runner."""
-    races_matched = races_unmatched = runners_priced = runners_unmatched = 0
+    races_matched = races_unmatched = races_unpriceable = 0
+    runners_priced = runners_unmatched = 0
     out: list[PricedHorse] = []
 
     for race888 in bookie_output.races:
@@ -112,9 +114,11 @@ def find_horses_by_name(
 
         ew = race888.each_way_terms
         if ew is None:
+            races_unpriceable += 1
             continue
         place_market = top_n_from_places(ew.places)
         if place_market is None or place_market not in br.market_scraped_at:
+            races_unpriceable += 1
             continue
 
         for r888 in race888.runners:
@@ -148,4 +152,6 @@ def find_horses_by_name(
             ))
 
     out.sort(key=lambda h: h.edge, reverse=True)
-    return out, MatchStats(races_matched, races_unmatched, runners_priced, runners_unmatched)
+    return out, MatchStats(
+        races_matched, races_unmatched, races_unpriceable,
+        runners_priced, runners_unmatched)

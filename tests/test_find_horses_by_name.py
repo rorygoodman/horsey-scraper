@@ -83,11 +83,17 @@ def test_null_each_way_skipped():
     horses, stats = find_horses_by_name(_betfair(), e)
     assert horses == []
     assert stats.races_matched == 1  # race matched, but unpriceable
+    assert stats.races_unpriceable == 1
 
 
 def test_places_out_of_range_skipped():
-    horses, _ = find_horses_by_name(_betfair(), _eight88(places=6))
+    # Betfair's to-be-placed markets stop at TOP_5, so a 6-place race matches
+    # Betfair but cannot be priced — it must be reported as unpriceable, not
+    # silently folded into "matched".
+    horses, stats = find_horses_by_name(_betfair(), _eight88(places=6))
     assert horses == []
+    assert stats.races_matched == 1
+    assert stats.races_unpriceable == 1
 
 
 def test_place_market_absent_skipped():

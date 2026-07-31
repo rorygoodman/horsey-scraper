@@ -137,7 +137,8 @@ def _run(spec: SourceSpec, argv: list[str], now) -> int:
     else:
         print(f"Wrote {out_path} ({len(horses)} horses; races matched "
               f"{stats.races_matched}/"
-              f"{stats.races_matched + stats.races_unmatched}, "
+              f"{stats.races_matched + stats.races_unmatched} "
+              f"({stats.races_unpriceable} unpriceable), "
               f"runners unmatched {stats.runners_unmatched})")
     return 0
 

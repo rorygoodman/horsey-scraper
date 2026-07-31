@@ -81,6 +81,18 @@ def test_six_places_is_unpriceable_and_yields_no_horses(tmp_path: Path):
     assert data["horseCount"] == 0
 
 
+def test_six_places_reported_as_unpriceable_not_silently_matched(tmp_path, capsys):
+    # A 6-place race matches Betfair but can't be priced (Betfair's
+    # to-be-placed markets stop at TOP_5). Novibet runs 6-place boosts
+    # often, so the operator-facing summary must call this out as
+    # unpriceable rather than folding it into "matched" and hiding the drop.
+    _write_inputs(tmp_path, places=6)
+    assert _run(tmp_path) == 0
+    out = capsys.readouterr().out
+    assert "races matched 1/1" in out
+    assert "1 unpriceable" in out
+
+
 def test_output_passes_the_horses_schema(tmp_path: Path):
     # The bookie-aware validator from the unification refactor is what lets
     # novibethorses.json be schema-checked at all.
@@ -110,8 +122,14 @@ def test_missing_input_exits_2(tmp_path: Path):
                      str(tmp_path / "out.json")], now=lambda: NOW) == 2
 
 
-def test_defaults_resolve_to_novibet_filenames(tmp_path: Path, monkeypatch):
+def test_defaults_resolve_to_novibet_filenames(tmp_path: Path, monkeypatch, capsys):
     monkeypatch.chdir(tmp_path)
     # No positional args → betfair.json + novibet.json → novibethorses.json.
-    # Inputs are absent, so this exits 2 having looked for the right names.
+    # A stand-in betfair.json gets the run past the first input check, so it
+    # fails looking for the *bookie* input specifically. Exit code 2 alone
+    # can't distinguish "resolved the right defaults" from "resolved the
+    # wrong ones" — only the error text naming novibet.json proves that.
+    (tmp_path / "betfair.json").write_text("{}")
     assert cli.main(["--source", "novibet"], now=lambda: NOW) == 2
+    err = capsys.readouterr().err
+    assert "novibet.json" in err
