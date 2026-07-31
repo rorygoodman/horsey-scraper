@@ -1,0 +1,1116 @@
+{
+ "betContextId": 47383618,
+ "marketViewId": 7826750,
+ "marketViewKey": "C47383618",
+ "marketViewType": "EVENT",
+ "path": "musselburgh/musselburgh-1815-july-31-2026",
+ "pathLocations": [
+  {
+   "caption": "Horse Racing",
+   "path": "horse-racing",
+   "marketViewGroupId": 4372612,
+   "marketViewGroupSysname": "HORSE_RACING",
+   "regionId": null,
+   "regionSysname": null,
+   "regionCaption": null,
+   "imageId": null,
+   "hasContents": false
+  },
+  {
+   "caption": "GB",
+   "path": "gb",
+   "marketViewGroupId": 4404767,
+   "marketViewGroupSysname": "HORSE_RACING_GB",
+   "regionId": null,
+   "regionSysname": null,
+   "regionCaption": null,
+   "imageId": null,
+   "hasContents": false
+  },
+  {
+   "caption": "Musselburgh",
+   "path": "musselburgh",
+   "marketViewGroupId": 4409314,
+   "marketViewGroupSysname": "HORSE_RACING_MUSSELBURGH",
+   "regionId": null,
+   "regionSysname": null,
+   "regionCaption": null,
+   "imageId": null,
+   "hasContents": false
+  }
+ ],
+ "meetingRaces": [
+  {
+   "betContextId": 47383626,
+   "timeStr": "17:45"
+  },
+  {
+   "betContextId": 47383618,
+   "timeStr": "18:15"
+  },
+  {
+   "betContextId": 47383613,
+   "timeStr": "18:50"
+  },
+  {
+   "betContextId": 47383610,
+   "timeStr": "19:25"
+  },
+  {
+   "betContextId": 47383621,
+   "timeStr": "19:55"
+  },
+  {
+   "betContextId": 47383632,
+   "timeStr": "20:25"
+  },
+  {
+   "betContextId": 47383629,
+   "timeStr": "20:55"
+  }
+ ],
+ "startDate": "31 Jul 2026",
+ "startTime": "18:15",
+ "startDateTime": "2026-07-31T17:15:00+00:00",
+ "startDateTimeUnix": 1785518100,
+ "streamingProvider": {
+  "providerSysname": "RMG",
+  "eventId": "8y1jg4fzz6uxh13g9htwb00mh",
+  "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+  "discriminator": "Rmg"
+ },
+ "title": "EBF Restricted Maiden Stakes (Band D) (EBF Restricted Race Qualifier) (GBB/IRE Incentive Race)",
+ "description": "N/A",
+ "remainingStartTime": "18:15",
+ "runners": 5,
+ "distance": "1555.00y",
+ "eligibility": "2yo",
+ "prizeAmount": 5939.0,
+ "prizes": [
+  {
+   "position": 1,
+   "amount": 5939.0
+  },
+  {
+   "position": 2,
+   "amount": 2787.5
+  },
+  {
+   "position": 3,
+   "amount": 1393.8
+  },
+  {
+   "position": 4,
+   "amount": 696.4
+  }
+ ],
+ "prizeCurrency": "GBP",
+ "prizeCurrencySymbol": "\u00a3",
+ "raceType": "FLAT",
+ "weather": "RAINY",
+ "raceClass": "4",
+ "goingType": "Good",
+ "verdict": {
+  "info": "\\bCoul Blue\\p makes his debut at a realistic level so he needs monitoring in the betting. The other four runners all contested the same Redcar maiden 12 days ago, with \\bGERRY'S DARLING\\p doing best in second. She still looked a bit green on that occasion and can confirm the placings, with \\bNosey Book\\p perhaps the one to chase her home.[Paul Smith]",
+  "provider": "RACINGPOST"
+ },
+ "horses": [
+  {
+   "teamBetCode": "610043",
+   "horseStatus": "Runner",
+   "horseName": "Hey Up Ronnie",
+   "horseAge": "2",
+   "horseWeight": "133",
+   "horseBred": "GB",
+   "horseBreederName": "Whitwell Bloodstock",
+   "jockeyImageFilename": "asmedia/png_silks/8/4/8/370848.png",
+   "jockeyName": "Harry Russell",
+   "trainerName": "Ollie Pears",
+   "horseFormFigures": "53",
+   "stall": 2,
+   "horseNumber": "2",
+   "comment": "Shaped well in a useful seller at York (6f, good) on debut; beaten favourite at Redcar (7f, good to firm) 12 days ago but still ran to a similar level; should go well again.",
+   "previousRaces": [],
+   "infoForm": [
+    {
+     "raceDatetime": "2026-07-19T12:53:00+00:00",
+     "jockeyName": "Harry Russell",
+     "comment": "midfield, headway over 1f out, disputing second over 1f out, no extra inside final furlong",
+     "caption": "Redcar",
+     "position": "3",
+     "numberOfRunners": 13,
+     "raceClass": "4",
+     "description": "3",
+     "distance": "1540.00y"
+    },
+    {
+     "raceDatetime": "2026-06-12T13:25:00+00:00",
+     "jockeyName": "Paul Mulrennan",
+     "comment": "hampered start, in rear, headway and short of room 2f out, in the clear over 1f out, kept on well, nearest finish",
+     "caption": "York",
+     "position": "5",
+     "numberOfRunners": 15,
+     "raceClass": "3",
+     "description": "5",
+     "distance": "1320.00y"
+    }
+   ]
+  },
+  {
+   "teamBetCode": "617622",
+   "horseStatus": "Runner",
+   "horseName": "Gerry's Darling",
+   "horseAge": "2",
+   "horseWeight": "128",
+   "horseBred": "GB",
+   "horseBreederName": "Carmel Stud",
+   "jockeyImageFilename": "asmedia/png_silks/b/9/9/356399b.png",
+   "jockeyName": "Kevin Stott",
+   "trainerName": "Roger Fell",
+   "horseFormFigures": "872",
+   "stall": 4,
+   "horseNumber": "5",
+   "comment": "Down the field on her first two starts but she took a good step forward when keeping on for second at Redcar (7f, good to firm) 12 days ago; finished in front of three of today's rivals on that occasion and she may do so again.",
+   "previousRaces": [],
+   "infoForm": [
+    {
+     "raceDatetime": "2026-07-19T12:53:00+00:00",
+     "jockeyName": "Kevin Stott",
+     "comment": "held up in midfield on near side of group, headway over 1f out, kept on and went second inside final furlong",
+     "caption": "Redcar",
+     "position": "2",
+     "numberOfRunners": 13,
+     "raceClass": "4",
+     "description": "2",
+     "distance": "1540.00y"
+    },
+    {
+     "raceDatetime": "2026-07-09T13:10:00+00:00",
+     "jockeyName": "Kevin Stott",
+     "comment": "took keen hold, prominent, lost position 2f out, weakened quickly over 1f out",
+     "caption": "Doncaster",
+     "position": "7",
+     "numberOfRunners": 7,
+     "raceClass": "2",
+     "description": "7",
+     "distance": "1546.00y"
+    },
+    {
+     "raceDatetime": "2026-06-20T16:48:00+00:00",
+     "jockeyName": "Oisin McSweeney",
+     "comment": "in rear, hampered under 2f out, stayed on inside final furlong",
+     "caption": "Doncaster",
+     "position": "8",
+     "numberOfRunners": 13,
+     "raceClass": "2",
+     "description": "8",
+     "distance": "1546.00y"
+    }
+   ]
+  },
+  {
+   "teamBetCode": "628586",
+   "horseStatus": "Runner",
+   "horseName": "Thai Paddy",
+   "horseAge": "2",
+   "horseWeight": "133",
+   "horseBred": "GB",
+   "horseBreederName": "Dahlbury",
+   "jockeyImageFilename": "asmedia/png_silks/7/5/3/279357.png",
+   "jockeyName": "Duran Fentiman",
+   "trainerName": "Tim Easterby",
+   "horseFormFigures": "08",
+   "stall": 5,
+   "horseNumber": "4",
+   "comment": "Down the field in both starts, including behind three of today's rivals at Redcar 12 days ago; hard to fancy.",
+   "previousRaces": [],
+   "infoForm": [
+    {
+     "raceDatetime": "2026-07-19T12:53:00+00:00",
+     "jockeyName": "Sean Kirrane",
+     "comment": "squeezed out start, towards rear throughout",
+     "caption": "Redcar",
+     "position": "8",
+     "numberOfRunners": 13,
+     "raceClass": "4",
+     "description": "8",
+     "distance": "1540.00y"
+    },
+    {
+     "raceDatetime": "2026-07-06T13:30:00+00:00",
+     "jockeyName": "Sean Kirrane",
+     "comment": "slowly into stride, always behind",
+     "caption": "Ayr",
+     "position": "10",
+     "numberOfRunners": 10,
+     "raceClass": "4",
+     "description": "10",
+     "distance": "1590.00y"
+    }
+   ]
+  },
+  {
+   "teamBetCode": "641956",
+   "horseStatus": "Runner",
+   "horseName": "Coul Blue",
+   "horseAge": "2",
+   "horseWeight": "133",
+   "horseBred": "IRE",
+   "horseBreederName": "Rathasker Stud",
+   "jockeyImageFilename": "asmedia/png_silks/0/3/2/375230.png",
+   "jockeyName": "Connor Beasley",
+   "trainerName": "Michael Dods",
+   "horseFormFigures": "",
+   "stall": 1,
+   "horseNumber": "1",
+   "comment": "\u00a316,000 yearling; second foal; half-brother to 6f 2yo winner Magistery (RPR 67); dam 7f winner (including 2yo; 95), half-sister to winners Sergeant Wilko (useful 5f 2yo/6f), Stately Home (1m) and Mister Guerrieri (Italian 5f/5.5f); stable have a smart 2yo in their ranks; betting revealing.",
+   "previousRaces": [],
+   "infoForm": []
+  },
+  {
+   "teamBetCode": "641958",
+   "horseStatus": "Runner",
+   "horseName": "Nosey Book",
+   "horseAge": "2",
+   "horseWeight": "133",
+   "horseBred": "GB",
+   "horseBreederName": "Bearstone Stud Limited",
+   "jockeyImageFilename": "asmedia/png_silks/f/5/3/343135f.png",
+   "jockeyName": "Oisin McSweeney",
+   "trainerName": "Tim Easterby",
+   "horseFormFigures": "6",
+   "stall": 3,
+   "horseNumber": "3",
+   "comment": "Not far behind Gerry's Darling and Hey Up Ronnie at Redcar (7f, good to firm) on his debut 12 days ago; open to improvement but it is slightly disconcerting to see headgear reached for so quickly.",
+   "previousRaces": [],
+   "infoForm": [
+    {
+     "raceDatetime": "2026-07-19T12:53:00+00:00",
+     "jockeyName": "Oisin McSweeney",
+     "comment": "towards rear, some headway and edged right 1f out, kept on inside final furlong",
+     "caption": "Redcar",
+     "position": "6",
+     "numberOfRunners": 13,
+     "raceClass": "4",
+     "description": "6",
+     "distance": "1540.00y"
+    }
+   ]
+  }
+ ],
+ "marketCategories": [
+  {
+   "sysname": "HORSE_RACING_MAIN",
+   "caption": "Race Winner",
+   "items": [
+    {
+     "id": 0,
+     "groupByModifiersGroupId": null,
+     "type": "Single",
+     "sysname": "HORSE_RACING_MAIN|0",
+     "caption": null,
+     "betViews": [
+      {
+       "marketId": 1698022403,
+       "marketInstanceId": 1698022403,
+       "marketEntityId": 68,
+       "marketSysname": "HORSE_RACING_RACE_WINNER",
+       "betItems": [
+        {
+         "id": "7076625063",
+         "code": "610043",
+         "codeCaption": null,
+         "caption": "Hey Up Ronnie",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 2.1,
+         "oddsText": "11/10",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625064",
+         "code": "617622",
+         "codeCaption": null,
+         "caption": "Gerry's Darling",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 2.5,
+         "oddsText": "6/4",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625065",
+         "code": "628586",
+         "codeCaption": null,
+         "caption": "Thai Paddy",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 41.0,
+         "oddsText": "40/1",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625066",
+         "code": "641956",
+         "codeCaption": null,
+         "caption": "Coul Blue",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 8.5,
+         "oddsText": "15/2",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625067",
+         "code": "641958",
+         "codeCaption": null,
+         "caption": "Nosey Book",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 7.5,
+         "oddsText": "13/2",
+         "isAvailable": true,
+         "marketStatistic": null
+        }
+       ],
+       "marketStatistic": null,
+       "metrics": [],
+       "timestamp": 639210980680360403,
+       "displayFormat": "VerticalTwo",
+       "caption": "Race Winner",
+       "isAvailable": true,
+       "betBuilderSupported": false,
+       "hasMultipleModifiers": false,
+       "displayCaption": "Race Winner",
+       "betViewKey": "HORSE_RACING_RACE_WINNER",
+       "modelType": "List"
+      }
+     ],
+     "showMore": null,
+     "grouping": null,
+     "groupDisplayFormat": null
+    }
+   ]
+  },
+  {
+   "sysname": "HORSE_RACING_RACE_INSURANCE_2",
+   "caption": "Insurebet - 2 Places",
+   "items": [
+    {
+     "id": 0,
+     "groupByModifiersGroupId": null,
+     "type": "Single",
+     "sysname": "HORSE_RACING_RACE_INSURANCE_2|0",
+     "caption": null,
+     "betViews": [
+      {
+       "marketId": 1698022444,
+       "marketInstanceId": 1698022444,
+       "marketEntityId": 9752,
+       "marketSysname": "HORSE_RACING_RACE_INSURANCE",
+       "betItems": [
+        {
+         "id": "7076625156",
+         "code": "610043",
+         "codeCaption": null,
+         "caption": "Hey Up Ronnie ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 1.59,
+         "oddsText": "4/7",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625157",
+         "code": "617622",
+         "codeCaption": null,
+         "caption": "Gerry's Darling ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 1.88,
+         "oddsText": "22/25",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625158",
+         "code": "628586",
+         "codeCaption": null,
+         "caption": "Thai Paddy ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 23.6,
+         "oddsText": "22/1",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625159",
+         "code": "641956",
+         "codeCaption": null,
+         "caption": "Coul Blue ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 6.96,
+         "oddsText": "11/2",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625160",
+         "code": "641958",
+         "codeCaption": null,
+         "caption": "Nosey Book ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 6.39,
+         "oddsText": "5/1",
+         "isAvailable": true,
+         "marketStatistic": null
+        }
+       ],
+       "marketStatistic": null,
+       "metrics": [],
+       "timestamp": 639210980680360403,
+       "displayFormat": "VerticalOne",
+       "caption": "Insurance 2",
+       "isAvailable": true,
+       "betBuilderSupported": false,
+       "hasMultipleModifiers": false,
+       "displayCaption": "Insurance 2",
+       "betViewKey": "HORSE_RACING_RACE_INSURANCE",
+       "modelType": "List"
+      }
+     ],
+     "showMore": null,
+     "grouping": null,
+     "groupDisplayFormat": null
+    }
+   ]
+  },
+  {
+   "sysname": "HORSE_RACING_RACE_PLACE_2",
+   "caption": "2 Places",
+   "items": [
+    {
+     "id": 0,
+     "groupByModifiersGroupId": null,
+     "type": "Single",
+     "sysname": "HORSE_RACING_RACE_PLACE_2|0",
+     "caption": null,
+     "betViews": [
+      {
+       "marketId": 1698022466,
+       "marketInstanceId": 1698022466,
+       "marketEntityId": 9756,
+       "marketSysname": "HORSE_RACING_RACE_PLACE",
+       "betItems": [
+        {
+         "id": "7076625215",
+         "code": "610043",
+         "codeCaption": null,
+         "caption": "Hey Up Ronnie ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 1.32,
+         "oddsText": "3/10",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625216",
+         "code": "617622",
+         "codeCaption": null,
+         "caption": "Gerry's Darling ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 1.36,
+         "oddsText": "4/11",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625217",
+         "code": "628586",
+         "codeCaption": null,
+         "caption": "Thai Paddy ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 14.59,
+         "oddsText": "12/1",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625218",
+         "code": "641956",
+         "codeCaption": null,
+         "caption": "Coul Blue ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 3.41,
+         "oddsText": "12/5",
+         "isAvailable": true,
+         "marketStatistic": null
+        },
+        {
+         "id": "7076625219",
+         "code": "641958",
+         "codeCaption": null,
+         "caption": "Nosey Book ",
+         "instanceCaption": null,
+         "betDisplayCaption": null,
+         "price": 3.26,
+         "oddsText": "9/4",
+         "isAvailable": true,
+         "marketStatistic": null
+        }
+       ],
+       "marketStatistic": null,
+       "metrics": [],
+       "timestamp": 639210980680360403,
+       "displayFormat": "VerticalOne",
+       "caption": "Place 2",
+       "isAvailable": true,
+       "betBuilderSupported": false,
+       "hasMultipleModifiers": false,
+       "displayCaption": "Place 2",
+       "betViewKey": "HORSE_RACING_RACE_PLACE",
+       "modelType": "List"
+      }
+     ],
+     "showMore": null,
+     "grouping": null,
+     "groupDisplayFormat": null
+    }
+   ]
+  }
+ ],
+ "day": {
+  "dateStr": "Jul 31 2026",
+  "date": "2026-07-31T00:00:00+00:00",
+  "countries": [
+   {
+    "marketViewGroupId": 4404767,
+    "caption": "GB",
+    "meetings": [
+     {
+      "marketViewGroupId": 4451094,
+      "marketViewId": 7826460,
+      "marketViewKey": "CE47383591",
+      "marketViewType": "COMPETITION_EVENTS",
+      "path": "goodwood",
+      "caption": "Goodwood",
+      "date": "2026-07-31T13:50:00+00:00",
+      "races": [
+       {
+        "betContextId": 47383594,
+        "startTimeUTC": "2026-07-31T12:50:00+00:00",
+        "startTimeUTCUnix": 1785502200,
+        "timeStr": "13:50",
+        "runnersCount": 15,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "5z8wlpfgucxi2m0ro460do7c0",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383595,
+        "startTimeUTC": "2026-07-31T13:25:00+00:00",
+        "startTimeUTCUnix": 1785504300,
+        "timeStr": "14:25",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "34wobeu7g66lfrr8jlb84j03",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383593,
+        "startTimeUTC": "2026-07-31T14:00:00+00:00",
+        "startTimeUTCUnix": 1785506400,
+        "timeStr": "15:00",
+        "runnersCount": 18,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "6mzxy0ag7cjvnvnak2radv3cq",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383597,
+        "startTimeUTC": "2026-07-31T14:35:00+00:00",
+        "startTimeUTCUnix": 1785508500,
+        "timeStr": "15:35",
+        "runnersCount": 15,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "7kslzl1d6qn1rvzefw7wupowc",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383598,
+        "startTimeUTC": "2026-07-31T15:10:00+00:00",
+        "startTimeUTCUnix": 1785510600,
+        "timeStr": "16:10",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "wjx39ncyqwm70ullugchb65f",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383596,
+        "startTimeUTC": "2026-07-31T15:45:00+00:00",
+        "startTimeUTCUnix": 1785512700,
+        "timeStr": "16:45",
+        "runnersCount": 18,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "6qn6dkuxwyt4a737cbx4lt8fa",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383599,
+        "startTimeUTC": "2026-07-31T16:20:00+00:00",
+        "startTimeUTCUnix": 1785514800,
+        "timeStr": "17:20",
+        "runnersCount": 13,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "3qbl170x1owb09dnbnyj4x704",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383592,
+        "startTimeUTC": "2026-07-31T16:55:00+00:00",
+        "startTimeUTCUnix": 1785516900,
+        "timeStr": "17:55",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "a0zmvzljuh6aoepueuuo5ywca",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       }
+      ]
+     },
+     {
+      "marketViewGroupId": 4415478,
+      "marketViewId": 7826863,
+      "marketViewKey": "CE47383673",
+      "marketViewType": "COMPETITION_EVENTS",
+      "path": "wolverhampton",
+      "caption": "Wolverhampton",
+      "date": "2026-07-31T14:00:00+00:00",
+      "races": [
+       {
+        "betContextId": 47383682,
+        "startTimeUTC": "2026-07-31T13:00:00+00:00",
+        "startTimeUTCUnix": 1785502800,
+        "timeStr": "14:00",
+        "runnersCount": 10,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383678,
+        "startTimeUTC": "2026-07-31T13:35:00+00:00",
+        "startTimeUTCUnix": 1785504900,
+        "timeStr": "14:35",
+        "runnersCount": 10,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383674,
+        "startTimeUTC": "2026-07-31T14:10:00+00:00",
+        "startTimeUTCUnix": 1785507000,
+        "timeStr": "15:10",
+        "runnersCount": 9,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383681,
+        "startTimeUTC": "2026-07-31T14:45:00+00:00",
+        "startTimeUTCUnix": 1785509100,
+        "timeStr": "15:45",
+        "runnersCount": 9,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383679,
+        "startTimeUTC": "2026-07-31T15:20:00+00:00",
+        "startTimeUTCUnix": 1785511200,
+        "timeStr": "16:20",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383675,
+        "startTimeUTC": "2026-07-31T15:55:00+00:00",
+        "startTimeUTCUnix": 1785513300,
+        "timeStr": "16:55",
+        "runnersCount": 10,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383680,
+        "startTimeUTC": "2026-07-31T16:25:00+00:00",
+        "startTimeUTCUnix": 1785515100,
+        "timeStr": "17:25",
+        "runnersCount": 6,
+        "status": "Dormant",
+        "streamingProvider": null
+       }
+      ]
+     },
+     {
+      "marketViewGroupId": 4405038,
+      "marketViewId": 7826548,
+      "marketViewKey": "CE47383637",
+      "marketViewType": "COMPETITION_EVENTS",
+      "path": "newcastle",
+      "caption": "Newcastle",
+      "date": "2026-07-31T14:10:00+00:00",
+      "races": [
+       {
+        "betContextId": 47383644,
+        "startTimeUTC": "2026-07-31T13:10:00+00:00",
+        "startTimeUTCUnix": 1785503400,
+        "timeStr": "14:10",
+        "runnersCount": 10,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383654,
+        "startTimeUTC": "2026-07-31T13:45:00+00:00",
+        "startTimeUTCUnix": 1785505500,
+        "timeStr": "14:45",
+        "runnersCount": 8,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383653,
+        "startTimeUTC": "2026-07-31T14:20:00+00:00",
+        "startTimeUTCUnix": 1785507600,
+        "timeStr": "15:20",
+        "runnersCount": 9,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383648,
+        "startTimeUTC": "2026-07-31T14:55:00+00:00",
+        "startTimeUTCUnix": 1785509700,
+        "timeStr": "15:55",
+        "runnersCount": 12,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383651,
+        "startTimeUTC": "2026-07-31T15:30:00+00:00",
+        "startTimeUTCUnix": 1785511800,
+        "timeStr": "16:30",
+        "runnersCount": 10,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383652,
+        "startTimeUTC": "2026-07-31T16:05:00+00:00",
+        "startTimeUTCUnix": 1785513900,
+        "timeStr": "17:05",
+        "runnersCount": 9,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383645,
+        "startTimeUTC": "2026-07-31T16:40:00+00:00",
+        "startTimeUTCUnix": 1785516000,
+        "timeStr": "17:40",
+        "runnersCount": 13,
+        "status": "Dormant",
+        "streamingProvider": null
+       }
+      ]
+     },
+     {
+      "marketViewGroupId": 4897860,
+      "marketViewId": 7826744,
+      "marketViewKey": "CE47383550",
+      "marketViewType": "COMPETITION_EVENTS",
+      "path": "bath",
+      "caption": "Bath",
+      "date": "2026-07-31T17:35:00+00:00",
+      "races": [
+       {
+        "betContextId": 47383553,
+        "startTimeUTC": "2026-07-31T16:35:00+00:00",
+        "startTimeUTCUnix": 1785515700,
+        "timeStr": "17:35",
+        "runnersCount": 4,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383556,
+        "startTimeUTC": "2026-07-31T17:08:00+00:00",
+        "startTimeUTCUnix": 1785517680,
+        "timeStr": "18:08",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383552,
+        "startTimeUTC": "2026-07-31T17:43:00+00:00",
+        "startTimeUTCUnix": 1785519780,
+        "timeStr": "18:43",
+        "runnersCount": 9,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383554,
+        "startTimeUTC": "2026-07-31T18:18:00+00:00",
+        "startTimeUTCUnix": 1785521880,
+        "timeStr": "19:18",
+        "runnersCount": 6,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383551,
+        "startTimeUTC": "2026-07-31T18:48:00+00:00",
+        "startTimeUTCUnix": 1785523680,
+        "timeStr": "19:48",
+        "runnersCount": 5,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383555,
+        "startTimeUTC": "2026-07-31T19:18:00+00:00",
+        "startTimeUTCUnix": 1785525480,
+        "timeStr": "20:18",
+        "runnersCount": 6,
+        "status": "Dormant",
+        "streamingProvider": null
+       }
+      ]
+     },
+     {
+      "marketViewGroupId": 4409314,
+      "marketViewId": 7826750,
+      "marketViewKey": "CE47383607",
+      "marketViewType": "COMPETITION_EVENTS",
+      "path": "musselburgh",
+      "caption": "Musselburgh",
+      "date": "2026-07-31T17:45:00+00:00",
+      "races": [
+       {
+        "betContextId": 47383626,
+        "startTimeUTC": "2026-07-31T16:45:00+00:00",
+        "startTimeUTCUnix": 1785516300,
+        "timeStr": "17:45",
+        "runnersCount": 9,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "ewxjtfqr29ubn3qn52a4yu2ur",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383618,
+        "startTimeUTC": "2026-07-31T17:15:00+00:00",
+        "startTimeUTCUnix": 1785518100,
+        "timeStr": "18:15",
+        "runnersCount": 5,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "8y1jg4fzz6uxh13g9htwb00mh",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383613,
+        "startTimeUTC": "2026-07-31T17:50:00+00:00",
+        "startTimeUTCUnix": 1785520200,
+        "timeStr": "18:50",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "dz63hktiqc4lvauzv827vyn9t",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383610,
+        "startTimeUTC": "2026-07-31T18:25:00+00:00",
+        "startTimeUTCUnix": 1785522300,
+        "timeStr": "19:25",
+        "runnersCount": 5,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "8ufrpomxfwbi30tdi6zul3hth",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383621,
+        "startTimeUTC": "2026-07-31T18:55:00+00:00",
+        "startTimeUTCUnix": 1785524100,
+        "timeStr": "19:55",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383632,
+        "startTimeUTC": "2026-07-31T19:25:00+00:00",
+        "startTimeUTCUnix": 1785525900,
+        "timeStr": "20:25",
+        "runnersCount": 6,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383629,
+        "startTimeUTC": "2026-07-31T19:55:00+00:00",
+        "startTimeUTCUnix": 1785527700,
+        "timeStr": "20:55",
+        "runnersCount": 6,
+        "status": "Dormant",
+        "streamingProvider": null
+       }
+      ]
+     },
+     {
+      "marketViewGroupId": 4409376,
+      "marketViewId": 7826640,
+      "marketViewKey": "CE47383657",
+      "marketViewType": "COMPETITION_EVENTS",
+      "path": "newmarket",
+      "caption": "Newmarket",
+      "date": "2026-07-31T17:50:00+00:00",
+      "races": [
+       {
+        "betContextId": 47383660,
+        "startTimeUTC": "2026-07-31T16:50:00+00:00",
+        "startTimeUTCUnix": 1785516600,
+        "timeStr": "17:50",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "7f57fup4hzvdcvgwf5v1qisxh",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383663,
+        "startTimeUTC": "2026-07-31T17:25:00+00:00",
+        "startTimeUTCUnix": 1785518700,
+        "timeStr": "18:25",
+        "runnersCount": 4,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "1i9daja1qm89gq4hiqpothsww",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383671,
+        "startTimeUTC": "2026-07-31T18:00:00+00:00",
+        "startTimeUTCUnix": 1785520800,
+        "timeStr": "19:00",
+        "runnersCount": 10,
+        "status": "Dormant",
+        "streamingProvider": {
+         "providerSysname": "RMG",
+         "eventId": "69fiawezq9p46yq6jobeszhjk",
+         "liveStreamingCountries": "AD,AE,AF,AG,AI,AL,AM,AN,AO,AQ,AR,AS,AT,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CC,CD,CF,CG,CH,CI,CK,CL,CM,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,EU,FI,FJ,FK,FM,FO,FX,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,KE,KG,KH,KI,KM,KN,KP,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TA,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,XK,YE,YT,YU,ZA,ZM,ZW",
+         "discriminator": "Rmg"
+        }
+       },
+       {
+        "betContextId": 47383659,
+        "startTimeUTC": "2026-07-31T18:32:00+00:00",
+        "startTimeUTCUnix": 1785522720,
+        "timeStr": "19:32",
+        "runnersCount": 9,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383658,
+        "startTimeUTC": "2026-07-31T19:02:00+00:00",
+        "startTimeUTCUnix": 1785524520,
+        "timeStr": "20:02",
+        "runnersCount": 4,
+        "status": "Dormant",
+        "streamingProvider": null
+       },
+       {
+        "betContextId": 47383672,
+        "startTimeUTC": "2026-07-31T19:32:00+00:00",
+        "startTimeUTCUnix": 1785526320,
+        "timeStr": "20:32",
+        "runnersCount": 7,
+        "status": "Dormant",
+        "streamingProvider": null
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

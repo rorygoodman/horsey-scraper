@@ -109,27 +109,48 @@ Categories observed across a 12-race GB sample:
 | Category sysname | Meaning | Used |
 |---|---|---|
 | `HORSE_RACING_MAIN` | Race Winner — win prices | ✅ 12/12 |
-| `HORSE_RACING_RACE_WINNER_EACHWAY_<P>_<D>` | each-way terms | ✅ 12/12 |
+| `HORSE_RACING_RACE_WINNER_EACHWAY_<P>_<D>` | each-way terms — **read the caption, not the sysname** | ✅ 12/12 |
 | `HORSE_RACING_RACE_PLACE_<N>` | standalone place market | ❌ (see Opportunities) |
 | `HORSE_RACING_RACE_INSURANCE_<N>` | Insurebet | ❌ |
 | `HORSE_RACING_RACE_STRAIGHT_FORECAST` | Forecast | ❌ |
 
-**Each-way terms** are encoded in the category sysname, not a data field:
-`HORSE_RACING_RACE_WINNER_EACHWAY_3_5` means 3 places at 1/5, and carries
-the human-readable caption `"E/W 1/5 - 3 Places"`. So
-`fraction = 1 / D`, `places = P`. Observed: `3_5`, `3_4`, `2_4`, `6_5`.
+**Each-way terms** appear as a single market category per race, carrying
+both a sysname (`HORSE_RACING_RACE_WINNER_EACHWAY_3_5`) and a caption
+(`"E/W 1/5 - 3 Places"`). The sysname *looks* like `<places>_<divisor>`.
 (The nested `marketSysname` is the literal template string
 `HORSE_RACING_RACE_WINNER_EACHWAY_P_D` — the numbers live only on the
 category sysname.)
+
+**The sysname is not trustworthy, and the caption is authoritative.**
+Across 30 GB/IRE races scanned on 2026-07-31: 22 agreed, **5 disagreed**,
+3 had no each-way market. Every disagreement was a `Place Boost` race,
+where the sysname retains the *base* terms while the caption advertises the
+*boosted* terms actually on offer:
+
+```
+sysname 3_4  ->  caption "Place Boost 1/5 - 4 Places"   (x4)
+sysname 2_5  ->  caption "Place Boost 1/5 - 5 Places"   (x1)
+```
+
+Some Place Boost races *do* agree, so "is it a boost?" is not a usable
+discriminator either — the caption must simply be the source of truth.
+
+This matters because both failure modes bias the same way. Pricing the
+`3_4` race off its sysname gives a place fraction of 1/4 instead of 1/5
+*and* compares against Betfair's `TOP_3` lay instead of `TOP_4` — each
+error inflates the computed edge, so the scraper would report arbs that do
+not exist.
+
+**Parsing rule:** extract terms from the caption with
+`1/(\d+)\s*-\s*(\d+)\s*Places?`, which covers both the `E/W` and
+`Place Boost` prefixes (19 and 8 of the 30 races respectively). An
+unparseable caption skips the race and is counted — never guessed, and
+never fallen back to the sysname.
 
 The each-way category's prices are identical to the win market's, as
 expected: an each-way bet is struck at the win price with the terms
 applied. Win prices are therefore taken from `HORSE_RACING_MAIN` and the
 each-way category is read for its terms only.
-
-**Parsing guard:** the sysname numbers are cross-checked against the
-caption. A mismatch, or an unparseable sysname, raises rather than
-guessing — a wrong fraction silently misprices every runner in the race.
 
 ## Components
 
@@ -147,7 +168,8 @@ New package `src/novibet_scraper/`, mirroring `sport888_scraper/`:
   venue, country caption, `off_time`, `runners_count`), filtered to today
   and the selected regions.
 - `racecard.py` — parse a racecard into runners (name, win price, raw
-  fractional price) plus `EachWayTerms`, dropping non-runners.
+  fractional price) plus `EachWayTerms` read from the each-way category's
+  **caption** (see the data-source section), dropping non-runners.
 - `models.py` — `NovibetRace`, `NovibetRunner`, `EachWayTerms`,
   `NovibetOutput`. snake_case internally, snake→camel on output.
 - `output.py` — serialize to `novibet.json`.
@@ -250,7 +272,7 @@ Follows the existing scrapers' conventions:
 - Index fetch failure → exit 1 (catastrophic).
 - Per-race fetch/parse failure → skip that race, count it, continue; exit 1
   only if *every* attempted race failed.
-- Unparseable each-way sysname → skip that race, count it (not a silent
+- Unparseable each-way caption → skip that race, count it (not a silent
   mispricing, not a whole-run failure).
 - Legitimate empty day → write empty `novibet.json`, exit 0.
 - Arb step: missing/invalid inputs → exit 2; success (even zero horses) → 0.
@@ -258,11 +280,17 @@ Follows the existing scrapers' conventions:
 ## Testing
 
 TDD, unit tests per module against fixtures captured from the live feed on
-2026-07-31 (day index + a fully-populated GB racecard, saved under
-`tests/fixtures/`). Heaviest coverage on:
+2026-07-31 and committed under `tests/fixtures/` (day index plus eight
+racecards; see `tests/fixtures/novibet_README.md` for what each one
+exercises). Heaviest coverage on:
 
-- each-way sysname parsing: `3_5`/`3_4`/`2_4`/`6_5`, caption cross-check,
-  malformed sysname → raises;
+- each-way **caption** parsing across both prefixes (`E/W …`,
+  `Place Boost …`) and all of 2/3/4/5/6 places;
+- the two boost-mismatch fixtures, asserting the parsed terms follow the
+  caption and *not* the sysname — the regression that would otherwise
+  manufacture phantom arbs;
+- races with no each-way market, with markets already pulled near the off,
+  and with `marketCategories: []` → skipped and counted;
 - non-runner exclusion via `horseStatus`;
 - region/country mapping, including `IRE`→matched-Betfair-`IE`;
 - today-only filtering when the index carries tomorrow's day too;
@@ -274,12 +302,12 @@ Plus schema-validity guards for the two new files and an opt-in
 
 ## Known limitations
 
-- **Six-place races are unpriceable.** `HORSE_RACING_RACE_WINNER_EACHWAY_6_5`
-  (6 places at 1/5) was observed, but `top_n_from_places` maps only 2–5
-  because Betfair's to-be-placed markets stop at `TOP_5`. Such races are
-  skipped and counted — the same behaviour PaddyPower already has, just
-  more visible on Novibet. Not a regression, and not fixable without
-  Betfair data that does not exist.
+- **Six-place races are unpriceable.** `top_n_from_places` maps only 2–5,
+  because Betfair's to-be-placed markets stop at `TOP_5`. Novibet ran
+  6-place boosts on **3 of the 30** GB/IRE races scanned (~10%), so this
+  is not a corner case. Such races are skipped and counted — the same
+  behaviour PaddyPower already has, just more frequent here. Not fixable
+  without Betfair data that does not exist.
 - **The `.ie` domain** (EUR, `usrGrp=IE`) is used, per the captured
   session. Its index covers GB/IRE/USA, and GB-race prices are assumed to
   match `novibet.co.uk`. Unverified; switching domains is a constant change
@@ -304,8 +332,12 @@ it belongs in its own spec rather than bolted onto this one.
 - **Cloudflare** may tighten. The warmup is verified working today; if it
   starts failing, the non-fatal `run.sh` guard means only Novibet output is
   lost.
-- **Sysname format change** for each-way terms would break parsing — hence
-  the caption cross-check and the fail-loudly-per-race handling.
+- **Caption format change** for each-way terms would break parsing. Since
+  the caption is the only trustworthy source (the sysname is demonstrably
+  wrong on Place Boost races), there is no fallback by design: an
+  unparseable caption skips the race rather than guessing. Wired to the
+  per-race skip counter so a format change shows up as a collapse in
+  priced races rather than as silently wrong prices.
 - **The `arb_finder` refactor** touches code that currently ships correct
   output for two bookies. Mitigated by landing it as a standalone green
   commit guarded by golden tests.
