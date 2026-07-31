@@ -39,6 +39,7 @@
         <select id="source">
           <option value="paddypower">PaddyPower</option>
           <option value="sport888">888sport</option>
+          <option value="novibet">Novibet</option>
         </select>
       </label>
       <select id="venue"><option value="">All venues</option></select>
@@ -48,11 +49,12 @@
   </div>
   <script>
     // Each source is one bookie's output file. The only schema difference is
-    // the bookie-leg field name (paddypower vs sport888); everything else
-    // (edge, betfair leg, runner, venue, offTime) is identical.
+    // the bookie-leg field name (paddypower vs sport888 vs novibet);
+    // everything else (edge, betfair leg, runner, venue, offTime) is identical.
     const SOURCES = {
       paddypower: { file: "horses.json",    leg: "paddypower", label: "PP" },
       sport888:   { file: "888horses.json", leg: "sport888",   label: "888" },
+      novibet:    { file: "novibethorses.json", leg: "novibet",   label: "NB" },
     };
     const STORE_KEY = "horsey_source";
 

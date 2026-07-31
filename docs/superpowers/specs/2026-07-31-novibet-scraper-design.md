@@ -144,8 +144,9 @@ not exist.
 **Parsing rule:** extract terms from the caption with
 `1/(\d+)\s*-\s*(\d+)\s*Places?`, which covers both the `E/W` and
 `Place Boost` prefixes (19 and 8 of the 30 races respectively). An
-unparseable caption skips the race and is counted — never guessed, and
-never fallen back to the sysname.
+unparseable caption never falls back to the sysname and is never guessed —
+the race is kept with `eachWayTerms: null` and a warning on stderr (see
+Error handling below).
 
 The each-way category's prices are identical to the win market's, as
 expected: an each-way bet is struck at the win price with the terms
@@ -272,8 +273,15 @@ Follows the existing scrapers' conventions:
 - Index fetch failure → exit 1 (catastrophic).
 - Per-race fetch/parse failure → skip that race, count it, continue; exit 1
   only if *every* attempted race failed.
-- Unparseable each-way caption → skip that race, count it (not a silent
-  mispricing, not a whole-run failure).
+- Unparseable each-way caption → **the race is not skipped.** It stays in
+  `novibet.json` with `eachWayTerms: null`, and a warning naming the
+  offending caption is printed to stderr (not a silent mispricing, not a
+  whole-run failure). This keeps `novibet.json` the complete card per race,
+  matching the "not filtered to Betfair-matchable races" contract in the
+  output-schema section above. The stderr warning is the signal to watch
+  for a caption-format change — `find_horses_by_name` already skips any
+  runner whose race has `eachWayTerms: null`, so a parse failure here can
+  only cost coverage, never mis-price an arb.
 - Legitimate empty day → write empty `novibet.json`, exit 0.
 - Arb step: missing/invalid inputs → exit 2; success (even zero horses) → 0.
 
@@ -305,8 +313,11 @@ Plus schema-validity guards for the two new files and an opt-in
 - **Six-place races are unpriceable.** `top_n_from_places` maps only 2–5,
   because Betfair's to-be-placed markets stop at `TOP_5`. Novibet ran
   6-place boosts on **3 of the 30** GB/IRE races scanned (~10%), so this
-  is not a corner case. Such races are skipped and counted — the same
-  behaviour PaddyPower already has, just more frequent here. Not fixable
+  is not a corner case. Such races match on Betfair but produce no priced
+  horses; `arb_finder`'s `MatchStats.races_unpriceable` counts them
+  separately from plain "matched" races so the run summary doesn't overstate
+  coverage — the same behaviour PaddyPower already has, just more frequent
+  here. Not fixable
   without Betfair data that does not exist.
 - **The `.ie` domain** (EUR, `usrGrp=IE`) is used, per the captured
   session. Its index covers GB/IRE/USA, and GB-race prices are assumed to
@@ -335,9 +346,13 @@ it belongs in its own spec rather than bolted onto this one.
 - **Caption format change** for each-way terms would break parsing. Since
   the caption is the only trustworthy source (the sysname is demonstrably
   wrong on Place Boost races), there is no fallback by design: an
-  unparseable caption skips the race rather than guessing. Wired to the
-  per-race skip counter so a format change shows up as a collapse in
-  priced races rather than as silently wrong prices.
+  unparseable caption is never guessed, and the race is kept with
+  `eachWayTerms: null` rather than skipped (see Error handling above). The
+  signal to watch for a format change is the per-caption stderr warning,
+  plus the "without each-way terms" count in the scraper's own summary line
+  and the `races_unpriceable` count `arb_finder` prints when it runs against
+  Novibet — a format change would show up as a jump in both rather than as
+  silently wrong prices.
 - **The `arb_finder` refactor** touches code that currently ships correct
   output for two bookies. Mitigated by landing it as a standalone green
   commit guarded by golden tests.

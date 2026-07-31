@@ -23,6 +23,8 @@ debug-page.html
 public/
 888sport.json
 888horses.json
+novibet.json
+novibethorses.json
 
 # Credentials — never commit. Real file lives at ~/.horsey-scraper/credentials.json.
 credentials.json
