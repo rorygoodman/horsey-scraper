@@ -18,6 +18,7 @@ Two things to know about this payload:
 from __future__ import annotations
 
 import re
+import sys
 
 from .models import EachWayTerms, NovibetRace, NovibetRunner
 
@@ -25,8 +26,12 @@ WIN_CATEGORY = "HORSE_RACING_MAIN"
 EACHWAY_PREFIX = "HORSE_RACING_RACE_WINNER_EACHWAY_"
 MARKET_NAME = "Race Winner"
 
-# "E/W 1/5 - 3 Places" and "Place Boost 1/5 - 4 Places" both match.
-_TERMS_RE = re.compile(r"1\s*/\s*(\d+)\s*-\s*(\d+)\s*places?", re.IGNORECASE)
+# "E/W 1/5 - 3 Places" and "Place Boost 1/5 - 4 Places" both match. The
+# (?<!\d) guard stops the leading "1" matching mid-number (e.g. "11/5"),
+# which would otherwise silently parse as 1/5 instead of failing loudly.
+_TERMS_RE = re.compile(
+    r"(?<!\d)1\s*/\s*(\d+)\s*-\s*(\d+)\s*places?", re.IGNORECASE
+)
 
 
 def parse_each_way_caption(caption: str) -> "EachWayTerms | None":
@@ -89,7 +94,16 @@ def _parse_eachway(categories: list) -> "EachWayTerms | None":
             continue
         sysname = c.get("sysname")
         if isinstance(sysname, str) and sysname.startswith(EACHWAY_PREFIX):
-            return parse_each_way_caption(c.get("caption"))
+            caption = c.get("caption")
+            terms = parse_each_way_caption(caption)
+            if terms is None:
+                print(
+                    f"Unparseable each-way caption {caption!r} for category "
+                    f"{sysname!r} — Novibet may have changed the caption "
+                    f"format",
+                    file=sys.stderr,
+                )
+            return terms
     return None
 
 

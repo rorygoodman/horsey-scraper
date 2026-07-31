@@ -37,6 +37,10 @@ class TestParseEachWayCaption:
                     "E/W 1/0 - 3 Places"):
             assert parse_each_way_caption(bad) is None, bad
 
+    def test_leading_one_is_not_matched_mid_number(self):
+        # "11/5" must not be misread as "1/5" via a substring match.
+        assert parse_each_way_caption("E/W 11/5 - 4 Places") is None
+
 
 class TestEachWayTermsFollowTheCaption:
     def test_agreeing_sysname(self, novibet_racecard_3pl):
@@ -84,6 +88,28 @@ class TestEachWayTermsFollowTheCaption:
         assert race.each_way_terms is None
 
 
+class TestEachWayCaptionWarning:
+    """An each-way category that fails to parse means Novibet changed the
+    caption format — that should be loud, not silently indistinguishable
+    from "this race just has no each-way market"."""
+
+    def test_warns_on_unparseable_caption(self, novibet_racecard_3pl, capsys):
+        p = mutate(novibet_racecard_3pl)
+        cat = next(c for c in p["marketCategories"] if "EACHWAY" in c["sysname"])
+        cat["caption"] = "Enhanced Each Way Special"
+        race = _parse(p)
+        assert race.each_way_terms is None
+        err = capsys.readouterr().err
+        assert "Enhanced Each Way Special" in err
+        assert cat["sysname"] in err
+
+    def test_no_warning_when_no_eachway_category_present(
+            self, novibet_racecard_no_eachway, capsys):
+        race = _parse(novibet_racecard_no_eachway, venue="Musselburgh")
+        assert race.each_way_terms is None
+        assert capsys.readouterr().err == ""
+
+
 class TestParseRacecard:
     def test_race_metadata(self, novibet_racecard_3pl):
         race = _parse(novibet_racecard_3pl, venue="Wolverhampton")
@@ -120,6 +146,35 @@ class TestParseRacecard:
         race = _parse(p, venue="Wolverhampton")
         got = next(r for r in race.runners if r.name == victim)
         assert got.win_price is None and got.win_price_raw is None
+
+    def test_non_runner_leaked_into_win_market_is_still_excluded(
+            self, novibet_racecard_6pl):
+        # In every committed fixture Novibet already excludes non-runners
+        # from the win market, so this belt-and-braces filter never fires
+        # for real. Force it: splice a NonRunner-flagged horse's betItem
+        # into the win market and confirm it still gets dropped.
+        p = mutate(novibet_racecard_6pl)
+        non_runner = next(
+            h for h in p["horses"] if h["horseStatus"] == "NonRunner")
+        win = next(c for c in p["marketCategories"]
+                   if c["sysname"] == "HORSE_RACING_MAIN")
+        bet_items = win["items"][0]["betViews"][0]["betItems"]
+        bet_items.append({
+            "id": "9999999999",
+            "code": "999999",
+            "codeCaption": None,
+            "caption": non_runner["horseName"],
+            "instanceCaption": None,
+            "betDisplayCaption": None,
+            "price": 10.0,
+            "oddsText": "9/1",
+            "isAvailable": True,
+            "marketStatistic": None,
+        })
+        race = _parse(p)
+        names = {r.name for r in race.runners}
+        assert non_runner["horseName"] not in names
+        assert len(race.runners) == 18  # unchanged from the non-leaked case
 
     def test_no_markets_yields_none(self, novibet_racecard_no_markets):
         assert _parse(novibet_racecard_no_markets, venue="Fairview",
