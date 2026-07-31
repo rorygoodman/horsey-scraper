@@ -23,11 +23,6 @@ def to_camel_dict(obj: Any, rename: Mapping[str, str]) -> Any:
 
     - dataclass → dict with field names renamed via `rename` (unmapped
       names pass through unchanged), declaration order preserved.
-    - other plain object with a `__dict__` (e.g. a structural stand-in for
-      a dataclass) → same treatment, keyed by its instance attributes in
-      assignment order. Lets callers accept "any object shaped like X"
-      (see arb_finder.models.EachWayTermsLike) without every scraper
-      package's EachWayTerms needing a common base class.
     - Enum → its `.name`.
     - dict → dict with Enum keys converted to `.name`, values recursed.
     - list/tuple → list of recursed elements.
@@ -39,11 +34,6 @@ def to_camel_dict(obj: Any, rename: Mapping[str, str]) -> Any:
         return out
     if isinstance(obj, enum.Enum):
         return obj.name
-    if hasattr(obj, "__dict__") and not isinstance(obj, type):
-        out = {}
-        for k, v in vars(obj).items():
-            out[rename.get(k, k)] = to_camel_dict(v, rename)
-        return out
     if isinstance(obj, dict):
         return {_key(k): to_camel_dict(v, rename) for k, v in obj.items()}
     if isinstance(obj, (list, tuple)):

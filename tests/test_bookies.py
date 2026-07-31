@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from dataclasses import dataclass
+
 from common.markettype import MarketType
 from arb_finder.bookies import BOOKIES, PADDYPOWER, SPORT888
 from arb_finder.models import (
@@ -10,11 +12,11 @@ from arb_finder.models import (
 )
 
 
+@dataclass(frozen=True)
 class _Terms:
-    """Structural stand-in for a scraper's EachWayTerms (fraction/places)."""
-    def __init__(self, fraction, places):
-        self.fraction = fraction
-        self.places = places
+    """Stands in for a scraper's EachWayTerms (all three are frozen dataclasses)."""
+    fraction: float
+    places: int
 
 
 def test_registry_is_keyed_by_cli_token():
