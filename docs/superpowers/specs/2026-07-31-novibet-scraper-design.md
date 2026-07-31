@@ -1,0 +1,311 @@
+---
+status: draft
+date: 2026-07-31
+topic: Novibet scraper — third bookie, novibethorses.json, arb_finder generalisation
+---
+
+# Novibet scraper
+
+## Goal
+
+Add **Novibet** as a third bookie alongside PaddyPower and 888sport. Scrape
+every Novibet race for the selected regions that runs today, with full win
+prices and each-way terms, into a new `novibet.json`. Price each-way arbs
+against the shared Betfair lay scrape into a new `novibethorses.json`, and
+wire that file into the published web page's existing source toggle.
+
+Along the way, collapse `arb_finder`'s per-bookie duplication into a single
+generic path — the refactor the 888sport spec deferred with "if a third
+bookie ever lands, revisit".
+
+## Motivation
+
+Novibet is a third independent book. Its prices and each-way terms are its
+own, so a third set of arbs comes off the same Betfair lay scrape at
+near-zero marginal cost.
+
+It is also the point where `arb_finder`'s copy-per-bookie shape stops
+paying. Two bookies did not justify an abstraction; three do. Adding
+Novibet without it would mean a third near-identical price leg, horse
+model, rename map, output writer and CLI branch.
+
+## Non-goals
+
+- **Not** a full generic bookie abstraction. The three scraper packages
+  stay independent — they wrap genuinely different APIs, and their
+  duplication is shallow. Only `arb_finder` is unified.
+- **Not** extracting a shared `browser.py`. Novibet gets a third
+  near-identical copy. This is the most obvious remaining duplication and
+  is flagged as the next cleanup, but it is out of scope here.
+- **Not** the standalone place-market arb (see Opportunities below).
+- **Not** a combined cross-bookie view on the web page. Novibet becomes a
+  third entry in the existing source toggle, nothing more.
+- **Not** changing `horses.json` or `888horses.json`. The `arb_finder`
+  refactor is required to leave both byte-identical.
+
+## The data source (investigated + confirmed 2026-07-31)
+
+Two endpoints on `https://www.novibet.ie`, mirroring 888's
+schedule/racecard split. `4324` is the horse-racing sport id and `4372612`
+the `HORSE_RACING` marketViewGroupId; both are constants.
+
+### Auth
+
+A bare `curl` — even with every header from a real browser session — gets a
+**Cloudflare 403** (`Attention Required! | Cloudflare`). A headless-Chromium
+warmup GET on `https://www.novibet.ie/sports/horse-racing/4372612` followed
+by an in-page `fetch()` returns **200**. This is exactly the `BrowserSession`
+pattern both existing scrapers use, verified working against the live site.
+
+The in-page fetch must carry the `x-gw-*` header set; unlike 888's
+`fetch_json` (which sends only `accept`), these headers are load-bearing:
+
+```
+x-gw-domain-key: _IE          x-gw-cms-key: _IE
+x-gw-application-name: NoviIE  x-gw-currency-sysname: EUR
+x-gw-country-sysname: IE       x-gw-language-sysname: en-IE
+x-gw-client-timezone: Europe/Dublin
+x-gw-channel: WebPC            x-gw-client-layout: Desktop
+x-gw-odds-representation: Fractional
+```
+
+Shared query string: `?lang=en-IE&timeZ=GMT%20Standard%20Time&oddsR=2&usrGrp=IE`.
+
+### 1. Day index
+
+```
+GET /spt/feed/marketviews/horse-racing-overview2/4324/4372612
+```
+
+Returns `days[]` (today **and tomorrow** — filter to today) → `countries[]`
+→ `meetings[]` → `races[]`:
+
+- `countries[].caption`: precise country code — `GB`, `IRE`, `USA`, `AUS`,
+  `SAF`, `GER`. Notably better than 888's coarse `uk-and-ireland`.
+- `meetings[].caption`: venue (e.g. `"Goodwood"`); `meetings[].path` its slug.
+- `races[]`: `betContextId`, `startTimeUTC` (ISO `+00:00`), `timeStr`
+  (local), `runnersCount`, `status` (all upcoming races observed as
+  `Dormant`).
+
+Sample: today's index held **49 GB/IRE races**.
+
+### 2. Racecard
+
+```
+GET /spt/feed/marketviews/horse-racing-race2/4324/<betContextId>
+```
+
+Relevant fields:
+
+- `startDateTime` (ISO `+00:00`), `title`, `runners` (count).
+- `horses[]`: `horseName`, `horseStatus` (`Runner` / `NonRunner`),
+  `teamBetCode`. Non-runners are dropped.
+- `marketCategories[]`, each with `sysname`, `caption`, and
+  `items[].betViews[].betItems[]` carrying `caption` (runner name),
+  `price` (decimal), `oddsText` (fractional), `isAvailable`.
+
+Categories observed across a 12-race GB sample:
+
+| Category sysname | Meaning | Used |
+|---|---|---|
+| `HORSE_RACING_MAIN` | Race Winner — win prices | ✅ 12/12 |
+| `HORSE_RACING_RACE_WINNER_EACHWAY_<P>_<D>` | each-way terms | ✅ 12/12 |
+| `HORSE_RACING_RACE_PLACE_<N>` | standalone place market | ❌ (see Opportunities) |
+| `HORSE_RACING_RACE_INSURANCE_<N>` | Insurebet | ❌ |
+| `HORSE_RACING_RACE_STRAIGHT_FORECAST` | Forecast | ❌ |
+
+**Each-way terms** are encoded in the category sysname, not a data field:
+`HORSE_RACING_RACE_WINNER_EACHWAY_3_5` means 3 places at 1/5, and carries
+the human-readable caption `"E/W 1/5 - 3 Places"`. So
+`fraction = 1 / D`, `places = P`. Observed: `3_5`, `3_4`, `2_4`, `6_5`.
+(The nested `marketSysname` is the literal template string
+`HORSE_RACING_RACE_WINNER_EACHWAY_P_D` — the numbers live only on the
+category sysname.)
+
+The each-way category's prices are identical to the win market's, as
+expected: an each-way bet is struck at the win price with the terms
+applied. Win prices are therefore taken from `HORSE_RACING_MAIN` and the
+each-way category is read for its terms only.
+
+**Parsing guard:** the sysname numbers are cross-checked against the
+caption. A mismatch, or an unparseable sysname, raises rather than
+guessing — a wrong fraction silently misprices every runner in the race.
+
+## Components
+
+New package `src/novibet_scraper/`, mirroring `sport888_scraper/`:
+
+- `api.py` — endpoint constants, warmup URL, racecard URL builder, the
+  `x-gw-*` header set, User-Agent. No I/O.
+- `browser.py` — headless-Chromium session: warmup GET, then
+  `fetch_json(url)` sending the `x-gw-*` headers. Third copy of the
+  pattern (see Non-goals).
+- `regions.py` — region id → Novibet country captions:
+  `gb-ie → {GB, IRE}`, `us → {USA}`. Novibet's taxonomy is its own, so
+  this map lives with the scraper, as 888's does.
+- `overview.py` — parse the day index into race stubs (`bet_context_id`,
+  venue, country caption, `off_time`, `runners_count`), filtered to today
+  and the selected regions.
+- `racecard.py` — parse a racecard into runners (name, win price, raw
+  fractional price) plus `EachWayTerms`, dropping non-runners.
+- `models.py` — `NovibetRace`, `NovibetRunner`, `EachWayTerms`,
+  `NovibetOutput`. snake_case internally, snake→camel on output.
+- `output.py` — serialize to `novibet.json`.
+- `validation.py` + `validate.py` — schema validator + CLI.
+- `cli.py` + `__main__.py` — `python -m novibet_scraper [regions]`.
+
+Filtering follows the same day/off-race window convention as the other two
+scrapers, for consistency.
+
+## `arb_finder` unification
+
+Landed as **its own commit, green, before Novibet touches `arb_finder`** —
+so the refactor is verified in isolation against the existing golden tests.
+
+- `models.py` — replace `PaddyPriceLeg` and `Sport888PriceLeg` with one
+  `BookiePriceLeg` (win_price, win_price_raw, each_way_terms), and
+  `Horse`/`Horse888` with one `PricedHorse`. The two hand-written rename
+  maps collapse into one built per bookie; the leg key (`paddypower` /
+  `sport888` / `novibet`) and the `<bookie>ScrapedAt` field are the only
+  variables.
+- `calculator.py` — one `find_horses_by_name(betfair, bookie_output, bookie)`
+  serving both 888 and Novibet. `find_horses` stays as-is: PaddyPower joins
+  on Betfair ids, which is a genuinely different join, not a parameter.
+- `cli.py` — `--source {paddypower,888,novibet}` becomes table-driven
+  (source → input file, output file, parser, leg name) instead of an
+  if/else chain. Default stays `paddypower`, so bare `python -m arb_finder`
+  is unchanged.
+
+**Safety property: `horses.json` and `888horses.json` must come out
+byte-identical.** `test_horses_golden.py` and the 888 equivalents are what
+prove it; both run before and after the refactor commit.
+
+## The join
+
+Novibet carries no Betfair ids, so it reuses `arb_finder/matching.py`
+unchanged — race matched on off-time instant plus normalized venue
+(with the single-race-at-instant fallback), runner matched on exact
+normalized name. No fuzzy matching: a wrong match is a silently mispriced
+arb.
+
+Novibet's times are `+00:00` like 888's. `venue`, `country`, `off_time`
+and the Betfair ids on each output row come from the **matched Betfair**
+race, so `country` lands as precise `GB`/`IE` regardless of Novibet's own
+`IRE`/`USA` captions. Unmatched races and runners are counted and reported,
+never guessed.
+
+## Output schemas
+
+### `novibet.json`
+
+The complete Novibet card — every winner-market runner for the selected
+regions today, deliberately *not* filtered to Betfair-matchable races, so
+unmatched runners stay visible. Mirrors `888sport.json`:
+
+```
+{
+  "scrapedAt": "...Z",
+  "raceCount": N,
+  "races": [
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-07-31T13:00:00+00:00",
+      "marketName": "Race Winner",
+      "scrapedAt": "...Z",
+      "eachWayTerms": { "fraction": 0.2, "places": 3 },
+      "runners": [
+        { "name": "Rajiba", "winPrice": 2.75, "winPriceRaw": "7/4" }
+      ]
+    }
+  ]
+}
+```
+
+### `novibethorses.json`
+
+Same shape and edge/sort semantics as `888horses.json`, with the bookie leg
+keyed `novibet`. Only matched, fully-priced runners; sorted by `edge`
+descending.
+
+## Pipeline wiring
+
+`run.sh` gains two **non-fatal** stages, guarded exactly as the 888 stages
+are — a Novibet outage must never block the PaddyPower publish:
+
+```
+uv run python -m novibet_scraper "$REGIONS" || echo "..." >&2
+uv run python -m arb_finder --source novibet || echo "..." >&2
+```
+
+`publish.sh` pushes `novibethorses.json` when present, alongside
+`888horses.json`. `index.html` gains one `SOURCES` entry
+(`novibet: { file: "novibethorses.json", leg: "novibet", label: "NB" }`) —
+the map is already generic. `.gitignore` gains both new outputs.
+
+## Error handling
+
+Follows the existing scrapers' conventions:
+
+- Index fetch failure → exit 1 (catastrophic).
+- Per-race fetch/parse failure → skip that race, count it, continue; exit 1
+  only if *every* attempted race failed.
+- Unparseable each-way sysname → skip that race, count it (not a silent
+  mispricing, not a whole-run failure).
+- Legitimate empty day → write empty `novibet.json`, exit 0.
+- Arb step: missing/invalid inputs → exit 2; success (even zero horses) → 0.
+
+## Testing
+
+TDD, unit tests per module against fixtures captured from the live feed on
+2026-07-31 (day index + a fully-populated GB racecard, saved under
+`tests/fixtures/`). Heaviest coverage on:
+
+- each-way sysname parsing: `3_5`/`3_4`/`2_4`/`6_5`, caption cross-check,
+  malformed sysname → raises;
+- non-runner exclusion via `horseStatus`;
+- region/country mapping, including `IRE`→matched-Betfair-`IE`;
+- today-only filtering when the index carries tomorrow's day too;
+- the `arb_finder` golden tests, proving `horses.json` and
+  `888horses.json` are unchanged by the refactor.
+
+Plus schema-validity guards for the two new files and an opt-in
+(`RUN_INTEGRATION=1`) live test, like the other two scrapers.
+
+## Known limitations
+
+- **Six-place races are unpriceable.** `HORSE_RACING_RACE_WINNER_EACHWAY_6_5`
+  (6 places at 1/5) was observed, but `top_n_from_places` maps only 2–5
+  because Betfair's to-be-placed markets stop at `TOP_5`. Such races are
+  skipped and counted — the same behaviour PaddyPower already has, just
+  more visible on Novibet. Not a regression, and not fixable without
+  Betfair data that does not exist.
+- **The `.ie` domain** (EUR, `usrGrp=IE`) is used, per the captured
+  session. Its index covers GB/IRE/USA, and GB-race prices are assumed to
+  match `novibet.co.uk`. Unverified; switching domains is a constant change
+  in `api.py` if it ever matters.
+
+## Opportunities (deliberately deferred)
+
+Novibet exposes **standalone place markets** (`HORSE_RACING_RACE_PLACE_2`,
+`_3`) with independently-priced place odds — e.g. one sampled race showed
+implied each-way fractions of 0.24–0.37 *across runners in the same race*,
+because these are priced per-runner rather than derived from a fixed
+fraction. That enables a **place-only arb** against Betfair's `TOP_N` lay
+that the current each-way frame cannot express, and it is real edge sitting
+unused. It needs its own edge formula, output shape and page treatment, so
+it belongs in its own spec rather than bolted onto this one.
+
+## Risks
+
+- **Venue-name drift** between Novibet and Betfair is the main matching
+  risk, as it was for 888. The off-time-instant fallback mitigates it and
+  unmatched races are logged.
+- **Cloudflare** may tighten. The warmup is verified working today; if it
+  starts failing, the non-fatal `run.sh` guard means only Novibet output is
+  lost.
+- **Sysname format change** for each-way terms would break parsing — hence
+  the caption cross-check and the fail-loudly-per-race handling.
+- **The `arb_finder` refactor** touches code that currently ships correct
+  output for two bookies. Mitigated by landing it as a standalone green
+  commit guarded by golden tests.
