@@ -48,6 +48,14 @@
 | `cli.py` | `--source` becomes a registry lookup over one `_run()`. |
 | `validation.py` | `validate_horses_output(text, *, bookie=PADDYPOWER)`. |
 
+**Modified — `src/common/`:**
+
+| File | Change |
+|---|---|
+| `scrapevalidation.py` (new) | Shared bookie-scrape schema validator, parameterised by the extra race-level string fields a bookie requires. |
+
+**Modified — existing validators:** `src/paddypower_scraper/validation.py` and `src/sport888_scraper/validation.py` become thin delegations to the shared core (see Task 9).
+
 **Modified — repo root:** `run.sh`, `publish.sh`, `index.html`, `.gitignore`, `pyproject.toml`, `README.md`.
 
 ---
@@ -1745,18 +1753,23 @@ Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
 
 ---
 
-### Task 9: `output.py` + `validation.py` + `validate.py`
+### Task 9: `output.py` + shared scrape validator + `validate.py`
 
 **Files:**
-- Create: `src/novibet_scraper/output.py`, `src/novibet_scraper/validation.py`, `src/novibet_scraper/validate.py`
+- Create: `src/novibet_scraper/output.py`, `src/novibet_scraper/validation.py`, `src/novibet_scraper/validate.py`, `src/common/scrapevalidation.py`
+- Modify: `src/paddypower_scraper/validation.py`, `src/sport888_scraper/validation.py`
 - Test: `tests/test_novibet_output.py`, `tests/test_novibet_validation.py` (create)
 
 **Interfaces:**
 - Produces:
   - `novibet_scraper.output.write_novibet_json(out: NovibetOutput, path: Path | str) -> None`
   - `novibet_scraper.output.NOVIBET_RENAME: dict[str, str]`
+  - `common.scrapevalidation.validate_bookie_scrape(text: str, *, required_race_strings: tuple[str, ...] = ()) -> list[str]`
   - `novibet_scraper.validation.validate_novibet_output(text: str) -> list[str]`
   - `novibet_scraper.validate.main(argv=None) -> int`
+  - `paddypower_scraper.validation.validate_paddy_output` and
+    `sport888_scraper.validation.validate_sport888_output` keep their exact
+    current names, signatures and error strings.
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -1919,26 +1932,86 @@ def write_novibet_json(out: NovibetOutput, path: Path | str) -> None:
     write_json(out, NOVIBET_RENAME, path)
 ```
 
-- [ ] **Step 4: Write `src/novibet_scraper/validation.py`**
+- [ ] **Step 4: Extract the shared validator core, then delegate all three**
 
-Copy `src/sport888_scraper/validation.py` verbatim, then make exactly three changes: rename the function to `validate_novibet_output`, update the module docstring to name `novibet.json`, and keep `_EW_PLACES = range(1, 7)` (Novibet runs 6-place boosts, so 6 must validate).
+The PaddyPower and 888 validators are the same logic twice; adding a third copy for Novibet was the plan's original instruction and has been **overruled by the human partner** in favour of extracting the shared core. Diffing them shows exactly two substantive differences: PaddyPower additionally requires a `raceUrl` string on each race, and its price-parity block is a cosmetic rewrite that emits byte-identical messages.
+
+Create `src/common/scrapevalidation.py` holding the current body of `sport888_scraper/validation.py`, with these changes:
+
+- module docstring describes a generic bookie scrape;
+- the public function becomes
+  `validate_bookie_scrape(text: str, *, required_race_strings: tuple[str, ...] = ()) -> list[str]`;
+- inside the per-race loop, immediately **after** the `marketName` check and **before** the `scrapedAt` check, add:
+
+```python
+        for extra in required_race_strings:
+            _require_str(race, extra, errors)
+```
+
+- `_require_str`, `_require_int` and `_EW_PLACES = range(1, 7)` move across unchanged.
+
+Then reduce the three bookie modules to delegations, each keeping its current public name, signature and docstring intent:
+
+```python
+# src/paddypower_scraper/validation.py
+from common.scrapevalidation import validate_bookie_scrape
+
+def validate_paddy_output(text: str) -> list[str]:
+    return validate_bookie_scrape(text, required_race_strings=("raceUrl",))
+```
+
+```python
+# src/sport888_scraper/validation.py
+from common.scrapevalidation import validate_bookie_scrape
+
+def validate_sport888_output(text: str) -> list[str]:
+    return validate_bookie_scrape(text)
+```
+
+```python
+# src/novibet_scraper/validation.py
+from common.scrapevalidation import validate_bookie_scrape
+
+def validate_novibet_output(text: str) -> list[str]:
+    return validate_bookie_scrape(text)
+```
+
+**The existing validator tests are the gate.** `tests/test_paddy_validation.py`, `tests/test_paddy_validate_cli.py` and `tests/test_sport888_validation.py` assert specific error strings and must pass **unchanged** — they are what proves the extraction preserved behaviour, including message wording and the order errors are appended. Do not edit them to fit the new code.
+
+Ordering matters: `raceUrl` must be checked between `marketName` and `scrapedAt` so PaddyPower's error sequence is preserved.
 
 - [ ] **Step 5: Write `src/novibet_scraper/validate.py`**
 
 Copy `src/sport888_scraper/validate.py`, changing the import to `from .validation import validate_novibet_output`, the call site, and the usage string to `python -m novibet_scraper.validate <novibet.json>`.
 
-- [ ] **Step 6: Run the tests**
+- [ ] **Step 6: Run the new tests**
 
 Run: `uv run pytest tests/test_novibet_output.py tests/test_novibet_validation.py -v`
 Expected: 12 passed.
 
-- [ ] **Step 7: Commit**
+- [ ] **Step 7: Prove the extraction changed nothing for the other two bookies**
+
+Run: `uv run pytest tests/test_paddy_validation.py tests/test_paddy_validate_cli.py tests/test_sport888_validation.py -v`
+Expected: all pass, with **no edits to those test files**.
+
+Then the whole suite: `uv run pytest -q` — no failures.
+
+- [ ] **Step 8: Commit**
 
 ```bash
-git add src/novibet_scraper/output.py src/novibet_scraper/validation.py \
-        src/novibet_scraper/validate.py tests/test_novibet_output.py \
-        tests/test_novibet_validation.py
-git commit -m "feat(novibet): novibet.json serializer + schema validator
+git add src/common/scrapevalidation.py src/novibet_scraper/output.py \
+        src/novibet_scraper/validation.py src/novibet_scraper/validate.py \
+        src/paddypower_scraper/validation.py src/sport888_scraper/validation.py \
+        tests/test_novibet_output.py tests/test_novibet_validation.py
+git commit -m "feat(novibet): novibet.json serializer + shared scrape validator
+
+The PaddyPower and 888 scrape validators were the same logic twice; rather
+than adding a third copy for Novibet, the common core moves to
+common/scrapevalidation.py, parameterised by the extra race-level string
+fields a bookie requires (PaddyPower alone requires raceUrl). All three
+bookie modules keep their public names and error strings — the existing
+PaddyPower and 888 validator tests pass unchanged, which is what proves the
+extraction preserved behaviour.
 
 Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
 ```
@@ -1956,6 +2029,8 @@ Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>"
 - Produces: `novibet_scraper.browser.BrowserSession` (context manager, `fetch_json(url, timeout_ms=20_000) -> dict`), `novibet_scraper.browser.BrowserFetchError(url, reason)`
 
 Start from `src/sport888_scraper/browser.py`. Two differences: the in-page `fetch()` must send `API_HEADERS` (888 sends only `accept`), and the constants come from Novibet's `api`.
+
+This is a third near-identical copy of the session class, and that is a deliberate call: when the shared-validator extraction was approved (Task 9), extracting the browser layer as well was considered and declined, because it would rewrite the one component whose failure silently breaks live scraping across two working scrapers. The spec already records browser extraction as the next cleanup.
 
 - [ ] **Step 1: Write the failing test**
 
