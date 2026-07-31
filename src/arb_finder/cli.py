@@ -14,12 +14,14 @@ from typing import Any, Callable
 from betfair_scraper.models import ScrapeOutput
 from betfair_scraper.validation import validate_scrape_output
 from common.timeutil import iso_utc
+from novibet_scraper.models import NovibetOutput
+from novibet_scraper.validation import validate_novibet_output
 from paddypower_scraper.models import PaddyOutput
 from paddypower_scraper.validation import validate_paddy_output
 from sport888_scraper.models import Sport888Output
 from sport888_scraper.validation import validate_sport888_output
 
-from .bookies import Bookie, PADDYPOWER, SPORT888
+from .bookies import Bookie, NOVIBET, PADDYPOWER, SPORT888
 from .calculator import find_horses, find_horses_by_name
 from .models import BookieHorsesOutput, write_bookie_horses_json
 
@@ -42,6 +44,10 @@ SOURCES: dict[str, SourceSpec] = {
         bookie=SPORT888, label="888sport",
         parse=lambda t: Sport888Output.from_dict(json.loads(t)),
         validate=validate_sport888_output, join="name"),
+    "novibet": SourceSpec(
+        bookie=NOVIBET, label="Novibet",
+        parse=lambda t: NovibetOutput.from_dict(json.loads(t)),
+        validate=validate_novibet_output, join="name"),
 }
 
 

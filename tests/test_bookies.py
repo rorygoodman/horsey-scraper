@@ -2,13 +2,13 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, fields
 
 from common.markettype import MarketType
-from arb_finder.bookies import BOOKIES, PADDYPOWER, SPORT888
+from arb_finder.bookies import BOOKIES, NOVIBET, PADDYPOWER, SPORT888
 from arb_finder.models import (
-    BetfairLayLeg, BookieHorsesOutput, BookiePriceLeg, PricedHorse, Runner,
-    build_rename, write_bookie_horses_json,
+    _BASE_RENAME, BetfairLayLeg, BookieHorsesOutput, BookiePriceLeg,
+    PricedHorse, Runner, build_rename, write_bookie_horses_json,
 )
 
 
@@ -20,9 +20,10 @@ class _Terms:
 
 
 def test_registry_is_keyed_by_cli_token():
-    assert set(BOOKIES) == {"paddypower", "888"}
+    assert set(BOOKIES) == {"paddypower", "888", "novibet"}
     assert BOOKIES["paddypower"] is PADDYPOWER
     assert BOOKIES["888"] is SPORT888
+    assert BOOKIES["novibet"] is NOVIBET
 
 
 def test_paddypower_declares_its_json_names():
@@ -37,6 +38,13 @@ def test_sport888_declares_its_json_names():
     assert SPORT888.scraped_at_field == "sport888ScrapedAt"
     assert SPORT888.default_bookie_input == "888sport.json"
     assert SPORT888.default_output == "888horses.json"
+
+
+def test_novibet_declares_its_json_names():
+    assert NOVIBET.leg_field == "novibet"
+    assert NOVIBET.scraped_at_field == "novibetScrapedAt"
+    assert NOVIBET.default_bookie_input == "novibet.json"
+    assert NOVIBET.default_output == "novibethorses.json"
 
 
 def test_build_rename_maps_the_two_variable_fields():
@@ -91,3 +99,32 @@ def test_field_order_is_unchanged(tmp_path):
     assert list(data["horses"][0].keys()) == [
         "venue", "country", "offTime", "marketName", "betfairWinMarketId",
         "runner", "paddypower", "betfair", "edge"]
+
+
+def test_bookie_fields_do_not_collide_with_other_output_keys():
+    """write_json applies one flat rename map by dataclass field name at
+    every level of the output tree. If a future bookie's leg_field or
+    scraped_at_field ever matched one of the fixed keys the output already
+    emits (venue, country, runner, betfair, edge, offTime, marketName,
+    horseCount, ...), the serializer would silently collapse two distinct
+    fields into a single JSON key. Every BOOKIES entry must stay clear of
+    that fixed key set, and clear of itself (leg_field != scraped_at_field)."""
+    variable_field_names = {"bookie", "bookie_scraped_at"}
+    fixed_keys: set[str] = set()
+    for dc in (BookieHorsesOutput, PricedHorse, Runner, BookiePriceLeg, BetfairLayLeg):
+        for f in fields(dc):
+            if f.name in variable_field_names:
+                continue
+            fixed_keys.add(_BASE_RENAME.get(f.name, f.name))
+    # EachWayTerms is a structural (non-arb_finder) dataclass nested under
+    # eachWayTerms; its own fields pass straight through unrenamed.
+    fixed_keys |= {"fraction", "places"}
+
+    for bookie in BOOKIES.values():
+        assert bookie.leg_field not in fixed_keys, (
+            f"{bookie.key}: leg_field {bookie.leg_field!r} collides with a "
+            "fixed output key")
+        assert bookie.scraped_at_field not in fixed_keys, (
+            f"{bookie.key}: scraped_at_field {bookie.scraped_at_field!r} "
+            "collides with a fixed output key")
+        assert bookie.leg_field != bookie.scraped_at_field
