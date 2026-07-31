@@ -1,15 +1,21 @@
 # Horsey Scraper
 
-A three-stage pipeline that prices each-way arbitrage — and near-misses —
-between PaddyPower win/place prices and Betfair Exchange lay prices for
-today's UK + Irish horse racing. Every fully-priced runner gets an `edge`;
-the positive-edge ones are the arbs:
+A pipeline that prices each-way arbitrage — and near-misses — between
+Betfair Exchange lay prices and three bookies' win/place prices (PaddyPower,
+888sport, Novibet) for today's UK + Irish horse racing. Every fully-priced
+runner gets an `edge`; the positive-edge ones are the arbs: Betfair →
+PaddyPower → arb → 888sport ×2 (scrape + arb) → Novibet ×2 (scrape + arb).
 
 1. **Betfair scrape** → `betfair.json` (multi-market lay prices via the
    Betfair Exchange REST API).
 2. **PaddyPower scrape** → `paddypower.json` (win prices + each-way terms
    via a headless-Chromium fetch of PaddyPower's API).
 3. **Arb finder** → `horses.json` (every fully-priced runner with its each-way edge).
+4. **888sport scrape** → `888sport.json`, then **arb finder --source 888**
+   → `888horses.json` (same edge, priced against 888sport; non-fatal, so an
+   888 outage never blocks the PaddyPower publish).
+5. **Novibet scrape** → `novibet.json`, then **arb finder --source novibet**
+   → `novibethorses.json` (same edge, priced against Novibet; also non-fatal).
 
 Pure Python. One `uv` project.
 
@@ -60,6 +66,7 @@ Run a single stage directly:
 uv run python -m betfair_scraper gb-ie
 uv run python -m paddypower_scraper gb-ie
 uv run python -m arb_finder
+uv run python -m novibet_scraper gb-ie
 ```
 
 ## Validating output
@@ -68,6 +75,7 @@ uv run python -m arb_finder
 uv run python -m betfair_scraper.validate betfair.json
 uv run python -m paddypower_scraper.validate paddypower.json
 uv run python -m arb_finder.validate horses.json
+uv run python -m novibet_scraper.validate novibet.json
 ```
 
 ## Web page (GitHub Pages)
@@ -75,8 +83,9 @@ uv run python -m arb_finder.validate horses.json
 The latest output is published as a static page at
 **https://rorygoodman.github.io/horsey-scraper/** — an edge-ranked table of
 every fully-priced runner (positive-edge rows highlighted). A **source**
-toggle switches the table between PaddyPower (`horses.json`) and 888sport
-(`888horses.json`); the choice is remembered across the page's auto-refresh.
+toggle switches the table between PaddyPower (`horses.json`), 888sport
+(`888horses.json`) and Novibet (`novibethorses.json`); the choice is
+remembered across the page's auto-refresh.
 
 Scrape and publish in one step:
 
@@ -86,8 +95,9 @@ Scrape and publish in one step:
 ```
 
 `publish.sh` runs the pipeline, then force-pushes `index.html` + `horses.json`
-(and `888horses.json` when present) to the `gh-pages` branch (via the `gh`
-https credential helper). Preview the page locally without publishing:
+(and `888horses.json` / `novibethorses.json` when present) to the `gh-pages`
+branch (via the `gh` https credential helper). Preview the page locally
+without publishing:
 
 ```
 mkdir -p /tmp/horsey-preview && cp index.html /tmp/horsey-preview/
@@ -110,7 +120,10 @@ src/
                       time conversion, JSON serializer
   betfair_scraper/    Betfair Exchange API scraper → betfair.json
   paddypower_scraper/ headless-Chromium PaddyPower scraper → paddypower.json
-  arb_finder/         joins both files → horses.json
+  sport888_scraper/   headless-Chromium 888sport scraper → 888sport.json
+  novibet_scraper/    headless-Chromium Novibet scraper → novibet.json
+  arb_finder/         joins betfair.json with one bookie's scrape →
+                      horses.json / 888horses.json / novibethorses.json
 ```
 
 Design docs live under `docs/superpowers/specs/`, implementation plans

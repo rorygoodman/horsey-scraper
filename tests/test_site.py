@@ -47,3 +47,15 @@ def test_publish_script_shape():
 def test_publish_script_copies_888horses():
     text = (ROOT / "publish.sh").read_text()
     assert "888horses.json" in text, "publish.sh should copy 888horses.json to the site"
+
+
+def test_index_offers_novibet_source():
+    html = INDEX.read_text()
+    assert "novibethorses.json" in html, "index.html missing novibethorses.json source"
+    assert "novibet" in html, "index.html missing novibet bookie leg"
+
+
+def test_publish_script_copies_novibethorses():
+    text = (ROOT / "publish.sh").read_text()
+    assert "novibethorses.json" in text, \
+        "publish.sh should copy novibethorses.json to the site"
