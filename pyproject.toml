@@ -17,6 +17,7 @@ betfair-scraper = "betfair_scraper.cli:main"
 paddypower-scraper = "paddypower_scraper.cli:main"
 arb-finder = "arb_finder.cli:main"
 sport888-scraper = "sport888_scraper.cli:main"
+novibet-scraper = "novibet_scraper.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = [
@@ -25,6 +26,7 @@ packages = [
     "src/paddypower_scraper",
     "src/arb_finder",
     "src/sport888_scraper",
+    "src/novibet_scraper",
 ]
 
 [tool.pytest.ini_options]
