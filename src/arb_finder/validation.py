@@ -6,11 +6,13 @@ import json
 
 from common.isovalid import is_iso_offset_datetime, is_iso_utc
 
+from .bookies import Bookie, PADDYPOWER
+
 _EW_PLACES = range(2, 6)  # 2..5 inclusive
 _ALLOWED_PLACE_MARKETS = {"TOP_2", "TOP_3", "TOP_4", "TOP_5"}
 
 
-def validate_horses_output(text: str) -> list[str]:
+def validate_horses_output(text: str, *, bookie: Bookie = PADDYPOWER) -> list[str]:
     errors: list[str] = []
     try:
         root = json.loads(text)
@@ -19,7 +21,7 @@ def validate_horses_output(text: str) -> list[str]:
     except ValueError as e:
         return [f"not valid JSON object: {e}"]
 
-    for key in ("computedAt", "betfairScrapedAt", "paddypowerScrapedAt"):
+    for key in ("computedAt", "betfairScrapedAt", bookie.scraped_at_field):
         _require_str(root, key, errors,
                      lambda v, k=key: None if is_iso_utc(v)
                      else errors.append(f"{k} is not ISO-8601 UTC instant: '{v}'"))
@@ -57,12 +59,12 @@ def validate_horses_output(text: str) -> list[str]:
             if not isinstance(sel, (int, float)) or isinstance(sel, bool):
                 errors.append(f"{ctx}.runner.selectionId: missing or not a number")
 
-        _validate_paddy_leg(h.get("paddypower"), f"{ctx}.paddypower", errors)
+        _validate_bookie_leg(h.get(bookie.leg_field), f"{ctx}.{bookie.leg_field}", errors)
         _validate_betfair_leg(h.get("betfair"), f"{ctx}.betfair", errors)
     return errors
 
 
-def _validate_paddy_leg(el, ctx: str, errors: list[str]) -> None:
+def _validate_bookie_leg(el, ctx: str, errors: list[str]) -> None:
     if not isinstance(el, dict):
         errors.append(f"{ctx}: missing or not an object")
         return

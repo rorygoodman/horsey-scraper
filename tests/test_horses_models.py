@@ -7,31 +7,32 @@ from pathlib import Path
 
 from common.markettype import MarketType
 from paddypower_scraper.models import EachWayTerms
+from arb_finder.bookies import PADDYPOWER
 from arb_finder.models import (
     BetfairLayLeg,
-    Horse,
-    HorsesOutput,
-    PaddyPriceLeg,
+    BookieHorsesOutput,
+    BookiePriceLeg,
+    PricedHorse,
     Runner,
-    write_horses_json,
+    write_bookie_horses_json,
 )
 
 
-def _sample() -> HorsesOutput:
-    return HorsesOutput(
+def _sample() -> BookieHorsesOutput:
+    return BookieHorsesOutput(
         computed_at="2026-05-27T20:34:11Z",
         betfair_scraped_at="2026-05-27T20:34:01Z",
-        paddypower_scraped_at="2026-05-27T20:34:05Z",
+        bookie_scraped_at="2026-05-27T20:34:05Z",
         horse_count=1,
         horses=[
-            Horse(
+            PricedHorse(
                 venue="Finger Lakes",
                 country="US",
                 off_time="2026-05-27T21:47:00+01:00",
                 market_name="21:47 Finger Lakes",
                 betfair_win_market_id="1.258619108",
                 runner=Runner(name="Emerald Forest", selection_id=12345678),
-                paddypower=PaddyPriceLeg(
+                bookie=BookiePriceLeg(
                     win_price=2.88, win_price_raw="15/8",
                     each_way_terms=EachWayTerms(fraction=0.25, places=2)),
                 betfair=BetfairLayLeg(
@@ -44,7 +45,7 @@ def _sample() -> HorsesOutput:
 
 def test_serialize_shape(tmp_path: Path):
     target = tmp_path / "horses.json"
-    write_horses_json(_sample(), target)
+    write_bookie_horses_json(_sample(), PADDYPOWER, target)
     payload = json.loads(target.read_text())
     assert list(payload.keys()) == [
         "computedAt", "betfairScrapedAt", "paddypowerScrapedAt",
@@ -64,8 +65,8 @@ def test_serialize_shape(tmp_path: Path):
 
 
 def test_empty_horses(tmp_path: Path):
-    out = HorsesOutput("2026-05-27T20:34:11Z", "2026-05-27T20:34:01Z",
-                       "2026-05-27T20:34:05Z", 0, [])
+    out = BookieHorsesOutput("2026-05-27T20:34:11Z", "2026-05-27T20:34:01Z",
+                             "2026-05-27T20:34:05Z", 0, [])
     target = tmp_path / "horses.json"
-    write_horses_json(out, target)
+    write_bookie_horses_json(out, PADDYPOWER, target)
     assert json.loads(target.read_text())["horses"] == []

@@ -1,21 +1,32 @@
-"""Dataclasses mirroring horses.json + serializer."""
+"""Dataclasses mirroring the priced-arb output files + serializer.
+
+One set of models serves every bookie. The only per-bookie variation is
+JSON key naming, which comes from bookies.Bookie via build_rename()."""
 
 from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Protocol
 
 from common.jsonio import write_json
 from common.markettype import MarketType
-from paddypower_scraper.models import EachWayTerms
-from sport888_scraper.models import EachWayTerms as Sport888EachWayTerms
+
+from .bookies import Bookie
+
+
+class EachWayTermsLike(Protocol):
+    """Any scraper's EachWayTerms. Structural on purpose: each scraper
+    package owns its own dataclass, and jsonio serializes it by shape."""
+    fraction: float
+    places: int
 
 
 @dataclass(frozen=True)
-class PaddyPriceLeg:
+class BookiePriceLeg:
     win_price: float
     win_price_raw: str
-    each_way_terms: EachWayTerms
+    each_way_terms: EachWayTermsLike
 
 
 @dataclass(frozen=True)
@@ -32,31 +43,30 @@ class Runner:
 
 
 @dataclass(frozen=True)
-class Horse:
+class PricedHorse:
     venue: str
     country: str
     off_time: str
     market_name: str
     betfair_win_market_id: str
     runner: Runner
-    paddypower: PaddyPriceLeg
+    bookie: BookiePriceLeg
     betfair: BetfairLayLeg
     edge: float
 
 
 @dataclass(frozen=True)
-class HorsesOutput:
+class BookieHorsesOutput:
     computed_at: str
     betfair_scraped_at: str
-    paddypower_scraped_at: str
+    bookie_scraped_at: str
     horse_count: int
-    horses: list[Horse]
+    horses: list[PricedHorse]
 
 
-HORSES_RENAME = {
+_BASE_RENAME = {
     "computed_at": "computedAt",
     "betfair_scraped_at": "betfairScrapedAt",
-    "paddypower_scraped_at": "paddypowerScrapedAt",
     "horse_count": "horseCount",
     "off_time": "offTime",
     "market_name": "marketName",
@@ -71,56 +81,16 @@ HORSES_RENAME = {
 }
 
 
-def write_horses_json(out: HorsesOutput, path: Path | str) -> None:
-    write_json(out, HORSES_RENAME, path)
+def build_rename(bookie: Bookie) -> dict[str, str]:
+    """Shared snake→camel map plus the two bookie-specific names."""
+    return {
+        **_BASE_RENAME,
+        "bookie_scraped_at": bookie.scraped_at_field,
+        "bookie": bookie.leg_field,
+    }
 
 
-@dataclass(frozen=True)
-class Sport888PriceLeg:
-    win_price: float
-    win_price_raw: str
-    each_way_terms: Sport888EachWayTerms
-
-
-@dataclass(frozen=True)
-class Horse888:
-    venue: str
-    country: str
-    off_time: str
-    market_name: str
-    betfair_win_market_id: str
-    runner: Runner
-    sport888: Sport888PriceLeg
-    betfair: BetfairLayLeg
-    edge: float
-
-
-@dataclass(frozen=True)
-class Horses888Output:
-    computed_at: str
-    betfair_scraped_at: str
-    sport888_scraped_at: str
-    horse_count: int
-    horses: list[Horse888]
-
-
-HORSES888_RENAME = {
-    "computed_at": "computedAt",
-    "betfair_scraped_at": "betfairScrapedAt",
-    "sport888_scraped_at": "sport888ScrapedAt",
-    "horse_count": "horseCount",
-    "off_time": "offTime",
-    "market_name": "marketName",
-    "betfair_win_market_id": "betfairWinMarketId",
-    "selection_id": "selectionId",
-    "win_price": "winPrice",
-    "win_price_raw": "winPriceRaw",
-    "each_way_terms": "eachWayTerms",
-    "win_lay": "winLay",
-    "place_lay": "placeLay",
-    "place_market": "placeMarket",
-}
-
-
-def write_horses888_json(out: Horses888Output, path: Path | str) -> None:
-    write_json(out, HORSES888_RENAME, path)
+def write_bookie_horses_json(
+    out: BookieHorsesOutput, bookie: Bookie, path: Path | str
+) -> None:
+    write_json(out, build_rename(bookie), path)

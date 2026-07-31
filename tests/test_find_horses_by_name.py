@@ -51,7 +51,7 @@ def test_matched_runner_priced():
     assert h.country == "GB"                     # from matched Betfair race
     assert h.betfair_win_market_id == "1.1"
     assert h.betfair.place_market is MarketType.TOP_3
-    assert h.sport888.win_price == 3.0
+    assert h.bookie.win_price == 3.0
     assert h.edge == pytest.approx(0.25)
     assert stats.races_matched == 1
     assert stats.runners_priced == 1

@@ -8,19 +8,20 @@ from pathlib import Path
 
 import pytest
 
-from arb_finder.cli import main, parse_horses_cli_args
+from arb_finder.cli import SOURCES, main, parse_cli_args
 
 
 class TestParseArgs:
     def test_defaults(self):
-        assert parse_horses_cli_args([]) == ("betfair.json", "paddypower.json", "horses.json")
+        assert parse_cli_args(SOURCES["paddypower"], []) == (
+            "betfair.json", "paddypower.json", "horses.json")
 
     def test_explicit(self):
-        assert parse_horses_cli_args(["a", "b", "c"]) == ("a", "b", "c")
+        assert parse_cli_args(SOURCES["paddypower"], ["a", "b", "c"]) == ("a", "b", "c")
 
     def test_bad_arity(self):
         with pytest.raises(ValueError):
-            parse_horses_cli_args(["only-one"])
+            parse_cli_args(SOURCES["paddypower"], ["only-one"])
 
 
 def _write_betfair(path: Path):
