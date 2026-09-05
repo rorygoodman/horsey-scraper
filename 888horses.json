@@ -1,0 +1,3633 @@
+{
+  "computedAt": "2026-09-05T23:44:32.449140Z",
+  "betfairScrapedAt": "2026-09-05T23:44:02.401770Z",
+  "sport888ScrapedAt": "2026-09-05T23:44:17.784453Z",
+  "horseCount": 145,
+  "horses": [
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Besieged",
+        "selectionId": 128818
+      },
+      "sport888": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 3.35,
+        "placeLay": 1.53,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.04106916398400151
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Regional",
+        "selectionId": 7648062
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.04327815042100758
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Double Rush",
+        "selectionId": 38925288
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.65,
+        "placeLay": 1.65,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.06600249066002484
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Inspired",
+        "selectionId": 909767
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 4.7,
+        "placeLay": 1.79,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.07351182693450609
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Extremely Zain",
+        "selectionId": 93104017
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.4,
+        "placeLay": 2.48,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.08347863993025273
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Mr Noble",
+        "selectionId": 91405491
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 4.6,
+        "placeLay": 1.68,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.08902691511387162
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:55:00+01:00",
+      "marketName": "14:55 Fontwell - 2m3f Mdn Hrd",
+      "betfairWinMarketId": "1.261987546",
+      "runner": {
+        "name": "Moab",
+        "selectionId": 63615664
+      },
+      "sport888": {
+        "winPrice": 2.5,
+        "winPriceRaw": "6/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.56,
+        "placeLay": 1.64,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.09251143292682928
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Castle Stuart",
+        "selectionId": 12960674
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 1.9,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.09558823529411764
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T17:15:00+01:00",
+      "marketName": "17:15 Fontwell - 2m2f NHF",
+      "betfairWinMarketId": "1.261987566",
+      "runner": {
+        "name": "Delulu",
+        "selectionId": 65824980
+      },
+      "sport888": {
+        "winPrice": 1.5,
+        "winPriceRaw": "1/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 1.55,
+        "placeLay": 1.34,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.09635291285507952
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Illy's Roo",
+        "selectionId": 88748482
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 3.25,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.10769230769230764
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Mezzo Forte",
+        "selectionId": 2013318
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 2.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.12681159420289845
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Havana Rum",
+        "selectionId": 46456919
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 7.2,
+        "placeLay": 2.24,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.13690476190476197
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T16:05:00+01:00",
+      "marketName": "16:05 Fontwell - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.261987557",
+      "runner": {
+        "name": "No More Bolero",
+        "selectionId": 41562962
+      },
+      "sport888": {
+        "winPrice": 2.2,
+        "winPriceRaw": "6/5",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.36,
+        "placeLay": 1.66,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.14233204002450472
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Izuba",
+        "selectionId": 100968380
+      },
+      "sport888": {
+        "winPrice": 2.1,
+        "winPriceRaw": "11/10",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.44,
+        "placeLay": 1.49,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16027615799317851
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "High Fibre",
+        "selectionId": 39703171
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 4.1,
+        "placeLay": 1.83,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.16333466613354652
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Nariko",
+        "selectionId": 12456255
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 13.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16759259259259263
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Scenic Route",
+        "selectionId": 6248248
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.6,
+        "placeLay": 2.66,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16951469583048528
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "Howin",
+        "selectionId": 74900024
+      },
+      "sport888": {
+        "winPrice": 2.5,
+        "winPriceRaw": "6/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.82,
+        "placeLay": 1.68,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16983282674772027
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Dark Moon Rising",
+        "selectionId": 12828154
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 2.68,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.17128642501776836
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Khafiz",
+        "selectionId": 69400778
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 4.1,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.17911585365853644
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "America Queen",
+        "selectionId": 85482616
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.6,
+        "placeLay": 2.08,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.18956043956043955
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T15:30:00+01:00",
+      "marketName": "15:30 Fontwell - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.261987551",
+      "runner": {
+        "name": "Gata Ban",
+        "selectionId": 45699817
+      },
+      "sport888": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.2,
+        "placeLay": 2.04,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.1907935049019608
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Quest For Fun",
+        "selectionId": 27699876
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1926470588235294
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Moon Chime",
+        "selectionId": 55632375
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.12,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.19816037735849057
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:20:00+01:00",
+      "marketName": "14:20 Fontwell - 2m6f Hcap Hrd",
+      "betfairWinMarketId": "1.261987540",
+      "runner": {
+        "name": "Jefe Triunfo",
+        "selectionId": 56330377
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 3.1,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.20852534562211988
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Lir Speciale",
+        "selectionId": 40390222
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 3.45,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.20958751393534003
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:20:00+01:00",
+      "marketName": "14:20 Fontwell - 2m6f Hcap Hrd",
+      "betfairWinMarketId": "1.261987540",
+      "runner": {
+        "name": "Royal Rhythm",
+        "selectionId": 962718
+      },
+      "sport888": {
+        "winPrice": 1.667,
+        "winPriceRaw": "4/6",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.08,
+        "placeLay": 1.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2103621794871795
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Houquetot",
+        "selectionId": 70706738
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.5,
+        "placeLay": 2.28,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.21810207336523124
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Call To Action",
+        "selectionId": 871046
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.22059871703492517
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Behike",
+        "selectionId": 28368863
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.8,
+        "placeLay": 2.18,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2221607086365074
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T15:30:00+01:00",
+      "marketName": "15:30 Fontwell - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.261987551",
+      "runner": {
+        "name": "Of Corse I Can",
+        "selectionId": 45906083
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 5.4,
+        "placeLay": 2.64,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.22821969696969702
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:20:00+01:00",
+      "marketName": "14:20 Fontwell - 2m6f Hcap Hrd",
+      "betfairWinMarketId": "1.261987540",
+      "runner": {
+        "name": "Clever Relation",
+        "selectionId": 54795603
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.23406862745098034
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Nice Neasy Does It",
+        "selectionId": 101860751
+      },
+      "sport888": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 130.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2351648351648351
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T17:15:00+01:00",
+      "marketName": "17:15 Fontwell - 2m2f NHF",
+      "betfairWinMarketId": "1.261987566",
+      "runner": {
+        "name": "Lady Chauntee",
+        "selectionId": 74545261
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 2.9,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.24076354679802958
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:55:00+01:00",
+      "marketName": "14:55 Fontwell - 2m3f Mdn Hrd",
+      "betfairWinMarketId": "1.261987546",
+      "runner": {
+        "name": "Novelista",
+        "selectionId": 13244011
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 4.6,
+        "placeLay": 2.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.24082880434782605
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Substance",
+        "selectionId": 11138234
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 5.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.2425324675324676
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T16:05:00+01:00",
+      "marketName": "16:05 Fontwell - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.261987557",
+      "runner": {
+        "name": "Ask A Sainte",
+        "selectionId": 81947247
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.55,
+        "placeLay": 2.24,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.24264336016096577
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:55:00+01:00",
+      "marketName": "14:55 Fontwell - 2m3f Mdn Hrd",
+      "betfairWinMarketId": "1.261987546",
+      "runner": {
+        "name": "Coastal Command",
+        "selectionId": 2229581
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.24722757955641272
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Woohoo",
+        "selectionId": 13507644
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 3.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.25162337662337664
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Barley",
+        "selectionId": 24822538
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 27.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.2651851851851852
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Northern Express",
+        "selectionId": 19918822
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 2.42,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2709563164108618
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:55:00+01:00",
+      "marketName": "14:55 Fontwell - 2m3f Mdn Hrd",
+      "betfairWinMarketId": "1.261987546",
+      "runner": {
+        "name": "Anzac Day",
+        "selectionId": 18337251
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 5.9,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2822033898305085
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Tanjen",
+        "selectionId": 76636289
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.2823529411764706
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T17:15:00+01:00",
+      "marketName": "17:15 Fontwell - 2m2f NHF",
+      "betfairWinMarketId": "1.261987566",
+      "runner": {
+        "name": "Uptoyourselves",
+        "selectionId": 102454404
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 4.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2881728778467909
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Trojan Sun",
+        "selectionId": 5426729
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2912457912457913
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Forewarn",
+        "selectionId": 101487804
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.0,
+        "placeLay": 3.15,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.30216031746031735
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Canvas",
+        "selectionId": 1266669
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 19.0,
+        "placeLay": 4.2,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.30325814536340856
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Son",
+        "selectionId": 55829297
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 3.7,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3091216216216217
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Florida Dreams",
+        "selectionId": 51403771
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 6.6,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3194444444444444
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Have Secret",
+        "selectionId": 45325909
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 27.0,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3195767195767196
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "Magnificat",
+        "selectionId": 656439
+      },
+      "sport888": {
+        "winPrice": 2.375,
+        "winPriceRaw": "11/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.8,
+        "placeLay": 1.74,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3211206896551724
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:20:00+01:00",
+      "marketName": "14:20 Fontwell - 2m6f Hcap Hrd",
+      "betfairWinMarketId": "1.261987540",
+      "runner": {
+        "name": "County Champs",
+        "selectionId": 68289290
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 3.95,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.32146011186340884
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Copper Knight",
+        "selectionId": 11030704
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 7.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.32512820512820517
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T15:30:00+01:00",
+      "marketName": "15:30 Fontwell - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.261987551",
+      "runner": {
+        "name": "Frankie Faulkner",
+        "selectionId": 38480239
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.4,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.33323948948948945
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Explosive Finnish",
+        "selectionId": 85556731
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 2.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.33333333333333326
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Stoneacre Donny",
+        "selectionId": 2278973
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 4.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.33333333333333326
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Dwindling Funds",
+        "selectionId": 82025208
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 19.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.34307992202729043
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Tuscan Hills",
+        "selectionId": 7242953
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 2.84,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.34344528710725886
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Bobby Bennu",
+        "selectionId": 70085732
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 2.7,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.34391534391534395
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Utmost Respect",
+        "selectionId": 2046679
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 70.0,
+        "placeLay": 19.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.34624060150375935
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Daydreama",
+        "selectionId": 84158919
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3505434782608696
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Bonnie's Boy",
+        "selectionId": 71770228
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3521739130434782
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Dash",
+        "selectionId": 8452280
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.74,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3633796997658725
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Harb",
+        "selectionId": 158025
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.374621212121212
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Curious Rover",
+        "selectionId": 58889809
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 7.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.38368421052631574
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "Amorita",
+        "selectionId": 16396622
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.2,
+        "placeLay": 3.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.38819875776397517
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Nesthorn",
+        "selectionId": 72480012
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3887147335423198
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Be Frank",
+        "selectionId": 1464385
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4029166666666666
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Spycatcher",
+        "selectionId": 390818
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 3.55,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.40390731485688325
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Dickensian",
+        "selectionId": 1184833
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.40784313725490196
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:55:00+01:00",
+      "marketName": "14:55 Fontwell - 2m3f Mdn Hrd",
+      "betfairWinMarketId": "1.261987546",
+      "runner": {
+        "name": "Downtown Nashville",
+        "selectionId": 100640245
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.2,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.41823270691723313
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T15:30:00+01:00",
+      "marketName": "15:30 Fontwell - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.261987551",
+      "runner": {
+        "name": "Unspeakable",
+        "selectionId": 41263224
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 9.6,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.4184027777777777
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Furhaan",
+        "selectionId": 84563865
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 5.9,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.41934541203974285
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T16:05:00+01:00",
+      "marketName": "16:05 Fontwell - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.261987557",
+      "runner": {
+        "name": "So Proud",
+        "selectionId": 13076748
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 9.6,
+        "placeLay": 3.7,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.42637950450450446
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Roach Power",
+        "selectionId": 40678426
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 75.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.42666666666666675
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Marbuzet",
+        "selectionId": 16807628
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 3.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.43044354838709675
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Callisto Dream",
+        "selectionId": 40739637
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.43665158371040724
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Ghost Raider",
+        "selectionId": 42561289
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.2,
+        "placeLay": 3.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.43793828892005604
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Kinnalargy",
+        "selectionId": 83617925
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 5.9,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4402071563088512
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Bayraktar",
+        "selectionId": 56289169
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.44501278772378516
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Graduation Day",
+        "selectionId": 160704
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 2.74,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.458029197080292
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "D'Yquem",
+        "selectionId": 102442175
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.5,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.47
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Pinatique",
+        "selectionId": 79160483
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.47628205128205137
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T16:05:00+01:00",
+      "marketName": "16:05 Fontwell - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.261987557",
+      "runner": {
+        "name": "Start Again",
+        "selectionId": 4678547
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 17.5,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.48685064935064937
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "Our Moonlight",
+        "selectionId": 78278259
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 7.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4882301656495205
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T17:15:00+01:00",
+      "marketName": "17:15 Fontwell - 2m2f NHF",
+      "betfairWinMarketId": "1.261987566",
+      "runner": {
+        "name": "Silver Whisper",
+        "selectionId": 6028136
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 8.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.4910714285714286
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "King Kenny",
+        "selectionId": 2614650
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 36.0,
+        "placeLay": 7.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4946581196581197
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Let's Dream",
+        "selectionId": 59154547
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.49749999999999994
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Starfinder",
+        "selectionId": 99243183
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 5.7,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5043859649122807
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Rock N Roll Pinkie",
+        "selectionId": 52885011
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 22.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5113636363636364
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Blue Sky Rain",
+        "selectionId": 101420135
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5183691756272402
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Parisiac",
+        "selectionId": 41200636
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.52
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "So There She Was",
+        "selectionId": 69174225
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5222826086956521
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Humam",
+        "selectionId": 75323184
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5224637681159421
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:20:00+01:00",
+      "marketName": "14:20 Fontwell - 2m6f Hcap Hrd",
+      "betfairWinMarketId": "1.261987540",
+      "runner": {
+        "name": "Atreides",
+        "selectionId": 56616272
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 13.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5268518518518519
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T15:30:00+01:00",
+      "marketName": "15:30 Fontwell - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.261987551",
+      "runner": {
+        "name": "Edgewell",
+        "selectionId": 52159376
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.4,
+        "placeLay": 5.1,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5274993375728669
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Power Fizz",
+        "selectionId": 73420640
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5297297297297298
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Shadow Dance",
+        "selectionId": 55067924
+      },
+      "sport888": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5528500000000001
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Sports Coach",
+        "selectionId": 5791117
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5544354838709677
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Percy Shelley",
+        "selectionId": 41409789
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5606060606060606
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Advance Twentyfive",
+        "selectionId": 84239471
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5727777777777778
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Miss Monica",
+        "selectionId": 802384
+      },
+      "sport888": {
+        "winPrice": 1.833,
+        "winPriceRaw": "5/6",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.2,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.581075890909091
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Newport",
+        "selectionId": 1468921
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5867224880382775
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "Mi Confesion",
+        "selectionId": 83986169
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 12.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5893793103448275
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Pearl River",
+        "selectionId": 301170
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5949579831932773
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Proud Nation",
+        "selectionId": 20329009
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 5.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5958620689655172
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T17:00:00+01:00",
+      "marketName": "17:00 York - 1m App Hcap",
+      "betfairWinMarketId": "1.261987619",
+      "runner": {
+        "name": "Rajapour",
+        "selectionId": 47296230
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 5.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6089080459770115
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Vingegaard",
+        "selectionId": 69296702
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 95.0,
+        "placeLay": 27.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6175438596491228
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "He's A Monster",
+        "selectionId": 48437746
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 12.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.626
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Oriental Prince",
+        "selectionId": 67168407
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 13.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6536789297658863
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:50:00+01:00",
+      "marketName": "15:50 York - 6f Listed",
+      "betfairWinMarketId": "1.261987605",
+      "runner": {
+        "name": "Lam Yai",
+        "selectionId": 83686697
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 960.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6572172619047618
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "U Sure Do",
+        "selectionId": 70113658
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6715826086956522
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Wanderlust",
+        "selectionId": 231786
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6768181818181818
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Candy Cole",
+        "selectionId": 100263257
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6847727272727273
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "Surf Song",
+        "selectionId": 76835747
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 46.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7048913043478261
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T16:05:00+01:00",
+      "marketName": "16:05 Fontwell - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.261987557",
+      "runner": {
+        "name": "Motazzen",
+        "selectionId": 39422308
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 9.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7113970588235294
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T15:30:00+01:00",
+      "marketName": "15:30 Fontwell - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.261987551",
+      "runner": {
+        "name": "The Kings Soldier",
+        "selectionId": 86321399
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 26.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7161324786324786
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Wahdan",
+        "selectionId": 63451320
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.7193979933110368
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Free Closer",
+        "selectionId": 98772090
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7332
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:03:00+01:00",
+      "marketName": "01:03 Del Mar - R8 1m Stks",
+      "betfairWinMarketId": "1.261983312",
+      "runner": {
+        "name": "Rosie Jeeks",
+        "selectionId": 60579949
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 95.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7476315789473684
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:40:00+01:00",
+      "marketName": "14:40 York - 2m Hcap",
+      "betfairWinMarketId": "1.261987589",
+      "runner": {
+        "name": "Call My Bluff",
+        "selectionId": 1541150
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 290.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7482758620689656
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Fast Amy",
+        "selectionId": 100091824
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7536
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T17:15:00+01:00",
+      "marketName": "17:15 Fontwell - 2m2f NHF",
+      "betfairWinMarketId": "1.261987566",
+      "runner": {
+        "name": "Milliedram",
+        "selectionId": 97087869
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.757
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T15:15:00+01:00",
+      "marketName": "15:15 York - 1m2f Hcap",
+      "betfairWinMarketId": "1.261987596",
+      "runner": {
+        "name": "Double Parked",
+        "selectionId": 2935092
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.7579487179487179
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "First Time",
+        "selectionId": 83880821
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 350.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7628571428571429
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Chaos Inn Court",
+        "selectionId": 102109391
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 330.0,
+        "placeLay": 36.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7699494949494949
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T14:05:00+01:00",
+      "marketName": "14:05 York - 5f Hcap",
+      "betfairWinMarketId": "1.261987580",
+      "runner": {
+        "name": "Little Mi Mi",
+        "selectionId": 56497174
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.7793478260869565
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Domain Expansion",
+        "selectionId": 102442176
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 180.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7829365079365079
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Mysweetvalentine",
+        "selectionId": 12825884
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 15.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.784417714598141
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Dear Diary",
+        "selectionId": 18293724
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8171294117647059
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Panda Listen",
+        "selectionId": 100731991
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8221473684210526
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Our Havana",
+        "selectionId": 56460596
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 560.0,
+        "placeLay": 26.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.823489010989011
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Holmby",
+        "selectionId": 100749248
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8239862068965518
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T17:15:00+01:00",
+      "marketName": "17:15 Fontwell - 2m2f NHF",
+      "betfairWinMarketId": "1.261987566",
+      "runner": {
+        "name": "Petite Poet",
+        "selectionId": 99470938
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 130.0,
+        "placeLay": 120.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.8306891025641026
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Pete's Angel",
+        "selectionId": 101860882
+      },
+      "sport888": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 350.0,
+        "placeLay": 600.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8382142857142857
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T01:33:00+01:00",
+      "marketName": "01:33 Del Mar - R9 1m Mdn",
+      "betfairWinMarketId": "1.261983315",
+      "runner": {
+        "name": "Miyako Pauma",
+        "selectionId": 100020089
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 970.0,
+        "placeLay": 28.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.846759941089838
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Five Years",
+        "selectionId": 102072316
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 330.0,
+        "placeLay": 65.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8686480186480187
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Great Dream",
+        "selectionId": 10460454
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 26.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8759784075573549
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Well Versed",
+        "selectionId": 2033106
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 70.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8852571428571429
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T17:15:00+01:00",
+      "marketName": "17:15 Fontwell - 2m2f NHF",
+      "betfairWinMarketId": "1.261987566",
+      "runner": {
+        "name": "Main De Fer",
+        "selectionId": 8581891
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 250.0,
+        "placeLay": 32.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.8996875
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Crazy Hot Mess",
+        "selectionId": 100487566
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 250.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9359999999999999
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-09-06T02:03:00+01:00",
+      "marketName": "02:03 Del Mar - R10 7f Grd 1",
+      "betfairWinMarketId": "1.261983318",
+      "runner": {
+        "name": "Avalon Rose",
+        "selectionId": 100233180
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 350.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9362285714285714
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T16:25:00+01:00",
+      "marketName": "16:25 York - 7f Hcap",
+      "betfairWinMarketId": "1.261987612",
+      "runner": {
+        "name": "Utmost Good Faith",
+        "selectionId": 86490787
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 600.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9453333333333334
+    },
+    {
+      "venue": "Fontwell",
+      "country": "GB",
+      "offTime": "2026-09-06T14:20:00+01:00",
+      "marketName": "14:20 Fontwell - 2m6f Hcap Hrd",
+      "betfairWinMarketId": "1.261987540",
+      "runner": {
+        "name": "Kings Order",
+        "selectionId": 89760740
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 320.0,
+        "placeLay": 230.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9541440217391304
+    },
+    {
+      "venue": "York",
+      "country": "GB",
+      "offTime": "2026-09-06T13:30:00+01:00",
+      "marketName": "13:30 York - 7f Mdn Stks",
+      "betfairWinMarketId": "1.261987574",
+      "runner": {
+        "name": "Unicorn Milkshake",
+        "selectionId": 102454408
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9612929292929293
+    }
+  ]
+}
