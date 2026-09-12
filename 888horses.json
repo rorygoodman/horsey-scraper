@@ -1,0 +1,2158 @@
+{
+  "computedAt": "2026-09-12T16:38:27.863945Z",
+  "betfairScrapedAt": "2026-09-12T16:38:02.528748Z",
+  "sport888ScrapedAt": "2026-09-12T16:38:16.571205Z",
+  "horseCount": 86,
+  "horses": [
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Thrifty Of Digby",
+        "selectionId": 61379556
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 2.9,
+        "placeMarket": "TOP_5"
+      },
+      "edge": 0.00556173526140169
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Chica Guerrera",
+        "selectionId": 72071057
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.0190217391304347
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Mayflower",
+        "selectionId": 27282666
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 4.3,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.05207280080889798
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Anvika",
+        "selectionId": 60315251
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.08143939393939403
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Black Storm",
+        "selectionId": 885034
+      },
+      "sport888": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.4,
+        "placeLay": 1.65,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.08266488413547235
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Monhammer",
+        "selectionId": 39862460
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.09373202990224261
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Aviatrice",
+        "selectionId": 7710016
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 7.4,
+        "placeLay": 2.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.09459459459459463
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Suzie Songs",
+        "selectionId": 84707910
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 9.4,
+        "placeLay": 2.62,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.11645281793081041
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Bee Farmer",
+        "selectionId": 98568694
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 4.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.12029569892473113
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:50:00+01:00",
+      "marketName": "18:50 Musselburgh - 2m2f Hcap",
+      "betfairWinMarketId": "1.262270858",
+      "runner": {
+        "name": "Boxing Great",
+        "selectionId": 71058799
+      },
+      "sport888": {
+        "winPrice": 2.1,
+        "winPriceRaw": "11/10",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.26,
+        "placeLay": 1.54,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.12143719112745655
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:50:00+01:00",
+      "marketName": "18:50 Musselburgh - 2m2f Hcap",
+      "betfairWinMarketId": "1.262270858",
+      "runner": {
+        "name": "Fast Fred",
+        "selectionId": 2227948
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 4.1,
+        "placeLay": 2.06,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.13309554818849156
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Sixcor",
+        "selectionId": 37128348
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 13.5,
+        "placeLay": 3.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.13450292397660824
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Minaun View",
+        "selectionId": 74545197
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 3.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1345663265306123
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Wrestling Revenue",
+        "selectionId": 58643853
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 2.72,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.13506191950464386
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Iconic Dawn",
+        "selectionId": 86793017
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 2.68,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1408342900880214
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Drop Dead Gorgeous",
+        "selectionId": 451094
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.1416666666666666
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Mart",
+        "selectionId": 56263057
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.3,
+        "placeLay": 1.87,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14951498569829624
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Callianassa",
+        "selectionId": 55681539
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.2,
+        "placeLay": 2.06,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.15468633308439128
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Sigliosa",
+        "selectionId": 84315886
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16185558627419094
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-12T17:45:00+01:00",
+      "marketName": "17:45 Churchill Downs - R1 1m1f Allw",
+      "betfairWinMarketId": "1.262296529",
+      "runner": {
+        "name": "Fountain Run",
+        "selectionId": 11498766
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.65,
+        "placeLay": 2.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16340508806262233
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Nibras Gold",
+        "selectionId": 36078364
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.7,
+        "placeLay": 1.96,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16630481980026057
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Damascus Steel",
+        "selectionId": 7002906
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 2.78,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16966426858513195
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Motawaared",
+        "selectionId": 79669745
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 3.25,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.17142857142857149
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Kyoto",
+        "selectionId": 3712227
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.12,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.17452830188679247
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Masaban",
+        "selectionId": 86490788
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.6,
+        "placeLay": 2.34,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1773504273504274
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Tachos",
+        "selectionId": 55631852
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 4.1,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.17944250871080136
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Penelope's Sister",
+        "selectionId": 46747253
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 3.55,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.18896713615023475
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Fear And Fast",
+        "selectionId": 71384197
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 4.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.19933554817275745
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Vince Le Prince",
+        "selectionId": 46712037
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.20028409090909094
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Supremissy",
+        "selectionId": 88258760
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 4.9,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.20478536242083045
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Royal Duke",
+        "selectionId": 409843
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.16,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2054393780573025
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Spartan Times",
+        "selectionId": 67801051
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.2,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.20648526407936973
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Jesmond Dawn",
+        "selectionId": 56134348
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 4.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.20975609756097557
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:50:00+01:00",
+      "marketName": "18:50 Musselburgh - 2m2f Hcap",
+      "betfairWinMarketId": "1.262270858",
+      "runner": {
+        "name": "Trojan Sun",
+        "selectionId": 5426729
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2152777777777778
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Killashee Warrior",
+        "selectionId": 87429181
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 2.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.21678321678321688
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Kuredu King",
+        "selectionId": 75403052
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 9.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.21780303030303028
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Kind Of Kiss",
+        "selectionId": 67956081
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.21818181818181814
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Exhibitioning",
+        "selectionId": 86203421
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 4.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.21904761904761905
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-09-12T17:55:00+01:00",
+      "marketName": "17:55 Gulfstream Park - R2 1m1f Claim",
+      "betfairWinMarketId": "1.262296851",
+      "runner": {
+        "name": "Spy Novel",
+        "selectionId": 46529622
+      },
+      "sport888": {
+        "winPrice": 1.833,
+        "winPriceRaw": "5/6",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.1,
+        "placeLay": 1.78,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.22417536115569825
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "So Grateful",
+        "selectionId": 6438761
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 3.9,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.22435897435897434
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Haveyoumissedme",
+        "selectionId": 35701730
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.36,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.22801906779661008
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Walking On Clouds",
+        "selectionId": 18423669
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.36,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.22801906779661008
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Ski Angel",
+        "selectionId": 55467762
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.36,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.22801906779661008
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Alashos",
+        "selectionId": 70053041
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 5.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2318181818181818
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Henry Tudor",
+        "selectionId": 13321
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2321428571428572
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Rianka",
+        "selectionId": 97736903
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 19.0,
+        "placeLay": 5.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.23271413828689358
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Doralee",
+        "selectionId": 68900529
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 5.9,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.23930589184826467
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Blue Blue Moon",
+        "selectionId": 85557500
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.2434077079107505
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Tahcawin",
+        "selectionId": 85755963
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.24342105263157898
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Rebel Wave",
+        "selectionId": 98527940
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.24948934928508892
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Yermanthere",
+        "selectionId": 39352526
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 4.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.25189393939393934
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Bella Colombia",
+        "selectionId": 59331238
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 5.1,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.2521446078431373
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Carolus Magnus",
+        "selectionId": 2068018
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 3.15,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.25226757369614516
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Loki",
+        "selectionId": 2704405
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.2,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2593962415033986
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Mick Collins",
+        "selectionId": 68072920
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 6.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2606250000000001
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Arrange",
+        "selectionId": 40525238
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 5.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.27030812324929965
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Style Of Life",
+        "selectionId": 49020493
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 3.45,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.27122153209109734
+    },
+    {
+      "venue": "Chester",
+      "country": "GB",
+      "offTime": "2026-09-12T17:42:00+01:00",
+      "marketName": "17:42 Chester - 1m4f Hcap",
+      "betfairWinMarketId": "1.262271041",
+      "runner": {
+        "name": "Bravais",
+        "selectionId": 54739908
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 9.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.27467105263157887
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Falcon Queen",
+        "selectionId": 1007100
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2773943054357204
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Sunriseontheboyne",
+        "selectionId": 67452330
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.9,
+        "placeLay": 2.08,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2822802197802199
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Coconut Bay",
+        "selectionId": 45256104
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 7.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.29070881226053635
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Mayor Of Maghera",
+        "selectionId": 70867348
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 5.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.29740259740259734
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Keep Me Stable",
+        "selectionId": 47250739
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 3.85,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.32176444245409763
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Showcasing Star",
+        "selectionId": 95931496
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3232142857142857
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:50:00+01:00",
+      "marketName": "18:50 Musselburgh - 2m2f Hcap",
+      "betfairWinMarketId": "1.262270858",
+      "runner": {
+        "name": "Dino Bellagio",
+        "selectionId": 50638774
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.32342657342657344
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:50:00+01:00",
+      "marketName": "18:50 Musselburgh - 2m2f Hcap",
+      "betfairWinMarketId": "1.262270858",
+      "runner": {
+        "name": "Sax Appeal",
+        "selectionId": 51320271
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 17.5,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3255411255411256
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:50:00+01:00",
+      "marketName": "18:50 Musselburgh - 2m2f Hcap",
+      "betfairWinMarketId": "1.262270858",
+      "runner": {
+        "name": "Wahraan",
+        "selectionId": 36127694
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 13.5,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3587962962962963
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:50:00+01:00",
+      "marketName": "18:50 Musselburgh - 2m2f Hcap",
+      "betfairWinMarketId": "1.262270858",
+      "runner": {
+        "name": "Simple Star",
+        "selectionId": 36468489
+      },
+      "sport888": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 32.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.39156250000000004
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Marmeladova",
+        "selectionId": 86405205
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 13.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3975961538461539
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "Moretons",
+        "selectionId": 82765634
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 19.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.399198717948718
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Elizabetty",
+        "selectionId": 85225513
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.40047879616963056
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Pink Oxalis",
+        "selectionId": 69076703
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4130769230769231
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Magic Lady Mae",
+        "selectionId": 89278817
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.44345238095238093
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T19:20:00+01:00",
+      "marketName": "19:20 Musselburgh - 5f Hcap",
+      "betfairWinMarketId": "1.262270866",
+      "runner": {
+        "name": "With Glory",
+        "selectionId": 83686699
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 15.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4457478005865103
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Guardian Of Realm",
+        "selectionId": 90467939
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 170.0,
+        "placeLay": 27.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.44694989106753813
+    },
+    {
+      "venue": "Monmouth Park",
+      "country": "US",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Monmouth Park - R1 1m1f Mdn Claim",
+      "betfairWinMarketId": "1.262296342",
+      "runner": {
+        "name": "Mustbethemunning",
+        "selectionId": 88089249
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 4.3,
+        "placeLay": 3.75,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.4511627906976744
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-12T17:45:00+01:00",
+      "marketName": "17:45 Churchill Downs - R1 1m1f Allw",
+      "betfairWinMarketId": "1.262296529",
+      "runner": {
+        "name": "Excel Calculator",
+        "selectionId": 50940950
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 2.74,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4516189406700355
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Musselburgh - 1m1f Sell Hcap",
+      "betfairWinMarketId": "1.262270843",
+      "runner": {
+        "name": "Good Morning Alex",
+        "selectionId": 57238335
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.46703296703296693
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Mallavelly",
+        "selectionId": 61112462
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 27.0,
+        "placeLay": 7.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4722222222222221
+    },
+    {
+      "venue": "Musselburgh",
+      "country": "GB",
+      "offTime": "2026-09-12T18:20:00+01:00",
+      "marketName": "18:20 Musselburgh - 7f Hcap",
+      "betfairWinMarketId": "1.262270849",
+      "runner": {
+        "name": "Pickersgill",
+        "selectionId": 72454023
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.48
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-09-12T17:55:00+01:00",
+      "marketName": "17:55 Gulfstream Park - R2 1m1f Claim",
+      "betfairWinMarketId": "1.262296851",
+      "runner": {
+        "name": "Dimanche Gras",
+        "selectionId": 73305480
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 4.8,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5162259615384615
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-09-12T18:17:00+01:00",
+      "marketName": "18:17 Lingfield - 6f Hcap",
+      "betfairWinMarketId": "1.262271106",
+      "runner": {
+        "name": "Mayfair Market",
+        "selectionId": 86360073
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5307471264367816
+    },
+    {
+      "venue": "Monmouth Park",
+      "country": "US",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Monmouth Park - R1 1m1f Mdn Claim",
+      "betfairWinMarketId": "1.262296342",
+      "runner": {
+        "name": "Landing Force",
+        "selectionId": 86943395
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 8.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6131215659340659
+    },
+    {
+      "venue": "Leopardstown",
+      "country": "IE",
+      "offTime": "2026-09-12T18:10:00+01:00",
+      "marketName": "18:10 Leopardstown - 1m Hcap",
+      "betfairWinMarketId": "1.262270812",
+      "runner": {
+        "name": "Quebec",
+        "selectionId": 8492784
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 9.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6145833333333333
+    },
+    {
+      "venue": "Monmouth Park",
+      "country": "US",
+      "offTime": "2026-09-12T17:50:00+01:00",
+      "marketName": "17:50 Monmouth Park - R1 1m1f Mdn Claim",
+      "betfairWinMarketId": "1.262296342",
+      "runner": {
+        "name": "I'm Going Cruising",
+        "selectionId": 99315273
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.8,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6206709956709957
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-09-12T17:55:00+01:00",
+      "marketName": "17:55 Gulfstream Park - R2 1m1f Claim",
+      "betfairWinMarketId": "1.262296851",
+      "runner": {
+        "name": "Blue Slide Park",
+        "selectionId": 67093561
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 13.5,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7278582930756844
+    }
+  ]
+}
