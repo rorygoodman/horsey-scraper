@@ -1,0 +1,1208 @@
+{
+  "computedAt": "2026-09-19T21:28:16.522252Z",
+  "betfairScrapedAt": "2026-09-19T21:28:03.054298Z",
+  "sport888ScrapedAt": "2026-09-19T21:28:10.738728Z",
+  "horseCount": 48,
+  "horses": [
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T22:36:00+01:00",
+      "marketName": "22:36 Woodbine - R9 1m1f Grd",
+      "betfairWinMarketId": "1.262590621",
+      "runner": {
+        "name": "Maycocks Bay",
+        "selectionId": 56184
+      },
+      "sport888": {
+        "winPrice": 1.222,
+        "winPriceRaw": "2/9",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 1.33,
+        "placeLay": 1.23,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.11153646310899212
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "The Puma",
+        "selectionId": 8676109
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.8,
+        "placeLay": 2.18,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.19543698696281986
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Sassmaster",
+        "selectionId": 10732135
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.22809017223910844
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Our Moneyman",
+        "selectionId": 89073725
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2936507936507937
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Further Ado",
+        "selectionId": 86446013
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.4,
+        "placeLay": 2.34,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.35994560994561
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T22:36:00+01:00",
+      "marketName": "22:36 Woodbine - R9 1m1f Grd",
+      "betfairWinMarketId": "1.262590621",
+      "runner": {
+        "name": "William T",
+        "selectionId": 77219467
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.8,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.41452569169960474
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Iron Honor",
+        "selectionId": 92544772
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.44513888888888886
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Into The Light",
+        "selectionId": 3062139
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.7,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5262617209045781
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Igniter",
+        "selectionId": 19475386
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5657859848484849
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Americathegreat",
+        "selectionId": 83648646
+      },
+      "sport888": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.9,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.582578125
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T22:36:00+01:00",
+      "marketName": "22:36 Woodbine - R9 1m1f Grd",
+      "betfairWinMarketId": "1.262590621",
+      "runner": {
+        "name": "Sedburys Ghost",
+        "selectionId": 69251036
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6884559884559884
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T22:36:00+01:00",
+      "marketName": "22:36 Woodbine - R9 1m1f Grd",
+      "betfairWinMarketId": "1.262590621",
+      "runner": {
+        "name": "Friendly Ghost",
+        "selectionId": 9978431
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7043712991988854
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Celebrity Warrior",
+        "selectionId": 10073618
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.75125
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T22:36:00+01:00",
+      "marketName": "22:36 Woodbine - R9 1m1f Grd",
+      "betfairWinMarketId": "1.262590621",
+      "runner": {
+        "name": "War Court",
+        "selectionId": 40616221
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7812847866419295
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Talk To Me Jimmy",
+        "selectionId": 89073765
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8516326530612245
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Micanopy",
+        "selectionId": 87874999
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 230.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.922209405501331
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Freedom's Echo",
+        "selectionId": 89922975
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 700.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9332886904761905
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Onceinawhile",
+        "selectionId": 92050160
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.965792759051186
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T22:48:00+01:00",
+      "marketName": "22:48 Philadelphia - R14 1m1f Grd",
+      "betfairWinMarketId": "1.262593726",
+      "runner": {
+        "name": "Ponder And Dream",
+        "selectionId": 88747758
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 960.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9740539965986394
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "My Military Hero",
+        "selectionId": 71484696
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9769813506312985
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Poetic Dawn",
+        "selectionId": 68330735
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.97851686972821
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Play The Gray",
+        "selectionId": 70793650
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9805993766482858
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Georgian Bay",
+        "selectionId": 6557890
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9823004749218116
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Solo In Paris",
+        "selectionId": 59235445
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9823320339371704
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Respirator",
+        "selectionId": 47761756
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9842661516853932
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "I've Got The Honey",
+        "selectionId": 86159682
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9847309833024118
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Prophetic Debby",
+        "selectionId": 96757097
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9855980805243446
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Tracy Arm",
+        "selectionId": 91210220
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9855980805243446
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "A Votre Sante",
+        "selectionId": 46495107
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.988221752407799
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Double Or Nothing",
+        "selectionId": 5798567
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9883065810593901
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Talbot's Riplyn",
+        "selectionId": 77162646
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9883282260810351
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Lady On A Mission",
+        "selectionId": 90062344
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9896142708212672
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Gus' Ten",
+        "selectionId": 88747768
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.989634258197661
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Beautiful Things",
+        "selectionId": 70902079
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.989634258197661
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Faith Understood",
+        "selectionId": 66775715
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9909794574963114
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Bad Penny",
+        "selectionId": 10137017
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9916089424302097
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Borika",
+        "selectionId": 98309620
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9922896124742031
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Coach Bennett",
+        "selectionId": 10247094
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9929236891385768
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Fury's Flight",
+        "selectionId": 101671572
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9942934967654069
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Nanina",
+        "selectionId": 17002445
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9946009498436233
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Go Olivia",
+        "selectionId": 100049197
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9946130474661775
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Trotsky",
+        "selectionId": 392167
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 970.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9946517988638754
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:08:00+01:00",
+      "marketName": "23:08 Woodbine - R10 1m Allw Claim",
+      "betfairWinMarketId": "1.262590624",
+      "runner": {
+        "name": "Pharoah's Affair",
+        "selectionId": 96350536
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 960.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9958440721649484
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Flying Schulzy",
+        "selectionId": 86714005
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 970.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9961955606985062
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Mister Me",
+        "selectionId": 37430460
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 960.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9964774659863945
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Sugar Bunny",
+        "selectionId": 102177774
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 980.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9968277929728593
+    },
+    {
+      "venue": "Philadelphia",
+      "country": "US",
+      "offTime": "2026-09-19T23:16:00+01:00",
+      "marketName": "23:16 Philadelphia - R15 7f Allw Claim",
+      "betfairWinMarketId": "1.262593729",
+      "runner": {
+        "name": "Flyin Hawaiian",
+        "selectionId": 38612554
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 970.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.997724441580756
+    },
+    {
+      "venue": "Woodbine",
+      "country": "US",
+      "offTime": "2026-09-19T23:38:00+01:00",
+      "marketName": "23:38 Woodbine - R11 7f Mdn",
+      "betfairWinMarketId": "1.262590627",
+      "runner": {
+        "name": "Tossing",
+        "selectionId": 89121000
+      },
+      "sport888": {
+        "winPrice": 2.375,
+        "winPriceRaw": "11/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 950.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9980859375
+    }
+  ]
+}
