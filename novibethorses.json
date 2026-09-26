@@ -1,0 +1,658 @@
+{
+  "computedAt": "2026-09-26T21:42:16.136842Z",
+  "betfairScrapedAt": "2026-09-26T21:42:03.071502Z",
+  "novibetScrapedAt": "2026-09-26T21:42:13.793681Z",
+  "horseCount": 26,
+  "horses": [
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Daisy Flyer",
+        "selectionId": 71770338
+      },
+      "novibet": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 3.7,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3135557432432432
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Hereforagoodtime",
+        "selectionId": 34202
+      },
+      "novibet": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.1,
+        "placeLay": 3.25,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.36168929110105574
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Calamity",
+        "selectionId": 3498770
+      },
+      "novibet": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4724226804123711
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:10:00+01:00",
+      "marketName": "23:10 Santa Anita Park - R5 7f Grd 2",
+      "betfairWinMarketId": "1.262903311",
+      "runner": {
+        "name": "Pure Madness",
+        "selectionId": 70213218
+      },
+      "novibet": {
+        "winPrice": 4.33,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 4.8,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5480328282828283
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Sol d'Oro",
+        "selectionId": 10154350
+      },
+      "novibet": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6275659824046921
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Not So Merry Mary",
+        "selectionId": 101420128
+      },
+      "novibet": {
+        "winPrice": 2.75,
+        "winPriceRaw": "7/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.75,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6326445578231292
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Snipsnippitysnip",
+        "selectionId": 72647897
+      },
+      "novibet": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.809365446142908
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "One Sweet Girl",
+        "selectionId": 88481117
+      },
+      "novibet": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8514992150706436
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:10:00+01:00",
+      "marketName": "23:10 Santa Anita Park - R5 7f Grd 2",
+      "betfairWinMarketId": "1.262903311",
+      "runner": {
+        "name": "Sorrento Sky",
+        "selectionId": 62794574
+      },
+      "novibet": {
+        "winPrice": 2.62,
+        "winPriceRaw": "8/5",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.8853627297176154
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Stay My Girl",
+        "selectionId": 98240812
+      },
+      "novibet": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.947733744660655
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Royal Justice",
+        "selectionId": 67801053
+      },
+      "novibet": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 85.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9636642156862745
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Ceniza Pampa",
+        "selectionId": 68460220
+      },
+      "novibet": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 110.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9670359848484849
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Her Strut",
+        "selectionId": 100749244
+      },
+      "novibet": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9704433139534884
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Reining Flowers",
+        "selectionId": 69622314
+      },
+      "novibet": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9720216669578892
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:10:00+01:00",
+      "marketName": "23:10 Santa Anita Park - R5 7f Grd 2",
+      "betfairWinMarketId": "1.262903311",
+      "runner": {
+        "name": "Nesso's Lastharrah",
+        "selectionId": 57960905
+      },
+      "novibet": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9791421653407125
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Sir Star",
+        "selectionId": 103193689
+      },
+      "novibet": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9815271710641272
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:10:00+01:00",
+      "marketName": "23:10 Santa Anita Park - R5 7f Grd 2",
+      "betfairWinMarketId": "1.262903311",
+      "runner": {
+        "name": "Amorita",
+        "selectionId": 16396622
+      },
+      "novibet": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9828429046037019
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-09-26T23:01:00+01:00",
+      "marketName": "23:01 Churchill Downs - R11 1m3f Allw Claim",
+      "betfairWinMarketId": "1.262903186",
+      "runner": {
+        "name": "Mambo Queen",
+        "selectionId": 73455386
+      },
+      "novibet": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9843798449612403
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:10:00+01:00",
+      "marketName": "23:10 Santa Anita Park - R5 7f Grd 2",
+      "betfairWinMarketId": "1.262903311",
+      "runner": {
+        "name": "Later Than Planned",
+        "selectionId": 83916852
+      },
+      "novibet": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.986942234520927
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Pavular",
+        "selectionId": 100749243
+      },
+      "novibet": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9900821247597414
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Ember Royale",
+        "selectionId": 101183505
+      },
+      "novibet": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9938735875706215
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Runaround Sue",
+        "selectionId": 272671
+      },
+      "novibet": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 980.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9938948460740228
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:10:00+01:00",
+      "marketName": "23:10 Santa Anita Park - R5 7f Grd 2",
+      "betfairWinMarketId": "1.262903311",
+      "runner": {
+        "name": "Sumter",
+        "selectionId": 40312171
+      },
+      "novibet": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 380.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9945483826754385
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:10:00+01:00",
+      "marketName": "23:10 Santa Anita Park - R5 7f Grd 2",
+      "betfairWinMarketId": "1.262903311",
+      "runner": {
+        "name": "First Peace",
+        "selectionId": 48325768
+      },
+      "novibet": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9947210451977401
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Savvy Tiger",
+        "selectionId": 102177783
+      },
+      "novibet": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9948252118644068
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-09-26T23:40:00+01:00",
+      "marketName": "23:40 Santa Anita Park - R6 6f Mdn",
+      "betfairWinMarketId": "1.262903314",
+      "runner": {
+        "name": "Sauced Up",
+        "selectionId": 98772089
+      },
+      "novibet": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9953010240112994
+    }
+  ]
+}
