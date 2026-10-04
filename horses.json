@@ -1,0 +1,6433 @@
+{
+  "computedAt": "2026-10-04T00:00:20.243867Z",
+  "betfairScrapedAt": "2026-10-04T00:00:03.269179Z",
+  "paddypowerScrapedAt": "2026-10-04T00:00:05.136137Z",
+  "horseCount": 257,
+  "horses": [
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Venezuelan",
+        "selectionId": 74823461
+      },
+      "paddypower": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 2.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": 0.08804347826086967
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Invincible Mind",
+        "selectionId": 102262608
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.5,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": 0.06904761904761902
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T16:30:00+01:00",
+      "marketName": "16:30 Killarney - 2m5f Beg Chs",
+      "betfairWinMarketId": "1.263245226",
+      "runner": {
+        "name": "Stede Bonnet",
+        "selectionId": 83653776
+      },
+      "paddypower": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.98,
+        "placeLay": 1.66,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.044837066386350655
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Current Edition",
+        "selectionId": 92429317
+      },
+      "paddypower": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.95,
+        "placeLay": 1.66,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.05844898581668445
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Governors Rock",
+        "selectionId": 85557492
+      },
+      "paddypower": {
+        "winPrice": 1.666666666666667,
+        "winPriceRaw": "4/6",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1.99,
+        "placeLay": 1.13,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.07976460473458724
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Venetian Star",
+        "selectionId": 82387829
+      },
+      "paddypower": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.08335832083958028
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "Beautiful Dawn",
+        "selectionId": 5433950
+      },
+      "paddypower": {
+        "winPrice": 2.625,
+        "winPriceRaw": "13/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.46,
+        "placeLay": 1.74,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.08571628819736477
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Hmas Perth",
+        "selectionId": 101042656
+      },
+      "paddypower": {
+        "winPrice": 1.571428571428571,
+        "winPriceRaw": "4/7",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1.65,
+        "placeLay": 1.28,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.08854166666666696
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Ballynoe Boy",
+        "selectionId": 77899592
+      },
+      "paddypower": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.5,
+        "placeLay": 1.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.09677419354838712
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Big Gossey",
+        "selectionId": 26451320
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.0,
+        "placeLay": 2.24,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.09821428571428581
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Blackwater Soldier",
+        "selectionId": 55467916
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.09953703703703709
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "Valtteri Its James",
+        "selectionId": 93798793
+      },
+      "paddypower": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.68,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.10039645522388052
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Tawaazon",
+        "selectionId": 40353292
+      },
+      "paddypower": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.1028985507246376
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Zolpharine",
+        "selectionId": 53687272
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 5.7,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.13157894736842102
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Mastertown Miss",
+        "selectionId": 96950140
+      },
+      "paddypower": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.7,
+        "placeLay": 1.84,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14330663615560635
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Chosen Shant",
+        "selectionId": 38480108
+      },
+      "paddypower": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 3.35,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14463397299218195
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Astelia",
+        "selectionId": 46174054
+      },
+      "paddypower": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.85,
+        "placeLay": 1.68,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14637445887445888
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T13:26:00+01:00",
+      "marketName": "13:26 Uttoxeter - 2m7f Nov Hrd",
+      "betfairWinMarketId": "1.263239481",
+      "runner": {
+        "name": "Gentle Ocean",
+        "selectionId": 10065729
+      },
+      "paddypower": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.82,
+        "placeLay": 2.14,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.14708233909988722
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Larzac",
+        "selectionId": 74495062
+      },
+      "paddypower": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.85,
+        "placeLay": 1.69,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14892799508184118
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Space Bear",
+        "selectionId": 86247087
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1499999999999999
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "Malangen",
+        "selectionId": 19450871
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.4,
+        "placeLay": 3.15,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.15104694360013515
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Little Darling",
+        "selectionId": 39457656
+      },
+      "paddypower": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 2.48,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.15559772296015173
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Ask A Sainte",
+        "selectionId": 81947247
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.44,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.15944942777605942
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Dmaniac",
+        "selectionId": 73153307
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 70.0,
+        "placeLay": 20.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16642857142857137
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Analogical",
+        "selectionId": 74586015
+      },
+      "paddypower": {
+        "winPrice": 2.1,
+        "winPriceRaw": "11/10",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.05,
+        "placeLay": 1.26,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.17161072079104867
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Berry Edge",
+        "selectionId": 36193165
+      },
+      "paddypower": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.2,
+        "placeLay": 2.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.175983436853002
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Colins Friend",
+        "selectionId": 81578719
+      },
+      "paddypower": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 4.5,
+        "placeLay": 1.74,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.1800766283524904
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Uncle Remus",
+        "selectionId": 85195595
+      },
+      "paddypower": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1819425444596443
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Reteti",
+        "selectionId": 63132321
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 19.0,
+        "placeLay": 5.7,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1842105263157895
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Bold Light",
+        "selectionId": 47470
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 3.75,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1941496598639456
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Dancing Saxon",
+        "selectionId": 83995695
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.7,
+        "placeLay": 2.46,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.19554985023534455
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Chico Magnifica",
+        "selectionId": 85518921
+      },
+      "paddypower": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.1,
+        "placeLay": 2.36,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.19865403788634084
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Truth Be Told",
+        "selectionId": 7330477
+      },
+      "paddypower": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 2.46,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.19875909285408644
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Ghasham",
+        "selectionId": 40838969
+      },
+      "paddypower": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 2.78,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1991112991959374
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Paraguay",
+        "selectionId": 1488656
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.21107994389901807
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:56:00+01:00",
+      "marketName": "16:56 Uttoxeter - 3m Hcap Chs",
+      "betfairWinMarketId": "1.263239537",
+      "runner": {
+        "name": "Jo Arengeot Bey Aa",
+        "selectionId": 62885980
+      },
+      "paddypower": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.15,
+        "placeLay": 2.22,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.21285124410124412
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Carla Ridge",
+        "selectionId": 72454035
+      },
+      "paddypower": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 3.85,
+        "placeLay": 1.78,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.21713118342331827
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T15:30:00+01:00",
+      "marketName": "15:30 Kelso - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263239327",
+      "runner": {
+        "name": "Primoz",
+        "selectionId": 62403444
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 6.0,
+        "placeLay": 3.35,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.22450248756218905
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Tropical Talent",
+        "selectionId": 40954451
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.6,
+        "placeLay": 2.66,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.22619047619047628
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "King Cuan",
+        "selectionId": 56330566
+      },
+      "paddypower": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.9,
+        "placeLay": 2.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.228200371057514
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Sweetly",
+        "selectionId": 100212109
+      },
+      "paddypower": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.0,
+        "placeLay": 2.16,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2314814814814814
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:45:00+01:00",
+      "marketName": "14:45 Killarney - 2m1f Nov Hrd",
+      "betfairWinMarketId": "1.263245185",
+      "runner": {
+        "name": "Lips Freedom",
+        "selectionId": 49011079
+      },
+      "paddypower": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.0,
+        "placeLay": 2.02,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2348391089108911
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Cool Azul",
+        "selectionId": 83952925
+      },
+      "paddypower": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 3.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.2353820598006644
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Kool Raoul",
+        "selectionId": 77034515
+      },
+      "paddypower": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.2,
+        "placeLay": 3.65,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.23645026801667646
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Heralds March",
+        "selectionId": 101893703
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 3.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.24242424242424243
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T15:30:00+01:00",
+      "marketName": "15:30 Kelso - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263239327",
+      "runner": {
+        "name": "Ice Jet",
+        "selectionId": 73230283
+      },
+      "paddypower": {
+        "winPrice": 2.75,
+        "winPriceRaw": "7/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.25,
+        "placeLay": 2.22,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2531618156618156
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T16:30:00+01:00",
+      "marketName": "16:30 Killarney - 2m5f Beg Chs",
+      "betfairWinMarketId": "1.263245226",
+      "runner": {
+        "name": "Time Is A Thief",
+        "selectionId": 92253061
+      },
+      "paddypower": {
+        "winPrice": 1.615384615384615,
+        "winPriceRaw": "8/13",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.26,
+        "placeLay": 1.53,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.26554011665932553
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Klitschko",
+        "selectionId": 45256440
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.62,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2658635496183206
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T13:26:00+01:00",
+      "marketName": "13:26 Uttoxeter - 2m7f Nov Hrd",
+      "betfairWinMarketId": "1.263239481",
+      "runner": {
+        "name": "Letmeseethecolts",
+        "selectionId": 56946440
+      },
+      "paddypower": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 9.4,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.27555504162812205
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Nonsense",
+        "selectionId": 103463218
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 36.0,
+        "placeLay": 8.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.28174603174603174
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Holy Legend",
+        "selectionId": 54534895
+      },
+      "paddypower": {
+        "winPrice": 4.333333333333333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.9,
+        "placeLay": 2.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.28554613935969875
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Final Voyage",
+        "selectionId": 28663454
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.28930232558139535
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Prettylady",
+        "selectionId": 76249980
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 4.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2898032200357782
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T15:30:00+01:00",
+      "marketName": "15:30 Kelso - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263239327",
+      "runner": {
+        "name": "Breaking Cover",
+        "selectionId": 24127627
+      },
+      "paddypower": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 5.4,
+        "placeLay": 3.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.29036458333333337
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Apothic Red",
+        "selectionId": 87964170
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 9.6,
+        "placeLay": 3.35,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3070584577114428
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Sommelier",
+        "selectionId": 1057660
+      },
+      "paddypower": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3075
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T13:26:00+01:00",
+      "marketName": "13:26 Uttoxeter - 2m7f Nov Hrd",
+      "betfairWinMarketId": "1.263239481",
+      "runner": {
+        "name": "In The Trenches",
+        "selectionId": 8777340
+      },
+      "paddypower": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 5.5,
+        "placeLay": 2.68,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3098710990502036
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Dexter",
+        "selectionId": 7367694
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 13.5,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.31144781144781153
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Princess Child",
+        "selectionId": 55286440
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 19.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3139952153110048
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Gerrits Gem",
+        "selectionId": 61868694
+      },
+      "paddypower": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.31534090909090917
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Footstepstoglory",
+        "selectionId": 84524546
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 3.2,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.34128289473684215
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Bryson",
+        "selectionId": 83242507
+      },
+      "paddypower": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.3505434782608696
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Cristal Clere",
+        "selectionId": 42717277
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 8.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3515376458112407
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:15:00+01:00",
+      "marketName": "15:15 Uttoxeter - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263239512",
+      "runner": {
+        "name": "Ernest Gray",
+        "selectionId": 38806821
+      },
+      "paddypower": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 4.5,
+        "placeLay": 2.74,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3537611516626116
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T15:30:00+01:00",
+      "marketName": "15:30 Kelso - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263239327",
+      "runner": {
+        "name": "Tommys Oscar",
+        "selectionId": 36775364
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.35399247491638797
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Evaluation",
+        "selectionId": 3160043
+      },
+      "paddypower": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 3.85,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.35497835497835495
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T13:26:00+01:00",
+      "marketName": "13:26 Uttoxeter - 2m7f Nov Hrd",
+      "betfairWinMarketId": "1.263239481",
+      "runner": {
+        "name": "Time In A Bottle",
+        "selectionId": 39954575
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 6.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3559695512820513
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Iamimmaculate",
+        "selectionId": 87221732
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 2.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3622222222222222
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T15:30:00+01:00",
+      "marketName": "15:30 Kelso - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263239327",
+      "runner": {
+        "name": "Traprain Law",
+        "selectionId": 41133259
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 3.65,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3688845401174168
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Chattering Classes",
+        "selectionId": 101466538
+      },
+      "paddypower": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 19.5,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.37529137529137524
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:15:00+01:00",
+      "marketName": "15:15 Uttoxeter - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263239512",
+      "runner": {
+        "name": "Jubilant",
+        "selectionId": 12284400
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.4,
+        "placeLay": 4.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.37540218790218793
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "Helsgetaway",
+        "selectionId": 62403454
+      },
+      "paddypower": {
+        "winPrice": 4.333333333333333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 2.28,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3765664160401003
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T15:30:00+01:00",
+      "marketName": "15:30 Kelso - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263239327",
+      "runner": {
+        "name": "Aeros Luck",
+        "selectionId": 54481853
+      },
+      "paddypower": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3877508361204014
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Heart Above",
+        "selectionId": 49782429
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 3.85,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.39610389610389607
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Contrary To Law",
+        "selectionId": 86116341
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 12.5,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Benevento",
+        "selectionId": 14629600
+      },
+      "paddypower": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 8.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4048780487804877
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:45:00+01:00",
+      "marketName": "14:45 Killarney - 2m1f Nov Hrd",
+      "betfairWinMarketId": "1.263245185",
+      "runner": {
+        "name": "Firebrand",
+        "selectionId": 13129272
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.38,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.41351540616246496
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Prophetess Miriam",
+        "selectionId": 89033370
+      },
+      "paddypower": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4154769230769231
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Go Athletico",
+        "selectionId": 28523412
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4176470588235295
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Kingdom Calling",
+        "selectionId": 68391743
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 3.15,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4183919944789509
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Lakewood Rose",
+        "selectionId": 82718835
+      },
+      "paddypower": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4209211986681465
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Stoneyford Lady",
+        "selectionId": 64616752
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 2.92,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4246575342465754
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:56:00+01:00",
+      "marketName": "16:56 Uttoxeter - 3m Hcap Chs",
+      "betfairWinMarketId": "1.263239537",
+      "runner": {
+        "name": "Better Off Alone",
+        "selectionId": 74275956
+      },
+      "paddypower": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.44,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.4278002242499226
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Retracement",
+        "selectionId": 68799705
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4298128342245989
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Big Dee",
+        "selectionId": 60622000
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.43104575163398695
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Inches Away",
+        "selectionId": 5892399
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 5.1,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4336898395721924
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Political Stance",
+        "selectionId": 83583888
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 4.9,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4363945578231292
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "The Border Boy",
+        "selectionId": 56616479
+      },
+      "paddypower": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4366883116883117
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Playful Fox",
+        "selectionId": 91037316
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4399759903961584
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "Luminaries",
+        "selectionId": 41198881
+      },
+      "paddypower": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 2.44,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4419924337957125
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Regards To Rose",
+        "selectionId": 74238271
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4471214017521903
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Nakamura",
+        "selectionId": 17423481
+      },
+      "paddypower": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 16.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4534090909090909
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Bowling Shane",
+        "selectionId": 86834857
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4545454545454545
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Noble Nation",
+        "selectionId": 13230423
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.45967741935483875
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Sidiriya",
+        "selectionId": 41299478
+      },
+      "paddypower": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4652406417112299
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:56:00+01:00",
+      "marketName": "16:56 Uttoxeter - 3m Hcap Chs",
+      "betfairWinMarketId": "1.263239537",
+      "runner": {
+        "name": "Izzys Grey",
+        "selectionId": 58755371
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 12.5,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.46558139534883725
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Run For Power",
+        "selectionId": 88209670
+      },
+      "paddypower": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.18,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.46636085626911317
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:45:00+01:00",
+      "marketName": "14:45 Killarney - 2m1f Nov Hrd",
+      "betfairWinMarketId": "1.263245185",
+      "runner": {
+        "name": "Belladaball",
+        "selectionId": 92514788
+      },
+      "paddypower": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.6,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4684222027972027
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Good World",
+        "selectionId": 35665075
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.46882352941176464
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:56:00+01:00",
+      "marketName": "16:56 Uttoxeter - 3m Hcap Chs",
+      "betfairWinMarketId": "1.263239537",
+      "runner": {
+        "name": "Fane Court",
+        "selectionId": 93289175
+      },
+      "paddypower": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 2.94,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.46982281284606864
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Unquite Dreams",
+        "selectionId": 93288968
+      },
+      "paddypower": {
+        "winPrice": 4.333333333333333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 2.44,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.470064148253742
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Galileo Noir",
+        "selectionId": 91444227
+      },
+      "paddypower": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4710548885077187
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Noble Honour",
+        "selectionId": 88748740
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4714285714285714
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "My My My Delilah",
+        "selectionId": 74754406
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 3.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4727272727272728
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Muscogee Nation",
+        "selectionId": 100867270
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.47580645161290325
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:15:00+01:00",
+      "marketName": "15:15 Uttoxeter - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263239512",
+      "runner": {
+        "name": "Pike Road",
+        "selectionId": 70832698
+      },
+      "paddypower": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.48115942028985503
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Presenting Lad",
+        "selectionId": 36909375
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.92,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.48344748858447484
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Kilbrin Rocco",
+        "selectionId": 54678831
+      },
+      "paddypower": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.6,
+        "placeLay": 2.44,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4870645491803278
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Pedros Moon",
+        "selectionId": 101929790
+      },
+      "paddypower": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.487814465408805
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Michaels Well",
+        "selectionId": 89760574
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 42.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4904761904761905
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Tazman Dan",
+        "selectionId": 93067571
+      },
+      "paddypower": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4970779220779221
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Granlahan",
+        "selectionId": 93668689
+      },
+      "paddypower": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.74,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5022810218978102
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:15:00+01:00",
+      "marketName": "15:15 Uttoxeter - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263239512",
+      "runner": {
+        "name": "Miss Goldfire",
+        "selectionId": 54148241
+      },
+      "paddypower": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 3.8,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.506578947368421
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Cracks And Sparks",
+        "selectionId": 102848209
+      },
+      "paddypower": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5106837606837608
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Lucky Sevens",
+        "selectionId": 24946820
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5108695652173912
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Promethean",
+        "selectionId": 13230422
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5194902548725637
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Raging Al",
+        "selectionId": 68245510
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 46.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5285326086956521
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Claude",
+        "selectionId": 163745
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 3.15,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5317460317460317
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T16:30:00+01:00",
+      "marketName": "16:30 Killarney - 2m5f Beg Chs",
+      "betfairWinMarketId": "1.263245226",
+      "runner": {
+        "name": "Impero",
+        "selectionId": 9202
+      },
+      "paddypower": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5331439393939394
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:15:00+01:00",
+      "marketName": "15:15 Uttoxeter - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263239512",
+      "runner": {
+        "name": "Roger Pol",
+        "selectionId": 49471962
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5348057354301573
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Wo Wo Never",
+        "selectionId": 99471049
+      },
+      "paddypower": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5364145658263305
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Monntie",
+        "selectionId": 84484162
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5374579124579124
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T13:26:00+01:00",
+      "marketName": "13:26 Uttoxeter - 2m7f Nov Hrd",
+      "betfairWinMarketId": "1.263239481",
+      "runner": {
+        "name": "A Chara",
+        "selectionId": 91079468
+      },
+      "paddypower": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 6.6,
+        "placeLay": 3.3,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5454545454545454
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Petticoat Bay",
+        "selectionId": 103463213
+      },
+      "paddypower": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 3.95,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5585015395141978
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "Tashie",
+        "selectionId": 100721593
+      },
+      "paddypower": {
+        "winPrice": 2.625,
+        "winPriceRaw": "13/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 2.36,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5630296610169492
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:45:00+01:00",
+      "marketName": "14:45 Killarney - 2m1f Nov Hrd",
+      "betfairWinMarketId": "1.263245185",
+      "runner": {
+        "name": "Celtic Alliance",
+        "selectionId": 95125304
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5636070853462158
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Ballyminnion Boy",
+        "selectionId": 98937506
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5636070853462158
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Smoke Them Out",
+        "selectionId": 70395959
+      },
+      "paddypower": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5636766334440753
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:56:00+01:00",
+      "marketName": "16:56 Uttoxeter - 3m Hcap Chs",
+      "betfairWinMarketId": "1.263239537",
+      "runner": {
+        "name": "A Dublin Job",
+        "selectionId": 42285013
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 26.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5651223776223776
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Fregada",
+        "selectionId": 74312142
+      },
+      "paddypower": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 42.0,
+        "placeLay": 5.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5662337662337662
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Prospect House",
+        "selectionId": 44695061
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 5.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5663129973474801
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Beyond Your Dreams",
+        "selectionId": 64778509
+      },
+      "paddypower": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.8,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5692636363636364
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Sindagan",
+        "selectionId": 88669368
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 8.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5708333333333333
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Romella",
+        "selectionId": 22197272
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5727307398932113
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Whimsy",
+        "selectionId": 21825385
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5868380952380952
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Inchidaly Copper",
+        "selectionId": 38021565
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5967320261437908
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Jon Riggens",
+        "selectionId": 39163003
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6022727272727273
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Eastwatch",
+        "selectionId": 70421470
+      },
+      "paddypower": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6045454545454545
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Starlyte",
+        "selectionId": 39371725
+      },
+      "paddypower": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 8.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6048780487804878
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:45:00+01:00",
+      "marketName": "14:45 Killarney - 2m1f Nov Hrd",
+      "betfairWinMarketId": "1.263245185",
+      "runner": {
+        "name": "Cocofred",
+        "selectionId": 94191642
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.607107107107107
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "The Windhover",
+        "selectionId": 102611368
+      },
+      "paddypower": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6082251082251082
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Loughrea",
+        "selectionId": 90059352
+      },
+      "paddypower": {
+        "winPrice": 2.375,
+        "winPriceRaw": "11/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.1,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6143854838709677
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Sytadel",
+        "selectionId": 83316476
+      },
+      "paddypower": {
+        "winPrice": 2.375,
+        "winPriceRaw": "11/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.15,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6181120268620268
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Pivotal Attack",
+        "selectionId": 85725316
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.622093023255814
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Pirate Anne Bonny",
+        "selectionId": 102848194
+      },
+      "paddypower": {
+        "winPrice": 1.909090909090909,
+        "winPriceRaw": "10/11",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.56,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6225852272727274
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Kings Son",
+        "selectionId": 12363121
+      },
+      "paddypower": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6239935587761675
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Katie Cant Count",
+        "selectionId": 99504796
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 7.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6240079365079365
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "Lone Star",
+        "selectionId": 15203
+      },
+      "paddypower": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6257692307692309
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "Breakaway Babe",
+        "selectionId": 100921010
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 7.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6332070707070707
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Greydreambeliever",
+        "selectionId": 71953917
+      },
+      "paddypower": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6352571428571429
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Rest Your Mind",
+        "selectionId": 86157940
+      },
+      "paddypower": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 4.5,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6359888888888889
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "James The Brave",
+        "selectionId": 75448147
+      },
+      "paddypower": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.0,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6363636363636364
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Do No Wrong",
+        "selectionId": 28115856
+      },
+      "paddypower": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6378378378378378
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Coolboy Christy",
+        "selectionId": 83391430
+      },
+      "paddypower": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6444444444444444
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Carolina Jetstream",
+        "selectionId": 74585732
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6481092436974789
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Majestic King",
+        "selectionId": 62641327
+      },
+      "paddypower": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.65245
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "I Bid You Ajou",
+        "selectionId": 62442465
+      },
+      "paddypower": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6527450980392157
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Institute",
+        "selectionId": 2614647
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6536902601330914
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Lady Lilac",
+        "selectionId": 10989018
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.661875
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T13:26:00+01:00",
+      "marketName": "13:26 Uttoxeter - 2m7f Nov Hrd",
+      "betfairWinMarketId": "1.263239481",
+      "runner": {
+        "name": "Captain Connor",
+        "selectionId": 79276100
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 200.0,
+        "placeLay": 55.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6734090909090908
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Focaccia",
+        "selectionId": 10856685
+      },
+      "paddypower": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 18.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.676945126945127
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Mint Man",
+        "selectionId": 61804130
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6792929292929293
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:56:00+01:00",
+      "marketName": "16:56 Uttoxeter - 3m Hcap Chs",
+      "betfairWinMarketId": "1.263239537",
+      "runner": {
+        "name": "Another Mystery",
+        "selectionId": 5123294
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 15.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6797912713472486
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Jimjohn Kittkath",
+        "selectionId": 103463241
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 15.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.688970348647768
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Arcon",
+        "selectionId": 56407145
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.69
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:15:00+01:00",
+      "marketName": "15:15 Uttoxeter - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263239512",
+      "runner": {
+        "name": "Divilabother",
+        "selectionId": 60237780
+      },
+      "paddypower": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6927154582763337
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Nouvel Espoir",
+        "selectionId": 60157627
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.6954901960784314
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Royal Bay Cen",
+        "selectionId": 82508294
+      },
+      "paddypower": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7030411449016101
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Golden Gift",
+        "selectionId": 521146
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 18.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7033264033264033
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:05:00+01:00",
+      "marketName": "15:05 Curragh - 1m1f Hcap",
+      "betfairWinMarketId": "1.263244973",
+      "runner": {
+        "name": "Johnny Soda",
+        "selectionId": 88669354
+      },
+      "paddypower": {
+        "winPrice": 4.333333333333333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7258333333333333
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Party President",
+        "selectionId": 76351853
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 12.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7379661016949153
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Darlene",
+        "selectionId": 27911711
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 150.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7482666666666666
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Bertie B",
+        "selectionId": 44049036
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 95.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7520676691729323
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Do For Love",
+        "selectionId": 85588748
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 34.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7573380867498515
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Midnight Lexi",
+        "selectionId": 102378173
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 16.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7625
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Sinbad My Dad",
+        "selectionId": 60048444
+      },
+      "paddypower": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.8,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7695272727272727
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "Boston Queen",
+        "selectionId": 84524548
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7710695499707774
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Unauthorized",
+        "selectionId": 10134905
+      },
+      "paddypower": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 16.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7745614035087719
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Mount Hotham",
+        "selectionId": 44083457
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.7771929824561403
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Gotta Catchem All",
+        "selectionId": 71770073
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 580.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.7775862068965518
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:15:00+01:00",
+      "marketName": "16:15 Curragh - 6f Hcap",
+      "betfairWinMarketId": "1.263245098",
+      "runner": {
+        "name": "Go Out",
+        "selectionId": 39050447
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 580.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.7775862068965518
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Troy Story",
+        "selectionId": 12401301
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 200.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7817857142857143
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Alfalfa",
+        "selectionId": 59675
+      },
+      "paddypower": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7824615384615384
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Spinning Around",
+        "selectionId": 83754627
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7926190476190476
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Keep Em Quite",
+        "selectionId": 95720923
+      },
+      "paddypower": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7926190476190476
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T16:40:00+01:00",
+      "marketName": "16:40 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239338",
+      "runner": {
+        "name": "Theirshegoes",
+        "selectionId": 51480974
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7969230769230768
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "True Harmony",
+        "selectionId": 94238087
+      },
+      "paddypower": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.798830303030303
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "A Wave Of The Sea",
+        "selectionId": 24058649
+      },
+      "paddypower": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8008
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Wannabe Royal",
+        "selectionId": 77626553
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8030075187969925
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Ballybrittas",
+        "selectionId": 72322090
+      },
+      "paddypower": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.806923076923077
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Cullenwaine",
+        "selectionId": 45476272
+      },
+      "paddypower": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8141818181818181
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:10:00+01:00",
+      "marketName": "14:10 Killarney - 2m1f Hcap Hrd",
+      "betfairWinMarketId": "1.263245154",
+      "runner": {
+        "name": "Alentejo",
+        "selectionId": 4241598
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.8149122807017544
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:56:00+01:00",
+      "marketName": "16:56 Uttoxeter - 3m Hcap Chs",
+      "betfairWinMarketId": "1.263239537",
+      "runner": {
+        "name": "Bravethewaves",
+        "selectionId": 41492757
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 38.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.8160526315789474
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Nolans Rocco",
+        "selectionId": 82718843
+      },
+      "paddypower": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8168285714285715
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Kilkee Bay",
+        "selectionId": 66128724
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8289333333333333
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Bythesametoken",
+        "selectionId": 16660945
+      },
+      "paddypower": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8292857142857143
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Velvet Ash",
+        "selectionId": 99006076
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8293006993006993
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Northern Rose",
+        "selectionId": 23406724
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8293006993006993
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Dontcontradictme",
+        "selectionId": 84993396
+      },
+      "paddypower": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8296153846153846
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Tedworth",
+        "selectionId": 69767741
+      },
+      "paddypower": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8338378378378378
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Likedbymike",
+        "selectionId": 73497744
+      },
+      "paddypower": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8362666666666667
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Barryroe Madam",
+        "selectionId": 53226979
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8454727272727273
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Prophets Path",
+        "selectionId": 70679608
+      },
+      "paddypower": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8473411764705883
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Joes Turn",
+        "selectionId": 44743458
+      },
+      "paddypower": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8511692307692308
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Interchangeable",
+        "selectionId": 67336973
+      },
+      "paddypower": {
+        "winPrice": 31.0,
+        "winPriceRaw": "30/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 370.0,
+        "placeLay": 34.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8551669316375199
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "The Mediator",
+        "selectionId": 6285419
+      },
+      "paddypower": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8572363636363637
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Ellens Pride",
+        "selectionId": 76118869
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8577833333333333
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Lara K",
+        "selectionId": 102878200
+      },
+      "paddypower": {
+        "winPrice": 111.0,
+        "winPriceRaw": "110/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 980.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8612244897959184
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Scopic",
+        "selectionId": 96921835
+      },
+      "paddypower": {
+        "winPrice": 111.0,
+        "winPriceRaw": "110/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8623571428571428
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Backinabit",
+        "selectionId": 61496553
+      },
+      "paddypower": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8704000000000001
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Rose Warrior",
+        "selectionId": 10160270
+      },
+      "paddypower": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 650.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.876978021978022
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:45:00+01:00",
+      "marketName": "14:45 Killarney - 2m1f Nov Hrd",
+      "betfairWinMarketId": "1.263245185",
+      "runner": {
+        "name": "Rosenborg",
+        "selectionId": 99251797
+      },
+      "paddypower": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8770153846153846
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Maeve Brennan",
+        "selectionId": 86871584
+      },
+      "paddypower": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8832636363636364
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Johntom",
+        "selectionId": 102848222
+      },
+      "paddypower": {
+        "winPrice": 151.0,
+        "winPriceRaw": "150/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 440.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.888510101010101
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Boxwood Hill",
+        "selectionId": 102848214
+      },
+      "paddypower": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 210.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8995
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Messonghi",
+        "selectionId": 84746708
+      },
+      "paddypower": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 230.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9038478260869565
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Belle Vision",
+        "selectionId": 102611369
+      },
+      "paddypower": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9075
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Thenandnow",
+        "selectionId": 84409801
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 280.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9087857142857143
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Wannabe Sporty",
+        "selectionId": 102607824
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 200.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.911923076923077
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Sangara",
+        "selectionId": 73847586
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9148203389830508
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T13:26:00+01:00",
+      "marketName": "13:26 Uttoxeter - 2m7f Nov Hrd",
+      "betfairWinMarketId": "1.263239481",
+      "runner": {
+        "name": "Stavanger Rose",
+        "selectionId": 95197166
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 980.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9308163265306122
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "A Lovely Manoeuvre",
+        "selectionId": 103463219
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 200.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.931
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:01:00+01:00",
+      "marketName": "14:01 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239492",
+      "runner": {
+        "name": "Mighty Dink",
+        "selectionId": 102748215
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9318922305764411
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Luna Mia",
+        "selectionId": 22636162
+      },
+      "paddypower": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9377616161616161
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Ben Vrackie",
+        "selectionId": 2154895
+      },
+      "paddypower": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9493483146067416
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "High Honour",
+        "selectionId": 43233332
+      },
+      "paddypower": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9493483146067416
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Avec Espoir",
+        "selectionId": 8332553
+      },
+      "paddypower": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9493483146067416
+    },
+    {
+      "venue": "Kelso",
+      "country": "GB",
+      "offTime": "2026-10-04T14:20:00+01:00",
+      "marketName": "14:20 Kelso - 2m5f Hcap Hrd",
+      "betfairWinMarketId": "1.263239321",
+      "runner": {
+        "name": "Dalileo",
+        "selectionId": 14101128
+      },
+      "paddypower": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9509899749373434
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:55:00+01:00",
+      "marketName": "13:55 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244966",
+      "runner": {
+        "name": "Scrap The Lot",
+        "selectionId": 103463220
+      },
+      "paddypower": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9518523002421307
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Staysound Susie",
+        "selectionId": 55986881
+      },
+      "paddypower": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9522424242424242
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Treasure Rose",
+        "selectionId": 83846760
+      },
+      "paddypower": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9522424242424242
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T14:30:00+01:00",
+      "marketName": "14:30 Curragh - 7f Listed",
+      "betfairWinMarketId": "1.263244952",
+      "runner": {
+        "name": "Lewis Carroll",
+        "selectionId": 84381873
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 550.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9532867132867133
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Akrramm",
+        "selectionId": 72111097
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9541160593792173
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T16:30:00+01:00",
+      "marketName": "16:30 Killarney - 2m5f Beg Chs",
+      "betfairWinMarketId": "1.263245226",
+      "runner": {
+        "name": "Woodstream Lad",
+        "selectionId": 39154500
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9549662921348314
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T14:45:00+01:00",
+      "marketName": "14:45 Killarney - 2m1f Nov Hrd",
+      "betfairWinMarketId": "1.263245185",
+      "runner": {
+        "name": "No Mon No Fun",
+        "selectionId": 100212331
+      },
+      "paddypower": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9549754385964913
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Cahirdown Boy",
+        "selectionId": 24174444
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9565375302663438
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T14:36:00+01:00",
+      "marketName": "14:36 Uttoxeter - 2m Mdn Hrd",
+      "betfairWinMarketId": "1.263239504",
+      "runner": {
+        "name": "Kind Of Kiss",
+        "selectionId": 67956081
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 600.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9569047619047619
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T16:30:00+01:00",
+      "marketName": "16:30 Killarney - 2m5f Beg Chs",
+      "betfairWinMarketId": "1.263245226",
+      "runner": {
+        "name": "Mister Loolah",
+        "selectionId": 82718823
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9575
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Satono Chevalier",
+        "selectionId": 39737143
+      },
+      "paddypower": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 550.0,
+        "placeLay": 240.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9598863636363636
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T15:40:00+01:00",
+      "marketName": "15:40 Curragh - 6f Listed",
+      "betfairWinMarketId": "1.263245090",
+      "runner": {
+        "name": "Gazelle Dor",
+        "selectionId": 69174768
+      },
+      "paddypower": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9612929292929293
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T13:20:00+01:00",
+      "marketName": "13:20 Curragh - 7f Mdn",
+      "betfairWinMarketId": "1.263244959",
+      "runner": {
+        "name": "Bayside Girl",
+        "selectionId": 103463215
+      },
+      "paddypower": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.961361403508772
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T13:35:00+01:00",
+      "marketName": "13:35 Killarney - 2m1f Mdn Hrd",
+      "betfairWinMarketId": "1.263245170",
+      "runner": {
+        "name": "Cerulean Summer",
+        "selectionId": 61302191
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9623481781376518
+    },
+    {
+      "venue": "Curragh",
+      "country": "IE",
+      "offTime": "2026-10-04T16:50:00+01:00",
+      "marketName": "16:50 Curragh - 1m4f Hcap",
+      "betfairWinMarketId": "1.263245107",
+      "runner": {
+        "name": "Mapa",
+        "selectionId": 59778651
+      },
+      "paddypower": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 890.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9656988764044944
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "King Ferdinand",
+        "selectionId": 4985394
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9659661016949153
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Its Time Again",
+        "selectionId": 38916958
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9659661016949153
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T15:45:00+01:00",
+      "marketName": "15:45 Uttoxeter - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263239525",
+      "runner": {
+        "name": "Zucayan",
+        "selectionId": 39682620
+      },
+      "paddypower": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 600.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9663333333333334
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "Glorys Morning",
+        "selectionId": 98772087
+      },
+      "paddypower": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9672281073446327
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Mane Attraction",
+        "selectionId": 25426898
+      },
+      "paddypower": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9676282828282828
+    },
+    {
+      "venue": "Uttoxeter",
+      "country": "GB",
+      "offTime": "2026-10-04T16:20:00+01:00",
+      "marketName": "16:20 Uttoxeter - 2m Hcap Chs",
+      "betfairWinMarketId": "1.263239531",
+      "runner": {
+        "name": "Inedit Damour",
+        "selectionId": 74080323
+      },
+      "paddypower": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 570.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9690245614035088
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:55:00+01:00",
+      "marketName": "15:55 Killarney - 2m1f Hcap Chs",
+      "betfairWinMarketId": "1.263245220",
+      "runner": {
+        "name": "Beauforts Storm",
+        "selectionId": 56330752
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9694393741851369
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Kilashee",
+        "selectionId": 26520698
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9722033898305085
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T17:05:00+01:00",
+      "marketName": "17:05 Killarney - 2m7f Hcap Chs",
+      "betfairWinMarketId": "1.263245247",
+      "runner": {
+        "name": "Urbs Intacta Manet",
+        "selectionId": 91496782
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9722033898305085
+    },
+    {
+      "venue": "Killarney",
+      "country": "IE",
+      "offTime": "2026-10-04T15:20:00+01:00",
+      "marketName": "15:20 Killarney - 2m7f Hcap Hrd",
+      "betfairWinMarketId": "1.263245192",
+      "runner": {
+        "name": "Its Not His Fault",
+        "selectionId": 89507271
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.977193220338983
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "You Trust Me",
+        "selectionId": 100049209
+      },
+      "paddypower": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 990.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9781113460183227
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "Stay Bossy",
+        "selectionId": 98240811
+      },
+      "paddypower": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 180.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9794097222222222
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "Caps dOro",
+        "selectionId": 97190541
+      },
+      "paddypower": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 960.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9795992231638418
+    },
+    {
+      "venue": "Santa Anita Park",
+      "country": "US",
+      "offTime": "2026-10-04T01:06:00+01:00",
+      "marketName": "01:06 Santa Anita Park - R9 7f Allw Claim",
+      "betfairWinMarketId": "1.263225055",
+      "runner": {
+        "name": "Manee",
+        "selectionId": 100721599
+      },
+      "paddypower": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 970.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9834746954076851
+    }
+  ]
+}
