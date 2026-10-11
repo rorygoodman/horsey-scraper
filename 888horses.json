@@ -1,0 +1,7733 @@
+{
+  "computedAt": "2026-10-11T00:32:29.806022Z",
+  "betfairScrapedAt": "2026-10-11T00:32:03.184134Z",
+  "sport888ScrapedAt": "2026-10-11T00:32:16.645765Z",
+  "horseCount": 309,
+  "horses": [
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Getuptheyard",
+        "selectionId": 54117624
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 2.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": 0.0
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "Brynmair Gold",
+        "selectionId": 103323929
+      },
+      "sport888": {
+        "winPrice": 2.375,
+        "winPriceRaw": "11/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.6,
+        "placeLay": 1.24,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.029156327543424343
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Step By Step",
+        "selectionId": 214765
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.4,
+        "placeLay": 1.84,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.07768542199488482
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:07:00+01:00",
+      "marketName": "16:07 Goodwood - 1m1f Nov Stks",
+      "betfairWinMarketId": "1.263596509",
+      "runner": {
+        "name": "Royal Acclamation",
+        "selectionId": 2605025
+      },
+      "sport888": {
+        "winPrice": 2.25,
+        "winPriceRaw": "5/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.28,
+        "placeLay": 1.56,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.08590587044534415
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "Cornichon",
+        "selectionId": 102878209
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.3,
+        "placeLay": 1.53,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.08793820558526444
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Shoda",
+        "selectionId": 71525968
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 3.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.09166666666666667
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Moylussa",
+        "selectionId": 71120878
+      },
+      "sport888": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.0,
+        "placeLay": 1.61,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.09381469979296064
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Cerulean Bay",
+        "selectionId": 57313928
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 2.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.09401709401709402
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Eternal Force",
+        "selectionId": 14252574
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 2.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.09523809523809523
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Putapoundinthejar",
+        "selectionId": 67371678
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 2.18,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.11271297509829625
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Passenger",
+        "selectionId": 6030612
+      },
+      "sport888": {
+        "winPrice": 2.0,
+        "winPriceRaw": "1/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.24,
+        "placeLay": 1.37,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.11561522419186665
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T13:27:00+01:00",
+      "marketName": "13:27 Chepstow - 2m3f Nov Hrd",
+      "betfairWinMarketId": "1.263596331",
+      "runner": {
+        "name": "Princess Day",
+        "selectionId": 92216125
+      },
+      "sport888": {
+        "winPrice": 1.909,
+        "winPriceRaw": "10/11",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 1.94,
+        "placeLay": 1.57,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.11714574167706349
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Leader Crik",
+        "selectionId": 90262157
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 3.75,
+        "placeLay": 1.81,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.11896869244935537
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Atomic City",
+        "selectionId": 70933974
+      },
+      "sport888": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.7,
+        "placeLay": 1.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1238012205754142
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Cashinoroyale",
+        "selectionId": 102343113
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.125
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Naval Light",
+        "selectionId": 83846567
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 2.42,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.12878787878787878
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Zarak Crown",
+        "selectionId": 102343100
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.4,
+        "placeLay": 1.66,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.137136782423813
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Ugo Bingo",
+        "selectionId": 64778541
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 1.97,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.14399961689493335
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Storming Point",
+        "selectionId": 90262129
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 2.78,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.14559780746831108
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Isabella De Vega",
+        "selectionId": 100933339
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 2.14,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14809489575844714
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Italian Spirit",
+        "selectionId": 36615092
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 3.9,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.15567765567765557
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Beset",
+        "selectionId": 62302775
+      },
+      "sport888": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.96,
+        "placeLay": 1.92,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.15628519144144137
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Mr Freedom",
+        "selectionId": 39803391
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 4.9,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1585034013605442
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:07:00+01:00",
+      "marketName": "16:07 Goodwood - 1m1f Nov Stks",
+      "betfairWinMarketId": "1.263596509",
+      "runner": {
+        "name": "Iron Curtain",
+        "selectionId": 5739101
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.5,
+        "placeLay": 1.84,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.16381987577639756
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Factual Fact",
+        "selectionId": 53727779
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.16874999999999996
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Stream Of Stars",
+        "selectionId": 18241613
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.5,
+        "placeLay": 2.42,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.17355371900826444
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Welsh Charger",
+        "selectionId": 32476
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1780474481036367
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "Conor'Salwaysright",
+        "selectionId": 101042658
+      },
+      "sport888": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.95,
+        "placeLay": 1.77,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.17900307516269764
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Under Arrest",
+        "selectionId": 82277896
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.6,
+        "placeLay": 2.38,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.18417366946778713
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "War Chest",
+        "selectionId": 13471918
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.1,
+        "placeLay": 1.56,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.18542839274546585
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:02:00+01:00",
+      "marketName": "13:02 Cork - 2m1f Juv Hrd",
+      "betfairWinMarketId": "1.263597518",
+      "runner": {
+        "name": "World Of The Way",
+        "selectionId": 103714220
+      },
+      "sport888": {
+        "winPrice": 2.375,
+        "winPriceRaw": "11/8",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.9,
+        "placeLay": 1.66,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.18577326547569584
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "Square Jasmin",
+        "selectionId": 98284651
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.4,
+        "placeLay": 2.14,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1861370716510904
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Galileo Dame",
+        "selectionId": 61762061
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.18666666666666654
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:57:00+01:00",
+      "marketName": "16:57 Chepstow - 2m NHF",
+      "betfairWinMarketId": "1.263596371",
+      "runner": {
+        "name": "Too Many Acres",
+        "selectionId": 103714102
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.5,
+        "placeLay": 1.98,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.19264069264069272
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Gower Prince",
+        "selectionId": 44348277
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.1,
+        "placeLay": 2.18,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1929483720093541
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:37:00+01:00",
+      "marketName": "14:37 Chepstow - 2m Nov Hrd",
+      "betfairWinMarketId": "1.263596344",
+      "runner": {
+        "name": "Mwabani",
+        "selectionId": 91542583
+      },
+      "sport888": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.5,
+        "placeLay": 2.28,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.1930607769423558
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Faiyum",
+        "selectionId": 81615074
+      },
+      "sport888": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.55,
+        "placeLay": 2.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.19701542588866539
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Prosperity",
+        "selectionId": 11934360
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.5,
+        "placeLay": 2.16,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.19739057239057234
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:37:00+01:00",
+      "marketName": "14:37 Chepstow - 2m Nov Hrd",
+      "betfairWinMarketId": "1.263596344",
+      "runner": {
+        "name": "Lion Rose Sivola",
+        "selectionId": 90725990
+      },
+      "sport888": {
+        "winPrice": 2.375,
+        "winPriceRaw": "11/8",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.7,
+        "placeLay": 1.86,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.19896206690561535
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:57:00+01:00",
+      "marketName": "16:57 Chepstow - 2m NHF",
+      "betfairWinMarketId": "1.263596371",
+      "runner": {
+        "name": "Old Coast Road",
+        "selectionId": 103714104
+      },
+      "sport888": {
+        "winPrice": 1.909,
+        "winPriceRaw": "10/11",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 2.3,
+        "placeLay": 1.61,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2038664596273292
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Harbour Light",
+        "selectionId": 1221741
+      },
+      "sport888": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 3.55,
+        "placeLay": 1.77,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.20665234343916605
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Cloud Chorus",
+        "selectionId": 101140927
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.4,
+        "placeLay": 2.92,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.20722821334887787
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Wechaad",
+        "selectionId": 84080040
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.7,
+        "placeLay": 2.02,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.20738752822650675
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Deep Havana",
+        "selectionId": 61832908
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 2.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.21538461538461529
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Jasko Des Dames",
+        "selectionId": 63648403
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.5,
+        "placeLay": 2.28,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.21810207336523124
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T13:27:00+01:00",
+      "marketName": "13:27 Chepstow - 2m3f Nov Hrd",
+      "betfairWinMarketId": "1.263596331",
+      "runner": {
+        "name": "Kamille Au Kanada",
+        "selectionId": 95820322
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 3.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2198660714285714
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Bound For Glory",
+        "selectionId": 5898479
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.8,
+        "placeLay": 2.58,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.22370507399577177
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Bone Marra",
+        "selectionId": 84080023
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.5,
+        "placeLay": 2.38,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.23376623376623362
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Light Up The Dark",
+        "selectionId": 11144815
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 19.0,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.23444976076555024
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Seven Towers",
+        "selectionId": 14625
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 2.64,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2357397504456329
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Dr T J Eckleburg",
+        "selectionId": 36503577
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 19.0,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.23987854251012142
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "One Flash",
+        "selectionId": 103206172
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 8.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.25795454545454544
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Collecting Coin",
+        "selectionId": 82651749
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2582417582417582
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Caught U Sleeping",
+        "selectionId": 86632284
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2586477987421384
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:02:00+01:00",
+      "marketName": "13:02 Cork - 2m1f Juv Hrd",
+      "betfairWinMarketId": "1.263597518",
+      "runner": {
+        "name": "Destinedforhistory",
+        "selectionId": 103714222
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 5.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2615740740740742
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Carthusian",
+        "selectionId": 82712663
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.1,
+        "placeLay": 2.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.265505115089514
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Formous",
+        "selectionId": 101622689
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.6,
+        "placeLay": 2.56,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2661830357142856
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Norn Iron",
+        "selectionId": 53761581
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.4,
+        "placeLay": 2.22,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2692692692692693
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Wise And Wonderful",
+        "selectionId": 98890848
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.8,
+        "placeLay": 2.54,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2734201494044013
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Sword Maker",
+        "selectionId": 85791145
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.2,
+        "placeLay": 2.44,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.27528988404638144
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Poet's Muse",
+        "selectionId": 94383991
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.27552447552447545
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Whosinterviewinwho",
+        "selectionId": 100142255
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.4,
+        "placeLay": 2.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.27578671328671334
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Phoenix Arizona",
+        "selectionId": 178397
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.27679628898539277
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Pure Granite",
+        "selectionId": 69259026
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 6.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.28125
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Persian Land",
+        "selectionId": 98684809
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 13.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2826923076923077
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Room Fourteen",
+        "selectionId": 89805283
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.2,
+        "placeLay": 3.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.28397435897435896
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Piccolo Player",
+        "selectionId": 90617492
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 2.96,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.28619691119691115
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Cappa Hill",
+        "selectionId": 334078
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.28835091083413233
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Princess Child",
+        "selectionId": 55286440
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.2,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.29476077072959517
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Alien Storm",
+        "selectionId": 42717115
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 5.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.29489942528735624
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Time To Bite",
+        "selectionId": 35856066
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2968923418423973
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Ita Florence",
+        "selectionId": 102262603
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2971311475409836
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:57:00+01:00",
+      "marketName": "16:57 Chepstow - 2m NHF",
+      "betfairWinMarketId": "1.263596371",
+      "runner": {
+        "name": "Onetingfornuttin",
+        "selectionId": 103714108
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 6.0,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2972027972027972
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Mic Drop",
+        "selectionId": 19504844
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.0,
+        "placeLay": 2.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.29807692307692313
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Amberelli",
+        "selectionId": 69296711
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3006003430531732
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Seven Nation Army",
+        "selectionId": 6964314
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 5.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3040752351097179
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Klycot",
+        "selectionId": 79427579
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 3.25,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3050089445438282
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Dawnmore",
+        "selectionId": 101598906
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 5.9,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.30816640986132515
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Divine Believer",
+        "selectionId": 94417913
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 4.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.30952380952380953
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Jury's In",
+        "selectionId": 90428338
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 4.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3160173160173161
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Baltray",
+        "selectionId": 41809767
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.31666666666666665
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Helvic Dream",
+        "selectionId": 24745607
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.31854838709677424
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Tune In A Box",
+        "selectionId": 53127871
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.0,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.32727272727272716
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Solar Pass",
+        "selectionId": 76354416
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.33017241379310347
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Film Set",
+        "selectionId": 3364828
+      },
+      "sport888": {
+        "winPrice": 2.875,
+        "winPriceRaw": "15/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.2,
+        "placeLay": 2.12,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.33344564240790664
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Madbadanddangerous",
+        "selectionId": 87874653
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.33461538461538454
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Comfort Zone",
+        "selectionId": 772601
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.33461538461538454
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Sudden Flight",
+        "selectionId": 55905
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 5.7,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.34398496240601506
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Espritroyale",
+        "selectionId": 84958306
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.34463946869070206
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Crowsatedappletart",
+        "selectionId": 41681854
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.34558823529411764
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Crazee Icon",
+        "selectionId": 86321300
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 12.5,
+        "placeLay": 2.94,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3458503401360544
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Brighton Beach",
+        "selectionId": 77790436
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 19.5,
+        "placeLay": 2.68,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3471106008419441
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Shaool",
+        "selectionId": 74674157
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3486956521739131
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Guy's Girl",
+        "selectionId": 83326680
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.0,
+        "placeLay": 2.14,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3495327102803738
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Chairmanforlife",
+        "selectionId": 1390087
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.2,
+        "placeLay": 2.52,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3501984126984127
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:37:00+01:00",
+      "marketName": "14:37 Chepstow - 2m Nov Hrd",
+      "betfairWinMarketId": "1.263596344",
+      "runner": {
+        "name": "Skibidirizz",
+        "selectionId": 103714111
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 6.2,
+        "placeLay": 2.74,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3580762891452791
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Stily",
+        "selectionId": 73575038
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3583333333333333
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Matty's Getaway",
+        "selectionId": 89679982
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 2.76,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.36114663256606994
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Whimsy",
+        "selectionId": 21825385
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 6.4,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.36121323529411775
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Fratas",
+        "selectionId": 50016618
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3634126333059885
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "At My Expense",
+        "selectionId": 103714117
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 120.0,
+        "placeLay": 13.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.36442307692307696
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Faivoir",
+        "selectionId": 26615535
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 8.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.36590909090909096
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "The Strikin Viking",
+        "selectionId": 70430614
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.36899224806201547
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "Binfluencer",
+        "selectionId": 98072053
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3699999999999999
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Caburn",
+        "selectionId": 70832656
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 17.5,
+        "placeLay": 3.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.37142857142857144
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "In My Teens",
+        "selectionId": 84315883
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 2.88,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.37397875816993453
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Western George",
+        "selectionId": 81578848
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 2.84,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3751600512163893
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Goodwood Galaxy",
+        "selectionId": 85195490
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3811773255813953
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Brosay",
+        "selectionId": 67168371
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3853820598006644
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "Scolyer",
+        "selectionId": 103714261
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 2.7,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.38888888888888884
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Chicago Blues",
+        "selectionId": 20853
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.38899430740037944
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "Martymill",
+        "selectionId": 91935953
+      },
+      "sport888": {
+        "winPrice": 2.625,
+        "winPriceRaw": "13/8",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.2,
+        "placeLay": 1.85,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.38948804573804585
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Supido",
+        "selectionId": 10753492
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.3978260869565218
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Rokanako",
+        "selectionId": 85482668
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 2.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4015151515151516
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Little Pi",
+        "selectionId": 49672216
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 2.68,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4090770636612855
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Ned In The Park",
+        "selectionId": 64421382
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 2.36,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4110169491525424
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Spirit Of Athene",
+        "selectionId": 90766359
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4144295302013423
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Birdie Or Bust",
+        "selectionId": 51221421
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 2.56,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.41657552083333327
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Katty",
+        "selectionId": 101466532
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4235705741626794
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Kates Choice",
+        "selectionId": 69437377
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 2.98,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4249901302803001
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Counting Coup",
+        "selectionId": 36385775
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 7.4,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4328828828828829
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Hamdania",
+        "selectionId": 92216130
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4363636363636363
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Ifuknowuknow",
+        "selectionId": 89895028
+      },
+      "sport888": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 1.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.44444444444444453
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Sir Jeremy",
+        "selectionId": 72390338
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 5.8,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4468965517241379
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:57:00+01:00",
+      "marketName": "16:57 Chepstow - 2m NHF",
+      "betfairWinMarketId": "1.263596371",
+      "runner": {
+        "name": "Masked Blagny",
+        "selectionId": 94592197
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.446969696969697
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Ben Lomond",
+        "selectionId": 11353580
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4470238095238095
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Queen's Reign",
+        "selectionId": 56330037
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 8.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.44705882352941173
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:02:00+01:00",
+      "marketName": "13:02 Cork - 2m1f Juv Hrd",
+      "betfairWinMarketId": "1.263597518",
+      "runner": {
+        "name": "Why Wait",
+        "selectionId": 10882051
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 6.2,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.449418880455408
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Sweet Honey B",
+        "selectionId": 62186860
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4558823529411765
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Alma Latina",
+        "selectionId": 97703115
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.45789473684210524
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "Our Sara",
+        "selectionId": 90500456
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.45876800794833583
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "Major Triumph",
+        "selectionId": 103714263
+      },
+      "sport888": {
+        "winPrice": 4.333,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.32,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.46027729885057467
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Poncho",
+        "selectionId": 5800672
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 7.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4622222222222222
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "Bengal Tiger",
+        "selectionId": 3887613
+      },
+      "sport888": {
+        "winPrice": 1.533,
+        "winPriceRaw": "8/15",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1.68,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.46238235294117647
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Abbotsford",
+        "selectionId": 1330737
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 27.0,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.462962962962963
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Let Him B",
+        "selectionId": 67371677
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 2.78,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4630295763389288
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Gortmore Lady",
+        "selectionId": 69174754
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4630311140849783
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Oakley",
+        "selectionId": 17691143
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4633228840125392
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Pralognan",
+        "selectionId": 40612822
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 6.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.46832770270270263
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Jabbar",
+        "selectionId": 20857446
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.47395833333333337
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Navy Waters",
+        "selectionId": 82866530
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 3.95,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.47410817031070196
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Boola Times",
+        "selectionId": 71525970
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 2.78,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4811701659080898
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "The Bosses Order",
+        "selectionId": 103714226
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 9.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4838718820861678
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Letmeentertainyou",
+        "selectionId": 100932961
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 5.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4860482654600302
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Good Bye Milan",
+        "selectionId": 40191173
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4865384615384616
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Jungle Drums",
+        "selectionId": 1104263
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 18.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.48712121212121207
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "C'Mere Girleen",
+        "selectionId": 84315918
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.49126241963763884
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Vanir",
+        "selectionId": 98748187
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.4917196386751421
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:07:00+01:00",
+      "marketName": "16:07 Goodwood - 1m1f Nov Stks",
+      "betfairWinMarketId": "1.263596509",
+      "runner": {
+        "name": "Donegan",
+        "selectionId": 103070088
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.94,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.49362244897959184
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "John Dixen",
+        "selectionId": 90690054
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4943452380952381
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Glowing Account",
+        "selectionId": 39281344
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.4971428571428571
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Brian",
+        "selectionId": 2024494
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 3.85,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.49859599859599857
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "The Scallionator",
+        "selectionId": 97816676
+      },
+      "sport888": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 2.96,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5038006756756757
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Icaque De L'Isle",
+        "selectionId": 42999190
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5045454545454545
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Not Just Any Eagle",
+        "selectionId": 44767246
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 6.0,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5111111111111111
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "No Ordinary Joe",
+        "selectionId": 36676169
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5201086956521739
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Letiza",
+        "selectionId": 53415846
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5218579234972678
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Dream Composer",
+        "selectionId": 28588717
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5245098039215687
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Ankara",
+        "selectionId": 2302475
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5297491039426523
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Wild Bessie",
+        "selectionId": 89033329
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 21.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5357142857142857
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Senna's Girl",
+        "selectionId": 70902364
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5367647058823529
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:57:00+01:00",
+      "marketName": "14:57 Goodwood - 1m1f Nursery",
+      "betfairWinMarketId": "1.263596393",
+      "runner": {
+        "name": "Lots Road",
+        "selectionId": 101649963
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 5.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5443478260869565
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Justcallmepete",
+        "selectionId": 41439013
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 18.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5517567567567567
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T13:27:00+01:00",
+      "marketName": "13:27 Chepstow - 2m3f Nov Hrd",
+      "betfairWinMarketId": "1.263596331",
+      "runner": {
+        "name": "Walkinthemournes",
+        "selectionId": 95820323
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 17.5,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5517857142857143
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T13:27:00+01:00",
+      "marketName": "13:27 Chepstow - 2m3f Nov Hrd",
+      "betfairWinMarketId": "1.263596331",
+      "runner": {
+        "name": "Midnight Doyen",
+        "selectionId": 92216127
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 30.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5534313725490196
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Wills History",
+        "selectionId": 102643372
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 95.0,
+        "placeLay": 19.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5534412955465586
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Glengouly",
+        "selectionId": 38378512
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 19.5,
+        "placeLay": 4.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5576923076923077
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Ker D'Oudairies",
+        "selectionId": 83917128
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5582687338501291
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Withtearsinmyeyes",
+        "selectionId": 97489302
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5630252100840336
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:07:00+01:00",
+      "marketName": "16:07 Goodwood - 1m1f Nov Stks",
+      "betfairWinMarketId": "1.263596509",
+      "runner": {
+        "name": "Bundaberg",
+        "selectionId": 487562
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5665584415584416
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "King Of The Lake",
+        "selectionId": 54027306
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5700000000000001
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Rebel Wave",
+        "selectionId": 98527940
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 5.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5803571428571428
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Teagarden Jazz",
+        "selectionId": 43188926
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 8.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.58125
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Kotari",
+        "selectionId": 42439792
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5841677096370463
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Thank You Ma'Am",
+        "selectionId": 53986807
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5926356589147287
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Makinbecon",
+        "selectionId": 94107716
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 4.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.5954016913319238
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:15:00+01:00",
+      "marketName": "16:15 Naas - 2m Hcap",
+      "betfairWinMarketId": "1.263597817",
+      "runner": {
+        "name": "Eben Zaabeel",
+        "selectionId": 60463923
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 5
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_5"
+      },
+      "edge": -0.5981060606060606
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Fair Dinkum",
+        "selectionId": 60388
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 7.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6032894736842105
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Fly Smartly",
+        "selectionId": 100272213
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6035539215686274
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Diamonds And Dames",
+        "selectionId": 100968285
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 6.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6061827956989247
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Typical Thomas",
+        "selectionId": 41952361
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6088362068965517
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "From The Hip",
+        "selectionId": 28161153
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6107954545454546
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "One Cool Dreamer",
+        "selectionId": 59240049
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6145833333333333
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Revelator",
+        "selectionId": 4099597
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 120.0,
+        "placeLay": 21.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6148809523809524
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Bay Colony",
+        "selectionId": 70902356
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 20.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.615
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Division Day",
+        "selectionId": 84879192
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6187354312354312
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Crestofdistinction",
+        "selectionId": 76069289
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 85.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6192513368983957
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "Earl Of Persia",
+        "selectionId": 103714260
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 220.0,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6198051948051948
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Solomon Coop",
+        "selectionId": 60460514
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 120.0,
+        "placeLay": 15.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6211021505376344
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Bright Legend",
+        "selectionId": 53955470
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6220347826086956
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Boomerang Breeze",
+        "selectionId": 100212327
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6224206349206349
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:02:00+01:00",
+      "marketName": "13:02 Cork - 2m1f Juv Hrd",
+      "betfairWinMarketId": "1.263597518",
+      "runner": {
+        "name": "Plumton Queen",
+        "selectionId": 103714217
+      },
+      "sport888": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6224256292906178
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Treasure Rose",
+        "selectionId": 83846760
+      },
+      "sport888": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 180.0,
+        "placeLay": 38.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.627046783625731
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Capichera",
+        "selectionId": 90579940
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6273809523809524
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Killashee Warrior",
+        "selectionId": 87429181
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 46.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6274247491638796
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "West Orchard",
+        "selectionId": 41236704
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.634357894736842
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Mawhibah",
+        "selectionId": 99181426
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 50.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.635
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Rogue Empire",
+        "selectionId": 75025571
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 9.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6419547872340425
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Percy's Star",
+        "selectionId": 97329213
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 17.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6456908344733242
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Chablis Rock",
+        "selectionId": 89228400
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 27.0,
+        "placeLay": 65.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6528774928774929
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:37:00+01:00",
+      "marketName": "14:37 Chepstow - 2m Nov Hrd",
+      "betfairWinMarketId": "1.263596344",
+      "runner": {
+        "name": "One Cool Kid",
+        "selectionId": 103714110
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 8.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.654592803030303
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Silk Twist",
+        "selectionId": 102146448
+      },
+      "sport888": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 36.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6573232323232323
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Drop Dead Gorgeous",
+        "selectionId": 451094
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 19.5,
+        "placeLay": 7.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6602564102564102
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Jalisco Star",
+        "selectionId": 55023806
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6602666666666667
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Acula",
+        "selectionId": 101269377
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 7.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6619369369369369
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Al Mubhir",
+        "selectionId": 41151116
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 34.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6626470588235294
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Lady Blackmore",
+        "selectionId": 93383018
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.664676923076923
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Arc Zoosve",
+        "selectionId": 73497832
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 9.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.665045766590389
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Chica Guerrera",
+        "selectionId": 72071057
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 19.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6652046783625731
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Balmacara",
+        "selectionId": 49490
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 70.0,
+        "placeLay": 26.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6659340659340659
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Seaxburh",
+        "selectionId": 98568648
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 7.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6711711711711712
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Deep Cave",
+        "selectionId": 50396785
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6721590909090909
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:02:00+01:00",
+      "marketName": "13:02 Cork - 2m1f Juv Hrd",
+      "betfairWinMarketId": "1.263597518",
+      "runner": {
+        "name": "Free To Speak",
+        "selectionId": 103714219
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 20.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6725
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:22:00+01:00",
+      "marketName": "16:22 Chepstow - 2m Hcap Hrd",
+      "betfairWinMarketId": "1.263596365",
+      "runner": {
+        "name": "Haas Boy",
+        "selectionId": 41212631
+      },
+      "sport888": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 9.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6809475806451613
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Arizona Raider",
+        "selectionId": 97523480
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 8.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6809593023255814
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Chasing Paradise",
+        "selectionId": 90021342
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 21.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6817460317460318
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Just One Show",
+        "selectionId": 99471068
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 17.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6841269841269841
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Kilbeg Jimmy",
+        "selectionId": 97996887
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6895238095238095
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:07:00+01:00",
+      "marketName": "16:07 Goodwood - 1m1f Nov Stks",
+      "betfairWinMarketId": "1.263596509",
+      "runner": {
+        "name": "Wilcox Bridge",
+        "selectionId": 103034800
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 18.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6912393162393162
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T13:27:00+01:00",
+      "marketName": "13:27 Chepstow - 2m3f Nov Hrd",
+      "betfairWinMarketId": "1.263596331",
+      "runner": {
+        "name": "Divine Diva",
+        "selectionId": 872587
+      },
+      "sport888": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.6,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6913549039433772
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:02:00+01:00",
+      "marketName": "13:02 Cork - 2m1f Juv Hrd",
+      "betfairWinMarketId": "1.263597518",
+      "runner": {
+        "name": "Lighthouse Sarah",
+        "selectionId": 103714224
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 15.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6917952314165497
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Be In Love",
+        "selectionId": 102848198
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 9.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6922196796338673
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Sylkie",
+        "selectionId": 63094570
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 12.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.69375
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Zadawa",
+        "selectionId": 99471050
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6966507177033493
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Winged One",
+        "selectionId": 88845382
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6977249999999999
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:02:00+01:00",
+      "marketName": "13:02 Cork - 2m1f Juv Hrd",
+      "betfairWinMarketId": "1.263597518",
+      "runner": {
+        "name": "Baby Og",
+        "selectionId": 103714221
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Glyfada",
+        "selectionId": 96975633
+      },
+      "sport888": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.5,
+        "placeLay": 7.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7003663003663003
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Killyclogher Rose",
+        "selectionId": 91361416
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7017045454545454
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Wild Violet",
+        "selectionId": 97460095
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 11.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7071022727272727
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Green Soul",
+        "selectionId": 83498276
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 7.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7083333333333334
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Aequitas",
+        "selectionId": 87468839
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.711853448275862
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T13:27:00+01:00",
+      "marketName": "13:27 Chepstow - 2m3f Nov Hrd",
+      "betfairWinMarketId": "1.263596331",
+      "runner": {
+        "name": "Connells Cross",
+        "selectionId": 83617914
+      },
+      "sport888": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 17.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7148351648351648
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Aggagio",
+        "selectionId": 36969513
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 13.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7306763285024155
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Apercu",
+        "selectionId": 62103858
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 17.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7307142857142856
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T16:42:00+01:00",
+      "marketName": "16:42 Goodwood - 1m Hcap",
+      "betfairWinMarketId": "1.263596522",
+      "runner": {
+        "name": "Urban Lion",
+        "selectionId": 62103865
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 95.0,
+        "placeLay": 18.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7330014224751067
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Deressa",
+        "selectionId": 71731247
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 13.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7342592592592593
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T15:32:00+01:00",
+      "marketName": "15:32 Goodwood - 6f Hcap",
+      "betfairWinMarketId": "1.263596515",
+      "runner": {
+        "name": "Midnight Thunder",
+        "selectionId": 7835139
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7342952380952381
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Snapretend",
+        "selectionId": 80378338
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.741111111111111
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:37:00+01:00",
+      "marketName": "14:37 Chepstow - 2m Nov Hrd",
+      "betfairWinMarketId": "1.263596344",
+      "runner": {
+        "name": "Gili Island",
+        "selectionId": 95233167
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 120.0,
+        "placeLay": 65.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7445512820512821
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "Seasail",
+        "selectionId": 98748585
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 230.0,
+        "placeLay": 21.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7451345755693581
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Northern Ruler",
+        "selectionId": 227513
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 19.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7491959064327485
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Rion Rubette",
+        "selectionId": 71446751
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 27.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7530092592592592
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:57:00+01:00",
+      "marketName": "16:57 Chepstow - 2m NHF",
+      "betfairWinMarketId": "1.263596371",
+      "runner": {
+        "name": "Roxy Rocks",
+        "selectionId": 96666401
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 580.0,
+        "placeLay": 60.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7551724137931035
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Phoenix Cowboy",
+        "selectionId": 26698704
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7571428571428571
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Duchess Of Kenli",
+        "selectionId": 92470727
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 15.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7579487179487179
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T16:32:00+01:00",
+      "marketName": "16:32 Cork - 2m2f Hcap Chs",
+      "betfairWinMarketId": "1.263597565",
+      "runner": {
+        "name": "Drumgill",
+        "selectionId": 62103863
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 21.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7583333333333333
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Bairdin",
+        "selectionId": 100673848
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 85.0,
+        "placeLay": 34.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7588235294117647
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Celine Dee",
+        "selectionId": 103714266
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 28.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7598214285714286
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Centreofattention",
+        "selectionId": 1458756
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7604166666666667
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Shangri La",
+        "selectionId": 237028
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7628307692307692
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Classiest",
+        "selectionId": 24699859
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 140.0,
+        "placeLay": 17.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7635714285714286
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Banks Of The Boyne",
+        "selectionId": 99471063
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 11.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.764266304347826
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "Nameyourgame",
+        "selectionId": 96730265
+      },
+      "sport888": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 28.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7666666666666666
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Moments Of Joy",
+        "selectionId": 446354
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 18.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7747474747474747
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Noli Timere",
+        "selectionId": 11244896
+      },
+      "sport888": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 980.0,
+        "placeLay": 38.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7789742212674543
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "Rejoinder",
+        "selectionId": 72070197
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 20.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7794444444444444
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "V Power",
+        "selectionId": 440463
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 14.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.7827586206896552
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Vlhova",
+        "selectionId": 70395954
+      },
+      "sport888": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 27.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7837962962962963
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Queen Of The Bogs",
+        "selectionId": 85263626
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 80.0,
+        "placeLay": 16.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7910984848484848
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Stars Will Shine",
+        "selectionId": 88237680
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 28.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7918956043956044
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Love Orchid",
+        "selectionId": 84993361
+      },
+      "sport888": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.5,
+        "placeLay": 26.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7924679487179487
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Claude",
+        "selectionId": 163745
+      },
+      "sport888": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 24.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7961309523809523
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Chosen Shant",
+        "selectionId": 38480108
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 32.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7991477272727272
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Cherry Hill Girl",
+        "selectionId": 86321184
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 36.0,
+        "placeLay": 32.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8003472222222222
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T16:57:00+01:00",
+      "marketName": "16:57 Chepstow - 2m NHF",
+      "betfairWinMarketId": "1.263596371",
+      "runner": {
+        "name": "Motivaspeed Essef",
+        "selectionId": 103714106
+      },
+      "sport888": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 580.0,
+        "placeLay": 65.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.8076259946949602
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Jp's Express",
+        "selectionId": 90378023
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 55.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8080143540669856
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:37:00+01:00",
+      "marketName": "14:37 Chepstow - 2m Nov Hrd",
+      "betfairWinMarketId": "1.263596344",
+      "runner": {
+        "name": "On Subs",
+        "selectionId": 91037315
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.813625
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Zelente",
+        "selectionId": 101929827
+      },
+      "sport888": {
+        "winPrice": 251.0,
+        "winPriceRaw": "250/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 900.0,
+        "placeLay": 570.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8158187134502923
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:47:00+01:00",
+      "marketName": "15:47 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596358",
+      "runner": {
+        "name": "Service Minimum",
+        "selectionId": 75091808
+      },
+      "sport888": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8178285714285715
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Wisper",
+        "selectionId": 33359011
+      },
+      "sport888": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.822125
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Klassical Kid",
+        "selectionId": 103714227
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 55.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8263636363636364
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "Midnight Pass",
+        "selectionId": 39013326
+      },
+      "sport888": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8293565217391304
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T14:30:00+01:00",
+      "marketName": "14:30 Naas - 7f Cond Stks",
+      "betfairWinMarketId": "1.263597786",
+      "runner": {
+        "name": "Eighteenth Smiles",
+        "selectionId": 98028678
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 90.0,
+        "placeLay": 36.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8305555555555555
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T14:02:00+01:00",
+      "marketName": "14:02 Chepstow - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263596338",
+      "runner": {
+        "name": "My Boy Beasty",
+        "selectionId": 88525849
+      },
+      "sport888": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8340857142857143
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Final Entry",
+        "selectionId": 69213050
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8357052631578947
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T16:50:00+01:00",
+      "marketName": "16:50 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597826",
+      "runner": {
+        "name": "Rhythm King",
+        "selectionId": 24007
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 27.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.837037037037037
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Qualixia",
+        "selectionId": 60570808
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 140.0,
+        "placeLay": 30.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8416666666666667
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Morgana Blue",
+        "selectionId": 81892393
+      },
+      "sport888": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 36.0,
+        "placeLay": 18.5,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8433183183183184
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T17:17:00+01:00",
+      "marketName": "17:17 Goodwood - 1m2f Hcap",
+      "betfairWinMarketId": "1.263596529",
+      "runner": {
+        "name": "Oh Yes You Do",
+        "selectionId": 87511008
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8454727272727273
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "Waysong",
+        "selectionId": 103714264
+      },
+      "sport888": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 60.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8469047619047619
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Senuna",
+        "selectionId": 103714270
+      },
+      "sport888": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 29.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8481681034482759
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:05:00+01:00",
+      "marketName": "15:05 Naas - 1m Listed",
+      "betfairWinMarketId": "1.263597801",
+      "runner": {
+        "name": "Blue Blue Moon",
+        "selectionId": 85557500
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 75.0,
+        "placeLay": 100.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8503333333333334
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "Angel Childe",
+        "selectionId": 102878212
+      },
+      "sport888": {
+        "winPrice": 151.0,
+        "winPriceRaw": "150/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 210.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8506904761904762
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Starship Trooper",
+        "selectionId": 10491566
+      },
+      "sport888": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 36.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8632478632478633
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Outside Sun",
+        "selectionId": 101335433
+      },
+      "sport888": {
+        "winPrice": 201.0,
+        "winPriceRaw": "200/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 600.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8653333333333333
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T13:47:00+01:00",
+      "marketName": "13:47 Goodwood - 2m Hcap",
+      "betfairWinMarketId": "1.263596379",
+      "runner": {
+        "name": "Easter Icon",
+        "selectionId": 45350135
+      },
+      "sport888": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.87525
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T17:25:00+01:00",
+      "marketName": "17:25 Naas - 1m3f Hcap",
+      "betfairWinMarketId": "1.263597833",
+      "runner": {
+        "name": "Speckled Meadow",
+        "selectionId": 28250882
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 130.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8785714285714286
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "Outlaw Thief",
+        "selectionId": 103137533
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 490.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8833469387755102
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Did Tell",
+        "selectionId": 102947414
+      },
+      "sport888": {
+        "winPrice": 126.0,
+        "winPriceRaw": "125/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.885
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:47:00+01:00",
+      "marketName": "14:47 Cork - 2m4f Mdn Hrd",
+      "betfairWinMarketId": "1.263597540",
+      "runner": {
+        "name": "Ruled By The Sun",
+        "selectionId": 97427330
+      },
+      "sport888": {
+        "winPrice": 126.0,
+        "winPriceRaw": "125/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.885
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Boston Benjamin",
+        "selectionId": 88088359
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 130.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8869230769230769
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Imagine Glory",
+        "selectionId": 103714267
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 540.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.891
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Pappariche",
+        "selectionId": 97290733
+      },
+      "sport888": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.8932
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:20:00+01:00",
+      "marketName": "13:20 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597794",
+      "runner": {
+        "name": "Camhaoir",
+        "selectionId": 103714269
+      },
+      "sport888": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 240.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.90575
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T13:27:00+01:00",
+      "marketName": "13:27 Chepstow - 2m3f Nov Hrd",
+      "betfairWinMarketId": "1.263596331",
+      "runner": {
+        "name": "Bath Taverness",
+        "selectionId": 91656944
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 390.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9076153846153846
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Poet's Sonnet",
+        "selectionId": 100242881
+      },
+      "sport888": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 55.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9189646464646465
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T15:57:00+01:00",
+      "marketName": "15:57 Cork - 2m2f Nov Chs",
+      "betfairWinMarketId": "1.263597551",
+      "runner": {
+        "name": "Nobody",
+        "selectionId": 15027996
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.919448275862069
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T17:07:00+01:00",
+      "marketName": "17:07 Cork - 2m3f INHF",
+      "betfairWinMarketId": "1.263597579",
+      "runner": {
+        "name": "Sir Kybo",
+        "selectionId": 102947422
+      },
+      "sport888": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9255
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "Camino Vino",
+        "selectionId": 92688789
+      },
+      "sport888": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 600.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9319999999999999
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T15:40:00+01:00",
+      "marketName": "15:40 Naas - 1m4f Listed",
+      "betfairWinMarketId": "1.263597809",
+      "runner": {
+        "name": "So Must I",
+        "selectionId": 83995692
+      },
+      "sport888": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 600.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9319999999999999
+    },
+    {
+      "venue": "Chepstow",
+      "country": "GB",
+      "offTime": "2026-10-11T15:12:00+01:00",
+      "marketName": "15:12 Chepstow - 3m Hcap Hrd",
+      "betfairWinMarketId": "1.263596351",
+      "runner": {
+        "name": "Shengai Enki",
+        "selectionId": 52480734
+      },
+      "sport888": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 280.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9350142857142857
+    },
+    {
+      "venue": "Naas",
+      "country": "IE",
+      "offTime": "2026-10-11T13:56:00+01:00",
+      "marketName": "13:56 Naas - 6f Mdn",
+      "betfairWinMarketId": "1.263597779",
+      "runner": {
+        "name": "Nakota River",
+        "selectionId": 103714262
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9352142857142858
+    },
+    {
+      "venue": "Goodwood",
+      "country": "GB",
+      "offTime": "2026-10-11T14:22:00+01:00",
+      "marketName": "14:22 Goodwood - 6f Nov Stks",
+      "betfairWinMarketId": "1.263596386",
+      "runner": {
+        "name": "Dancingonthestars",
+        "selectionId": 98494110
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9352142857142858
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Synchronize",
+        "selectionId": 52632
+      },
+      "sport888": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 710.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9370845070422535
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "Another Day Done",
+        "selectionId": 13139054
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 140.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9471500721500722
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T13:37:00+01:00",
+      "marketName": "13:37 Cork - 2m Juv Mdn Hrd",
+      "betfairWinMarketId": "1.263597525",
+      "runner": {
+        "name": "The Wee Man",
+        "selectionId": 90378026
+      },
+      "sport888": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 990.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9612929292929293
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Our Girl Ellie",
+        "selectionId": 74238274
+      },
+      "sport888": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 230.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9616545893719807
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Duke Otto",
+        "selectionId": 36337704
+      },
+      "sport888": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 590.0,
+        "placeLay": 250.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9634661016949153
+    },
+    {
+      "venue": "Cork",
+      "country": "IE",
+      "offTime": "2026-10-11T14:12:00+01:00",
+      "marketName": "14:12 Cork - 2m3f Hcap Hrd",
+      "betfairWinMarketId": "1.263597531",
+      "runner": {
+        "name": "Finnicky Filly",
+        "selectionId": 67126398
+      },
+      "sport888": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 360.0,
+        "placeLay": 230.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.9655193236714976
+    }
+  ]
+}
