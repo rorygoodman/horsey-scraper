@@ -97,3 +97,36 @@ def novibet_racecard_near_off() -> dict:
 def novibet_racecard_no_markets() -> dict:
     """Fairview at the off — marketCategories is empty."""
     return _load("novibet_racecard_no_markets.json")
+
+
+@pytest.fixture
+def williamhill_day_index_payload() -> dict:
+    """Raw William Hill region-competitions/all/today (Nov 03, 2026), trimmed
+    to 2 UK&IRE meetings, 1 US, 1 Europe and 1 virtual, 4 events each."""
+    return _load("williamhill_day_index.json")
+
+
+@pytest.fixture
+def williamhill_racecard_3pl() -> dict:
+    """Warwick 15:48 — 10 runners, EW: 1/5 Odds 3 Places."""
+    return _load("williamhill_racecard_ew_3pl_1_5.json")
+
+
+@pytest.fixture
+def williamhill_racecard_extra_places() -> dict:
+    """Fairyhouse 14:55 — Extra Places: 4 places 1/5 on 15 runners, plus 4
+    non-runners (active=false, suspended, stale prices) and an Each Way
+    Extra collection offering 5-7 places."""
+    return _load("williamhill_racecard_extra_places_4pl.json")
+
+
+@pytest.fixture
+def williamhill_racecard_win_only() -> dict:
+    """Warwick 14:38 — 4 runners, Win Only (1/1, 1 place)."""
+    return _load("williamhill_racecard_win_only.json")
+
+
+@pytest.fixture
+def williamhill_racecard_at_off() -> dict:
+    """Warwick 12:18 — in play: no raceCardData at all."""
+    return _load("williamhill_racecard_at_off.json")

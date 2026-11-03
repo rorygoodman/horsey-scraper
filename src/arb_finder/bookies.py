@@ -43,4 +43,14 @@ NOVIBET = Bookie(
     default_output="novibethorses.json",
 )
 
-BOOKIES: dict[str, Bookie] = {b.key: b for b in (PADDYPOWER, SPORT888, NOVIBET)}
+WILLIAMHILL = Bookie(
+    key="williamhill",
+    leg_field="williamhill",
+    scraped_at_field="williamhillScrapedAt",
+    default_bookie_input="williamhill.json",
+    default_output="williamhillhorses.json",
+)
+
+BOOKIES: dict[str, Bookie] = {
+    b.key: b for b in (PADDYPOWER, SPORT888, NOVIBET, WILLIAMHILL)
+}

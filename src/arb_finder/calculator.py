@@ -98,7 +98,7 @@ def find_horses_by_name(
 ) -> "tuple[list[PricedHorse], MatchStats]":
     """Every fully-priced runner that matches a Betfair selection, with its
     each-way edge, sorted by edge descending. For a bookie that carries no
-    Betfair ids (888sport, Novibet), each race is matched by off-time+venue
+    Betfair ids (888sport, Novibet, William Hill), each race is matched by off-time+venue
     and each runner by normalized name. venue/country/off_time/ids come from
     the matched Betfair race/runner."""
     races_matched = races_unmatched = races_unpriceable = 0

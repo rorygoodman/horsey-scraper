@@ -17,11 +17,11 @@ REGIONS="${1:-gb-ie}"
 rm -rf public
 mkdir -p public
 cp index.html horses.json public/
-# 888horses.json is optional — copy it when the 888 arb stage produced one, so
-# a missing/failed 888 run never blocks the PaddyPower publish.
-[ -f 888horses.json ] && cp 888horses.json public/
-# novibethorses.json is optional for the same reason.
+# novibethorses.json is optional — copy it when the Novibet arb stage produced
+# one, so a missing/failed Novibet run never blocks the PaddyPower publish.
 [ -f novibethorses.json ] && cp novibethorses.json public/
+# williamhillhorses.json is optional for the same reason.
+[ -f williamhillhorses.json ] && cp williamhillhorses.json public/
 
 # 3. Force-push public/ as the gh-pages branch.
 ORIGIN_URL="${PUBLISH_REMOTE:-$(git remote get-url origin)}"

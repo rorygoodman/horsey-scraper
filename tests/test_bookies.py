@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass, fields
 
 from common.markettype import MarketType
-from arb_finder.bookies import BOOKIES, NOVIBET, PADDYPOWER, SPORT888
+from arb_finder.bookies import BOOKIES, NOVIBET, PADDYPOWER, SPORT888, WILLIAMHILL
 from arb_finder.models import (
     _BASE_RENAME, BetfairLayLeg, BookieHorsesOutput, BookiePriceLeg,
     PricedHorse, Runner, build_rename, write_bookie_horses_json,
@@ -20,10 +20,11 @@ class _Terms:
 
 
 def test_registry_is_keyed_by_cli_token():
-    assert set(BOOKIES) == {"paddypower", "888", "novibet"}
+    assert set(BOOKIES) == {"paddypower", "888", "novibet", "williamhill"}
     assert BOOKIES["paddypower"] is PADDYPOWER
     assert BOOKIES["888"] is SPORT888
     assert BOOKIES["novibet"] is NOVIBET
+    assert BOOKIES["williamhill"] is WILLIAMHILL
 
 
 def test_paddypower_declares_its_json_names():
@@ -45,6 +46,13 @@ def test_novibet_declares_its_json_names():
     assert NOVIBET.scraped_at_field == "novibetScrapedAt"
     assert NOVIBET.default_bookie_input == "novibet.json"
     assert NOVIBET.default_output == "novibethorses.json"
+
+
+def test_williamhill_declares_its_json_names():
+    assert WILLIAMHILL.leg_field == "williamhill"
+    assert WILLIAMHILL.scraped_at_field == "williamhillScrapedAt"
+    assert WILLIAMHILL.default_bookie_input == "williamhill.json"
+    assert WILLIAMHILL.default_output == "williamhillhorses.json"
 
 
 def test_build_rename_maps_the_two_variable_fields():

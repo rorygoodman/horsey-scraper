@@ -20,8 +20,10 @@ from paddypower_scraper.models import PaddyOutput
 from paddypower_scraper.validation import validate_paddy_output
 from sport888_scraper.models import Sport888Output
 from sport888_scraper.validation import validate_sport888_output
+from williamhill_scraper.models import WilliamHillOutput
+from williamhill_scraper.validation import validate_williamhill_output
 
-from .bookies import Bookie, NOVIBET, PADDYPOWER, SPORT888
+from .bookies import Bookie, NOVIBET, PADDYPOWER, SPORT888, WILLIAMHILL
 from .calculator import find_horses, find_horses_by_name
 from .models import BookieHorsesOutput, write_bookie_horses_json
 
@@ -48,6 +50,10 @@ SOURCES: dict[str, SourceSpec] = {
         bookie=NOVIBET, label="Novibet",
         parse=lambda t: NovibetOutput.from_dict(json.loads(t)),
         validate=validate_novibet_output, join="name"),
+    "williamhill": SourceSpec(
+        bookie=WILLIAMHILL, label="William Hill",
+        parse=lambda t: WilliamHillOutput.from_dict(json.loads(t)),
+        validate=validate_williamhill_output, join="name"),
 }
 
 

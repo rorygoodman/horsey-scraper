@@ -1,0 +1,39 @@
+{
+ "event": {
+  "id": "OB_EV41748423",
+  "slug": "1218-warwick",
+  "active": false,
+  "settled": false,
+  "isInPlay": true,
+  "isUkIreland": true,
+  "numberOfRunners": 2,
+  "eventName": "12:18 Warwick",
+  "startDateTime": "2026-11-03T12:18:00.000+0000",
+  "runners": {
+   "OB_RN21647352": {
+    "id": "OB_RN21647352",
+    "runnerNum": 1,
+    "jockey": "Harry Skelton",
+    "trainer": "D Skelton",
+    "active": true
+   },
+   "OB_RN21647351": {
+    "id": "OB_RN21647351",
+    "runnerNum": 2,
+    "jockey": "Sam Twiston-Davies",
+    "trainer": "N & W Twiston-Davies",
+    "active": true
+   }
+  },
+  "_offers": {},
+  "_competitionOffers": {
+   "extraPlaces": false,
+   "topPriceGuarantee": false,
+   "bestOddsGuaranteed": true
+  }
+ },
+ "raceCardData": {
+  "selections": {},
+  "marketCollections": []
+ }
+}

@@ -28,11 +28,10 @@ def test_index_references_schema_fields():
         assert field in html, f"index.html missing reference to {field!r}"
 
 
-def test_index_offers_888_source():
-    # The bookie source toggle reads 888horses.json and its sport888 leg.
+def test_index_no_longer_offers_888_source():
     html = INDEX.read_text()
-    assert "888horses.json" in html, "index.html missing 888horses.json source"
-    assert "sport888" in html, "index.html missing sport888 bookie leg"
+    assert "888horses.json" not in html
+    assert "sport888" not in html
 
 
 def test_publish_script_shape():
@@ -44,9 +43,9 @@ def test_publish_script_shape():
         assert token in text, f"publish.sh missing {token!r}"
 
 
-def test_publish_script_copies_888horses():
+def test_publish_script_no_longer_copies_888horses():
     text = (ROOT / "publish.sh").read_text()
-    assert "888horses.json" in text, "publish.sh should copy 888horses.json to the site"
+    assert "888horses.json" not in text
 
 
 def test_index_offers_novibet_source():
@@ -59,3 +58,16 @@ def test_publish_script_copies_novibethorses():
     text = (ROOT / "publish.sh").read_text()
     assert "novibethorses.json" in text, \
         "publish.sh should copy novibethorses.json to the site"
+
+
+def test_index_offers_williamhill_source():
+    html = INDEX.read_text()
+    assert "williamhillhorses.json" in html, \
+        "index.html missing williamhillhorses.json source"
+    assert 'leg: "williamhill"' in html, "index.html missing williamhill bookie leg"
+
+
+def test_publish_script_copies_williamhillhorses():
+    text = (ROOT / "publish.sh").read_text()
+    assert "williamhillhorses.json" in text, \
+        "publish.sh should copy williamhillhorses.json to the site"

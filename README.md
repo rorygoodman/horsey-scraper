@@ -2,20 +2,25 @@
 
 A pipeline that prices each-way arbitrage — and near-misses — between
 Betfair Exchange lay prices and three bookies' win/place prices (PaddyPower,
-888sport, Novibet) for today's UK + Irish horse racing. Every fully-priced
+Novibet, William Hill) for today's UK + Irish horse racing. Every fully-priced
 runner gets an `edge`; the positive-edge ones are the arbs: Betfair →
-PaddyPower → arb → 888sport ×2 (scrape + arb) → Novibet ×2 (scrape + arb).
+PaddyPower → arb → Novibet ×2 (scrape + arb) → William Hill ×2 (scrape + arb).
 
 1. **Betfair scrape** → `betfair.json` (multi-market lay prices via the
    Betfair Exchange REST API).
 2. **PaddyPower scrape** → `paddypower.json` (win prices + each-way terms
    via a headless-Chromium fetch of PaddyPower's API).
 3. **Arb finder** → `horses.json` (every fully-priced runner with its each-way edge).
-4. **888sport scrape** → `888sport.json`, then **arb finder --source 888**
-   → `888horses.json` (same edge, priced against 888sport; non-fatal, so an
-   888 outage never blocks the PaddyPower publish).
-5. **Novibet scrape** → `novibet.json`, then **arb finder --source novibet**
-   → `novibethorses.json` (same edge, priced against Novibet; also non-fatal).
+4. **Novibet scrape** → `novibet.json`, then **arb finder --source novibet**
+   → `novibethorses.json` (same edge, priced against Novibet; non-fatal, so a
+   Novibet outage never blocks the PaddyPower publish).
+5. **William Hill scrape** → `williamhill.json`, then **arb finder --source
+   williamhill** → `williamhillhorses.json` (same edge, priced against William
+   Hill via its public racing JSON API; also non-fatal).
+
+888sport is no longer part of the pipeline or the site. Its scraper
+(`sport888_scraper`) and `arb finder --source 888` are kept and still work
+when run by hand (see below).
 
 Pure Python. One `uv` project.
 
@@ -58,10 +63,10 @@ stage warns to stderr if the file is readable by group/others.
 ```
 
 Outputs are written to `./betfair.json`, `./paddypower.json`, `./horses.json`,
-`./888sport.json`, `./888horses.json`, `./novibet.json` and
-`./novibethorses.json`. The Betfair and PaddyPower stages (and the first
+`./novibet.json`, `./novibethorses.json`, `./williamhill.json` and
+`./williamhillhorses.json`. The Betfair and PaddyPower stages (and the first
 arb-finder run) are fatal — a non-zero exit there halts the pipeline before
-the PaddyPower publish. The 888 and Novibet stages are deliberately
+the PaddyPower publish. The Novibet and William Hill stages are deliberately
 **non-fatal**: a failure there is logged to stderr and the pipeline
 continues, so an outage in either bookie can never block the PaddyPower
 publish.
@@ -72,8 +77,13 @@ Run a single stage directly:
 uv run python -m betfair_scraper gb-ie
 uv run python -m paddypower_scraper gb-ie
 uv run python -m arb_finder
-uv run python -m sport888_scraper gb-ie
 uv run python -m novibet_scraper gb-ie
+uv run python -m williamhill_scraper gb-ie
+uv run python -m arb_finder --source williamhill
+
+# retired from run.sh, still runnable:
+uv run python -m sport888_scraper gb-ie
+uv run python -m arb_finder --source 888
 ```
 
 ## Validating output
@@ -84,6 +94,7 @@ uv run python -m paddypower_scraper.validate paddypower.json
 uv run python -m arb_finder.validate horses.json
 uv run python -m sport888_scraper.validate 888sport.json
 uv run python -m novibet_scraper.validate novibet.json
+uv run python -m williamhill_scraper.validate williamhill.json
 ```
 
 ## Web page (GitHub Pages)
@@ -91,8 +102,8 @@ uv run python -m novibet_scraper.validate novibet.json
 The latest output is published as a static page at
 **https://rorygoodman.github.io/horsey-scraper/** — an edge-ranked table of
 every fully-priced runner (positive-edge rows highlighted). A **source**
-toggle switches the table between PaddyPower (`horses.json`), 888sport
-(`888horses.json`) and Novibet (`novibethorses.json`); the choice is
+toggle switches the table between PaddyPower (`horses.json`), Novibet
+(`novibethorses.json`) and William Hill (`williamhillhorses.json`); the choice is
 remembered across the page's auto-refresh.
 
 Scrape and publish in one step:
@@ -103,7 +114,7 @@ Scrape and publish in one step:
 ```
 
 `publish.sh` runs the pipeline, then force-pushes `index.html` + `horses.json`
-(and `888horses.json` / `novibethorses.json` when present) to the `gh-pages`
+(and `novibethorses.json` / `williamhillhorses.json` when present) to the `gh-pages`
 branch (via the `gh` https credential helper). Preview the page locally
 without publishing:
 
@@ -129,9 +140,13 @@ src/
   betfair_scraper/    Betfair Exchange API scraper → betfair.json
   paddypower_scraper/ headless-Chromium PaddyPower scraper → paddypower.json
   sport888_scraper/   headless-Chromium 888sport scraper → 888sport.json
+                      (retired from run.sh; kept)
   novibet_scraper/    headless-Chromium Novibet scraper → novibet.json
+  williamhill_scraper/ William Hill racing-API scraper (plain HTTPS) →
+                      williamhill.json
   arb_finder/         joins betfair.json with one bookie's scrape →
-                      horses.json / 888horses.json / novibethorses.json
+                      horses.json / 888horses.json / novibethorses.json /
+                      williamhillhorses.json
 ```
 
 Design docs live under `docs/superpowers/specs/`, implementation plans

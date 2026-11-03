@@ -1,6 +1,6 @@
 """Structural match of a bookie race/runner to a Betfair race/runner.
 
-888sport and Novibet carry no Betfair ids, so we match by off-time instant +
+888sport, Novibet and William Hill carry no Betfair ids, so we match by off-time instant +
 normalized venue (race) and normalized runner name (selection). Exact
 normalized matches only — no fuzzy matching, because a wrong match yields a
 silently mispriced arb."""
