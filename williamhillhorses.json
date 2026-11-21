@@ -1,0 +1,2733 @@
+{
+  "computedAt": "2026-11-21T15:30:31.122448Z",
+  "betfairScrapedAt": "2026-11-21T15:30:02.594329Z",
+  "williamhillScrapedAt": "2026-11-21T15:30:18.007256Z",
+  "horseCount": 109,
+  "horses": [
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Letmebetheboss",
+        "selectionId": 57569279
+      },
+      "williamhill": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 100.0,
+        "placeLay": 9.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": 0.10673913043478267
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Brave Leader",
+        "selectionId": 7450124
+      },
+      "williamhill": {
+        "winPrice": 2.5,
+        "winPriceRaw": "6/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 2.64,
+        "placeLay": 1.25,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.006515151515151585
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:00:00Z",
+      "marketName": "16:00 Newcastle - 6f Nov Stks",
+      "betfairWinMarketId": "1.265791197",
+      "runner": {
+        "name": "Bondy Boy",
+        "selectionId": 104437789
+      },
+      "williamhill": {
+        "winPrice": 1.1818181818181819,
+        "winPriceRaw": "2/11",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 1.2,
+        "placeLay": 1.1,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.032369146005509664
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Raintown",
+        "selectionId": 840676
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 2.14,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.04632263307598539
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Concert Boy",
+        "selectionId": 48531488
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 3.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.05173745173745159
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Doon The Glen",
+        "selectionId": 57661806
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 4.1,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.06280487804878043
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:00:00Z",
+      "marketName": "17:00 Newcastle - 5f Nov Stks",
+      "betfairWinMarketId": "1.265791210",
+      "runner": {
+        "name": "Cornichon",
+        "selectionId": 102878209
+      },
+      "williamhill": {
+        "winPrice": 1.2222222222222223,
+        "winPriceRaw": "2/9",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 1.3,
+        "placeLay": 1.13,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.0628545495802133
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Oxford Circus",
+        "selectionId": 3173444
+      },
+      "williamhill": {
+        "winPrice": 2.0,
+        "winPriceRaw": "1/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 2.12,
+        "placeLay": 1.31,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.07028661961688032
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Educating Rita",
+        "selectionId": 408285
+      },
+      "williamhill": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.22,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.0807995495495496
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:00:00Z",
+      "marketName": "17:00 Newcastle - 5f Nov Stks",
+      "betfairWinMarketId": "1.265791210",
+      "runner": {
+        "name": "Time And Effort",
+        "selectionId": 98684818
+      },
+      "williamhill": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 30.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.08396226415094343
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Starliner",
+        "selectionId": 49116831
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 4.9,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.08960459183673475
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Off Spin",
+        "selectionId": 1132501
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 2.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.09090909090909083
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Court Legend",
+        "selectionId": 99470965
+      },
+      "williamhill": {
+        "winPrice": 4.333333333333334,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.7,
+        "placeLay": 1.87,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.09337429362460647
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Le Grand Retour",
+        "selectionId": 102643374
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 2.62,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.09754028837998296
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Somkiyr",
+        "selectionId": 59725249
+      },
+      "williamhill": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 150.0,
+        "placeLay": 13.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.10037037037037033
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Adalo",
+        "selectionId": 97996671
+      },
+      "williamhill": {
+        "winPrice": 4.333333333333334,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 5.6,
+        "placeLay": 1.63,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.10184779433245672
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Tough Enough",
+        "selectionId": 838709
+      },
+      "williamhill": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 2.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.10869565217391308
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Mhi Milani",
+        "selectionId": 97489015
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.11796536796536805
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Oppenheimer",
+        "selectionId": 15778705
+      },
+      "williamhill": {
+        "winPrice": 2.25,
+        "winPriceRaw": "5/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 2.48,
+        "placeLay": 1.48,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.12407367044463813
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:00:00Z",
+      "marketName": "16:00 Newcastle - 6f Nov Stks",
+      "betfairWinMarketId": "1.265791197",
+      "runner": {
+        "name": "Clink",
+        "selectionId": 40910776
+      },
+      "williamhill": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 19.5,
+        "placeLay": 3.35,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.1326061997703789
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Titainium",
+        "selectionId": 68866377
+      },
+      "williamhill": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.2,
+        "placeLay": 2.24,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.13490853658536583
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:00:00Z",
+      "marketName": "16:00 Newcastle - 6f Nov Stks",
+      "betfairWinMarketId": "1.265791197",
+      "runner": {
+        "name": "Maiden's Bower",
+        "selectionId": 105328069
+      },
+      "williamhill": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 19.5,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.14083710407239813
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Tortured Soul",
+        "selectionId": 59391301
+      },
+      "williamhill": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.5,
+        "placeLay": 2.16,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.14150563607085354
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Eagle Storm",
+        "selectionId": 7776597
+      },
+      "williamhill": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 3.5,
+        "placeLay": 1.63,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14198071866783524
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Our Dagger",
+        "selectionId": 60824683
+      },
+      "williamhill": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.0,
+        "placeLay": 2.12,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.14360587002096437
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Ifuknowuknow",
+        "selectionId": 89895028
+      },
+      "williamhill": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.0,
+        "placeLay": 2.06,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14597780859916787
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Front Gunner",
+        "selectionId": 61868709
+      },
+      "williamhill": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 18.0,
+        "placeLay": 3.45,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.14613526570048307
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Sankhum Galaxy",
+        "selectionId": 101335441
+      },
+      "williamhill": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 8.4,
+        "placeLay": 2.52,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.14682539682539675
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Blue Force",
+        "selectionId": 57314213
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.14696969696969697
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Little Miss India",
+        "selectionId": 70362403
+      },
+      "williamhill": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.4,
+        "placeLay": 2.08,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1494476268412439
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Spun To Gold",
+        "selectionId": 59626707
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 12.5,
+        "placeLay": 3.15,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.15555555555555556
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Get Up Everybody",
+        "selectionId": 75281339
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 3.9,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.15796703296703285
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Aurora Valkyrie",
+        "selectionId": 98720609
+      },
+      "williamhill": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 9.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.1585227272727272
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Wild Orchid",
+        "selectionId": 11387274
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 24.0,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16185897435897445
+    },
+    {
+      "venue": "Haydock",
+      "country": "GB",
+      "offTime": "2026-11-21T15:35:00Z",
+      "marketName": "15:35 Haydock - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.265791053",
+      "runner": {
+        "name": "Jaccours",
+        "selectionId": 64252932
+      },
+      "williamhill": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.76,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.16598304621274262
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Adoramus",
+        "selectionId": 97930806
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.8,
+        "placeLay": 2.82,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.16630481980026046
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "What What What",
+        "selectionId": 11174502
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 22.0,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1668278529980658
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Battle Standard",
+        "selectionId": 96232213
+      },
+      "williamhill": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.17045454545454541
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Mount King",
+        "selectionId": 47028836
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 28.0,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1713525835866262
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Bright",
+        "selectionId": 1220043
+      },
+      "williamhill": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 2.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.17374999999999996
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Masterofperfection",
+        "selectionId": 73729174
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1803977272727274
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Showtime Mahomes",
+        "selectionId": 39381940
+      },
+      "williamhill": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 3.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.18055555555555558
+    },
+    {
+      "venue": "Ascot",
+      "country": "GB",
+      "offTime": "2026-11-21T15:48:00Z",
+      "marketName": "15:48 Ascot - 3m Nov Hcap Hrd",
+      "betfairWinMarketId": "1.265791012",
+      "runner": {
+        "name": "Person Of Interest",
+        "selectionId": 15294326
+      },
+      "williamhill": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 10.0,
+        "placeLay": 4.1,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.18414634146341458
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:00:00Z",
+      "marketName": "17:00 Newcastle - 5f Nov Stks",
+      "betfairWinMarketId": "1.265791210",
+      "runner": {
+        "name": "Debutante",
+        "selectionId": 242119
+      },
+      "williamhill": {
+        "winPrice": 6.5,
+        "winPriceRaw": "11/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 10.0,
+        "placeLay": 2.42,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.184297520661157
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Rubyroo",
+        "selectionId": 101429448
+      },
+      "williamhill": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 3.85,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.18441558441558437
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Too Much",
+        "selectionId": 175375
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 2.92,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1855541718555418
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Khabib",
+        "selectionId": 22979787
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 2.94,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.18846629560915273
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Mister Boum",
+        "selectionId": 105189069
+      },
+      "williamhill": {
+        "winPrice": 2.1,
+        "winPriceRaw": "11/10",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 2.56,
+        "placeLay": 1.52,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.18852796052631582
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Jkr Cobbler",
+        "selectionId": 40401159
+      },
+      "williamhill": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 3.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.18928571428571428
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Uncle Sam",
+        "selectionId": 36880
+      },
+      "williamhill": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 4.6,
+        "placeLay": 1.75,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.19099378881987583
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Asian Journey",
+        "selectionId": 85725311
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.19201388888888893
+    },
+    {
+      "venue": "Haydock",
+      "country": "GB",
+      "offTime": "2026-11-21T15:35:00Z",
+      "marketName": "15:35 Haydock - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.265791053",
+      "runner": {
+        "name": "Dexperts Opinion",
+        "selectionId": 74616880
+      },
+      "williamhill": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.85,
+        "placeLay": 2.3,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.19219367588932812
+    },
+    {
+      "venue": "Haydock",
+      "country": "GB",
+      "offTime": "2026-11-21T15:35:00Z",
+      "marketName": "15:35 Haydock - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.265791053",
+      "runner": {
+        "name": "Chasingouttheblues",
+        "selectionId": 75061364
+      },
+      "williamhill": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 6.2,
+        "placeLay": 2.92,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.19258174988952725
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Wish This",
+        "selectionId": 69041396
+      },
+      "williamhill": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 9.6,
+        "placeLay": 2.76,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.19270833333333326
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:00:00Z",
+      "marketName": "17:00 Newcastle - 5f Nov Stks",
+      "betfairWinMarketId": "1.265791210",
+      "runner": {
+        "name": "Kalahari Flame",
+        "selectionId": 97930758
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 4.7,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.19518963922294175
+    },
+    {
+      "venue": "Ascot",
+      "country": "GB",
+      "offTime": "2026-11-21T15:48:00Z",
+      "marketName": "15:48 Ascot - 3m Nov Hcap Hrd",
+      "betfairWinMarketId": "1.265791012",
+      "runner": {
+        "name": "Kilnew Supreme",
+        "selectionId": 90859248
+      },
+      "williamhill": {
+        "winPrice": 3.5,
+        "winPriceRaw": "5/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.95,
+        "placeLay": 2.26,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.19744875098017256
+    },
+    {
+      "venue": "Haydock",
+      "country": "GB",
+      "offTime": "2026-11-21T15:35:00Z",
+      "marketName": "15:35 Haydock - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.265791053",
+      "runner": {
+        "name": "Caughtinyourtrance",
+        "selectionId": 67203801
+      },
+      "williamhill": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 5.8,
+        "placeLay": 2.7,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.198595146871009
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Tasever",
+        "selectionId": 49101029
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.1989130434782609
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Power Strike",
+        "selectionId": 598783
+      },
+      "williamhill": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 44.0,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.199025974025974
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Ganesha",
+        "selectionId": 41047
+      },
+      "williamhill": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 6.4,
+        "placeLay": 2.22,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.20396959459459463
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Jimmy Knocker",
+        "selectionId": 67452414
+      },
+      "williamhill": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 3.1,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2056451612903225
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Rousham",
+        "selectionId": 96467411
+      },
+      "williamhill": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 10.5,
+        "placeLay": 2.64,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.20725108225108224
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Ardaddy",
+        "selectionId": 78060256
+      },
+      "williamhill": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 3.65,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2097307510628248
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Roaring Ralph",
+        "selectionId": 46361122
+      },
+      "williamhill": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 3.65,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2097307510628248
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Zuffolo",
+        "selectionId": 44148974
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 21.0,
+        "placeLay": 4.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.21103896103896103
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "The Gay Blade",
+        "selectionId": 41080578
+      },
+      "williamhill": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 34.0,
+        "placeLay": 5.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2194783573806881
+    },
+    {
+      "venue": "Haydock",
+      "country": "GB",
+      "offTime": "2026-11-21T15:35:00Z",
+      "marketName": "15:35 Haydock - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.265791053",
+      "runner": {
+        "name": "Saladins Son",
+        "selectionId": 53789469
+      },
+      "williamhill": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.64,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.22035806174957118
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Benedetti",
+        "selectionId": 1061779
+      },
+      "williamhill": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 2.6,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.22064777327935226
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Forest Phoenix",
+        "selectionId": 36011574
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 3.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.22083333333333344
+    },
+    {
+      "venue": "Ascot",
+      "country": "GB",
+      "offTime": "2026-11-21T15:48:00Z",
+      "marketName": "15:48 Ascot - 3m Nov Hcap Hrd",
+      "betfairWinMarketId": "1.265791012",
+      "runner": {
+        "name": "Herbygoesbananas",
+        "selectionId": 76728355
+      },
+      "williamhill": {
+        "winPrice": 3.0,
+        "winPriceRaw": "2/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.45,
+        "placeLay": 2.18,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.22118069405664142
+    },
+    {
+      "venue": "Ascot",
+      "country": "GB",
+      "offTime": "2026-11-21T15:48:00Z",
+      "marketName": "15:48 Ascot - 3m Nov Hcap Hrd",
+      "betfairWinMarketId": "1.265791012",
+      "runner": {
+        "name": "Muskerry Rock",
+        "selectionId": 55103646
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 27.0,
+        "placeLay": 9.6,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.23553240740740744
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:00:00Z",
+      "marketName": "16:00 Newcastle - 6f Nov Stks",
+      "betfairWinMarketId": "1.265791197",
+      "runner": {
+        "name": "Obsidian Bay",
+        "selectionId": 105328065
+      },
+      "williamhill": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 50.0,
+        "placeLay": 7.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.23652777777777778
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Monticristo Boy",
+        "selectionId": 70296608
+      },
+      "williamhill": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 75.0,
+        "placeLay": 13.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2369230769230769
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Harry The Rogue",
+        "selectionId": 56653627
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 5.9,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.23974130240856373
+    },
+    {
+      "venue": "Ascot",
+      "country": "GB",
+      "offTime": "2026-11-21T15:48:00Z",
+      "marketName": "15:48 Ascot - 3m Nov Hcap Hrd",
+      "betfairWinMarketId": "1.265791012",
+      "runner": {
+        "name": "Mr Rafiki",
+        "selectionId": 39678750
+      },
+      "williamhill": {
+        "winPrice": 7.0,
+        "winPriceRaw": "6/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 8.0,
+        "placeLay": 3.9,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.24198717948717952
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Luidgi Du Luy",
+        "selectionId": 88472947
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 12.0,
+        "placeLay": 3.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2426075268817205
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Pivotal Terms",
+        "selectionId": 87559488
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 3.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2434077079107505
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Master Of Entropy",
+        "selectionId": 89033391
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 40.0,
+        "placeLay": 5.9,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2548728813559322
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Sands Of Seve",
+        "selectionId": 83686685
+      },
+      "williamhill": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 65.0,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.256043956043956
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:00:00Z",
+      "marketName": "17:00 Newcastle - 5f Nov Stks",
+      "betfairWinMarketId": "1.265791210",
+      "runner": {
+        "name": "Steel At Heart",
+        "selectionId": 104437788
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 25.0,
+        "placeLay": 5.1,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2588235294117647
+    },
+    {
+      "venue": "Ascot",
+      "country": "GB",
+      "offTime": "2026-11-21T15:48:00Z",
+      "marketName": "15:48 Ascot - 3m Nov Hcap Hrd",
+      "betfairWinMarketId": "1.265791012",
+      "runner": {
+        "name": "Baile An Or",
+        "selectionId": 90859247
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 9.2,
+        "placeLay": 4.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2596618357487922
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:00:00Z",
+      "marketName": "16:00 Newcastle - 6f Nov Stks",
+      "betfairWinMarketId": "1.265791197",
+      "runner": {
+        "name": "Havana Cohiba",
+        "selectionId": 100464829
+      },
+      "williamhill": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 95.0,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.26040100250626563
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Kit Gabriel",
+        "selectionId": 39641071
+      },
+      "williamhill": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 20.0,
+        "placeLay": 3.65,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.26164383561643834
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Auradue",
+        "selectionId": 97996535
+      },
+      "williamhill": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 13.5,
+        "placeLay": 3.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.26243386243386246
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Soy Loco",
+        "selectionId": 79471568
+      },
+      "williamhill": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 240.0,
+        "placeLay": 20.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2645833333333333
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Queensmaite",
+        "selectionId": 82251447
+      },
+      "williamhill": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.26583333333333337
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Miss Rainbow",
+        "selectionId": 54795326
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 36.0,
+        "placeLay": 6.6,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2714646464646464
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Havanagreattime",
+        "selectionId": 58258439
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 14.5,
+        "placeLay": 3.65,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.271610769957487
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Bluebell Breeze",
+        "selectionId": 99006184
+      },
+      "williamhill": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 48.0,
+        "placeLay": 7.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.2748397435897436
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Liberate",
+        "selectionId": 1289017
+      },
+      "williamhill": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 160.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2834821428571428
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Operation Gimcrack",
+        "selectionId": 57661804
+      },
+      "williamhill": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 23.0,
+        "placeLay": 4.0,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.2923913043478261
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Karakula Dancer",
+        "selectionId": 84746629
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 4.3,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.29951884522854844
+    },
+    {
+      "venue": "Lingfield",
+      "country": "GB",
+      "offTime": "2026-11-21T15:40:00Z",
+      "marketName": "15:40 Lingfield - 1m4f Hcap",
+      "betfairWinMarketId": "1.265791169",
+      "runner": {
+        "name": "Perzaaneh",
+        "selectionId": 91405517
+      },
+      "williamhill": {
+        "winPrice": 81.0,
+        "winPriceRaw": "80/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 200.0,
+        "placeLay": 17.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.31178571428571433
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Chanson Du Jury",
+        "selectionId": 104882820
+      },
+      "williamhill": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.8,
+        "placeLay": 3.05,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3372709739633557
+    },
+    {
+      "venue": "Ascot",
+      "country": "GB",
+      "offTime": "2026-11-21T15:48:00Z",
+      "marketName": "15:48 Ascot - 3m Nov Hcap Hrd",
+      "betfairWinMarketId": "1.265791012",
+      "runner": {
+        "name": "Dante's Rocco",
+        "selectionId": 95197165
+      },
+      "williamhill": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 13.0,
+        "placeLay": 7.4,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.34043659043659047
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Henry Halflight",
+        "selectionId": 94457615
+      },
+      "williamhill": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 110.0,
+        "placeLay": 13.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.36077441077441086
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:00:00Z",
+      "marketName": "17:00 Newcastle - 5f Nov Stks",
+      "betfairWinMarketId": "1.265791210",
+      "runner": {
+        "name": "Bea Kindly",
+        "selectionId": 97560760
+      },
+      "williamhill": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 140.0,
+        "placeLay": 22.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.36298701298701297
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Shine On Sam",
+        "selectionId": 104256768
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 26.0,
+        "placeLay": 6.8,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3642533936651584
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Red Dahlia",
+        "selectionId": 117420
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 38.0,
+        "placeLay": 8.4,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.37593984962406013
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:00:00Z",
+      "marketName": "16:00 Newcastle - 6f Nov Stks",
+      "betfairWinMarketId": "1.265791197",
+      "runner": {
+        "name": "Maharry",
+        "selectionId": 105328067
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 36.0,
+        "placeLay": 5.7,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.39692982456140347
+    },
+    {
+      "venue": "Haydock",
+      "country": "GB",
+      "offTime": "2026-11-21T15:35:00Z",
+      "marketName": "15:35 Haydock - 3m2f Hcap Chs",
+      "betfairWinMarketId": "1.265791053",
+      "runner": {
+        "name": "Fortunedefortunata",
+        "selectionId": 42680676
+      },
+      "williamhill": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 46.0,
+        "placeLay": 14.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3990683229813665
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T17:30:00Z",
+      "marketName": "17:30 Newcastle - 5f Hcap",
+      "betfairWinMarketId": "1.265791217",
+      "runner": {
+        "name": "Great Success",
+        "selectionId": 12955500
+      },
+      "williamhill": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 60.0,
+        "placeLay": 12.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4126666666666666
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Boubyan",
+        "selectionId": 72322304
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 55.0,
+        "placeLay": 7.2,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4159090909090909
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:30:00Z",
+      "marketName": "18:30 Newcastle - 7f Hcap",
+      "betfairWinMarketId": "1.265791231",
+      "runner": {
+        "name": "Fickle Mcselfish",
+        "selectionId": 91496940
+      },
+      "williamhill": {
+        "winPrice": 41.0,
+        "winPriceRaw": "40/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 85.0,
+        "placeLay": 13.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.4254901960784314
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T18:00:00Z",
+      "marketName": "18:00 Newcastle - 1m Hcap",
+      "betfairWinMarketId": "1.265791224",
+      "runner": {
+        "name": "Carwyn",
+        "selectionId": 85518956
+      },
+      "williamhill": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 70.0,
+        "placeLay": 10.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.47857142857142854
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T16:30:00Z",
+      "marketName": "16:30 Newcastle - 1m Nursery",
+      "betfairWinMarketId": "1.265791204",
+      "runner": {
+        "name": "Mohangel",
+        "selectionId": 99329071
+      },
+      "williamhill": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 140.0,
+        "placeLay": 23.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5787267080745342
+    },
+    {
+      "venue": "Newcastle",
+      "country": "GB",
+      "offTime": "2026-11-21T19:00:00Z",
+      "marketName": "19:00 Newcastle - 6f Hcap",
+      "betfairWinMarketId": "1.265791238",
+      "runner": {
+        "name": "Habrdi",
+        "selectionId": 58644112
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 4
+        }
+      },
+      "betfair": {
+        "winLay": 75.0,
+        "placeLay": 12.5,
+        "placeMarket": "TOP_4"
+      },
+      "edge": -0.6306666666666667
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Time Takes Time",
+        "selectionId": 103828647
+      },
+      "williamhill": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 430.0,
+        "placeLay": 65.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7210196779964222
+    },
+    {
+      "venue": "Punchestown",
+      "country": "IE",
+      "offTime": "2026-11-21T15:53:00Z",
+      "marketName": "15:53 Punchestown - 2m1f INHF",
+      "betfairWinMarketId": "1.265791453",
+      "runner": {
+        "name": "Cant Stopthe Clock",
+        "selectionId": 104437574
+      },
+      "williamhill": {
+        "winPrice": 101.0,
+        "winPriceRaw": "100/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 500.0,
+        "placeLay": 60.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.724
+    }
+  ]
+}
