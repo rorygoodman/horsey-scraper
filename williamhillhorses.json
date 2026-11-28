@@ -1,0 +1,1808 @@
+{
+  "computedAt": "2026-11-28T20:56:21.541054Z",
+  "betfairScrapedAt": "2026-11-28T20:56:02.712176Z",
+  "williamhillScrapedAt": "2026-11-28T20:56:13.365543Z",
+  "horseCount": 72,
+  "horses": [
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T20:58:00Z",
+      "marketName": "20:58 Oaklawn Park - R6 1m Stks",
+      "betfairWinMarketId": "1.266136408",
+      "runner": {
+        "name": "Imperial Honor",
+        "selectionId": 102524227
+      },
+      "williamhill": {
+        "winPrice": 1.6666666666666665,
+        "winPriceRaw": "4/6",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 1.9,
+        "placeLay": 1.46,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.1618601297764961
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T20:58:00Z",
+      "marketName": "20:58 Oaklawn Park - R6 1m Stks",
+      "betfairWinMarketId": "1.266136408",
+      "runner": {
+        "name": "Fleetfoot Mac",
+        "selectionId": 424435
+      },
+      "williamhill": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 4.5,
+        "placeLay": 2.14,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.18905763239875384
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:02:00Z",
+      "marketName": "21:02 Del Mar - R2 7f Mdn",
+      "betfairWinMarketId": "1.266136234",
+      "runner": {
+        "name": "Apples Y Peaches",
+        "selectionId": 95710018
+      },
+      "williamhill": {
+        "winPrice": 2.625,
+        "winPriceRaw": "13/8",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.1,
+        "placeLay": 2.06,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.2352900876918258
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Ehsaan",
+        "selectionId": 23159415
+      },
+      "williamhill": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 7.2,
+        "placeLay": 3.1,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.260752688172043
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Maybern",
+        "selectionId": 84790223
+      },
+      "williamhill": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 6.2,
+        "placeLay": 2.86,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.28208887886307243
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Bay Of Bengal",
+        "selectionId": 6789009
+      },
+      "williamhill": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 5.3,
+        "placeLay": 2.54,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.3076808795127024
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T20:58:00Z",
+      "marketName": "20:58 Oaklawn Park - R6 1m Stks",
+      "betfairWinMarketId": "1.266136408",
+      "runner": {
+        "name": "Excellent",
+        "selectionId": 1273388
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 10.0,
+        "placeLay": 5.2,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.335576923076923
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T20:58:00Z",
+      "marketName": "20:58 Oaklawn Park - R6 1m Stks",
+      "betfairWinMarketId": "1.266136408",
+      "runner": {
+        "name": "Fate Of War",
+        "selectionId": 103235601
+      },
+      "williamhill": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 15.0,
+        "placeLay": 6.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.3416666666666667
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:02:00Z",
+      "marketName": "21:02 Del Mar - R2 7f Mdn",
+      "betfairWinMarketId": "1.266136234",
+      "runner": {
+        "name": "Bailarina",
+        "selectionId": 12883339
+      },
+      "williamhill": {
+        "winPrice": 4.0,
+        "winPriceRaw": "3/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 4.2,
+        "placeLay": 10.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.4363095238095238
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:02:00Z",
+      "marketName": "21:02 Del Mar - R2 7f Mdn",
+      "betfairWinMarketId": "1.266136234",
+      "runner": {
+        "name": "Rabid Response",
+        "selectionId": 88124332
+      },
+      "williamhill": {
+        "winPrice": 2.75,
+        "winPriceRaw": "7/4",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.75,
+        "placeLay": 7.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.5306547619047619
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "Little Torch",
+        "selectionId": 84988460
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.6,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5560416666666667
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "Forget About You",
+        "selectionId": 90293584
+      },
+      "williamhill": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 4.5,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.5825583333333333
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "La Cantera",
+        "selectionId": 71953491
+      },
+      "williamhill": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 10.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.62385
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Just A Song",
+        "selectionId": 9968912
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 11.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6351636363636364
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "Amazonka",
+        "selectionId": 90060569
+      },
+      "williamhill": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 15.5,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.6436612903225807
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T20:58:00Z",
+      "marketName": "20:58 Oaklawn Park - R6 1m Stks",
+      "betfairWinMarketId": "1.266136408",
+      "runner": {
+        "name": "Take A Picture",
+        "selectionId": 48488467
+      },
+      "williamhill": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 18.5,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.6466486486486487
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:32:00Z",
+      "marketName": "21:32 Del Mar - R3 1m Grd 3",
+      "betfairWinMarketId": "1.266136237",
+      "runner": {
+        "name": "Extravaganzoo",
+        "selectionId": 97726207
+      },
+      "williamhill": {
+        "winPrice": 1.8,
+        "winPriceRaw": "4/5",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 3.95,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.7715518987341772
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Steam Powered",
+        "selectionId": 73271049
+      },
+      "williamhill": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 13.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.7745192307692308
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "Gum",
+        "selectionId": 81035741
+      },
+      "williamhill": {
+        "winPrice": 4.333333333333334,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 13.5,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8386728395061729
+    },
+    {
+      "venue": "Turf Paradise",
+      "country": "US",
+      "offTime": "2026-11-28T21:23:00Z",
+      "marketName": "21:23 Turf Paradise - R4 1m Allw Claim",
+      "betfairWinMarketId": "1.266136318",
+      "runner": {
+        "name": "Interplay",
+        "selectionId": 47709767
+      },
+      "williamhill": {
+        "winPrice": 2.1,
+        "winPriceRaw": "11/10",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 7.6,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.8612046052631579
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Love Runs Deep",
+        "selectionId": 102134700
+      },
+      "williamhill": {
+        "winPrice": 4.333333333333334,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 17.5,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8753571428571428
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Top Selection",
+        "selectionId": 102980098
+      },
+      "williamhill": {
+        "winPrice": 3.75,
+        "winPriceRaw": "11/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 16.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.8820375
+    },
+    {
+      "venue": "Turf Paradise",
+      "country": "US",
+      "offTime": "2026-11-28T21:23:00Z",
+      "marketName": "21:23 Turf Paradise - R4 1m Allw Claim",
+      "betfairWinMarketId": "1.266136318",
+      "runner": {
+        "name": "Lookout Pass",
+        "selectionId": 53230588
+      },
+      "williamhill": {
+        "winPrice": 29.0,
+        "winPriceRaw": "28/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 130.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.8844615384615384
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Free Verse",
+        "selectionId": 5507219
+      },
+      "williamhill": {
+        "winPrice": 2.0,
+        "winPriceRaw": "1/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 9.2,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.890704347826087
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:02:00Z",
+      "marketName": "21:02 Del Mar - R2 7f Mdn",
+      "betfairWinMarketId": "1.266136234",
+      "runner": {
+        "name": "Lacey Love",
+        "selectionId": 103962146
+      },
+      "williamhill": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 70.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9051428571428571
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:02:00Z",
+      "marketName": "21:02 Del Mar - R2 7f Mdn",
+      "betfairWinMarketId": "1.266136234",
+      "runner": {
+        "name": "Mad Pursuit",
+        "selectionId": 76835751
+      },
+      "williamhill": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 70.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9124107142857143
+    },
+    {
+      "venue": "Turf Paradise",
+      "country": "US",
+      "offTime": "2026-11-28T21:23:00Z",
+      "marketName": "21:23 Turf Paradise - R4 1m Allw Claim",
+      "betfairWinMarketId": "1.266136318",
+      "runner": {
+        "name": "Big A's Little One",
+        "selectionId": 86754022
+      },
+      "williamhill": {
+        "winPrice": 4.333333333333334,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9243706896551724
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Extrasexybigdaddee",
+        "selectionId": 37459705
+      },
+      "williamhill": {
+        "winPrice": 4.333333333333334,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 29.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9244540229885058
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "Starship Melody",
+        "selectionId": 78755327
+      },
+      "williamhill": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 32.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9288375
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T20:58:00Z",
+      "marketName": "20:58 Oaklawn Park - R6 1m Stks",
+      "betfairWinMarketId": "1.266136408",
+      "runner": {
+        "name": "Schwarz",
+        "selectionId": 61103835
+      },
+      "williamhill": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9567386363636363
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Winooski",
+        "selectionId": 46564030
+      },
+      "williamhill": {
+        "winPrice": 67.0,
+        "winPriceRaw": "66/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 980.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9587163265306122
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "She's All Kristi",
+        "selectionId": 103235589
+      },
+      "williamhill": {
+        "winPrice": 51.0,
+        "winPriceRaw": "50/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.969
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:32:00Z",
+      "marketName": "21:32 Del Mar - R3 1m Grd 3",
+      "betfairWinMarketId": "1.266136237",
+      "runner": {
+        "name": "River In Paradise",
+        "selectionId": 99181595
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 280.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9709642857142857
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Blame To Fame",
+        "selectionId": 103090297
+      },
+      "williamhill": {
+        "winPrice": 34.0,
+        "winPriceRaw": "33/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9792
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Two Steppin Ray",
+        "selectionId": 104182834
+      },
+      "williamhill": {
+        "winPrice": 26.0,
+        "winPriceRaw": "25/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9820574712643678
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Kelbycan",
+        "selectionId": 105595921
+      },
+      "williamhill": {
+        "winPrice": 21.0,
+        "winPriceRaw": "20/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9854310344827586
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "King Reigert",
+        "selectionId": 85194877
+      },
+      "williamhill": {
+        "winPrice": 23.0,
+        "winPriceRaw": "22/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 980.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.985565306122449
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Midnight Commander",
+        "selectionId": 104500456
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 330.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9858712121212121
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Jespah",
+        "selectionId": 102367350
+      },
+      "williamhill": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.986
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Khetam",
+        "selectionId": 85871982
+      },
+      "williamhill": {
+        "winPrice": 11.0,
+        "winPriceRaw": "10/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.986
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:32:00Z",
+      "marketName": "21:32 Del Mar - R3 1m Grd 3",
+      "betfairWinMarketId": "1.266136237",
+      "runner": {
+        "name": "Dash",
+        "selectionId": 8452280
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9863304597701149
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:32:00Z",
+      "marketName": "21:32 Del Mar - R3 1m Grd 3",
+      "betfairWinMarketId": "1.266136237",
+      "runner": {
+        "name": "Starfinder",
+        "selectionId": 99243183
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9863304597701149
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Sweet Lou",
+        "selectionId": 6680732
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.986780459770115
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Nuccia",
+        "selectionId": 102215254
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9872363636363637
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Hey Baby Mikko",
+        "selectionId": 100920942
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9881298850574712
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Majestic Marie",
+        "selectionId": 102980094
+      },
+      "williamhill": {
+        "winPrice": 19.0,
+        "winPriceRaw": "18/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9882
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Goldbuttonthursday",
+        "selectionId": 104245897
+      },
+      "williamhill": {
+        "winPrice": 12.0,
+        "winPriceRaw": "11/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 600.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9884
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Sweet Jen",
+        "selectionId": 101185423
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 920.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9886608695652174
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "Starts Now",
+        "selectionId": 49784757
+      },
+      "williamhill": {
+        "winPrice": 17.0,
+        "winPriceRaw": "16/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 920.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9886608695652174
+    },
+    {
+      "venue": "Turf Paradise",
+      "country": "US",
+      "offTime": "2026-11-28T21:23:00Z",
+      "marketName": "21:23 Turf Paradise - R4 1m Allw Claim",
+      "betfairWinMarketId": "1.266136318",
+      "runner": {
+        "name": "Cut N Curl",
+        "selectionId": 74099764
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9889034090909091
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Rosabella Gold",
+        "selectionId": 102368445
+      },
+      "williamhill": {
+        "winPrice": 8.5,
+        "winPriceRaw": "15/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9890909090909091
+    },
+    {
+      "venue": "Tampa Bay Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Tampa Bay Downs - R9 1m1f Claim",
+      "betfairWinMarketId": "1.266136357",
+      "runner": {
+        "name": "Souper Crunchy",
+        "selectionId": 59667783
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9897090909090909
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Stephs Factor",
+        "selectionId": 101166961
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 920.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9899478260869565
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Luangwa Valley",
+        "selectionId": 105595879
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 920.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9899478260869565
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Love Line",
+        "selectionId": 101420104
+      },
+      "williamhill": {
+        "winPrice": 7.5,
+        "winPriceRaw": "13/2",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9903272727272727
+    },
+    {
+      "venue": "Turf Paradise",
+      "country": "US",
+      "offTime": "2026-11-28T21:23:00Z",
+      "marketName": "21:23 Turf Paradise - R4 1m Allw Claim",
+      "betfairWinMarketId": "1.266136318",
+      "runner": {
+        "name": "Tapit Cara",
+        "selectionId": 75181373
+      },
+      "williamhill": {
+        "winPrice": 9.5,
+        "winPriceRaw": "17/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 600.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9905208333333333
+    },
+    {
+      "venue": "Turf Paradise",
+      "country": "US",
+      "offTime": "2026-11-28T21:23:00Z",
+      "marketName": "21:23 Turf Paradise - R4 1m Allw Claim",
+      "betfairWinMarketId": "1.266136318",
+      "runner": {
+        "name": "Jager Angel",
+        "selectionId": 72803196
+      },
+      "williamhill": {
+        "winPrice": 13.0,
+        "winPriceRaw": "12/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9905287356321839
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Speedbird",
+        "selectionId": 574692
+      },
+      "williamhill": {
+        "winPrice": 15.0,
+        "winPriceRaw": "14/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 1000.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9906
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:32:00Z",
+      "marketName": "21:32 Del Mar - R3 1m Grd 3",
+      "betfairWinMarketId": "1.266136237",
+      "runner": {
+        "name": "Falling Creek",
+        "selectionId": 103780840
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9926278735632184
+    },
+    {
+      "venue": "Turf Paradise",
+      "country": "US",
+      "offTime": "2026-11-28T21:23:00Z",
+      "marketName": "21:23 Turf Paradise - R4 1m Allw Claim",
+      "betfairWinMarketId": "1.266136318",
+      "runner": {
+        "name": "True Patriot",
+        "selectionId": 489100
+      },
+      "williamhill": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9926875
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Cutt The D'Oro",
+        "selectionId": 103447255
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9928528735632184
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Ritornello",
+        "selectionId": 101884730
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9928528735632184
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Poppy's Playhouse",
+        "selectionId": 101673282
+      },
+      "williamhill": {
+        "winPrice": 10.0,
+        "winPriceRaw": "9/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9928528735632184
+    },
+    {
+      "venue": "Churchill Downs",
+      "country": "US",
+      "offTime": "2026-11-28T21:25:00Z",
+      "marketName": "21:25 Churchill Downs - R8 1m1f Mdn",
+      "betfairWinMarketId": "1.266136129",
+      "runner": {
+        "name": "Gray Eminence",
+        "selectionId": 103962137
+      },
+      "williamhill": {
+        "winPrice": 5.0,
+        "winPriceRaw": "4/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9934181818181819
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Big City Steve",
+        "selectionId": 103962142
+      },
+      "williamhill": {
+        "winPrice": 9.0,
+        "winPriceRaw": "8/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9935275862068965
+    },
+    {
+      "venue": "Gulfstream Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:17:00Z",
+      "marketName": "21:17 Gulfstream Park - R9 1m Allw Claim",
+      "betfairWinMarketId": "1.266136384",
+      "runner": {
+        "name": "Cryingintherain",
+        "selectionId": 84837332
+      },
+      "williamhill": {
+        "winPrice": 8.0,
+        "winPriceRaw": "7/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 920.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9944521739130435
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Drummer Bill",
+        "selectionId": 103126930
+      },
+      "williamhill": {
+        "winPrice": 6.0,
+        "winPriceRaw": "5/1",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.995551724137931
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:32:00Z",
+      "marketName": "21:32 Del Mar - R3 1m Grd 3",
+      "betfairWinMarketId": "1.266136237",
+      "runner": {
+        "name": "Trouble Maker",
+        "selectionId": 1239940
+      },
+      "williamhill": {
+        "winPrice": 5.5,
+        "winPriceRaw": "9/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9957765804597701
+    },
+    {
+      "venue": "Fair Grounds",
+      "country": "US",
+      "offTime": "2026-11-28T21:15:00Z",
+      "marketName": "21:15 Fair Grounds - R6 1m1f Mdn",
+      "betfairWinMarketId": "1.266136282",
+      "runner": {
+        "name": "Mood Spin",
+        "selectionId": 99809612
+      },
+      "williamhill": {
+        "winPrice": 2.75,
+        "winPriceRaw": "7/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 440.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.9962
+    },
+    {
+      "venue": "Del Mar",
+      "country": "US",
+      "offTime": "2026-11-28T21:32:00Z",
+      "marketName": "21:32 Del Mar - R3 1m Grd 3",
+      "betfairWinMarketId": "1.266136237",
+      "runner": {
+        "name": "Deluge",
+        "selectionId": 5989779
+      },
+      "williamhill": {
+        "winPrice": 4.5,
+        "winPriceRaw": "7/2",
+        "eachWayTerms": {
+          "fraction": 0.25,
+          "places": 2
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_2"
+      },
+      "edge": -0.9964762931034483
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Betterquitthatboy",
+        "selectionId": 102698748
+      },
+      "williamhill": {
+        "winPrice": 4.333333333333334,
+        "winPriceRaw": "10/3",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.996676245210728
+    },
+    {
+      "venue": "Oaklawn Park",
+      "country": "US",
+      "offTime": "2026-11-28T21:28:00Z",
+      "marketName": "21:28 Oaklawn Park - R7 6f Mdn",
+      "betfairWinMarketId": "1.266136411",
+      "runner": {
+        "name": "Serious Beast",
+        "selectionId": 103280012
+      },
+      "williamhill": {
+        "winPrice": 3.25,
+        "winPriceRaw": "9/4",
+        "eachWayTerms": {
+          "fraction": 0.2,
+          "places": 3
+        }
+      },
+      "betfair": {
+        "winLay": 870.0,
+        "placeLay": 1000.0,
+        "placeMarket": "TOP_3"
+      },
+      "edge": -0.997407183908046
+    }
+  ]
+}
